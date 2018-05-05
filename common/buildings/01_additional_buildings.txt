@@ -1,0 +1,27 @@
+trading_post_01 {
+	cost = 500
+	time = 12
+	
+	modifier {
+		trade_value_modifier = 0.75
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+grievances_center_01 {
+	cost = 500
+	time = 12
+	
+	modifier {
+		local_core_creation = -0.18
+		local_institution_spread = 0.25
+		local_culture_conversion_cost = -0.79
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

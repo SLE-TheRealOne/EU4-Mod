@@ -1,0 +1,192 @@
+embassy_01 {
+	cost = 20000
+	time = 6
+	
+	modifier {
+		global_spy_defence = 0.025
+		discovered_relations_impact = -0.025
+		rebel_support_efficiency = 0.025
+		prestige_decay = -0.025
+	}
+	
+	trigger {
+		is_capital = yes
+	}
+
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_02 {
+	cost = 40000
+	time = 7
+	
+	modifier {
+		global_spy_defence = 0.05
+		discovered_relations_impact = -0.05
+		rebel_support_efficiency = 0.05
+		prestige_decay = -0.05
+	}
+	
+	make_obsolete = embassy_01
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_03 {
+	cost = 60000
+	time = 8
+	
+	modifier {
+		global_spy_defence = 0.075
+		discovered_relations_impact = -0.075
+		rebel_support_efficiency = 0.075
+		prestige_decay = -0.075
+	}
+	
+	make_obsolete = embassy_02
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_04 {
+	cost = 80000
+	time = 9
+	
+	modifier {
+		global_spy_defence = 0.1
+		discovered_relations_impact = -0.1
+		rebel_support_efficiency = 0.1
+		prestige_decay = -0.1
+	}
+	
+	make_obsolete = embassy_03
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_05 {
+	cost = 100000
+	time = 10
+	
+	modifier {
+		global_spy_defence = 0.125
+		discovered_relations_impact = -0.125
+		rebel_support_efficiency = 0.125
+		prestige_decay = -0.125
+	}
+	
+	make_obsolete = embassy_04
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_06 {
+	cost = 120000
+	time = 11
+	
+	modifier {
+		global_spy_defence = 0.15
+		discovered_relations_impact = -0.15
+		rebel_support_efficiency = 0.15
+		prestige_decay = -0.15
+	}
+	
+	make_obsolete = embassy_05
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_07 {
+	cost = 140000
+	time = 12
+	
+	modifier {
+		global_spy_defence = 0.175
+		discovered_relations_impact = -0.175
+		rebel_support_efficiency = 0.175
+		prestige_decay = -0.175
+	}
+	
+	make_obsolete = embassy_06
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_08 {
+	cost = 160000
+	time = 13
+	
+	modifier {
+		global_spy_defence = 0.2
+		discovered_relations_impact = -0.2
+		rebel_support_efficiency = 0.2
+		prestige_decay = -0.2
+	}
+	
+	make_obsolete = embassy_07
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_09 {
+	cost = 180000
+	time = 14
+	
+	modifier {
+		global_spy_defence = 0.225
+		discovered_relations_impact = -0.225
+		rebel_support_efficiency = 0.225
+		prestige_decay = -0.225
+	}
+	
+	make_obsolete = embassy_08
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+embassy_10 {
+	cost = 200000
+	time = 15
+	
+	modifier {
+		global_spy_defence = 0.25
+		discovered_relations_impact = -0.25
+		rebel_support_efficiency = 0.25
+		prestige_decay = -0.25
+	}
+	
+	make_obsolete = embassy_09
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

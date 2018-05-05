@@ -1,0 +1,167 @@
+spy_center_01 {
+	cost = 20000
+	time = 6
+	
+	modifier {
+		spy_offence = 0.05
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_02 {
+	cost = 40000
+	time = 7
+	
+	make_obsolete = spy_center_01
+	
+	modifier {
+		spy_offence = 0.1
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_03 {
+	cost = 60000
+	time = 8
+	
+	make_obsolete = spy_center_02
+	
+	modifier {
+		spy_offence = 0.15
+	}
+	
+	one_per_country = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_04 {
+	cost = 80000
+	time = 9
+	
+	make_obsolete = spy_center_03
+	
+	modifier {
+		spy_offence = 0.20
+	}
+	
+	one_per_country = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_05 {
+	cost = 100000
+	time = 10
+	
+	make_obsolete = spy_center_04
+	
+	modifier {
+		spy_offence = 0.25
+	}
+	
+	one_per_country = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_06 {
+	cost = 120000
+	time = 11
+	
+	make_obsolete = spy_center_05
+	
+	modifier {
+		spy_offence = 0.30
+	}
+	
+	one_per_country = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_07 {
+	cost = 140000
+	time = 12
+	
+	make_obsolete = spy_center_06
+	
+	modifier {
+		spy_offence = 0.35
+	}
+	
+	one_per_country = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_08 {
+	cost = 160000
+	time = 13
+	
+	make_obsolete = spy_center_07
+	
+	modifier {
+		spy_offence = 0.40
+	}
+	
+	one_per_country = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_09 {
+	cost = 180000
+	time = 14
+	
+	make_obsolete = spy_center_08
+	
+	modifier {
+		spy_offence = 0.45
+	}
+	
+	one_per_country = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+spy_center_10 {
+	cost = 200000
+	time = 15
+	
+	make_obsolete = spy_center_09
+	
+	modifier {
+		spy_offence = 0.50
+	}
+	
+	one_per_country = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}

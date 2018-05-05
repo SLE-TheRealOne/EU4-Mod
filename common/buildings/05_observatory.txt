@@ -1,0 +1,149 @@
+observatory_01 = {
+	cost = 20000
+	time = 6
+	modifier = {
+		idea_cost = -0.025
+	}
+	
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+observatory_02 = {
+	cost = 40000
+	time = 7
+	modifier = {
+		idea_cost = -0.05
+	}
+	
+	make_obsolete = observatory_01
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+observatory_03 = {
+	cost = 60000
+	time = 8
+	modifier = {
+		idea_cost = -0.075
+	}
+	
+	make_obsolete = observatory_02
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+observatory_04 = {
+	cost = 80000
+	time = 9
+	modifier = {
+		idea_cost = -0.1
+	}
+	
+	make_obsolete = observatory_03
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+observatory_05 = {
+	cost = 100000
+	time = 10
+	modifier = {
+		idea_cost = -0.125
+	}
+	
+	make_obsolete = observatory_04
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+observatory_06 = {
+	cost = 120000
+	time = 11
+	modifier = {
+		idea_cost = -0.15
+	}
+	
+	make_obsolete = observatory_05
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+observatory_07 = {
+	cost = 140000
+	time = 13
+	modifier = {
+		idea_cost = -0.175
+	}
+	
+	make_obsolete = observatory_06
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+observatory_08 = {
+	cost = 160000
+	time = 12
+	modifier = {
+		idea_cost = -0.2
+	}
+	
+	make_obsolete = observatory_07
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+observatory_09 = {
+	cost = 180000
+	time = 13
+	modifier = {
+		idea_cost = -0.225
+	}
+	
+	make_obsolete = observatory_08
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}
+
+
+observatory_10 = {
+	cost = 200000
+	time = 14
+	modifier = {
+		idea_cost = -0.25
+	}
+	
+	make_obsolete = observatory_09
+	one_per_country = yes
+	
+		ai_will_do = {
+		factor = 1
+	}
+}

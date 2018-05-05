@@ -1,0 +1,183 @@
+country_decisions = {
+	parade {
+		allow = {
+			AND {
+				manpower = 50
+				NOT {
+					prestige = 50
+				}
+			}
+		}
+		
+		effect = {
+			add_manpower = -50
+			add_prestige = 5
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	train_armies {
+		allow = {
+			manpower = 50
+		}
+		
+		effect = {
+			add_manpower = -50
+			add_army_tradition = 5
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reduce_nobles_influence {
+		allow = {
+			AND {
+				manpower = 50
+				estate_influence = {
+					estate = estate_nobles
+					influence = 50
+				}
+			}
+		}
+		
+		effect = {
+			add_manpower = -50
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = reduce_influence_effect
+				influence = -10
+				duration = 1095
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reduce_church_influence {
+		allow = {
+			AND {
+				manpower = 50
+				estate_influence = {
+					estate = estate_church
+					influence = 50
+				}
+			}
+		}
+		
+		effect = {
+			add_manpower = -50
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = reduce_influence_effect
+				influence = -10
+				duration = 1095
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reduce_burghers_influence {
+		allow = {
+			AND {
+				manpower = 50
+				estate_influence = {
+					estate = estate_burghers
+					influence = 50
+				}
+			}
+		}
+		
+		effect = {
+			add_manpower = -50
+			add_estate_influence_modifier = {
+				estate = estate_burghers
+				desc = reduce_influence_effect
+				influence = -10
+				duration = 1095
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	convert_manpower_to_dipmiladm_power {
+		allow = {
+			AND {
+				manpower = 150
+				NOT {
+					adm_power = 400
+				}
+				NOT {
+					dip_power = 400
+				}
+			}
+		}
+		
+		effect = {
+			add_manpower = -150
+			add_mil_power = -15
+			add_dip_power = 50
+			add_adm_power = 50
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	stop_manpower_recovery {
+		potential {
+			NOT {
+				has_country_modifier = pacifism
+			}
+		}
+	
+		allow = {
+			AND {
+				manpower = 200
+				NOT {
+					had_recent_war = 5
+				}
+				is_at_war = no
+			}
+		}
+		
+		effect = {
+			add_country_modifier {
+				name = pacifism
+				duration = 730
+				hidden = no
+			}
+			change_dip = 1
+			change_adm = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

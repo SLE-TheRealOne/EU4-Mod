@@ -1,0 +1,5 @@
+pacifism {
+	manpower_recovery_speed = -0.95
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+}

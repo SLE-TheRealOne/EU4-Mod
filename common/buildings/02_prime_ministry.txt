@@ -1,0 +1,158 @@
+prime_ministry_01 {
+	cost = 20000
+	time = 5
+	
+	one_per_country = yes
+	
+	modifier {
+		development_cost = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_02 {
+	cost = 40000
+	time = 6
+	make_obsolete = prime_ministry_01
+	
+	modifier {
+		development_cost = -0.1
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_03 {
+	cost = 60000
+	time = 7
+	make_obsolete = prime_ministry_02
+	
+	modifier {
+		development_cost = -0.15
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_04 {
+	cost = 80000
+	time = 8
+	make_obsolete = prime_ministry_03
+	
+	modifier {
+		development_cost = -0.2
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_05 {
+	cost = 100000
+	time = 9
+	make_obsolete = prime_ministry_04
+	
+	modifier {
+		development_cost = -0.25
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_06 {
+	cost = 120000
+	time = 10
+	make_obsolete = prime_ministry_05
+	
+	modifier {
+		development_cost = -0.3
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_07 {
+	cost = 1400000
+	time = 11
+	make_obsolete = prime_ministry_06
+	
+	modifier {
+		development_cost = -0.35
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_08 {
+	cost = 160000
+	time = 12
+	make_obsolete = prime_ministry_07
+	
+	modifier {
+		development_cost = -0.4
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_09 {
+	cost = 180000
+	time = 13
+	make_obsolete = prime_ministry_08
+	
+	modifier {
+		development_cost = -0.45
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+prime_ministry_10 {
+	cost = 200000
+	time = 14
+	make_obsolete = prime_ministry_09
+	
+	modifier {
+		development_cost = -0.5
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

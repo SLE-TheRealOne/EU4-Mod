@@ -1,0 +1,167 @@
+laboratory_01 {
+	cost = 20000
+	time = 6
+	
+	modifier = {
+		technology_cost = -0.02
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_02 {
+	cost = 40000
+	time = 7
+
+	make_obsolete = laboratory_01
+	
+	modifier = {
+		technology_cost = -0.04
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_03 {
+	cost = 50000
+	time = 8
+
+	make_obsolete = laboratory_02
+	
+	modifier = {
+		technology_cost = -0.06
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_04 {
+	cost = 80000
+	time = 9
+
+	make_obsolete = laboratory_03
+	
+	modifier = {
+		technology_cost = -0.08
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_05 {
+	cost = 100000
+	time = 10
+
+	make_obsolete = laboratory_04
+	
+	modifier = {
+		technology_cost = -0.10
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_06 {
+	cost = 120000
+	time = 11
+
+	make_obsolete = laboratory_05
+	
+	modifier = {
+		technology_cost = -0.12
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_07 {
+	cost = 140000
+	time = 12
+
+	make_obsolete = laboratory_06
+	
+	modifier = {
+		technology_cost = -0.14
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_08 {
+	cost = 160000
+	time = 13
+
+	make_obsolete = laboratory_07
+	
+	modifier = {
+		technology_cost = -0.16
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_09 {
+	cost = 180000
+	time = 14
+	
+	make_obsolete = laboratory_08
+	
+	modifier = {
+		technology_cost = -0.18
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+laboratory_10 {
+	cost = 200000
+	time = 15
+	
+	make_obsolete = laboratory_09
+	
+	modifier = {
+		technology_cost = -0.20
+	}
+	
+	one_per_country = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
