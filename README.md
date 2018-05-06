@@ -45,6 +45,6 @@ Awaiting a steam workshop release (or at least an install script), proceed as fo
 ** interface
 ** localisation
 
-### Screenshots
+## Screenshots
 ![Screenshot](https://github.com/SLE-TheRealOne/EUIVMod/blob/master/Screen-Buildings.jpg)
 ![Screenshot](https://github.com/SLE-TheRealOne/EUIVMod/blob/master/Screen-Decisions.jpg)
