@@ -139,7 +139,6 @@ technology = { #Early Modern Administration
 	administrative_republic	= yes
 	max_states = 3
 	prime_ministry_04 = yes
-	grievances_center_01 = yes
 }
 
 technology = { #Improved Drainage
@@ -188,6 +187,7 @@ technology = { #University
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1
 	observatory_06 = yes
+	trading_post_02 = yes
 }
 
 technology = { #National Sovereignty
@@ -244,6 +244,7 @@ technology = { #Measuring the World
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1
 	observatory_08 = yes
+	trading_post_03 = yes
 }
 
 technology = { #Bonds and Tontines

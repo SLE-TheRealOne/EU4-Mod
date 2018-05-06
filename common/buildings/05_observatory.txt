@@ -1,5 +1,5 @@
 observatory_01 = {
-	cost = 20000
+	cost = 310
 	time = 6
 	modifier = {
 		idea_cost = -0.025
@@ -13,7 +13,7 @@ observatory_01 = {
 }
 
 observatory_02 = {
-	cost = 40000
+	cost = 625
 	time = 7
 	modifier = {
 		idea_cost = -0.05
@@ -28,7 +28,7 @@ observatory_02 = {
 }
 
 observatory_03 = {
-	cost = 60000
+	cost = 1250
 	time = 8
 	modifier = {
 		idea_cost = -0.075
@@ -43,7 +43,7 @@ observatory_03 = {
 }
 
 observatory_04 = {
-	cost = 80000
+	cost = 2500
 	time = 9
 	modifier = {
 		idea_cost = -0.1
@@ -58,7 +58,7 @@ observatory_04 = {
 }
 
 observatory_05 = {
-	cost = 100000
+	cost = 5000
 	time = 10
 	modifier = {
 		idea_cost = -0.125
@@ -73,7 +73,7 @@ observatory_05 = {
 }
 
 observatory_06 = {
-	cost = 120000
+	cost = 7500
 	time = 11
 	modifier = {
 		idea_cost = -0.15
@@ -88,7 +88,7 @@ observatory_06 = {
 }
 
 observatory_07 = {
-	cost = 140000
+	cost = 10000
 	time = 13
 	modifier = {
 		idea_cost = -0.175
@@ -103,7 +103,7 @@ observatory_07 = {
 }
 
 observatory_08 = {
-	cost = 160000
+	cost = 15000
 	time = 12
 	modifier = {
 		idea_cost = -0.2
@@ -118,7 +118,7 @@ observatory_08 = {
 }
 
 observatory_09 = {
-	cost = 180000
+	cost = 20000
 	time = 13
 	modifier = {
 		idea_cost = -0.225
@@ -134,7 +134,7 @@ observatory_09 = {
 
 
 observatory_10 = {
-	cost = 200000
+	cost = 40000
 	time = 14
 	modifier = {
 		idea_cost = -0.25

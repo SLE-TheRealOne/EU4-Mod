@@ -1,12 +1,21 @@
 ﻿l_french:
- bannerText: "Bâtiments uniques"
-
- building_trading_post_01: "Comptoir commercial"
+ 
+ building_trading_post_01: "Comptoir commercial I"
  building_trading_post_01_desc: "Produire, stocker, échanger : le Comptoir est un haut lieu du commerce où se retrouvent toutes celles et ceux qui aiment faire circuler les devises"
+ building_trading_post_02: "Comptoir commercial II"
+ building_trading_post_02_desc: "Amélioration du comptoir commercial"
+ building_trading_post_03: "Comptoir commercial III"
+ building_trading_post_03_desc: "Amélioration du comptoir commercial"
 
- building_grievances_center_01: "Centre de doléances"
- building_grievances_center_01_desc: "Savoir écouter les plaintes, drames et autres suppliques peut s'avérer payant"
+ building_grievances_center_01: "Centre de doléances I"
+ building_grievances_center_01_desc: "Savoir écouter les plaintes, revendications et autres suppliques peut s'avérer payant lorsqu'on souhaite intégrer une province à l'empire"
+ building_grievances_center_02: "Centre de doléances II"
+ building_grievances_center_02_desc: "Amélioration du centre de doléances"
+ building_grievances_center_03: "Centre de doléances III"
+ building_grievances_center_03_desc: "Amélioration du centre de doléances"
 
+ bannerText: "Bâtiments uniques"
+ 
  building_military_academy_01: "Académie militaire I"
  building_military_academy_01_desc: "Un entrainement permanent d'une élite de l'armée permet de diffuser les meilleures techniques dans les régiments \n\n§RCondition :§! Ne peut être construite que dans une province sous contrôle des nobles\n"
  building_military_academy_02: "Académie militaire II"
@@ -50,7 +59,7 @@
  building_precision_workshop_10_desc: "Amélioration de l'atelier de précision"
 
  building_embassy_01: "Ambassade I"
- building_embassy_01_desc: "A mesure que les frontières du monde s'étendent, il est plus que jamais nécessaire de savoir co-exister avec d'autres nations ... et de savoir s'en protéger. \n\n§RCondition§! : Doit se trouver dans la capitale [From.Capital.GetCapitalName] \n"
+ building_embassy_01_desc: "A mesure que les frontières du monde s'étendent, il est plus que jamais nécessaire de savoir co-exister avec d'autres nations ... et de savoir s'en protéger. \n\n§RCondition§! : Doit se trouver dans la capitale \n"
  building_embassy_02: "Ambassade II"
  building_embassy_02_desc: "Amélioration de l'ambassade"
  building_embassy_03: "Ambassade III"
@@ -154,24 +163,27 @@
  building_laboratory_10: "Laboratoire X"
  building_laboratory_10_desc: "Amélioration du laboratoire"
 
- parade_title: "Parade des armées"
+ parade_title: "--- Parade des armées"
  parade_desc: "Faire une démonstration de puissance aussi grandiloquente qu'une parade militaire permet d'impressionner certains états"
 
- train_armies_title: "Entrainement avancé"
+ train_armies_title: "--- Entrainement avancé des soldats"
  train_armies_desc: "Dédier une partie des ressources militaires à préparer un exercice de combat en étudiant les récentes batailles permet d'être mieux préparé pour les suivantes"
+ 
+ train_sailors_title: "--- Entrainement avancé des marins"
+ train_sailors_desc: "Dédier une partie des ressources militaires à préparer un exercice de combat en étudiant les récentes batailles permet d'être mieux préparé pour les suivantes"
 
- reduce_nobles_influence_title: "Réduire l'influence des nobles"
+ reduce_nobles_influence_title: "--- Réduire l'influence des nobles"
  reduce_nobles_influence_desc: "Faire une démonstration de force afin de réduire l'influence dont dispose la faction"
- reduce_church_influence_title: "Réduire l'influence des prêtres"
+ reduce_church_influence_title: "--- Réduire l'influence des prêtres"
  reduce_church_influence_desc: "Faire une démonstration de force afin de réduire l'influence dont dispose la faction"
- reduce_burghers_influence_title: "Réduire l'influence des bourgeois"
+ reduce_burghers_influence_title: "--- Réduire l'influence des bourgeois"
  reduce_burghers_influence_desc: "Faire une démonstration de force afin de réduire l'influence dont dispose la faction"
  reduce_influence_effect: "Coercition militaire"
 
- convert_manpower_to_dipmiladm_power_title: "Rediriger l'effort de l'armée"
+ convert_manpower_to_dipmiladm_power_title: "--- Rediriger l'effort de l'armée"
  convert_manpower_to_dipmiladm_power_desc: "La paix requiert parfois autant de ressources que la guerre. Une réutilisation maitrisée du personnel permet une amélioration de l'action de l'état"
 
- stop_manpower_recovery_title: "Ralentir l'effort militaire"
+ stop_manpower_recovery_title: "--- Ralentir l'effort militaire"
  stop_manpower_recovery_desc: "La période de paix actuelle semble durer et l'état de nos armées nous permet d'envisager de ralentir l'effort militaire pour l'orienter différement"
 
  pacifism: "Désarmement"

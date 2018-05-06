@@ -102,6 +102,7 @@ technology  = { #Docks
 	naval_morale			=	0.2
 	
 	spy_center_03 = yes
+	grievances_center_01 = yes
 }
 
 technology = { #Carracks & Caravel
@@ -144,6 +145,7 @@ technology = { #Man of War
 	naval_morale			=	0.4
 	may_slander_merchants = yes
 	embassy_04 = yes
+	grievances_center_02 = yes
 }
 
 technology = { #Chartered Companies
@@ -185,7 +187,7 @@ technology = { #Development of Maritime Law
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
-
+	grievances_center_03 = yes
 }
 
 technology = { #Merchantman

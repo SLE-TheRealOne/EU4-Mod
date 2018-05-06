@@ -1,5 +1,5 @@
 prime_ministry_01 {
-	cost = 20000
+	cost = 310
 	time = 5
 	
 	one_per_country = yes
@@ -14,7 +14,7 @@ prime_ministry_01 {
 }
 
 prime_ministry_02 {
-	cost = 40000
+	cost = 625
 	time = 6
 	make_obsolete = prime_ministry_01
 	
@@ -30,7 +30,7 @@ prime_ministry_02 {
 }
 
 prime_ministry_03 {
-	cost = 60000
+	cost = 1250
 	time = 7
 	make_obsolete = prime_ministry_02
 	
@@ -46,7 +46,7 @@ prime_ministry_03 {
 }
 
 prime_ministry_04 {
-	cost = 80000
+	cost = 2500
 	time = 8
 	make_obsolete = prime_ministry_03
 	
@@ -62,7 +62,7 @@ prime_ministry_04 {
 }
 
 prime_ministry_05 {
-	cost = 100000
+	cost = 5000
 	time = 9
 	make_obsolete = prime_ministry_04
 	
@@ -78,7 +78,7 @@ prime_ministry_05 {
 }
 
 prime_ministry_06 {
-	cost = 120000
+	cost = 7500
 	time = 10
 	make_obsolete = prime_ministry_05
 	
@@ -94,7 +94,7 @@ prime_ministry_06 {
 }
 
 prime_ministry_07 {
-	cost = 1400000
+	cost = 10000
 	time = 11
 	make_obsolete = prime_ministry_06
 	
@@ -110,7 +110,7 @@ prime_ministry_07 {
 }
 
 prime_ministry_08 {
-	cost = 160000
+	cost = 15000
 	time = 12
 	make_obsolete = prime_ministry_07
 	
@@ -126,7 +126,7 @@ prime_ministry_08 {
 }
 
 prime_ministry_09 {
-	cost = 180000
+	cost = 20000
 	time = 13
 	make_obsolete = prime_ministry_08
 	
@@ -142,7 +142,7 @@ prime_ministry_09 {
 }
 
 prime_ministry_10 {
-	cost = 200000
+	cost = 40000
 	time = 14
 	make_obsolete = prime_ministry_09
 	

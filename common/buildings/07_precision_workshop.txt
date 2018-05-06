@@ -1,5 +1,5 @@
 precision_workshop_01 {
-	cost = 20000
+	cost = 310
 	time = 6
 	
 	modifier = {
@@ -22,7 +22,7 @@ precision_workshop_01 {
 }
 
 precision_workshop_02 {
-	cost = 40000
+	cost = 625
 	time = 7
 	
 	modifier = {
@@ -46,7 +46,7 @@ precision_workshop_02 {
 }
 
 precision_workshop_03 {
-	cost = 60000
+	cost = 1250
 	time = 8
 	
 	modifier = {
@@ -70,7 +70,7 @@ precision_workshop_03 {
 }
 
 precision_workshop_04 {
-	cost = 80000
+	cost = 2500
 	time = 9
 	
 	modifier = {
@@ -94,7 +94,7 @@ precision_workshop_04 {
 }
 
 precision_workshop_05 {
-	cost = 100000
+	cost = 5000
 	time = 10
 	
 	modifier = {
@@ -118,7 +118,7 @@ precision_workshop_05 {
 }
 
 precision_workshop_06 {
-	cost = 120000
+	cost = 7500
 	time = 11
 	
 	modifier = {
@@ -142,7 +142,7 @@ precision_workshop_06 {
 }
 
 precision_workshop_07 {
-	cost = 140000
+	cost = 10000
 	time = 12
 	
 	modifier = {
@@ -166,7 +166,7 @@ precision_workshop_07 {
 }
 
 precision_workshop_08 {
-	cost = 160000
+	cost = 15000
 	time = 13
 	
 	modifier = {
@@ -190,7 +190,7 @@ precision_workshop_08 {
 }
 
 precision_workshop_09 {
-	cost = 180000
+	cost = 20000
 	time = 14
 	
 	modifier = {
@@ -214,7 +214,7 @@ precision_workshop_09 {
 }
 
 precision_workshop_10 {
-	cost = 200000
+	cost = 40000
 	time = 15
 	
 	modifier = {

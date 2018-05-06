@@ -180,4 +180,19 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	train_sailors {
+		allow = {
+			sailors = 10000
+		}
+		
+		effect = {
+			add_sailors = -10000
+			add_navy_tradition = 5
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
