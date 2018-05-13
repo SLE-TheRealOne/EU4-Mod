@@ -188,3 +188,216 @@
 
  pacifism: "Désarmement"
  desc_pacifism: "Le peuple se désintéresse de la chose militaire au profit d'activités plus pacifiques. Il y est encouragé par son dirigeant. \n Puissance administrative de [From.Monarch.GetName] : +1 \n Puissance diplomatique de [From.Monarch.GetName] : +1"
+ 
+ # =============================== Country modifiers for unique buildings ===============================
+ unique_buildings_country_modifier_alternate_description: "§R, sera retiré si le bâtiment est détruit§!"
+ # 										===== Prime ministry =====
+ prime_ministry_01_country_modifier: "Premier ministère"
+ desc_prime_ministry_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_02_country_modifier: "Second ministère"
+ desc_prime_ministry_02_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_03_country_modifier: "Troisième ministère"
+ desc_prime_ministry_03_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_04_country_modifier: "Quatrième ministère"
+ desc_prime_ministry_04_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_05_country_modifier: "Cinquième ministère"
+ desc_prime_ministry_05_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_06_country_modifier: "Sixième ministère"
+ desc_prime_ministry_06_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_07_country_modifier: "Septième ministère"
+ desc_prime_ministry_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_08_country_modifier: "Huitième ministère"
+ desc_prime_ministry_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_09_country_modifier: "Neuvième ministère"
+ desc_prime_ministry_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ 
+ prime_ministry_10_country_modifier: "Dixième ministère"
+ desc_prime_ministry_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
+ #   								    ===== Embassy =====
+ embassy_01_country_modifier: "Ambassade I"
+ desc_embassy_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_02_country_modifier: "Ambassade II"
+ desc_embassy_02_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_03_country_modifier: "Ambassade III"
+ desc_embassy_03_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_04_country_modifier: "Ambassade IV"
+ desc_embassy_04_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_05_country_modifier: "Ambassade V"
+ desc_embassy_05_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_06_country_modifier: "Ambassade VI"
+ desc_embassy_06_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_07_country_modifier: "Ambassade VII"
+ desc_embassy_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_08_country_modifier: "Ambassade VIII"
+ desc_embassy_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_09_country_modifier: "Ambassade IX"
+ desc_embassy_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ 
+ embassy_10_country_modifier: "Ambassade X"
+ desc_embassy_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[embassy_location.GetName]§!"
+ #   								    ===== Spy center =====
+ spy_center_01_country_modifier: "Centre d'espionnage I"
+ desc_spy_center_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_02_country_modifier: "Centre d'espionnage II"
+ desc_spy_center_02_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_03_country_modifier: "Centre d'espionnage III"
+ desc_spy_center_03_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_04_country_modifier: "Centre d'espionnage IV"
+ desc_spy_center_04_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_05_country_modifier: "Centre d'espionnage V"
+ desc_spy_center_05_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_06_country_modifier: "Centre d'espionnage VI"
+ desc_spy_center_06_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_07_country_modifier: "Centre d'espionnage VII"
+ desc_spy_center_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_08_country_modifier: "Centre d'espionnage VIII"
+ desc_spy_center_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_09_country_modifier: "Centre d'espionnage IX"
+ desc_spy_center_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ 
+ spy_center_10_country_modifier: "Centre d'espionnage X"
+ desc_spy_center_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[spy_center_location.GetName]§!"
+ #   								    ===== Laboratory =====
+ laboratory_01_country_modifier: "Laboratoire I"
+ desc_laboratory_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_02_country_modifier: "Laboratoire II"
+ desc_laboratory_02_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_03_country_modifier: "Laboratoire III"
+ desc_laboratory_03_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_04_country_modifier: "Laboratoire IV"
+ desc_laboratory_04_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_05_country_modifier: "Laboratoire V"
+ desc_laboratory_05_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_06_country_modifier: "Laboratoire VI"
+ desc_laboratory_06_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_07_country_modifier: "Laboratoire VII"
+ desc_laboratory_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_08_country_modifier: "Laboratoire VIII"
+ desc_laboratory_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_09_country_modifier: "Laboratoire IX"
+ desc_laboratory_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ 
+ laboratory_10_country_modifier: "Laboratoire X"
+ desc_laboratory_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[laboratory_location.GetName]§!"
+ #   								    ===== Observatory =====
+ observatory_01_country_modifier: "Observatoire I"
+ desc_observatory_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_02_country_modifier: "Observatoire II"
+ desc_observatory_02_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_03_country_modifier: "Observatoire III"
+ desc_observatory_03_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_04_country_modifier: "Observatoire IV"
+ desc_observatory_04_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_05_country_modifier: "Observatoire V"
+ desc_observatory_05_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_06_country_modifier: "Observatoire VI"
+ desc_observatory_06_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_07_country_modifier: "Observatoire VII"
+ desc_observatory_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_08_country_modifier: "Observatoire VIII"
+ desc_observatory_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_09_country_modifier: "Observatoire IX"
+ desc_observatory_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ 
+ observatory_10_country_modifier: "Observatoire X"
+ desc_observatory_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
+ #   								    ===== Precision workshop =====
+ precision_workshop_01_country_modifier: "Atelier de précision I"
+ desc_precision_workshop_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_02_country_modifier: "Atelier de précision II"
+ desc_precision_workshop_02_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_03_country_modifier: "Atelier de précision III"
+ desc_precision_workshop_03_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_04_country_modifier: "Atelier de précision IV"
+ desc_precision_workshop_04_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_05_country_modifier: "Atelier de précision V"
+ desc_precision_workshop_05_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_06_country_modifier: "Atelier de précision VI"
+ desc_precision_workshop_06_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_07_country_modifier: "Atelier de précision VII"
+ desc_precision_workshop_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_08_country_modifier: "Atelier de précision VIII"
+ desc_precision_workshop_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_09_country_modifier: "Atelier de précision IX"
+ desc_precision_workshop_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ 
+ precision_workshop_10_country_modifier: "Atelier de précision X"
+ desc_precision_workshop_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
+ #   								    ===== Military academy =====
+ military_academy_01_country_modifier: "Académie militaire I"
+ desc_military_academy_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_02_country_modifier: "Académie militaire II"
+ desc_military_academy_02_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_03_country_modifier: "Académie militaire III"
+ desc_military_academy_03_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_04_country_modifier: "Académie militaire IV"
+ desc_military_academy_04_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_05_country_modifier: "Académie militaire V"
+ desc_military_academy_05_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_06_country_modifier: "Académie militaire VI"
+ desc_military_academy_06_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_07_country_modifier: "Académie militaire VII"
+ desc_military_academy_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_08_country_modifier: "Académie militaire VIII"
+ desc_military_academy_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_09_country_modifier: "Académie militaire IX"
+ desc_military_academy_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
+ 
+ military_academy_10_country_modifier: "Académie militaire X"
+ desc_military_academy_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"

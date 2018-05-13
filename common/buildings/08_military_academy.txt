@@ -1,12 +1,7 @@
 military_academy_01 {
 	cost = 310
 	time = 6
-	
-	modifier {
-		army_tradition = 0.03
-		army_tradition_decay = -0.03
-		army_tradition_from_battle = 0.03
-	}
+	one_per_country = yes
 	
 	trigger {
 		has_estate = estate_nobles
@@ -14,20 +9,36 @@ military_academy_01 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_01_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+		}
+		# Used to have building location on country modifiers view
+		save_global_event_target_as = military_academy_location
+		# Used to have unicity for all versions (and not per version)
+		set_global_flag = military_academy_flag
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_01_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_02 {
 	cost = 625
 	time = 7
-	
+	one_per_country = yes
 	make_obsolete = military_academy_01
-	
-	modifier {
-		army_tradition = 0.06
-		army_tradition_decay = -0.06
-		army_tradition_from_battle = 0.06
-	}
 	
 	trigger {
 		has_estate = estate_nobles
@@ -35,20 +46,34 @@ military_academy_02 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_02_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_02_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_03 {
 	cost = 1250
 	time = 8
-	
-		make_obsolete = military_academy_02
-	
-	modifier {
-		army_tradition = 0.09
-		army_tradition_decay = -0.09
-		army_tradition_from_battle = 0.09
-	}
+	one_per_country = yes
+	make_obsolete = military_academy_02
 	
 	trigger {
 		has_estate = estate_nobles
@@ -56,20 +81,36 @@ military_academy_03 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_03_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = military_academy_02_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_03_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_04 {
 	cost = 2500
 	time = 9
-	
+	one_per_country = yes
 	make_obsolete = military_academy_03
-	
-	modifier {
-		army_tradition = 0.12
-		army_tradition_decay = -0.12
-		army_tradition_from_battle = 0.12
-	}
 	
 	trigger {
 		has_estate = estate_nobles
@@ -77,20 +118,38 @@ military_academy_04 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_04_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = military_academy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = military_academy_03_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_04_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_05 {
 	cost = 5000
 	time = 10
-	
+	one_per_country = yes
 	make_obsolete = military_academy_04
-	
-	modifier {
-		army_tradition = 0.15
-		army_tradition_decay = -0.15
-		army_tradition_from_battle = 0.15
-	}
 	
 	trigger {
 		has_estate = estate_nobles
@@ -98,20 +157,40 @@ military_academy_05 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_05_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = military_academy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = military_academy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = military_academy_04_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_05_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_06 {
 	cost = 7500
 	time = 11
-	
+	one_per_country = yes
 	make_obsolete = military_academy_05
-	
-	modifier {
-		army_tradition = 0.18
-		army_tradition_decay = -0.18
-		army_tradition_from_battle = 0.18
-	}
 	
 	trigger {
 		has_estate = estate_nobles
@@ -119,20 +198,42 @@ military_academy_06 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_06_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = military_academy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = military_academy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = military_academy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = military_academy_05_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_06_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_07 {
 	cost = 10000
 	time = 12
-	
+	one_per_country = yes
 	make_obsolete = military_academy_06
-	
-	modifier {
-		army_tradition = 0.21
-		army_tradition_decay = -0.21
-		army_tradition_from_battle = 0.21
-	}
 	
 	trigger {
 		has_estate = estate_nobles
@@ -140,20 +241,44 @@ military_academy_07 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_07_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = military_academy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = military_academy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = military_academy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = military_academy_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = military_academy_06_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_07_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_08 {
 	cost = 15000
 	time = 13
-	
+	one_per_country = yes
 	make_obsolete = military_academy_07
-	
-	modifier {
-		army_tradition = 0.24
-		army_tradition_decay = -0.24
-		army_tradition_from_battle = 0.24
-	}
 	
 	trigger {
 		has_estate = estate_nobles
@@ -161,41 +286,95 @@ military_academy_08 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_08_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = military_academy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = military_academy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = military_academy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = military_academy_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = military_academy_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = military_academy_07_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_08_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_09 {
 	cost = 20000
 	time = 14
-	
+	one_per_country = yes
 	make_obsolete = military_academy_08
-	
-	modifier {
-		army_tradition = 0.27
-		army_tradition_decay = -0.27
-		army_tradition_from_battle = 0.27
-	}
-	
+
 	trigger {
 		has_estate = estate_nobles
 	}
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_09_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = military_academy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = military_academy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = military_academy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = military_academy_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = military_academy_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = military_academy_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = military_academy_08_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_09_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }
 
 military_academy_10 {
 	cost = 40000
 	time = 15
-	
+	one_per_country = yes
 	make_obsolete = military_academy_09
-	
-	modifier {
-		army_tradition = 0.30
-		army_tradition_decay = -0.30
-		army_tradition_from_battle = 0.30
-	}
 	
 	trigger {
 		has_estate = estate_nobles
@@ -203,5 +382,41 @@ military_academy_10 {
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = military_academy_10_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = military_academy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = military_academy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = military_academy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = military_academy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = military_academy_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = military_academy_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = military_academy_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = military_academy_08_country_modifier
+			# Upgrade from level 9
+			remove_country_modifier = military_academy_09_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = military_academy_10_country_modifier
+		}
+		clr_global_flag = military_academy_flag
 	}
 }

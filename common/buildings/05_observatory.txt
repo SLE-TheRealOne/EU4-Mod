@@ -1,134 +1,342 @@
 observatory_01 = {
 	cost = 310
 	time = 6
-	modifier = {
-		idea_cost = -0.025
-	}
-	
 	one_per_country = yes
 	
-		ai_will_do = {
+	trigger {
+		NOT {
+			has_global_flag = observatory_flag
+		}
+	}
+	
+	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_01_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+		}
+		# Used to have building location on country modifiers view
+		save_global_event_target_as = observatory_location
+		# Used to have unicity for all versions (and not per version)
+		set_global_flag = observatory_flag
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_01_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
 observatory_02 = {
 	cost = 625
 	time = 7
-	modifier = {
-		idea_cost = -0.05
+	one_per_country = yes
+	make_obsolete = observatory_01
+
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_01
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_02_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_02_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
 observatory_03 = {
 	cost = 1250
 	time = 8
-	modifier = {
-		idea_cost = -0.075
+	one_per_country = yes
+	make_obsolete = observatory_02
+	
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_02
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_03_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = observatory_02_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_03_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
 observatory_04 = {
 	cost = 2500
 	time = 9
-	modifier = {
-		idea_cost = -0.1
+	one_per_country = yes
+	make_obsolete = observatory_03
+	
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_03
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_04_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = observatory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = observatory_03_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_04_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
 observatory_05 = {
 	cost = 5000
 	time = 10
-	modifier = {
-		idea_cost = -0.125
+	one_per_country = yes
+	make_obsolete = observatory_04
+	
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_04
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_05_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = observatory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = observatory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = observatory_04_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_05_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
 observatory_06 = {
 	cost = 7500
 	time = 11
-	modifier = {
-		idea_cost = -0.15
+	one_per_country = yes
+	make_obsolete = observatory_05
+		
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_05
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_06_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = observatory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = observatory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = observatory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = observatory_05_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_06_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
 observatory_07 = {
 	cost = 10000
 	time = 13
-	modifier = {
-		idea_cost = -0.175
+	one_per_country = yes
+	make_obsolete = observatory_06
+	
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_06
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_07_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = observatory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = observatory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = observatory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = observatory_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = observatory_06_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_07_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
 observatory_08 = {
 	cost = 15000
 	time = 12
-	modifier = {
-		idea_cost = -0.2
+	one_per_country = yes
+	make_obsolete = observatory_07
+	
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_07
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_08_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = observatory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = observatory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = observatory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = observatory_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = observatory_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = observatory_07_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_08_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
 observatory_09 = {
 	cost = 20000
 	time = 13
-	modifier = {
-		idea_cost = -0.225
+	one_per_country = yes
+	make_obsolete = observatory_08
+	
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_08
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_09_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = observatory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = observatory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = observatory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = observatory_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = observatory_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = observatory_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = observatory_08_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_09_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }
 
@@ -136,14 +344,46 @@ observatory_09 = {
 observatory_10 = {
 	cost = 40000
 	time = 14
-	modifier = {
-		idea_cost = -0.25
+	one_per_country = yes
+	make_obsolete = observatory_09
+	
+	ai_will_do = {
+		factor = 1
 	}
 	
-	make_obsolete = observatory_09
-	one_per_country = yes
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = observatory_10_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = observatory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = observatory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = observatory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = observatory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = observatory_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = observatory_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = observatory_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = observatory_08_country_modifier
+			# Upgrade from level 9
+			remove_country_modifier = observatory_09_country_modifier
+		}
+	}
 	
-		ai_will_do = {
-		factor = 1
+	on_destroyed = {
+		owner {
+			remove_country_modifier = observatory_10_country_modifier
+		}
+		clr_global_flag = observatory_flag
 	}
 }

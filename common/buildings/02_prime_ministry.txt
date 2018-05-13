@@ -1,15 +1,42 @@
 prime_ministry_01 {
 	cost = 310
 	time = 5
-	
 	one_per_country = yes
 	
+	trigger {
+		NOT {
+			has_global_flag = prime_ministry_flag
+		}
+	}
+	
 	modifier {
-		development_cost = -0.05
+		local_development_cost = -0.05
 	}
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_01_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+		}
+		# Used to have building location on country modifiers view
+		save_global_event_target_as = prime_ministry_location
+		# Used to have unicity for all versions (and not per version)
+		set_global_flag = prime_ministry_flag
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_01_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -19,13 +46,33 @@ prime_ministry_02 {
 	make_obsolete = prime_ministry_01
 	
 	modifier {
-		development_cost = -0.1
+		local_development_cost = -0.10
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_02_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_02_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -35,13 +82,35 @@ prime_ministry_03 {
 	make_obsolete = prime_ministry_02
 	
 	modifier {
-		development_cost = -0.15
+		local_development_cost = -0.15
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_03_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = prime_ministry_02_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_03_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -51,13 +120,37 @@ prime_ministry_04 {
 	make_obsolete = prime_ministry_03
 	
 	modifier {
-		development_cost = -0.2
+		local_development_cost = -0.20
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_04_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = prime_ministry_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = prime_ministry_03_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_04_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -67,13 +160,39 @@ prime_ministry_05 {
 	make_obsolete = prime_ministry_04
 	
 	modifier {
-		development_cost = -0.25
+		local_development_cost = -0.25
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_05_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = prime_ministry_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = prime_ministry_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = prime_ministry_04_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_05_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -83,13 +202,41 @@ prime_ministry_06 {
 	make_obsolete = prime_ministry_05
 	
 	modifier {
-		development_cost = -0.3
+		local_development_cost = -0.30
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_06_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = prime_ministry_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = prime_ministry_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = prime_ministry_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = prime_ministry_05_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_06_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -99,13 +246,43 @@ prime_ministry_07 {
 	make_obsolete = prime_ministry_06
 	
 	modifier {
-		development_cost = -0.35
+		local_development_cost = -0.35
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_07_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = prime_ministry_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = prime_ministry_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = prime_ministry_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = prime_ministry_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = prime_ministry_06_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_07_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -115,13 +292,45 @@ prime_ministry_08 {
 	make_obsolete = prime_ministry_07
 	
 	modifier {
-		development_cost = -0.4
+		local_development_cost = -0.40
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_08_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = prime_ministry_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = prime_ministry_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = prime_ministry_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = prime_ministry_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = prime_ministry_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = prime_ministry_07_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_08_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -131,13 +340,47 @@ prime_ministry_09 {
 	make_obsolete = prime_ministry_08
 	
 	modifier {
-		development_cost = -0.45
+		local_development_cost = -0.45
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_09_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = prime_ministry_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = prime_ministry_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = prime_ministry_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = prime_ministry_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = prime_ministry_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = prime_ministry_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = prime_ministry_08_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_09_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }
 
@@ -147,12 +390,48 @@ prime_ministry_10 {
 	make_obsolete = prime_ministry_09
 	
 	modifier {
-		development_cost = -0.5
+		local_development_cost = -0.50
 	}
 	
 	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = prime_ministry_10_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = prime_ministry_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = prime_ministry_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = prime_ministry_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = prime_ministry_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = prime_ministry_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = prime_ministry_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = prime_ministry_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = prime_ministry_08_country_modifier
+			# Upgrade from level 9
+			remove_country_modifier = prime_ministry_09_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = prime_ministry_10_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
 	}
 }

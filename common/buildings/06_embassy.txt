@@ -1,192 +1,391 @@
 embassy_01 {
 	cost = 310
 	time = 6
-	
-	modifier {
-		global_spy_defence = 0.025
-		discovered_relations_impact = -0.025
-		rebel_support_efficiency = 0.025
-		prestige_decay = -0.025
-	}
+	one_per_country = yes
 	
 	trigger {
-		is_capital = yes
+		AND {
+			is_capital = yes
+			NOT {
+				has_global_flag = embassy_flag
+			}
+		}
 	}
-
-	one_per_country = yes
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_01_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+		}
+		# Used to have building location on country modifiers view
+		save_global_event_target_as = embassy_location
+		# Used to have unicity for all versions (and not per version)
+		set_global_flag = embassy_flag
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_01_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_02 {
 	cost = 625
 	time = 7
-	
-	modifier {
-		global_spy_defence = 0.05
-		discovered_relations_impact = -0.05
-		rebel_support_efficiency = 0.05
-		prestige_decay = -0.05
-	}
-	
-	make_obsolete = embassy_01
 	one_per_country = yes
+	make_obsolete = embassy_01
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_02_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_02_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_03 {
 	cost = 1250
 	time = 8
-	
-	modifier {
-		global_spy_defence = 0.075
-		discovered_relations_impact = -0.075
-		rebel_support_efficiency = 0.075
-		prestige_decay = -0.075
-	}
-	
-	make_obsolete = embassy_02
 	one_per_country = yes
+	make_obsolete = embassy_02
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_03_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = embassy_02_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_03_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_04 {
 	cost = 2500
 	time = 9
-	
-	modifier {
-		global_spy_defence = 0.1
-		discovered_relations_impact = -0.1
-		rebel_support_efficiency = 0.1
-		prestige_decay = -0.1
-	}
-	
-	make_obsolete = embassy_03
 	one_per_country = yes
+	make_obsolete = embassy_03
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_04_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = embassy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = embassy_03_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_04_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_05 {
 	cost = 5000
 	time = 10
-	
-	modifier {
-		global_spy_defence = 0.125
-		discovered_relations_impact = -0.125
-		rebel_support_efficiency = 0.125
-		prestige_decay = -0.125
-	}
-	
-	make_obsolete = embassy_04
 	one_per_country = yes
+	make_obsolete = embassy_04
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_05_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = embassy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = embassy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = embassy_04_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_05_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_06 {
 	cost = 7500
 	time = 11
-	
-	modifier {
-		global_spy_defence = 0.15
-		discovered_relations_impact = -0.15
-		rebel_support_efficiency = 0.15
-		prestige_decay = -0.15
-	}
-	
-	make_obsolete = embassy_05
 	one_per_country = yes
+	make_obsolete = embassy_05
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_06_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = embassy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = embassy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = embassy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = embassy_05_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_06_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_07 {
 	cost = 10000
 	time = 12
-	
-	modifier {
-		global_spy_defence = 0.175
-		discovered_relations_impact = -0.175
-		rebel_support_efficiency = 0.175
-		prestige_decay = -0.175
-	}
-	
-	make_obsolete = embassy_06
 	one_per_country = yes
+	make_obsolete = embassy_06
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_07_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = embassy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = embassy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = embassy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = embassy_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = embassy_06_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_07_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_08 {
 	cost = 15000
 	time = 13
-	
-	modifier {
-		global_spy_defence = 0.2
-		discovered_relations_impact = -0.2
-		rebel_support_efficiency = 0.2
-		prestige_decay = -0.2
-	}
-	
-	make_obsolete = embassy_07
 	one_per_country = yes
+	make_obsolete = embassy_07
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_08_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = embassy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = embassy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = embassy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = embassy_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = embassy_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = embassy_07_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_08_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_09 {
 	cost = 20000
 	time = 14
-	
-	modifier {
-		global_spy_defence = 0.225
-		discovered_relations_impact = -0.225
-		rebel_support_efficiency = 0.225
-		prestige_decay = -0.225
-	}
-	
-	make_obsolete = embassy_08
 	one_per_country = yes
+	make_obsolete = embassy_08
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_09_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = embassy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = embassy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = embassy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = embassy_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = embassy_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = embassy_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = embassy_08_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_09_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }
 
 embassy_10 {
 	cost = 40000
 	time = 15
-	
-	modifier {
-		global_spy_defence = 0.25
-		discovered_relations_impact = -0.25
-		rebel_support_efficiency = 0.25
-		prestige_decay = -0.25
-	}
-	
-	make_obsolete = embassy_09
 	one_per_country = yes
+	make_obsolete = embassy_09
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = embassy_10_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = embassy_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = embassy_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = embassy_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = embassy_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = embassy_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = embassy_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = embassy_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = embassy_08_country_modifier
+			# Upgrade from level 9
+			remove_country_modifier = embassy_09_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = embassy_10_country_modifier
+		}
+		clr_global_flag = embassy_flag
 	}
 }

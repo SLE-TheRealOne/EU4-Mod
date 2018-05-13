@@ -1,167 +1,388 @@
 laboratory_01 {
 	cost = 310
 	time = 6
-	
-	modifier = {
-		technology_cost = -0.02
-	}
-	
 	one_per_country = yes
+	
+	trigger {
+		NOT {
+			has_global_flag = laboratory_flag
+		}
+	}
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_01_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+		}
+		# Used to have building location on country modifiers view
+		save_global_event_target_as = laboratory_location
+		# Used to have unicity for all versions (and not per version)
+		set_global_flag = laboratory_flag
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_01_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_02 {
 	cost = 625
 	time = 7
-
-	make_obsolete = laboratory_01
-	
-	modifier = {
-		technology_cost = -0.04
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_01
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_02_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_02_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_03 {
 	cost = 1250
 	time = 8
-
-	make_obsolete = laboratory_02
-	
-	modifier = {
-		technology_cost = -0.06
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_02
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_03_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = laboratory_02_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_03_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_04 {
 	cost = 2500
 	time = 9
-
-	make_obsolete = laboratory_03
-	
-	modifier = {
-		technology_cost = -0.08
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_03
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_04_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = laboratory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = laboratory_03_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_04_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_05 {
 	cost = 5000
 	time = 10
-
-	make_obsolete = laboratory_04
-	
-	modifier = {
-		technology_cost = -0.10
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_04
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_05_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = laboratory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = laboratory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = laboratory_04_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_05_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_06 {
 	cost = 7500
 	time = 11
-
-	make_obsolete = laboratory_05
-	
-	modifier = {
-		technology_cost = -0.12
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_05
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_06_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = laboratory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = laboratory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = laboratory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = laboratory_05_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_06_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_07 {
 	cost = 10000
 	time = 12
-
-	make_obsolete = laboratory_06
-	
-	modifier = {
-		technology_cost = -0.14
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_06
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_07_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = laboratory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = laboratory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = laboratory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = laboratory_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = laboratory_06_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_07_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_08 {
 	cost = 15000
 	time = 13
-
-	make_obsolete = laboratory_07
-	
-	modifier = {
-		technology_cost = -0.16
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_07
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_08_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = laboratory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = laboratory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = laboratory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = laboratory_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = laboratory_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = laboratory_07_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_08_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_09 {
 	cost = 20000
 	time = 14
-	
-	make_obsolete = laboratory_08
-	
-	modifier = {
-		technology_cost = -0.18
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_08
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_09_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = laboratory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = laboratory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = laboratory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = laboratory_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = laboratory_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = laboratory_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = laboratory_08_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_09_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
 
 laboratory_10 {
 	cost = 40000
 	time = 15
-	
-	make_obsolete = laboratory_09
-	
-	modifier = {
-		technology_cost = -0.20
-	}
-	
 	one_per_country = yes
+	make_obsolete = laboratory_09
 	
 	ai_will_do = {
 		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier {
+				name = laboratory_10_country_modifier
+				duration = -1
+				hidden = no
+				desc = unique_buildings_country_modifier_alternate_description
+			}
+			# Upgrade from level 1
+			remove_country_modifier = laboratory_01_country_modifier
+			# Upgrade from level 2
+			remove_country_modifier = laboratory_02_country_modifier
+			# Upgrade from level 3
+			remove_country_modifier = laboratory_03_country_modifier
+			# Upgrade from level 4
+			remove_country_modifier = laboratory_04_country_modifier
+			# Upgrade from level 5
+			remove_country_modifier = laboratory_05_country_modifier
+			# Upgrade from level 6
+			remove_country_modifier = laboratory_06_country_modifier
+			# Upgrade from level 7
+			remove_country_modifier = laboratory_07_country_modifier
+			# Upgrade from level 8
+			remove_country_modifier = laboratory_08_country_modifier
+			# Upgrade from level 9
+			remove_country_modifier = laboratory_09_country_modifier
+		}
+	}
+	
+	on_destroyed = {
+		owner {
+			remove_country_modifier = laboratory_10_country_modifier
+		}
+		clr_global_flag = laboratory_flag
 	}
 }
