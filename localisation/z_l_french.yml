@@ -163,6 +163,7 @@
  building_laboratory_10: "Laboratoire X"
  building_laboratory_10_desc: "Amélioration du laboratoire"
 
+ # =============================== Decisions ===============================
  parade_title: "--- Parade des armées"
  parade_desc: "Faire une démonstration de puissance aussi grandiloquente qu'une parade militaire permet d'impressionner certains états"
 
@@ -188,6 +189,18 @@
 
  pacifism: "Désarmement"
  desc_pacifism: "Le peuple se désintéresse de la chose militaire au profit d'activités plus pacifiques. Il y est encouragé par son dirigeant. \n Puissance administrative de [From.Monarch.GetName] : +1 \n Puissance diplomatique de [From.Monarch.GetName] : +1"
+ 
+ reduce_development_costs_title: "--- Aide au développement"
+ reduce_development_costs_desc: "Le principal problème n'est parfois pas d'avoir les ressources mais d'être capable de les dépenser ; le développement des provinces est facilité par un investissement plus important en ducat"
+ 
+ reduce_development_costs_country_modifier: "Aide au développement"
+ desc_reduce_development_costs_country_modifier: "Coût du développement réduit"
+ 
+ improve_advisor_naval_reformer_title: "--- Assister §Y[Root.Dip_Advisor.GetName]§!"
+ improve_advisor_naval_reformer_desc: "En se reposant sur de nombreux assistants, §Y[Root.Dip_Advisor.GetName]§! peut se concentrer sur ce qu'on attend de lui et laisser libre cours à tout son talent"
+ 
+ improve_advisor_naval_reformer_country_modifier: "§Y[Root.Dip_Advisor.GetName]§! assisté"
+ desc_improve_advisor_naval_reformer_country_modifier : "Augmente l'éfficacité de §Y[Root.Dip_Advisor.GetName]§!"
  
  # =============================== Country modifiers for unique buildings ===============================
  unique_buildings_country_modifier_alternate_description: "§R, sera retiré si le bâtiment est détruit§!"

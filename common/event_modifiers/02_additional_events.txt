@@ -4,6 +4,17 @@ pacifism {
 	monarch_diplomatic_power = 1
 }
 
+reduce_development_costs_country_modifier {
+	inflation_reduction = -0.30
+	development_cost = -0.20
+	global_tax_modifier = -0.10
+}
+
+improve_advisor_naval_reformer_country_modifier {
+	naval_morale = 0.08
+	global_manpower = -10
+}
+
 #    ===== Prime ministry =====
 prime_ministry_01_country_modifier {
 	development_cost = -0.05
