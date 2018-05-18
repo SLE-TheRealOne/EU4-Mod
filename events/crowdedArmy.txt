@@ -1,0 +1,84 @@
+namespace = SLMod_events_crowded_army_namespace
+
+country_event = {
+	id = SLMod_events_crowded_army_namespace.1
+	title = SLMod_events_crowded_army_namespace.1_title
+	desc = SLMod_events_crowded_army_namespace.1_desc
+	picture = CORRUPTION_eventPicture
+	hidden = no
+
+	trigger {
+		sailors_percentage = 0.80
+		sailors = 18000
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	# Boost privateer_efficiency
+	option {
+		name = SLMod_events_crowded_army_namespace.1_option_1
+		highlight = yes
+		trigger {
+			has_privateers = yes
+		}
+		add_country_modifier {
+			name = efficient_privateers_country_modifier
+			duration = 365
+			hidden = no
+		}
+		add_sailors = -10000
+	}
+	
+	# Boost navy tradition
+	option {
+		name = SLMod_events_crowded_army_namespace.1_option_2
+		highlight = yes
+		trigger {
+			NOT {
+				navy_tradition = 90
+			}
+		}
+		add_navy_tradition = 5
+		add_sailors = -10000
+	}
+
+	# Cycle them for manpower
+	option {
+		name = SLMod_events_crowded_army_namespace.1_option_3
+		highlight = yes
+		trigger {
+			NOT {
+				manpower_percentage = 50
+			}
+		}
+		add_sailors = -10000
+		add_manpower = 5
+	}
+	
+	# Boost trade
+	option {
+		name = SLMod_events_crowded_army_namespace.1_option_4
+		highlight = yes
+		trigger {
+			ruler_has_personality = entrepreneur_personality
+		}
+		add_sailors = -10000
+		add_country_modifier {
+			name = trade_steering_country_modifier
+			duration = 365
+			hidden = no
+		}
+	}
+	
+	# Default
+	option {
+		name = SLMod_events_crowded_army_namespace.1_option_5
+		add_country_modifier {
+			name = crowded_ships_country_modifier
+			duration = 365
+			hidden = no
+		}
+	}
+}
