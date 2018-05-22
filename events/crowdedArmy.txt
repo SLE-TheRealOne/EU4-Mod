@@ -1,5 +1,6 @@
 namespace = SLMod_events_crowded_army_namespace
 
+# Sailors usage 
 country_event = {
 	id = SLMod_events_crowded_army_namespace.1
 	title = SLMod_events_crowded_army_namespace.1_title
@@ -8,65 +9,61 @@ country_event = {
 	hidden = no
 
 	trigger {
-		sailors_percentage = 0.80
-		sailors = 18000
+		manpower_percentage = 0.90
 	}
 	
 	mean_time_to_happen = {
 		days = 120
 	}
-	
-	# Boost privateer_efficiency
+
+	# Boost prestige
 	option {
 		name = SLMod_events_crowded_army_namespace.1_option_1
 		highlight = yes
 		trigger {
-			has_privateers = yes
+			ruler_has_personality = babbling_buffoon_personality
 		}
-		add_country_modifier {
-			name = efficient_privateers_country_modifier
-			duration = 365
-			hidden = no
-		}
-		add_sailors = -10000
+		# Trade 12 months of manpower for bonus
+		add_yearly_manpower = -1
+		add_prestige = 5
 	}
 	
-	# Boost navy tradition
+	# Army tradition boost
 	option {
 		name = SLMod_events_crowded_army_namespace.1_option_2
 		highlight = yes
 		trigger {
-			NOT {
-				navy_tradition = 90
+			OR {
+				ruler_has_personality = martial_educator_personality
+				ruler_has_personality = strict_personality
 			}
+			
 		}
-		add_navy_tradition = 5
-		add_sailors = -10000
+		# Trade 12 months of manpower for bonus
+		add_yearly_manpower = -1
+		add_army_tradition = 5
 	}
-
-	# Cycle them for manpower
+	
+	# Add professionalism
 	option {
 		name = SLMod_events_crowded_army_namespace.1_option_3
 		highlight = yes
 		trigger {
-			NOT {
-				manpower_percentage = 50
-			}
+			ruler_has_personality = tactical_genius_personality
 		}
-		add_sailors = -10000
-		add_manpower = 5
+		# Trade 12 months of manpower for bonus
+		add_yearly_manpower = -1
+		add_army_professionalism = 0.05
 	}
 	
-	# Boost trade
+	# Condottieri boost
 	option {
 		name = SLMod_events_crowded_army_namespace.1_option_4
-		highlight = yes
-		trigger {
-			ruler_has_personality = entrepreneur_personality
-		}
-		add_sailors = -10000
+		
+		# Trade 12 months of manpower for +2 condottieri
+		add_yearly_manpower = -1
 		add_country_modifier {
-			name = trade_steering_country_modifier
+			name = condottieri_raise_country_modifier
 			duration = 365
 			hidden = no
 		}
@@ -74,9 +71,9 @@ country_event = {
 	
 	# Default
 	option {
-		name = SLMod_events_crowded_army_namespace.1_option_5
+		name = SLMod_events_crowded_army_namespace.1_option_99
 		add_country_modifier {
-			name = crowded_ships_country_modifier
+			name = crowded_army_country_modifier
 			duration = 365
 			hidden = no
 		}

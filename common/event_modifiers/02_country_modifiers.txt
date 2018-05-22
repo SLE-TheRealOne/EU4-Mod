@@ -4,9 +4,9 @@ reduce_development_costs_country_modifier {
 	global_tax_modifier = -0.10
 }
 
-improve_advisor_naval_reformer_country_modifier {
-	naval_morale = 0.08
-	global_manpower = -10
+improve_advisor_natural_scientist_country_modifier {
+	production_efficiency = 0.02
+	advisor_cost = 0.2
 }
 
 efficient_privateers_country_modifier {
@@ -17,8 +17,22 @@ trade_steering_country_modifier {
 	trade_steering = 0.15
 }
 
-crowded_ships_country_modifier {
+crowded_navy_country_modifier {
 	naval_attrition = 0.15
+	navy_tradition_decay = 0.05
+}
+
+crowded_army_country_modifier {
+	discipline = -0.15
+	army_tradition_decay = 0.05
+}
+
+slow_navy_tradition_decay_country_modifier {
+	navy_tradition_decay = -0.015
+}
+
+condottieri_raise_country_modifier {
+	possible_condottieri = 0.1
 }
 
 #    ===== Prime ministry =====

@@ -168,15 +168,6 @@
  #                        =====================================================================
  #                        ======================        Decisions        ======================
  #                        =====================================================================
- parade_title: "--- Parade des armées"
- parade_desc: "Faire une démonstration de puissance aussi grandiloquente qu'une parade militaire permet d'impressionner certains états"
-
- train_armies_title: "--- Entrainement avancé des soldats"
- train_armies_desc: "Dédier une partie des ressources militaires à préparer un exercice de combat en étudiant les récentes batailles permet d'être mieux préparé pour les suivantes"
- 
- train_sailors_title: "--- Entrainement avancé des marins"
- train_sailors_desc: "Dédier une partie des ressources militaires à préparer un exercice de combat en étudiant les récentes batailles permet d'être mieux préparé pour les suivantes"
-
  reduce_nobles_influence_title: "--- Réduire l'influence des nobles"
  reduce_nobles_influence_desc: "Faire une démonstration de force afin de réduire l'influence dont dispose la faction"
  reduce_church_influence_title: "--- Réduire l'influence des prêtres"
@@ -190,14 +181,9 @@
  
  reduce_development_costs_title: "--- Aide au développement"
  reduce_development_costs_desc: "Le principal problème n'est parfois pas d'avoir les ressources mais d'être capable de les dépenser ; le développement des provinces est facilité par un investissement plus important en ducat"
- 
- reduce_development_costs_country_modifier: "Aide au développement"
- desc_reduce_development_costs_country_modifier: "Coût du développement réduit"
   
- improve_advisor_naval_reformer_title: "--- Assister §Y[Root.Dip_Advisor.GetName]§!"
- improve_advisor_naval_reformer_desc: "En se reposant sur de nombreux assistants, §Y[Root.Dip_Advisor.GetName]§! peut se concentrer sur ce qu'on attend de lui et laisser libre cours à tout son talent"
- improve_advisor_naval_reformer_country_modifier: "§Y[Root.Dip_Advisor.GetName]§! assisté"
- desc_improve_advisor_naval_reformer_country_modifier: "Augmente l'éfficacité de §Y[Root.Dip_Advisor.GetName]§!"
+ improve_advisor_natural_scientist_title: "--- Assister §Y[Root.Adm_Advisor.GetName]§!"
+ improve_advisor_natural_scientist_desc: "En se reposant sur de nombreux assistants, §Y[Root.Adm_Advisor.GetName]§! peut se concentrer sur ce qu'on attend de lui et laisser libre cours à tout son talent"
  
  #                        =============================================================================
  #                        ======================        Country modifiers        ======================
@@ -351,15 +337,29 @@
  military_academy_10_country_modifier: "Académie militaire X"
  desc_military_academy_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
  
- 
- efficient_privateers_country_modifier: "Pirates plus efficaces"
- desc_efficient_privateers_country_modifier: "More efficient privateers"
+ efficient_privateers_country_modifier: "Corsaires intrépides"
+ desc_efficient_privateers_country_modifier: "Un pavillon plutôt qu'un autre ? Quelle différence ? Pourvu que le butin soit conséquent !"
  
  trade_steering_country_modifier: "Les marins font de bons marchands"
- desc_trade_steering_country_modifier: "Sailors can be good traders"
+ desc_trade_steering_country_modifier: "Il y a toujours quelque chose à échanger dans un port ; une marchandise sans valeur quelque part peut très bien valoir une fortune à l'autre bout du monde. Naviguer : n'est-ce pas l'essence du commerce ?"
  
- crowded_ships_country_modifier: "Bâteaux surchargés"
- desc_crowded_ships_country_modifier: "Overloaded ships"
+ crowded_ships_country_modifier: "Marins sans navire"
+ desc_crowded_ships_country_modifier: "Trop de marins à terre, c'est plus de rhum, plus de bagarres et moins de discipline"
+ 
+ improve_advisor_natural_scientist_country_modifier: "Aide au conseiller scientifique"
+ desc_improve_advisor_natural_scientist_country_modifier: "Des moyens matériels et humains supplémentaires alloués au conseiller scientifique lui permettent de laisser libre cours à tout son talent"
+ 
+ reduce_development_costs_country_modifier: "Aide au développement"
+ desc_reduce_development_costs_country_modifier: "Coût du développement réduit"
+ 
+ condottieri_raise_country_modifier: "Condottieri étendu"
+ desc_condottieri_raise_country_modifier: "D'autres ont surement plus besoin de nos armées que nous. N'hésitons pas à leur louer nos services"
+ 
+ slow_navy_tradition_decay_country_modifier: "Todo"
+ desc_slow_navy_tradition_decay_country_modifier: "Todo"
+ 
+ crowded_navy_country_modifier: "Todo"
+ desc_crowded_navy_country_modifier: "Todo"
  
  #                        ======================================================================
  #                        ======================          Events          ======================
@@ -375,10 +375,20 @@
  SLMod_events_greedy_wealth_namespace.2_option_1: "Option 1"
  SLMod_events_greedy_wealth_namespace.2_option_2: "Option 2"
  
- SLMod_events_crowded_army_namespace.1_title: "Trop de marins"
- SLMod_events_crowded_army_namespace.1_desc: "Yohoho et une bouteille de §Rrhum§!"
+ SLMod_events_crowded_navy_namespace.1_title: "L'appel du large"
+ SLMod_events_crowded_navy_namespace.1_desc: "De très nombreux hommes attendent impatiament un navire sur lequel embarquer"
+ SLMod_events_crowded_navy_namespace.1_option_1: "Option 1"
+ SLMod_events_crowded_navy_namespace.1_option_2: "Option 2"
+ SLMod_events_crowded_navy_namespace.1_option_3: "Option 3"
+ SLMod_events_crowded_navy_namespace.1_option_4: "Option 4"
+ SLMod_events_crowded_navy_namespace.1_option_5: "Option 5"
+ SLMod_events_crowded_navy_namespace.1_option_99: "Default"
+ 
+ SLMod_events_crowded_army_namespace.1_title: "L'ennemi fantôme"
+ SLMod_events_crowded_army_namespace.1_desc: "Todo"
  SLMod_events_crowded_army_namespace.1_option_1: "Option 1"
  SLMod_events_crowded_army_namespace.1_option_2: "Option 2"
  SLMod_events_crowded_army_namespace.1_option_3: "Option 3"
  SLMod_events_crowded_army_namespace.1_option_4: "Option 4"
  SLMod_events_crowded_army_namespace.1_option_5: "Option 5"
+ SLMod_events_crowded_army_namespace.1_option_99: "Default"
