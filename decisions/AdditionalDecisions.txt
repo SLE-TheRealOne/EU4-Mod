@@ -83,29 +83,6 @@ country_decisions = {
 		}
 	}
 	
-	convert_manpower_to_dipmiladm_power {
-		allow = {
-			manpower = 150
-			NOT {
-				adm_power = 400
-			}
-			NOT {
-				dip_power = 400
-			}
-		}
-		
-		effect = {
-			add_manpower = -150
-			add_mil_power = -15
-			add_dip_power = 50
-			add_adm_power = 50
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	reduce_development_costs {
 		allow = {
 			stability = 2
@@ -121,29 +98,6 @@ country_decisions = {
 				hidden = no
 			}
 			add_inflation = 2
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	improve_advisor_natural_scientist {
-		potential {
-			natural_scientist = 3
-			NOT {
-				has_country_modifier = mprove_advisor_natural_scientist_country_modifier
-			}
-		}
-		
-		effect {
-			add_country_modifier {
-				name = improve_advisor_natural_scientist_country_modifier
-				duration = 730
-				hidden = no
-			}
-			# Trade 12 months of sailors for 5 months of manpower
-			add_yearly_manpower = -0.5
 		}
 		
 		ai_will_do = {
