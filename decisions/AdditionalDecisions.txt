@@ -86,22 +86,174 @@ country_decisions = {
 	reduce_development_costs {
 		allow = {
 			stability = 2
-			NOT {
-				total_development = 150
-			}
+			NOT { inflation = 3 }
 		}
 		
 		effect {
 			add_country_modifier {
 				name = reduce_development_costs_country_modifier
-				duration = 730
+				duration = -1
 				hidden = no
 			}
-			add_inflation = 2
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
+	}
+	
+	create_officers_school {
+		potential {
+			has_dlc = "Cradle of Civilization"
+			NOT { has_country_modifier = officers_shool_country_modifier }
+		}
+		
+		allow {
+			full_idea_group = innovativeness_ideas
+			army_professionalism = 0.35
+		}
+				
+		effect {
+			custom_tooltip = explain_officers_school_country_modifier
+			add_country_modifier {
+				name = officers_school_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_estate_loyalty {
+				estate = estate_nobility
+				loyalty = -10
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	abandon_officers_school {
+		potential {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = officers_shool_country_modifier
+		}
+		
+		allow {
+			has_country_modifier = officers_shool_country_modifier
+		}
+		
+		effect {
+			army_professionalism = -0.10
+			remove_country_modifier = officers_shool_country_modifier
+			add_estate_loyalty {
+				estate = estate_nobility
+				loyalty = 2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	siege_artillery {
+		potential {
+			NOT { has_country_modifier = siege_artillery_country_modifier }
+			NOT { has_country_modifier = combat_artillery_country_modifier }
+		}
+		
+		allow {
+			NOT { has_country_modifier = siege_artillery_country_modifier }
+			NOT { has_country_modifier = combat_artillery_country_modifier }
+			full_idea_group = offensive_ideas
+		}
+		
+		effect {
+			add_country_modifier {
+				name = siege_artillery_country_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		
+		ai_will_do {
+		}
+	}
+	
+	combat_artillery {
+		potential {
+			NOT { has_country_modifier = siege_artillery_country_modifier }
+			NOT { has_country_modifier = combat_artillery_country_modifier }
+		}
+		
+		allow {
+			NOT { has_country_modifier = siege_artillery_country_modifier }
+			NOT { has_country_modifier = combat_artillery_country_modifier }
+			full_idea_group = quantity_ideas
+		}
+		
+		effect {
+			add_country_modifier {
+				name = combat_artillery_country_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		
+		ai_will_do {
+		}
+	}
+	
+	
+	army_base_units_division {
+		# Moins de régiments mais + efficaces
+		potential {
+			NOT { has_country_modifier = army_base_units_country_modifier }
+		}
+		
+		allow {
+			OR {
+				advisor = army_organiser
+				advisor = army_reformer
+			}
+			NOT { has_country_modifier = army_base_units_country_modifier }
+			full_idea_group = quality_ideas
+		}
+		
+		effect {
+			add_country_modifier {
+				name = army_base_units_country_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		
+		ai_will_do {
+		}
+	}
+	
+	align_army_ranks_and_medals {
+		potential {
+			NOT { has_country_modifier = align_army_ranks_and_medals_country_modifier }
+		}
+		
+		allow {
+			OR {
+				advisor = army_organiser
+				advisor = army_reformer
+			}
+			NOT { has_country_modifier = align_army_ranks_and_medals_country_modifier }
+			full_idea_group = full_idea_group  = aristocracy_ideas
+		}
+		
+		effect {
+			add_country_modifier {
+				name = align_army_ranks_and_medals_country_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		
+		ai_will_do {
+		} 
 	}
 }
