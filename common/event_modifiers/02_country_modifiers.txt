@@ -30,33 +30,42 @@ reduce_development_costs_country_modifier {
 }
 siege_artillery_country_modifier {
 	artillery_bonus_vs_fort = 1
-	artillery_cost = 0.30
+	artillery_cost = 0.3
 	siege_blockade_progress = 1
+	siege_ability = 0.15
 }
 combat_artillery_country_modifier {
-	artillery_power = 0.10
-	artillery_cost = 0.30
-	backrow_artillery_damage = 0.10
+	artillery_power = 0.1
+	artillery_cost = 0.3
+	backrow_artillery_damage = 0.1
 }
 army_base_units_country_modifier {
 	land_maintenance_modifier = 0.35
-	shock_damage = 0.20
-	fire_damage = 0.20
-	infantry_power = 0.20
-	cavalry_power = 0.20
+	shock_damage = 0.2
+	fire_damage = 0.2
+	infantry_power = 0.2
+	cavalry_power = 0.2
 	artillery_power = 0.2
 	land_forcelimit_modifier = -0.35
 }
 officers_school_country_modifier {
 	discipline = 0.05
-	drill_gain_modifier = 0.10
-	drill_decay_modifier = -0.10
+	drill_gain_modifier = 0.1
+	drill_decay_modifier = -0.1
+	yearly_army_professionalism = 0.1
 }
 align_army_ranks_and_medals_country_modifier {
 	discipline = 0.05
-	army_tradition_from_battle = 0.10
-	yearly_army_professionalism = 0.10
+	army_tradition_from_battle = 0.1
+	land_morale = 0.1
+	recover_army_morale_speed = 0.1
 }
+improve_defenses_country_modifier {
+	defensiveness = 0.15
+	fort_maintenance_modifier = 0.50
+	garrison_size = 0.15
+}
+
 # --------------------------------------------
 assist_advisor_natural_scientist_country_modifier {
 	production_efficiency = 0.02

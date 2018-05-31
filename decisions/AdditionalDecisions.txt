@@ -1,32 +1,4 @@
 country_decisions = {
-		
-	reduce_nobles_influence {
-		allow = {
-			manpower = 50
-			estate_influence = {
-				estate = estate_nobles
-				influence = 50
-			}
-		}
-		
-		effect = {
-			add_manpower = -50
-			add_estate_influence_modifier = {
-				estate = estate_nobles
-				desc = reduce_influence_effect
-				influence = -10
-				duration = 1095
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 	reduce_church_influence {
 		allow = {
@@ -55,6 +27,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
 	reduce_burghers_influence {
 		allow = {
 			manpower = 50
@@ -110,11 +83,11 @@ country_decisions = {
 		
 		allow {
 			full_idea_group = innovativeness_ideas
-			army_professionalism = 0.35
+			army_professionalism = 0.75
+			army_size = 220
 		}
 				
 		effect {
-			custom_tooltip = explain_officers_school_country_modifier
 			add_country_modifier {
 				name = officers_school_country_modifier
 				duration = -1
@@ -142,7 +115,7 @@ country_decisions = {
 		}
 		
 		effect {
-			army_professionalism = -0.10
+			army_professionalism = -0.25
 			remove_country_modifier = officers_shool_country_modifier
 			add_estate_loyalty {
 				estate = estate_nobility
@@ -176,6 +149,7 @@ country_decisions = {
 		}
 		
 		ai_will_do {
+			factor = 1
 		}
 	}
 	
@@ -200,14 +174,13 @@ country_decisions = {
 		}
 		
 		ai_will_do {
+			factor = 1
 		}
 	}
 	
-	
 	army_base_units_division {
-		# Moins de régiments mais + efficaces
 		potential {
-			NOT { has_country_modifier = army_base_units_country_modifier }
+			NOT { has_country_modifier = army_base_units_division_country_modifier }
 		}
 		
 		allow {
@@ -215,19 +188,20 @@ country_decisions = {
 				advisor = army_organiser
 				advisor = army_reformer
 			}
-			NOT { has_country_modifier = army_base_units_country_modifier }
+			NOT { has_country_modifier = army_base_units_division_country_modifier }
 			full_idea_group = quality_ideas
 		}
 		
 		effect {
 			add_country_modifier {
-				name = army_base_units_country_modifier
+				name = army_base_units_division_country_modifier
 				duration = -1
 				hidden = no
 			}
 		}
 		
 		ai_will_do {
+			factor = 1
 		}
 	}
 	
@@ -254,6 +228,30 @@ country_decisions = {
 		}
 		
 		ai_will_do {
-		} 
+			factor = 1
+		}
+	}
+	
+	improve_defenses {
+		potential {
+			NOT { has_country_modifier = improve_defenses_country_modifier }
+		}
+		
+		allow {
+			full_idea_group = defensive_ideas
+			NOT { has_country_modifier = improve_defenses_country_modifier }
+		}
+		
+		effect {
+			add_country_modifier {
+				name = improve_defenses_country_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		
+		ai_will_do {
+			factor = 1
+		}
 	}
 }

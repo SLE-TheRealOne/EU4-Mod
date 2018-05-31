@@ -1,0 +1,132 @@
+namespace = SLMod_events_estates_influence_reduction_namespace
+
+# Nobles
+country_event = {
+	id = SLMod_events_estates_influence_reduction_namespace.1
+	title = SLMod_events_estates_influence_reduction_namespace.1_title
+	desc = SLMod_events_estates_influence_reduction_namespace.1_desc
+	picture = CORRUPTION_eventPicture
+	hidden = no
+
+	trigger {
+		has_disaster = estate_nobility_disaster
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	# Manpower loss ==> Reduce disaster
+	option {
+		name = SLMod_events_estates_influence_reduction_namespace.1_option_1
+		custom_tooltip = SLMod_events_estates_influence_reduction_namespace.1_option_1_tooltip
+		trigger {
+			manpower_percentage = 0.8
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -2
+		}
+		add_disaster_progress {
+			disaster = estate_nobility_disaster
+			value = -2
+		}
+		add_yearly_manpower = -1
+	}
+	
+	# Prestige loss ==> Reduce disaster
+	option {
+		name = SLMod_events_estates_influence_reduction_namespace.1_option_2
+		custom_tooltip = SLMod_events_estates_influence_reduction_namespace.1_option_2_tooltip
+		trigger {
+			prestige = 80
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -2
+		}
+		add_disaster_progress {
+			disaster = estate_nobility_disaster
+			value = -2
+		}
+		add_prestige = -5
+	}
+	
+	# Ducats loss ==> Reduce disaster
+	option {
+		name = SLMod_events_estates_influence_reduction_namespace.1_option_3
+		trigger {
+			years_of_income = 1
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = reduce_influence_effect
+			influence = -10
+			duration = 1095
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -2
+		}
+		add_disaster_progress {
+			disaster = estate_nobility_disaster
+			value = 10
+		}
+		add_years_of_income = -1
+	}
+	
+	# Currently at war ==> Advance disaster
+	option {
+		name = SLMod_events_estates_influence_reduction_namespace.1_option_4
+		trigger {
+				is_at_war = yes
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = reduce_influence_effect
+			influence = -10
+			duration = 1095
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -2
+		}
+		add_disaster_progress {
+			disaster = estate_nobility_disaster
+			value = 10
+		}
+		add_war_exhaustion = 2
+	}
+	
+	# Turn against other estates ==> Reduce disaster
+	option {
+		name = SLMod_events_estates_influence_reduction_namespace.1_option_5
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = reduce_influence_effect
+			influence = -10
+			duration = 1095
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -2
+		}
+		add_disaster_progress {
+			disaster = estate_nobility_disaster
+			value = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -5
+		}
+	}
+	
+	# Default
+	option {
+		name = SLMod_events_estates_influence_reduction_namespace.1_option_99
+	}
+}

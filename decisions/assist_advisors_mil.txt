@@ -1,0 +1,190 @@
+country_decisions = {
+	assist_advisor_commandant {
+		potential {
+			advisor = commandant
+			NOT {
+				has_country_modifier = assist_advisor_commandant_country_modifier
+			}
+		}
+		
+		allow {
+			commandant = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_commandant_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_army_reformer {
+		potential {
+			advisor = army_reformer
+			NOT {
+				has_country_modifier = assist_advisor_army_reformer_country_modifier
+			}
+		}
+		
+		allow {
+			army_reformer = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_army_reformer_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_army_organiser {
+		potential {
+			advisor = army_organiser
+			NOT {
+				has_country_modifier = assist_advisor_army_organiser_country_modifier
+			}
+		}
+		
+		allow {
+			army_organiser = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_army_organiser_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_quartermaster {
+		potential {
+			advisor = quartermaster
+			NOT {
+				has_country_modifier = assist_advisor_quartermaster_country_modifier
+			}
+		}
+		
+		allow {
+			quartermaster = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_quartermaster_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_recruitmaster {
+		potential {
+			advisor = recruitmaster
+			NOT {
+				has_country_modifier = assist_advisor_recruitmaster_country_modifier
+			}
+		}
+		
+		allow {
+			recruitmaster = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_recruitmaster_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_fortification_expert {
+		potential {
+			advisor = fortification_expert
+			NOT {
+				has_country_modifier = assist_advisor_fortification_expert_country_modifier
+			}
+		}
+		
+		allow {
+			fortification_expert = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_fortification_expert_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_grand_captain {
+		potential {
+			advisor = grand_captain
+			NOT {
+				has_country_modifier = assist_advisor_grand_captain_country_modifier
+			}
+		}
+		
+		allow {
+			grand_captain = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_grand_captain_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

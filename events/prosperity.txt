@@ -1,0 +1,68 @@
+namespace = SLMod_events_prosperity_namespace
+
+province_event = {
+
+	id = SLMod_events_prosperity_namespace.1
+	title = SLMod_events_prosperity_namespace.1.title
+	desc = SLMod_events_prosperity_namespace.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	trigger {
+		NOT { 
+			all_province_in_state {
+				devastation = 0.1
+			}
+		}
+		is_state = yes
+		owner {
+			stability = 1
+		}
+	}
+	
+	mean_time_to_happen {
+		days = 120
+	}
+	
+	option { #Raise the taxes!
+		name = SLMod_events_prosperity_namespace.1.a
+		trigger {
+			owner {
+				NOT { has_country_flag = idp_prosperity_took_adm }
+			}
+		}
+		add_base_tax = 1
+		#hidden_effect {
+		#	owner { 
+		#		set_country_flag = idp_prosperity_took_adm
+		#	}
+		#}
+	}
+	option { #Salvage their products and able seafarers!
+		name = SLMod_events_prosperity_namespace.1.b
+		trigger {
+			owner {
+				NOT { has_country_flag = idp_prosperity_took_dip }
+			}
+		}
+		add_base_production = 1
+		#hidden_effect {
+		#	owner = { 
+		#		set_country_flag = idp_prosperity_took_dip
+		#	}
+		#}
+	}
+	option { #Increase recruitment!
+		name = SLMod_events_prosperity_namespace.1.c
+		trigger {
+			owner {
+				NOT { has_country_flag = idp_prosperity_took_mil }
+			}
+		}
+		add_base_manpower = 1
+		#hidden_effect {
+		#	owner { 
+		#		set_country_flag = idp_prosperity_took_mil
+		#	}
+		#}
+	}
+}

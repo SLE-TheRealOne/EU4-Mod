@@ -1,0 +1,190 @@
+country_decisions = {
+	assist_advisor_natural_scientist {
+		potential {
+			advisor = natural_scientist
+			NOT {
+				has_country_modifier = assist_advisor_natural_scientist_country_modifier
+			}
+		}
+		
+		allow {
+			natural_scientist = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_natural_scientist_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	assist_advisor_philosopher {
+		potential {
+			advisor = philosopher
+			NOT {
+				has_country_modifier = assist_advisor_philosopher_country_modifier
+			}
+		}
+		
+		allow {
+			philosopher = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_philosopher_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_artist {
+		potential {
+			advisor = artist
+			NOT {
+				has_country_modifier = assist_advisor_artist_country_modifier
+			}
+		}
+		
+		allow {
+			artist = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_artist_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_theologian {
+		potential {
+			advisor = theologian
+			NOT {
+				has_country_modifier = assist_advisor_theologian_country_modifier
+			}
+		}
+		
+		allow {
+			theologian = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_theologian_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_treasurer {
+		potential {
+			advisor = treasurer
+			NOT {
+				has_country_modifier = assist_advisor_treasurer_country_modifier
+			}
+		}
+		
+		allow {
+			treasurer = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_treasurer_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_master_of_mint {
+		potential {
+			advisor = master_of_mint
+			NOT {
+				has_country_modifier = assist_advisor_master_of_mint_country_modifier
+			}
+		}
+		
+		allow {
+			master_of_mint = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_master_of_mint_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	assist_advisor_inquisitor {
+		potential {
+			advisor = inquisitor
+			NOT {
+				has_country_modifier = assist_advisor_inquisitor_country_modifier
+			}
+		}
+		
+		allow {
+			inquisitor = 3
+		}
+		
+		effect {
+			add_country_modifier {
+				name = assist_advisor_inquisitor_country_modifier
+				duration = 365
+				hidden = no
+			}
+			# Trade 12 months of sailors for 5 months of manpower
+			add_yearly_manpower = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

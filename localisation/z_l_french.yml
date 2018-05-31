@@ -177,6 +177,20 @@
  reduce_influence_effect: "Coercition militaire"
  reduce_development_costs_title: "--- Aide au développement"
  reduce_development_costs_desc: "Le principal problème n'est parfois pas d'avoir les ressources mais d'être capable de les dépenser ; le développement des provinces est facilité par un investissement plus important en ducat"
+ create_officers_school_title:  "--- Créer une école d'officiers"
+ create_officers_school_desc: "La professionalisation et la taille de nos armées poussent à uniformiser l'encadrement des troupes. \n Les stratégies, tactiques et ordres doivent pouvoir être transmis de la même façon à toutes les unités, terrestres ou navales, dans toutes les régions sous notre contrôle.\nCependant, diluer le pouvoir militaire parmis des gens du commun risquera de déplaire aux nobles"
+ abandon_officers_school_title: "--- Revenir sur l'école d'officiers"
+ abandon_officers_school_desc: "L'expérience n'a pas été concluante ; le savoir dispensé dans l'école n'aura pas réussi à se diffuser dans les armées alors que la cohérence, avant assurée par les nobles, s'est perdue. Il nous faut abandonner l'idée"
+ siege_artillery_title: "--- Axer notre artillerie sur le siège"
+ siege_artillery_desc: "L'invasion de nos ennemis passera par l'éffondrement de leurs défenses. Boulets explosifs, canon rayés et munitions plus lourdes nous permettront de percer toutes les murailles"
+ combat_artillery_title: "--- Axer notre artillerie sur le combat"
+ combat_artillery_desc: "L'invasion de nos ennemis passera par l'éffondrement de leurs armées. Les boulets creux d'Henry Shrapnel nous permettront d'infliger de très importantes pertes à l'ennemi"
+ army_base_units_division_title: "--- Adopter le système divisionaire"
+ army_base_units_division_desc: "Augmenter la taille des unités combattantes, en mutualisant les compagnies de support, de soutien et d'intendance permettra l'émergence de nouvelles stratégie, à l'échelle bien plus ambitieuse et augmentera la combativité de nos armées"
+ align_army_ranks_and_medals_title: "--- Institutionaliser la promotion et les décorations militaires"
+ align_army_ranks_and_medals_desc: "S'il est donné, à tout soldat, la possibilité de gravir les échelons, nous aurons, sous peu, des officiers sortis du rang pleinement capables d'assurer l'encadrement des troupes et d'améliorer nos résultats tactiques. Tandis que récompenser la combativité par des décorations et médailles fournira le supplément nécessaire pour surpasser nos ennemis durant la bataille"
+ improve_defenses_title: "--- Renforcer nos défenses" 
+ improve_defenses_desc: "Rendre nos forts plus robustes, mieux construits, mieux placés et plus garnis en hommes nous permettra de tenir les positions clefs dans nos futurs conflits"
  # -------------------------
  assist_advisor_natural_scientist_title: "--- Assister §Y[Root.Adm_Advisor.GetName]§!"
  assist_advisor_natural_scientist_desc: "Allouer à §Y[Root.Adm_Advisor.GetName]§! du matériel, du personnel ainsi que des ressources supplémentaires lui permettrait de se focaliser sur ses compétences pour laisser libre cours à tout son talent"
@@ -373,15 +387,6 @@
  military_academy_10_country_modifier: "Académie militaire X"
  desc_military_academy_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[military_academy_location.GetName]§!"
  
- efficient_privateers_country_modifier: "Corsaires intrépides"
- desc_efficient_privateers_country_modifier: "Un pavillon plutôt qu'un autre ? Quelle différence ? Pourvu que le butin soit conséquent !"
- 
- trade_steering_country_modifier: "Les marins font de bons marchands"
- desc_trade_steering_country_modifier: "Il y a toujours quelque chose à échanger dans un port ; une marchandise sans valeur quelque part peut très bien valoir une fortune à l'autre bout du monde. Naviguer : n'est-ce pas l'essence du commerce ?"
- 
- crowded_ships_country_modifier: "Marins sans navire"
- desc_crowded_ships_country_modifier: "Trop de marins à terre, c'est plus de rhum, plus de bagarres et moins de discipline"
- 
  assist_advisor_natural_scientist_country_modifier: "Ministre §Scientifique§!"
  desc_assist_advisor_natural_scientist_country_modifier: "Allouer à notre §YScientifique§! du matériel, du personnel ainsi que des ressources supplémentaires lui permettrait de se focaliser sur ses compétences pour laisser libre cours à tout son talent"
  assist_advisor_philosopher_country_modifier: "Ministre §YPhilosophe§!"
@@ -425,15 +430,30 @@
  
  reduce_development_costs_country_modifier: "Aide au développement"
  desc_reduce_development_costs_country_modifier: "Coût du développement réduit"
- 
  condottieri_raise_country_modifier: "Condottieri étendu"
  desc_condottieri_raise_country_modifier: "D'autres ont surement plus besoin de nos armées que nous. N'hésitons pas à leur louer nos services"
- 
  slow_navy_tradition_decay_country_modifier: "Todo"
  desc_slow_navy_tradition_decay_country_modifier: "Todo"
- 
  crowded_navy_country_modifier: "Todo"
  desc_crowded_navy_country_modifier: "Todo"
+ efficient_privateers_country_modifier: "Corsaires intrépides"
+ desc_efficient_privateers_country_modifier: "Un pavillon plutôt qu'un autre ? Quelle différence ? Pourvu que le butin soit conséquent !"
+ trade_steering_country_modifier: "Les marins font de bons marchands"
+ desc_trade_steering_country_modifier: "Il y a toujours quelque chose à échanger dans un port ; une marchandise sans valeur quelque part peut très bien valoir une fortune à l'autre bout du monde. Naviguer : n'est-ce pas l'essence du commerce ?"
+ crowded_ships_country_modifier: "Marins oisifs"
+ desc_crowded_ships_country_modifier: "Trop de marins à terre, c'est plus de rhum, plus de bagarres et moins de discipline"
+ officers_school_country_modifier: "Ecole d'officiers"
+ desc_officers_school_country_modifier: ""
+ siege_artillery_country_modifier: "Artillerie de siège"
+ desc_siege_artillery_country_modifier: "Nous avons axé notre artillerie pour le siège plutôt que le combat"
+ combat_artillery_country_modifier: "Artillerie de combat"
+ desc_combat_artillery_country_modifier: "Nous avons axé notre artillerie pour le combat plutôt que le siège"
+ army_base_units_division_country_modifier: "Système divisionaire"
+ desc_army_base_units_division_country_modifier: "Les armées sont organisées en divisions plutôt qu'en régiments"
+ align_army_ranks_and_medals_country_modifier: "Grades et médailles"
+ desc_align_army_ranks_and_medals_country_modifier: "Nos soldats savent que leur efficacité au combat sera récompensée"
+ improve_defenses_country_modifier: "Défenses renforcées"
+ desc_improve_defenses_country_modifier: "Il sera plus difficile, pour nos ennemis, de nous atteindre"
  
  #                        ======================================================================
  #                        ======================          Events          ======================
@@ -466,3 +486,20 @@
  SLMod_events_crowded_army_namespace.1_option_4: "Option 4"
  SLMod_events_crowded_army_namespace.1_option_5: "Option 5"
  SLMod_events_crowded_army_namespace.1_option_99: "Default"
+ 
+ SLMod_events_estates_influence_reduction_namespace.1_title: "L'influence des nobles devient problématique"
+ SLMod_events_estates_influence_reduction_namespace.1_desc: "Dangerosité"
+ SLMod_events_estates_influence_reduction_namespace.1_option_1: "Faisons leur une démonstration de force"
+ SLMod_events_estates_influence_reduction_namespace.1_option_2: "Acceptons que leur manigances ternisse notre image"
+ SLMod_events_estates_influence_reduction_namespace.1_option_2_tooltip: "Cette option est disponible car le prestige est d'au moins 80 \n\n---------------------------"
+ SLMod_events_estates_influence_reduction_namespace.1_option_3: "Payons des agents pour les calomnier"
+ SLMod_events_estates_influence_reduction_namespace.1_option_4: "At war"
+ SLMod_events_estates_influence_reduction_namespace.1_option_5: "Other estates"
+ SLMod_events_estates_influence_reduction_namespace.1_option_99: "Default"
+ 
+ SLMod_events_prosperity_namespace.1.title: "Tentative de province event"
+ SLMod_events_prosperity_namespace.1.desc: "La province sélectionnée est §B[This.GetName]§! dans l'état §R[This.GetAreaName]§!"
+ SLMod_events_prosperity_namespace.1.a: "Augmenter la puissance administrative"
+ SLMod_events_prosperity_namespace.1.b: "Augmenter la puissance diplomatique"
+ SLMod_events_prosperity_namespace.1.c: "Augmenter la puissance militaire"
+ 
