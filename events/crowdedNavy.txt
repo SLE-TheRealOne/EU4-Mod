@@ -3,8 +3,8 @@ namespace = SLMod_events_crowded_navy_namespace
 # Sailors usage 
 country_event = {
 	id = SLMod_events_crowded_navy_namespace.1
-	title = SLMod_events_crowded_navy_namespace.1_title
-	desc = SLMod_events_crowded_navy_namespace.1_desc
+	title = SLMod_events_crowded_navy_namespace.1.title
+	desc = SLMod_events_crowded_navy_namespace.1.desc
 	picture = CORRUPTION_eventPicture
 	hidden = no
 
@@ -13,16 +13,17 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 120
+		days = 365
 	}
 	
 	# Boost privateer_efficiency
 	option {
-		name = SLMod_events_crowded_navy_namespace.1_option_1
-		highlight = yes
+		name = SLMod_events_crowded_navy_namespace.1.a
+
 		trigger {
 			has_privateers = yes
 		}
+		
 		add_country_modifier {
 			name = efficient_privateers_country_modifier
 			duration = 365
@@ -34,31 +35,34 @@ country_event = {
 	
 	# Boost navy tradition
 	option {
-		name = SLMod_events_crowded_navy_namespace.1_option_2
-		highlight = yes
+		name = SLMod_events_crowded_navy_namespace.1.b
+		
 		trigger {
 			NOT {
 				navy_tradition = 90
 			}
 		}
+		
 		add_country_modifier {
 			name = slow_navy_tradition_decay_country_modifier
 			duration = 365
 			hidden = no
 		}
+		
 		# Trade 15 months of sailors for 12 months of bonus
 		add_yearly_sailors = -1.25
 	}
 
 	# Cycle them for manpower
 	option {
-		name = SLMod_events_crowded_navy_namespace.1_option_3
-		highlight = yes
+		name = SLMod_events_crowded_navy_namespace.1.c
+		
 		trigger {
 			NOT {
 				manpower_percentage = 50
 			}
 		}
+		
 		# Trade 12 months of sailors for 5 months of manpower
 		add_yearly_sailors = -1
 		add_yearly_manpower = 0.42
@@ -66,23 +70,28 @@ country_event = {
 	
 	# Boost trade
 	option {
-		name = SLMod_events_crowded_navy_namespace.1_option_4
+		name = SLMod_events_crowded_navy_namespace.1.d
+		
 		highlight = yes
+		required_personality = entrepreneur_personality
 		trigger {
 			ruler_has_personality = entrepreneur_personality
 		}
+
 		add_country_modifier {
 			name = trade_steering_country_modifier
 			duration = 365
 			hidden = no
 		}
+		
 		# Trade 15 months of sailors for 12 months of bonus
 		add_yearly_sailors = -1.25
 	}
 	
 	# Default
 	option {
-		name = SLMod_events_crowded_navy_namespace.1_option_99
+		name = SLMod_events_crowded_navy_namespace.1.z
+		
 		add_country_modifier {
 			name = crowded_navy_country_modifier
 			duration = 365

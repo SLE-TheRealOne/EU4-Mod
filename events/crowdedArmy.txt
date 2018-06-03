@@ -3,8 +3,8 @@ namespace = SLMod_events_crowded_army_namespace
 # Sailors usage 
 country_event = {
 	id = SLMod_events_crowded_army_namespace.1
-	title = SLMod_events_crowded_army_namespace.1_title
-	desc = SLMod_events_crowded_army_namespace.1_desc
+	title = SLMod_events_crowded_army_namespace.1.title
+	desc = SLMod_events_crowded_army_namespace.1.desc
 	picture = CORRUPTION_eventPicture
 	hidden = no
 
@@ -13,16 +13,19 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 120
+		days = 365
 	}
 
 	# Boost prestige
 	option {
-		name = SLMod_events_crowded_army_namespace.1_option_1
+		name = SLMod_events_crowded_army_namespace.1.a
+		
 		highlight = yes
 		trigger {
 			ruler_has_personality = babbling_buffoon_personality
 		}
+		required_personality = babbling_buffoon_personality
+		
 		# Trade 12 months of manpower for bonus
 		add_yearly_manpower = -1
 		add_prestige = 5
@@ -30,15 +33,18 @@ country_event = {
 	
 	# Army tradition boost
 	option {
-		name = SLMod_events_crowded_army_namespace.1_option_2
+		name = SLMod_events_crowded_army_namespace.1.b
+		
 		highlight = yes
 		trigger {
 			OR {
 				ruler_has_personality = martial_educator_personality
 				ruler_has_personality = strict_personality
 			}
-			
+			required_personality = martial_educator_personality
+			required_personality = strict_personality
 		}
+		
 		# Trade 12 months of manpower for bonus
 		add_yearly_manpower = -1
 		add_army_tradition = 5
@@ -46,11 +52,14 @@ country_event = {
 	
 	# Add professionalism
 	option {
-		name = SLMod_events_crowded_army_namespace.1_option_3
+		name = SLMod_events_crowded_army_namespace.1.c
+		
 		highlight = yes
 		trigger {
 			ruler_has_personality = tactical_genius_personality
 		}
+		required_personality = tactical_genius_personality
+		
 		# Trade 12 months of manpower for bonus
 		add_yearly_manpower = -1
 		add_army_professionalism = 0.05
@@ -58,7 +67,7 @@ country_event = {
 	
 	# Condottieri boost
 	option {
-		name = SLMod_events_crowded_army_namespace.1_option_4
+		name = SLMod_events_crowded_army_namespace.1.d
 		
 		# Trade 12 months of manpower for +2 condottieri
 		add_yearly_manpower = -1
@@ -71,7 +80,7 @@ country_event = {
 	
 	# Default
 	option {
-		name = SLMod_events_crowded_army_namespace.1_option_99
+		name = SLMod_events_crowded_army_namespace.1.z
 		add_country_modifier {
 			name = crowded_army_country_modifier
 			duration = 365

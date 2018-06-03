@@ -16,7 +16,8 @@ slow_navy_tradition_decay_country_modifier {
 #    ===== Crowded army =====
 crowded_army_country_modifier {
 	discipline = -0.15
-	army_tradition_decay = 0.05
+	land_attrition = 0.10
+	army_tradition_decay = 0.10
 }
 condottieri_raise_country_modifier {
 	possible_condottieri = 0.1

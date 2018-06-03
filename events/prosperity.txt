@@ -8,22 +8,52 @@ province_event = {
 	picture = CITY_DEVELOPMENT_eventPicture
 	
 	trigger {
-		NOT { 
-			all_province_in_state {
-				devastation = 0.1
-			}
-		}
-		is_state = yes
-		owner {
-			stability = 1
-		}
+		is_prosperous = yes
 	}
 	
 	mean_time_to_happen {
-		days = 120
+		days = 730
+		
+		# Stability modifiers ==> Max 6 months (either negative or positive)
+		modifier {
+			factor = 0.95
+			owner {
+				stability = 1
+			}
+		}
+		modifier {
+			factor = 0.95
+			owner {
+				stability = 2
+			}
+		}
+		modifier {
+			factor = 0.95
+			owner {
+				stability = 3
+			}
+		}
+		modifier { # -1
+			factor = 1.05
+			owner {
+				NOT { stability = 0 }
+			}
+		}
+		modifier { # -2
+			factor = 1.05
+			owner {
+				NOT { stability = -1 }
+			}
+		}
+		modifier { # -3
+			factor = 1.05
+			owner {
+				NOT { stability = -2 }
+			}
+		}
 	}
 	
-	option { #Raise the taxes!
+	option {
 		name = SLMod_events_prosperity_namespace.1.a
 		trigger {
 			owner {
@@ -31,13 +61,8 @@ province_event = {
 			}
 		}
 		add_base_tax = 1
-		#hidden_effect {
-		#	owner { 
-		#		set_country_flag = idp_prosperity_took_adm
-		#	}
-		#}
 	}
-	option { #Salvage their products and able seafarers!
+	option {
 		name = SLMod_events_prosperity_namespace.1.b
 		trigger {
 			owner {
@@ -45,13 +70,8 @@ province_event = {
 			}
 		}
 		add_base_production = 1
-		#hidden_effect {
-		#	owner = { 
-		#		set_country_flag = idp_prosperity_took_dip
-		#	}
-		#}
 	}
-	option { #Increase recruitment!
+	option {
 		name = SLMod_events_prosperity_namespace.1.c
 		trigger {
 			owner {
@@ -59,10 +79,5 @@ province_event = {
 			}
 		}
 		add_base_manpower = 1
-		#hidden_effect {
-		#	owner { 
-		#		set_country_flag = idp_prosperity_took_mil
-		#	}
-		#}
 	}
 }

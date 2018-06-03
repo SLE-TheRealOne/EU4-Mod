@@ -2,56 +2,60 @@ namespace = SLMod_events_greedy_wealth_namespace
 
 country_event = {
 	id = SLMod_events_greedy_wealth_namespace.1
-	title = SLMod_events_greedy_wealth_namespace.1_title
-	desc = SLMod_events_greedy_wealth_namespace.1_desc
+	title = SLMod_events_greedy_wealth_namespace.1.title
+	desc = SLMod_events_greedy_wealth_namespace.1.desc
 	picture = CORRUPTION_eventPicture
 	hidden = no
 
 	trigger {
-		monthly_income = 500
+		monthly_income = 400
 	}
 	
 	mean_time_to_happen = {
-		days = 365
+		days = 730
 	}
 	
 	option {
-		name = SLMod_events_greedy_wealth_namespace.1_option_1
-		add_corruption = 2
-	}
-	
-	option {
-		name = SLMod_events_greedy_wealth_namespace.1_option_2
-		add_inflation = 2
+		name = SLMod_events_greedy_wealth_namespace.1.z
+		custom_tooltip = SLMod_events_greedy_wealth_namespace.1.z.tooltip
+		
+		add_inflation = 0.15
+		
+		if {
+			limit {
+				ruler_has_personality = greedy_personality
+			}
+			add_inflation = 0.20
+		}
 	}
 }
 
 country_event {
 	id = SLMod_events_greedy_wealth_namespace.2
-	title = SLMod_events_greedy_wealth_namespace.2_title
-	desc = SLMod_events_greedy_wealth_namespace.2_desc
+	title = SLMod_events_greedy_wealth_namespace.2.title
+	desc = SLMod_events_greedy_wealth_namespace.2.desc
 	picture = CORRUPTION_eventPicture
 	hidden = no
 
 	trigger {
-		num_of_states = 20
+		num_of_states = 30
 	}
 	
 	mean_time_to_happen = {
-		days = 365
+		days = 730
 	}
 	
 	option {
-		name = SLMod_events_greedy_wealth_namespace.2_option_1
-		highlight = yes
-		trigger {
-			ruler_has_personality = embezzler_personality
+		name = SLMod_events_greedy_wealth_namespace.2.z
+		custom_tooltip = SLMod_events_greedy_wealth_namespace.2.z.tooltip
+		
+		add_corruption = 1
+	
+		if {
+			limit {
+				ruler_has_personality = embezzler_personality
+			}
+			add_corruption = 2
 		}
-		add_corruption = 3
-	}
-	
-	option {
-		name = SLMod_events_greedy_wealth_namespace.2_option_2
-		add_corruption = 1.5
 	}
 }
