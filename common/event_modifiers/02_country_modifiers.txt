@@ -1,46 +1,46 @@
 #    ===== Crowded navy =====
-efficient_privateers_country_modifier {
+efficient_privateers_country_modifier = {
 	privateer_efficiency = 0.15
 }
-trade_steering_country_modifier {
+trade_steering_country_modifier = {
 	trade_steering = 0.15
 }
-crowded_navy_country_modifier {
+crowded_navy_country_modifier = {
 	naval_attrition = 0.15
 	navy_tradition_decay = 0.05
 }
-slow_navy_tradition_decay_country_modifier {
+slow_navy_tradition_decay_country_modifier = {
 	navy_tradition_decay = -0.015
 }
 
 #    ===== Crowded army =====
-crowded_army_country_modifier {
+crowded_army_country_modifier = {
 	discipline = -0.15
 	land_attrition = 0.10
 	army_tradition_decay = 0.10
 }
-condottieri_raise_country_modifier {
+condottieri_raise_country_modifier = {
 	possible_condottieri = 0.1
 }
 
 #    ===== Decisions =====
-reduce_development_costs_country_modifier {
+reduce_development_costs_country_modifier = {
 	inflation_reduction = -0.30
 	development_cost = -0.20
 	global_tax_modifier = -0.10
 }
-siege_artillery_country_modifier {
+siege_artillery_country_modifier = {
 	artillery_bonus_vs_fort = 1
 	artillery_cost = 0.3
 	siege_blockade_progress = 1
 	siege_ability = 0.15
 }
-combat_artillery_country_modifier {
+combat_artillery_country_modifier = {
 	artillery_power = 0.1
 	artillery_cost = 0.3
 	backrow_artillery_damage = 0.1
 }
-army_base_units_country_modifier {
+army_base_units_country_modifier = {
 	land_maintenance_modifier = 0.35
 	shock_damage = 0.2
 	fire_damage = 0.2
@@ -49,417 +49,397 @@ army_base_units_country_modifier {
 	artillery_power = 0.2
 	land_forcelimit_modifier = -0.35
 }
-officers_school_country_modifier {
+officers_school_country_modifier = {
 	discipline = 0.05
 	drill_gain_modifier = 0.1
 	drill_decay_modifier = -0.1
 	yearly_army_professionalism = 0.1
 }
-align_army_ranks_and_medals_country_modifier {
+align_army_ranks_and_medals_country_modifier = {
 	discipline = 0.05
 	army_tradition_from_battle = 0.1
 	land_morale = 0.1
 	recover_army_morale_speed = 0.1
 }
-improve_defenses_country_modifier {
+improve_defenses_country_modifier = {
 	defensiveness = 0.15
 	fort_maintenance_modifier = 0.50
 	garrison_size = 0.15
 }
 
 # --------------------------------------------
-assist_advisor_natural_scientist_country_modifier {
+assist_advisor_natural_scientist_country_modifier = {
 	production_efficiency = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_philosopher_country_modifier {
+assist_advisor_philosopher_country_modifier = {
 	prestige = 0.2
 	advisor_cost = 0.1
 }
-assist_advisor_artist_country_modifier {
+assist_advisor_artist_country_modifier = {
 	stability_cost_modifier = -0.02
 	advisor_cost = 0.1
 }
-assist_advisor_theologian_country_modifier {
+assist_advisor_theologian_country_modifier = {
 	global_unrest = -0.2
 	advisor_cost = 0.1
 }
-assist_advisor_treasurer_country_modifier {
+assist_advisor_treasurer_country_modifier = {
 	global_tax_modifier = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_master_of_mint_country_modifier {
+assist_advisor_master_of_mint_country_modifier = {
 	inflation_reduction = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_inquisitor_country_modifier {
+assist_advisor_inquisitor_country_modifier = {
 	global_missionary_strength = 0.004
 	advisor_cost = 0.1
 }
 # --------------------------------------------
-assist_advisor_spymaster_country_modifier {
+assist_advisor_spymaster_country_modifier = {
 	spy_offence = 0.05
 	advisor_cost = 0.1
 }
-assist_advisor_naval_reformer_country_modifier {
+assist_advisor_naval_reformer_country_modifier = {
 	naval_morale = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_trader_country_modifier {
+assist_advisor_trader_country_modifier = {
 	trade_efficiency = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_colonial_governor_country_modifier {
+assist_advisor_colonial_governor_country_modifier = {
 	global_tariffs = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_diplomat_country_modifier {
+assist_advisor_diplomat_country_modifier = {
 	improve_relation_modifier = 0.04
 	advisor_cost = 0.1
 }
-assist_advisor_navigator_country_modifier {
+assist_advisor_navigator_country_modifier = {
 	range = 0.04
 	advisor_cost = 0.1
 }
 # --------------------------------------------
-assist_advisor_commandant_country_modifier {
+assist_advisor_commandant_country_modifier = {
 	discipline = 0.01
 	advisor_cost = 0.1
 }
-assist_advisor_army_reformer_country_modifier {
+assist_advisor_army_reformer_country_modifier = {
 	land_morale = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_army_organiser_country_modifier {
+assist_advisor_army_organiser_country_modifier = {
 	land_forcelimit_modifier = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_quartermaster_country_modifier {
+assist_advisor_quartermaster_country_modifier = {
 	reinforce_speed = 0.07
 	advisor_cost = 0.1
 }
-assist_advisor_recruitmaster_country_modifier {
+assist_advisor_recruitmaster_country_modifier = {
 	global_manpower_modifier = 0.02
 	advisor_cost = 0.1
 }
-assist_advisor_fortification_expert_country_modifier {
+assist_advisor_fortification_expert_country_modifier = {
 	defensiveness = 0.04
 	advisor_cost = 0.1
 }
-assist_advisor_grand_captain_country_modifier {
+assist_advisor_grand_captain_country_modifier = {
 	land_maintenance_modifier = -0.02
 	advisor_cost = 0.1
 }
 
 #    ===== Prime ministry =====
-prime_ministry_01_country_modifier {
+prime_ministry_01_country_modifier = {
 	development_cost = -0.05
 }
-prime_ministry_02_country_modifier {
+prime_ministry_02_country_modifier = {
 	development_cost = -0.10
 }
-prime_ministry_03_country_modifier {
+prime_ministry_03_country_modifier = {
 	development_cost = -0.15
 }
-prime_ministry_04_country_modifier {
+prime_ministry_04_country_modifier = {
 	development_cost = -0.20
 }
-prime_ministry_05_country_modifier {
+prime_ministry_05_country_modifier = {
 	development_cost = -0.25
 }
-prime_ministry_06_country_modifier {
+prime_ministry_06_country_modifier = {
 	development_cost = -0.30
 }
-prime_ministry_07_country_modifier {
+prime_ministry_07_country_modifier = {
 	development_cost = -0.35
 }
-prime_ministry_08_country_modifier {
+prime_ministry_08_country_modifier = {
 	development_cost = -0.40
 }
-prime_ministry_09_country_modifier {
+prime_ministry_09_country_modifier = {
 	development_cost = -0.45
 }
-prime_ministry_10_country_modifier {
+prime_ministry_10_country_modifier = {
 	development_cost = -0.50
 }
 
 #   ===== Embassy =====
-embassy_01_country_modifier {
-	global_spy_defence = 0.025
-	discovered_relations_impact = -0.025
-	rebel_support_efficiency = 0.025
-	prestige_decay = -0.025
+embassy_01_country_modifier = {
+	discovered_relations_impact = -0.02
+	prestige_decay = -0.02
 }
-embassy_02_country_modifier {
-	global_spy_defence = 0.05
-	discovered_relations_impact = -0.05
-	rebel_support_efficiency = 0.05
-	prestige_decay = -0.05
+embassy_02_country_modifier = {
+	discovered_relations_impact = -0.04
+	prestige_decay = -0.04
 }
-embassy_03_country_modifier {
-	global_spy_defence = 0.075
-	discovered_relations_impact = -0.075
-	rebel_support_efficiency = 0.075
-	prestige_decay = -0.075	
+embassy_03_country_modifier = {
+	discovered_relations_impact = -0.06
+	prestige_decay = -0.06
 }
-embassy_04_country_modifier {
-	global_spy_defence = 0.1
-	discovered_relations_impact = -0.1
-	rebel_support_efficiency = 0.1
-	prestige_decay = -0.1
+embassy_04_country_modifier = {
+	discovered_relations_impact = -0.08
+	prestige_decay = -0.08
 }
-embassy_05_country_modifier {
-	global_spy_defence = 0.125
-	discovered_relations_impact = -0.125
-	rebel_support_efficiency = 0.125
-	prestige_decay = -0.125	
+embassy_05_country_modifier = {
+	discovered_relations_impact = -0.10
+	prestige_decay = -0.10
 }
-embassy_06_country_modifier {
-	global_spy_defence = 0.15
-	discovered_relations_impact = -0.15
-	rebel_support_efficiency = 0.15
-	prestige_decay = -0.15	
+embassy_06_country_modifier = {
+	discovered_relations_impact = -0.12
+	prestige_decay = -0.12
 }
-embassy_07_country_modifier {
-	global_spy_defence = 0.175
-	discovered_relations_impact = -0.175
-	rebel_support_efficiency = 0.175
-	prestige_decay = -0.175
+embassy_07_country_modifier = {
+	discovered_relations_impact = -0.14
+	prestige_decay = -0.14
 }
-embassy_08_country_modifier {
-	global_spy_defence = 0.2
-	discovered_relations_impact = -0.2
-	rebel_support_efficiency = 0.2
-	prestige_decay = -0.2	
+embassy_08_country_modifier = {
+	discovered_relations_impact = -0.16
+	prestige_decay = -0.16
 }
-embassy_09_country_modifier {
-	global_spy_defence = 0.225
-	discovered_relations_impact = -0.225
-	rebel_support_efficiency = 0.225
-	prestige_decay = -0.225	
+embassy_09_country_modifier = {
+	discovered_relations_impact = -0.18
+	prestige_decay = -0.18
 }
-embassy_10_country_modifier {
-	global_spy_defence = 0.25
-	discovered_relations_impact = -0.25
-	rebel_support_efficiency = 0.25
-	prestige_decay = -0.25	
+embassy_10_country_modifier = {
+	discovered_relations_impact = -0.20
+	prestige_decay = -0.20
 }
 
 #   ===== Spy center =====
-spy_center_01_country_modifier {
-	spy_offence = 0.05
+spy_center_01_country_modifier = {
+	spy_offence = 0.02
+	rebel_support_efficiency = 0.02
 }
-spy_center_02_country_modifier {
+spy_center_02_country_modifier = {
+	spy_offence = 0.04
+	rebel_support_efficiency = 0.04
+}
+spy_center_03_country_modifier = {
+	spy_offence = 0.06
+	rebel_support_efficiency = 0.06
+}
+spy_center_04_country_modifier = {
+	spy_offence = 0.08
+	rebel_support_efficiency = 0.08
+}
+spy_center_05_country_modifier = {
 	spy_offence = 0.10
+	rebel_support_efficiency = 0.10
 }
-spy_center_03_country_modifier {
-	spy_offence = 0.15
+spy_center_06_country_modifier = {
+	spy_offence = 0.12
+	rebel_support_efficiency = 0.12
 }
-spy_center_04_country_modifier {
+spy_center_07_country_modifier = {
+	spy_offence = 0.14
+	rebel_support_efficiency = 0.14
+}
+spy_center_08_country_modifier = {
+	spy_offence = 0.16
+	rebel_support_efficiency = 0.16
+}
+spy_center_09_country_modifier = {
+	spy_offence = 0.18
+	rebel_support_efficiency = 0.18
+}
+spy_center_10_country_modifier = {
 	spy_offence = 0.20
-}
-spy_center_05_country_modifier {
-	spy_offence = 0.25
-}
-spy_center_06_country_modifier {
-	spy_offence = 0.30
-}
-spy_center_07_country_modifier {
-	spy_offence = 0.35
-}
-spy_center_08_country_modifier {
-	spy_offence = 0.40
-}
-spy_center_09_country_modifier {
-	spy_offence = 0.45
-}
-spy_center_10_country_modifier {
-	spy_offence = 0.50
+	rebel_support_efficiency = 0.20
 }
 
 #   ===== Laboratory =====
-laboratory_01_country_modifier {
+laboratory_01_country_modifier = {
 	technology_cost = -0.02
 }
-laboratory_02_country_modifier {
+laboratory_02_country_modifier = {
 	technology_cost = -0.04
 }
-laboratory_03_country_modifier {
+laboratory_03_country_modifier = {
 	technology_cost = -0.06
 }
-laboratory_04_country_modifier {
+laboratory_04_country_modifier = {
 	technology_cost = -0.08
 }
-laboratory_05_country_modifier {
+laboratory_05_country_modifier = {
 	technology_cost = -0.10
 }
-laboratory_06_country_modifier {
+laboratory_06_country_modifier = {
 	technology_cost = -0.12
 }
-laboratory_07_country_modifier {
+laboratory_07_country_modifier = {
 	technology_cost = -0.14
 }
-laboratory_08_country_modifier {
+laboratory_08_country_modifier = {
 	technology_cost = -0.16
 }
-laboratory_09_country_modifier {
+laboratory_09_country_modifier = {
 	technology_cost = -0.18
 }
-laboratory_10_country_modifier {
+laboratory_10_country_modifier = {
 	technology_cost = -0.20
 }
 
 #   ===== Observatory =====
-observatory_01_country_modifier {
+observatory_01_country_modifier = {
 	idea_cost = -0.025
 }
-observatory_02_country_modifier {
+observatory_02_country_modifier = {
 	idea_cost = -0.05
 }
-observatory_03_country_modifier {
+observatory_03_country_modifier = {
 	idea_cost = -0.075
 }
-observatory_04_country_modifier {
+observatory_04_country_modifier = {
 	idea_cost = -0.1
 }
-observatory_05_country_modifier {
+observatory_05_country_modifier = {
 	idea_cost = -0.125
 }
-observatory_06_country_modifier {
+observatory_06_country_modifier = {
 	idea_cost = -0.15
 }
-observatory_07_country_modifier {
+observatory_07_country_modifier = {
 	idea_cost = -0.175
 }
-observatory_08_country_modifier {
+observatory_08_country_modifier = {
 	idea_cost = -0.2
 }
-observatory_09_country_modifier {
+observatory_09_country_modifier = {
 	idea_cost = -0.225
 }
-observatory_10_country_modifier {
+observatory_10_country_modifier = {
 	idea_cost = -0.25
 }
 
 #   ===== Precision workshop =====
-precision_workshop_01_country_modifier {
-	artillery_cost = -0.025
-	cavalry_cost = -0.025
-	infantry_cost = -0.025
-	land_attrition = -0.025
-	reinforce_cost_modifier = -0.025
+precision_workshop_01_country_modifier = {
+	reinforce_cost_modifier = -0.02
+    reinforce_speed = 0.02
+    land_maintenance_modifier = -0.02
 }
-precision_workshop_02_country_modifier {
-	artillery_cost = -0.05
-	cavalry_cost = -0.05
-	infantry_cost = -0.05
-	land_attrition = -0.05
-	reinforce_cost_modifier = -0.05
+precision_workshop_02_country_modifier = {
+	reinforce_cost_modifier = -0.04
+    reinforce_speed = 0.04
+    land_maintenance_modifier = -0.04
 }
-precision_workshop_03_country_modifier {
-	artillery_cost = -0.075
-	cavalry_cost = -0.075
-	infantry_cost = -0.075
-	land_attrition = -0.075
-	reinforce_cost_modifier = -0.075
+precision_workshop_03_country_modifier = {
+	reinforce_cost_modifier = -0.06
+    reinforce_speed = 0.06
+    land_maintenance_modifier = -0.06
 }
-precision_workshop_04_country_modifier {
-	artillery_cost = -0.1
-	cavalry_cost = -0.1
-	infantry_cost = -0.1
-	land_attrition = -0.1
-	reinforce_cost_modifier = -0.1
+precision_workshop_04_country_modifier = {
+	reinforce_cost_modifier = -0.08
+    reinforce_speed = 0.08
+    land_maintenance_modifier = -0.08
 }
-precision_workshop_05_country_modifier {
-	artillery_cost = -0.125
-	cavalry_cost = -0.125
-	infantry_cost = -0.125
-	land_attrition = -0.125
-	reinforce_cost_modifier = -0.125
+precision_workshop_05_country_modifier = {
+	reinforce_cost_modifier = -0.10
+    reinforce_speed = 0.10
+    land_maintenance_modifier = -0.10
 }
-precision_workshop_06_country_modifier {
-	artillery_cost = -0.15
-	cavalry_cost = -0.15
-	infantry_cost = -0.15
-	land_attrition = -0.15
-	reinforce_cost_modifier = -0.15
+precision_workshop_06_country_modifier = {
+	reinforce_cost_modifier = -0.12
+    reinforce_speed = 0.12
+    land_maintenance_modifier = -0.12
 }
-precision_workshop_07_country_modifier {
-	artillery_cost = -0.175
-	cavalry_cost = -0.175
-	infantry_cost = -0.175
-	land_attrition = -0.175
-	reinforce_cost_modifier = -0.175
+precision_workshop_07_country_modifier = {
+	reinforce_cost_modifier = -0.14
+    reinforce_speed = 0.14
+    land_maintenance_modifier = -0.14
 }
-precision_workshop_08_country_modifier {
-	artillery_cost = -0.2
-	cavalry_cost = -0.2
-	infantry_cost = -0.2
-	land_attrition = -0.2
+precision_workshop_08_country_modifier = {
+	reinforce_cost_modifier = -0.16
+    reinforce_speed = 0.16
+    land_maintenance_modifier = -0.16
+}
+precision_workshop_09_country_modifier = {
+	reinforce_cost_modifier = -0.18
+    reinforce_speed = 0.18
+    land_maintenance_modifier = -0.18
+}
+precision_workshop_10_country_modifier = {
 	reinforce_cost_modifier = -0.2
-}
-precision_workshop_09_country_modifier {
-	artillery_cost = -0.225
-	cavalry_cost = -0.225
-	infantry_cost = -0.225
-	land_attrition = -0.225
-	reinforce_cost_modifier = -0.225
-}
-precision_workshop_10_country_modifier {
-	artillery_cost = -0.25
-	cavalry_cost = -0.25
-	infantry_cost = -0.25
-	land_attrition = -0.25
-	reinforce_cost_modifier = -0.25
+	reinforce_speed = 0.2
+	land_maintenance_modifier = -0.2
 }
 #   ===== Military academy =====
-military_academy_01_country_modifier {
-	army_tradition = 0.03
-	army_tradition_decay = -0.03
-	army_tradition_from_battle = 0.03
+military_academy_01_country_modifier = {
+	army_tradition_decay = -0.02
+	army_tradition_from_battle = 0.02
+	drill_gain_modifier = 0.02
+	drill_decay_modifier = -0.02
 }
-military_academy_02_country_modifier {
-	army_tradition = 0.06
+military_academy_02_country_modifier = {
+	army_tradition_decay = -0.04
+	army_tradition_from_battle = 0.04
+	drill_gain_modifier = 0.04
+	drill_decay_modifier = -0.04
+}
+military_academy_03_country_modifier = {
 	army_tradition_decay = -0.06
 	army_tradition_from_battle = 0.06
+	drill_gain_modifier = 0.06
+	drill_decay_modifier = -0.06
 }
-military_academy_03_country_modifier {
-	army_tradition = 0.09
-	army_tradition_decay = -0.09
-	army_tradition_from_battle = 0.09
+military_academy_04_country_modifier = {
+	army_tradition_decay = -0.08
+	army_tradition_from_battle = 0.08
+	drill_gain_modifier = 0.08
+	drill_decay_modifier = -0.08
 }
-military_academy_04_country_modifier {
-	army_tradition = 0.12
+military_academy_05_country_modifier = {
+	army_tradition_decay = -0.10
+	army_tradition_from_battle = 0.10
+	drill_gain_modifier = 0.10
+	drill_decay_modifier = -0.10
+}
+military_academy_06_country_modifier = {
 	army_tradition_decay = -0.12
 	army_tradition_from_battle = 0.12
+	drill_gain_modifier = 0.12
+	drill_decay_modifier = -0.12
 }
-military_academy_05_country_modifier {
-	army_tradition = 0.15
-	army_tradition_decay = -0.15
-	army_tradition_from_battle = 0.15
+military_academy_07_country_modifier = {
+	army_tradition_decay = -0.14
+	army_tradition_from_battle = 0.14
+	drill_gain_modifier = 0.14
+	drill_decay_modifier = -0.14
 }
-military_academy_06_country_modifier {
-	army_tradition = 0.18
+military_academy_08_country_modifier = {
+	army_tradition_decay = -0.16
+	army_tradition_from_battle = 0.16
+	drill_gain_modifier = 0.16
+	drill_decay_modifier = -0.16
+}
+military_academy_09_country_modifier = {
 	army_tradition_decay = -0.18
 	army_tradition_from_battle = 0.18
+	drill_gain_modifier = 0.18
+	drill_decay_modifier = -0.18
 }
-military_academy_07_country_modifier {
-	army_tradition = 0.21
-	army_tradition_decay = -0.21
-	army_tradition_from_battle = 0.21
-}
-military_academy_08_country_modifier {
-	army_tradition = 0.24
-	army_tradition_decay = -0.24
-	army_tradition_from_battle = 0.24
-}
-military_academy_09_country_modifier {
-	army_tradition = 0.27
-	army_tradition_decay = -0.27
-	army_tradition_from_battle = 0.27
-}
-military_academy_10_country_modifier {
-	army_tradition = 0.30
-	army_tradition_decay = -0.30
-	army_tradition_from_battle = 0.30
+military_academy_10_country_modifier = {
+	army_tradition_decay = -0.20
+	army_tradition_from_battle = 0.20
+	drill_gain_modifier = 0.20
+	drill_decay_modifier = -0.20
 }

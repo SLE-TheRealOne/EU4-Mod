@@ -1,6 +1,6 @@
 country_decisions = {
 	
-	reduce_church_influence {
+	reduce_church_influence = {
 		allow = {
 			manpower = 50
 			estate_influence = {
@@ -28,7 +28,7 @@ country_decisions = {
 		}
 	}
 	
-	reduce_burghers_influence {
+	reduce_burghers_influence = {
 		allow = {
 			manpower = 50
 			estate_influence = {
@@ -56,14 +56,14 @@ country_decisions = {
 		}
 	}
 	
-	reduce_development_costs {
+	reduce_development_costs = {
 		allow = {
 			stability = 2
-			NOT { inflation = 3 }
+			NOT = { inflation = 3 }
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = reduce_development_costs_country_modifier
 				duration = -1
 				hidden = no
@@ -75,25 +75,25 @@ country_decisions = {
 		}
 	}
 	
-	create_officers_school {
-		potential {
+	create_officers_school = {
+		potential = {
 			has_dlc = "Cradle of Civilization"
-			NOT { has_country_modifier = officers_shool_country_modifier }
+			NOT = { has_country_modifier = officers_school_country_modifier }
 		}
 		
-		allow {
+		allow = {
 			full_idea_group = innovativeness_ideas
 			army_professionalism = 0.75
 			army_size = 220
 		}
 				
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = officers_school_country_modifier
 				duration = -1
 				hidden = no
 			}
-			add_estate_loyalty {
+			add_estate_loyalty = {
 				estate = estate_nobility
 				loyalty = -10
 			}
@@ -104,20 +104,20 @@ country_decisions = {
 		}
 	}
 	
-	abandon_officers_school {
-		potential {
+	abandon_officers_school = {
+		potential = {
 			has_dlc = "Cradle of Civilization"
-			has_country_modifier = officers_shool_country_modifier
+			has_country_modifier = officers_school_country_modifier
 		}
 		
-		allow {
-			has_country_modifier = officers_shool_country_modifier
+		allow = {
+			has_country_modifier = officers_school_country_modifier
 		}
 		
-		effect {
-			army_professionalism = -0.25
-			remove_country_modifier = officers_shool_country_modifier
-			add_estate_loyalty {
+		effect = {
+			add_army_professionalism = -0.25
+			remove_country_modifier = officers_school_country_modifier
+			add_estate_loyalty = {
 				estate = estate_nobility
 				loyalty = 2
 			}
@@ -128,129 +128,129 @@ country_decisions = {
 		}
 	}
 	
-	siege_artillery {
-		potential {
-			NOT { has_country_modifier = siege_artillery_country_modifier }
-			NOT { has_country_modifier = combat_artillery_country_modifier }
+	siege_artillery = {
+		potential = {
+			NOT = { has_country_modifier = siege_artillery_country_modifier }
+			NOT = { has_country_modifier = combat_artillery_country_modifier }
 		}
 		
-		allow {
-			NOT { has_country_modifier = siege_artillery_country_modifier }
-			NOT { has_country_modifier = combat_artillery_country_modifier }
+		allow = {
+			NOT = { has_country_modifier = siege_artillery_country_modifier }
+			NOT = { has_country_modifier = combat_artillery_country_modifier }
 			full_idea_group = offensive_ideas
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = siege_artillery_country_modifier
 				duration = -1
 				hidden = no
 			}
 		}
 		
-		ai_will_do {
+		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	combat_artillery {
-		potential {
-			NOT { has_country_modifier = siege_artillery_country_modifier }
-			NOT { has_country_modifier = combat_artillery_country_modifier }
+	combat_artillery = {
+		potential = {
+			NOT = { has_country_modifier = siege_artillery_country_modifier }
+			NOT = { has_country_modifier = combat_artillery_country_modifier }
 		}
 		
-		allow {
-			NOT { has_country_modifier = siege_artillery_country_modifier }
-			NOT { has_country_modifier = combat_artillery_country_modifier }
+		allow = {
+			NOT = { has_country_modifier = siege_artillery_country_modifier }
+			NOT = { has_country_modifier = combat_artillery_country_modifier }
 			full_idea_group = quantity_ideas
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = combat_artillery_country_modifier
 				duration = -1
 				hidden = no
 			}
 		}
 		
-		ai_will_do {
+		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	army_base_units_division {
-		potential {
-			NOT { has_country_modifier = army_base_units_division_country_modifier }
+	army_base_units_division = {
+		potential = {
+			NOT = { has_country_modifier = army_base_units_country_modifier }
 		}
 		
-		allow {
-			OR {
+		allow = {
+			OR = {
 				advisor = army_organiser
 				advisor = army_reformer
 			}
-			NOT { has_country_modifier = army_base_units_division_country_modifier }
+			NOT = { has_country_modifier = army_base_units_country_modifier }
 			full_idea_group = quality_ideas
 		}
 		
-		effect {
-			add_country_modifier {
-				name = army_base_units_division_country_modifier
+		effect = {
+			add_country_modifier = {
+				name = army_base_units_country_modifier
 				duration = -1
 				hidden = no
 			}
 		}
 		
-		ai_will_do {
+		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	align_army_ranks_and_medals {
-		potential {
-			NOT { has_country_modifier = align_army_ranks_and_medals_country_modifier }
+	align_army_ranks_and_medals = {
+		potential = {
+			NOT = { has_country_modifier = align_army_ranks_and_medals_country_modifier }
 		}
 		
-		allow {
-			OR {
+		allow = {
+			OR = {
 				advisor = army_organiser
 				advisor = army_reformer
 			}
-			NOT { has_country_modifier = align_army_ranks_and_medals_country_modifier }
-			full_idea_group = full_idea_group  = aristocracy_ideas
+			NOT = { has_country_modifier = align_army_ranks_and_medals_country_modifier }
+			full_idea_group = aristocracy_ideas
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = align_army_ranks_and_medals_country_modifier
 				duration = -1
 				hidden = no
 			}
 		}
 		
-		ai_will_do {
+		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	improve_defenses {
-		potential {
-			NOT { has_country_modifier = improve_defenses_country_modifier }
+	improve_defenses = {
+		potential = {
+			NOT = { has_country_modifier = improve_defenses_country_modifier }
 		}
 		
-		allow {
+		allow = {
 			full_idea_group = defensive_ideas
-			NOT { has_country_modifier = improve_defenses_country_modifier }
+			NOT = { has_country_modifier = improve_defenses_country_modifier }
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = improve_defenses_country_modifier
 				duration = -1
 				hidden = no
 			}
 		}
 		
-		ai_will_do {
+		ai_will_do = {
 			factor = 1
 		}
 	}

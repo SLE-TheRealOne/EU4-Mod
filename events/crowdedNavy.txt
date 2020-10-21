@@ -8,7 +8,7 @@ country_event = {
 	picture = CORRUPTION_eventPicture
 	hidden = no
 
-	trigger {
+	trigger = {
 		sailors_percentage = 0.90
 	}
 	
@@ -17,14 +17,14 @@ country_event = {
 	}
 	
 	# Boost privateer_efficiency
-	option {
+	option = {
 		name = SLMod_events_crowded_navy_namespace.1.a
 
-		trigger {
+		trigger = {
 			has_privateers = yes
 		}
 		
-		add_country_modifier {
+		add_country_modifier = {
 			name = efficient_privateers_country_modifier
 			duration = 365
 			hidden = no
@@ -34,16 +34,16 @@ country_event = {
 	}
 	
 	# Boost navy tradition
-	option {
+	option = {
 		name = SLMod_events_crowded_navy_namespace.1.b
 		
-		trigger {
-			NOT {
+		trigger = {
+			NOT = {
 				navy_tradition = 90
 			}
 		}
 		
-		add_country_modifier {
+		add_country_modifier = {
 			name = slow_navy_tradition_decay_country_modifier
 			duration = 365
 			hidden = no
@@ -54,11 +54,11 @@ country_event = {
 	}
 
 	# Cycle them for manpower
-	option {
+	option = {
 		name = SLMod_events_crowded_navy_namespace.1.c
 		
-		trigger {
-			NOT {
+		trigger = {
+			NOT = {
 				manpower_percentage = 50
 			}
 		}
@@ -69,16 +69,15 @@ country_event = {
 	}
 	
 	# Boost trade
-	option {
+	option = {
 		name = SLMod_events_crowded_navy_namespace.1.d
 		
 		highlight = yes
-		required_personality = entrepreneur_personality
-		trigger {
-			ruler_has_personality = entrepreneur_personality
+		trigger = {
+			personality = entrepreneur_personality
 		}
 
-		add_country_modifier {
+		add_country_modifier = {
 			name = trade_steering_country_modifier
 			duration = 365
 			hidden = no
@@ -89,10 +88,10 @@ country_event = {
 	}
 	
 	# Default
-	option {
+	option = {
 		name = SLMod_events_crowded_navy_namespace.1.z
 		
-		add_country_modifier {
+		add_country_modifier = {
 			name = crowded_navy_country_modifier
 			duration = 365
 			hidden = no

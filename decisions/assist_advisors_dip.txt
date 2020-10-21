@@ -1,18 +1,18 @@
 country_decisions = {
-	assist_advisor_spymaster {
-		potential {
+	assist_advisor_spymaster = {
+		potential = {
 			advisor = spymaster
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_spymaster_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			spymaster = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_spymaster_country_modifier
 				duration = 365
 				hidden = no
@@ -26,20 +26,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_naval_reformer {
-		potential {
+	assist_advisor_naval_reformer = {
+		potential = {
 			advisor = naval_reformer
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_naval_reformer_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			naval_reformer = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_naval_reformer_country_modifier
 				duration = 365
 				hidden = no
@@ -53,20 +53,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_trader {
-		potential {
+	assist_advisor_trader = {
+		potential = {
 			advisor = trader
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_trader_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			trader = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_trader_country_modifier
 				duration = 365
 				hidden = no
@@ -80,20 +80,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_colonial_governor {
-		potential {
+	assist_advisor_colonial_governor = {
+		potential = {
 			advisor = colonial_governor
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_colonial_governor_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			colonial_governor = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_colonial_governor_country_modifier
 				duration = 365
 				hidden = no
@@ -107,20 +107,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_diplomat {
-		potential {
+	assist_advisor_diplomat = {
+		potential = {
 			advisor = diplomat
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_diplomat_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			diplomat = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_diplomat_country_modifier
 				duration = 365
 				hidden = no
@@ -134,20 +134,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_navigator {
-		potential {
+	assist_advisor_navigator = {
+		potential = {
 			advisor = navigator
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_navigator_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			navigator = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_navigator_country_modifier
 				duration = 365
 				hidden = no

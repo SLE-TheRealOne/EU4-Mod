@@ -1,9 +1,9 @@
-precision_workshop_01 {
-	cost = 310
+precision_workshop_01 = {
+	cost = 300
 	time = 6
 	one_per_country = yes
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}
 	
@@ -13,7 +13,7 @@ precision_workshop_01 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_01_country_modifier
 				duration = -1
 				hidden = no
@@ -27,20 +27,20 @@ precision_workshop_01 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_01_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_02 {
-	cost = 625
+precision_workshop_02 = {
+	cost = 306
 	time = 7
 	one_per_country = yes
 	make_obsolete = precision_workshop_01
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}
 	
@@ -50,7 +50,7 @@ precision_workshop_02 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_02_country_modifier
 				duration = -1
 				hidden = no
@@ -62,20 +62,20 @@ precision_workshop_02 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_02_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_03 {
-	cost = 1250
+precision_workshop_03 = {
+	cost = 312
 	time = 8
 	one_per_country = yes
 	make_obsolete = precision_workshop_02
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}
 	
@@ -85,7 +85,7 @@ precision_workshop_03 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_03_country_modifier
 				duration = -1
 				hidden = no
@@ -99,20 +99,20 @@ precision_workshop_03 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_03_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_04 {
-	cost = 2500
+precision_workshop_04 = {
+	cost = 318
 	time = 9
 	one_per_country = yes
 	make_obsolete = precision_workshop_03
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}	
 	
@@ -122,7 +122,7 @@ precision_workshop_04 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_04_country_modifier
 				duration = -1
 				hidden = no
@@ -138,20 +138,20 @@ precision_workshop_04 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_04_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_05 {
-	cost = 5000
+precision_workshop_05 = {
+	cost = 324
 	time = 10
 	one_per_country = yes
 	make_obsolete = precision_workshop_04
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}
 	
@@ -161,7 +161,7 @@ precision_workshop_05 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_05_country_modifier
 				duration = -1
 				hidden = no
@@ -179,20 +179,20 @@ precision_workshop_05 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_05_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_06 {
-	cost = 7500
+precision_workshop_06 = {
+	cost = 331
 	time = 11
 	one_per_country = yes
 	make_obsolete = precision_workshop_05
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}
 	
@@ -202,7 +202,7 @@ precision_workshop_06 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_06_country_modifier
 				duration = -1
 				hidden = no
@@ -222,20 +222,20 @@ precision_workshop_06 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_06_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_07 {
-	cost = 10000
+precision_workshop_07 = {
+	cost = 337
 	time = 12
 	one_per_country = yes
 	make_obsolete = precision_workshop_06
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}
 	
@@ -245,7 +245,7 @@ precision_workshop_07 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_07_country_modifier
 				duration = -1
 				hidden = no
@@ -267,20 +267,20 @@ precision_workshop_07 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_07_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_08 {
-	cost = 15000
+precision_workshop_08 = {
+	cost = 344
 	time = 13
 	one_per_country = yes
 	make_obsolete = precision_workshop_07
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}
 	
@@ -290,7 +290,7 @@ precision_workshop_08 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_08_country_modifier
 				duration = -1
 				hidden = no
@@ -314,20 +314,20 @@ precision_workshop_08 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_08_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_09 {
-	cost = 20000
+precision_workshop_09 = {
+	cost = 351
 	time = 14
 	one_per_country = yes
 	make_obsolete = precision_workshop_08
 	
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}	
 	
@@ -337,7 +337,7 @@ precision_workshop_09 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_09_country_modifier
 				duration = -1
 				hidden = no
@@ -363,20 +363,20 @@ precision_workshop_09 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_09_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag
 	}
 }
 
-precision_workshop_10 {
-	cost = 40000
+precision_workshop_10 = {
+	cost = 358
 	time = 15
 	one_per_country = yes
 	make_obsolete = precision_workshop_09
 		
-	trigger {
+	trigger = {
 		is_in_capital_area = yes
 	}
 	
@@ -386,7 +386,7 @@ precision_workshop_10 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = precision_workshop_10_country_modifier
 				duration = -1
 				hidden = no
@@ -414,7 +414,7 @@ precision_workshop_10 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = precision_workshop_10_country_modifier
 		}
 		clr_global_flag = precision_workshop_flag

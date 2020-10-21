@@ -1,12 +1,12 @@
-embassy_01 {
-	cost = 310
+embassy_01 = {
+	cost = 300
 	time = 6
 	one_per_country = yes
 	
-	trigger {
-		AND {
+	trigger = {
+		AND = {
 			is_capital = yes
-			NOT {
+			NOT = {
 				has_global_flag = embassy_flag
 			}
 		}
@@ -18,7 +18,7 @@ embassy_01 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_01_country_modifier
 				duration = -1
 				hidden = no
@@ -32,15 +32,15 @@ embassy_01 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_01_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_02 {
-	cost = 625
+embassy_02 = {
+	cost = 306
 	time = 7
 	one_per_country = yes
 	make_obsolete = embassy_01
@@ -51,7 +51,7 @@ embassy_02 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_02_country_modifier
 				duration = -1
 				hidden = no
@@ -63,15 +63,15 @@ embassy_02 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_02_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_03 {
-	cost = 1250
+embassy_03 = {
+	cost = 312
 	time = 8
 	one_per_country = yes
 	make_obsolete = embassy_02
@@ -82,7 +82,7 @@ embassy_03 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_03_country_modifier
 				duration = -1
 				hidden = no
@@ -96,15 +96,15 @@ embassy_03 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_03_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_04 {
-	cost = 2500
+embassy_04 = {
+	cost = 318
 	time = 9
 	one_per_country = yes
 	make_obsolete = embassy_03
@@ -115,7 +115,7 @@ embassy_04 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_04_country_modifier
 				duration = -1
 				hidden = no
@@ -131,15 +131,15 @@ embassy_04 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_04_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_05 {
-	cost = 5000
+embassy_05 = {
+	cost = 324
 	time = 10
 	one_per_country = yes
 	make_obsolete = embassy_04
@@ -150,7 +150,7 @@ embassy_05 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_05_country_modifier
 				duration = -1
 				hidden = no
@@ -168,15 +168,15 @@ embassy_05 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_05_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_06 {
-	cost = 7500
+embassy_06 = {
+	cost = 331
 	time = 11
 	one_per_country = yes
 	make_obsolete = embassy_05
@@ -187,7 +187,7 @@ embassy_06 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_06_country_modifier
 				duration = -1
 				hidden = no
@@ -207,15 +207,15 @@ embassy_06 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_06_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_07 {
-	cost = 10000
+embassy_07 = {
+	cost = 337
 	time = 12
 	one_per_country = yes
 	make_obsolete = embassy_06
@@ -226,7 +226,7 @@ embassy_07 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_07_country_modifier
 				duration = -1
 				hidden = no
@@ -248,15 +248,15 @@ embassy_07 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_07_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_08 {
-	cost = 15000
+embassy_08 = {
+	cost = 344
 	time = 13
 	one_per_country = yes
 	make_obsolete = embassy_07
@@ -267,7 +267,7 @@ embassy_08 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_08_country_modifier
 				duration = -1
 				hidden = no
@@ -291,15 +291,15 @@ embassy_08 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_08_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_09 {
-	cost = 20000
+embassy_09 = {
+	cost = 351
 	time = 14
 	one_per_country = yes
 	make_obsolete = embassy_08
@@ -310,7 +310,7 @@ embassy_09 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_09_country_modifier
 				duration = -1
 				hidden = no
@@ -336,15 +336,15 @@ embassy_09 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_09_country_modifier
 		}
 		clr_global_flag = embassy_flag
 	}
 }
 
-embassy_10 {
-	cost = 40000
+embassy_10 = {
+	cost = 358
 	time = 15
 	one_per_country = yes
 	make_obsolete = embassy_09
@@ -355,7 +355,7 @@ embassy_10 {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = embassy_10_country_modifier
 				duration = -1
 				hidden = no
@@ -383,7 +383,7 @@ embassy_10 {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = embassy_10_country_modifier
 		}
 		clr_global_flag = embassy_flag

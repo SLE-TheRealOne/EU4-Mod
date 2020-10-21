@@ -8,7 +8,7 @@ country_event = {
 	picture = CORRUPTION_eventPicture
 	hidden = no
 
-	trigger {
+	trigger = {
 		has_disaster = estate_nobility_disaster
 	}
 	
@@ -17,17 +17,17 @@ country_event = {
 	}
 	
 	# Manpower loss ==> Reduce disaster
-	option {
+	option = {
 		name = SLMod_events_nobility_disaster_namespace.1.a
 		custom_tooltip = SLMod_events_nobility_disaster_namespace.1.a.tooltip
-		trigger {
+		trigger = {
 			manpower_percentage = 0.9
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -2
 		}
-		add_disaster_progress {
+		add_disaster_progress = {
 			disaster = estate_nobility_disaster
 			value = -2
 		}
@@ -35,17 +35,17 @@ country_event = {
 	}
 	
 	# Prestige loss ==> Reduce disaster
-	option {
+	option = {
 		name = SLMod_events_nobility_disaster_namespace.1.b
 		custom_tooltip = SLMod_events_nobility_disaster_namespace.1.b.tooltip
-		trigger {
+		trigger = {
 			prestige = 80
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -2
 		}
-		add_disaster_progress {
+		add_disaster_progress = {
 			disaster = estate_nobility_disaster
 			value = -2
 		}
@@ -53,17 +53,17 @@ country_event = {
 	}
 	
 	# Ducats loss ==> Reduce disaster
-	option {
+	option = {
 		name = SLMod_events_nobility_disaster_namespace.1.c
 		custom_tooltip = SLMod_events_nobility_disaster_namespace.1.c.tooltip
-		trigger {
+		trigger = {
 			years_of_income = 1
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -2
 		}
-		add_disaster_progress {
+		add_disaster_progress = {
 			disaster = estate_nobility_disaster
 			value = -2
 		}
@@ -71,12 +71,12 @@ country_event = {
 	}
 	
 	# Turn against other estates ==> Reduce disaster
-	option {
+	option = {
 		name = SLMod_events_nobility_disaster_namespace.1.d
 		custom_tooltip = SLMod_events_nobility_disaster_namespace.1.d.tooltip
 		
-		trigger {
-			NOT {
+		trigger = {
+			NOT = {
 				has_disaster = estate_church_disaster
 				has_disaster = estate_burghers_disaster
 			}
@@ -86,7 +86,7 @@ country_event = {
 			estate = estate_nobles
 			loyalty = -2
 		}
-		add_disaster_progress {
+		add_disaster_progress = {
 			disaster = estate_nobility_disaster
 			value = -2
 		}
@@ -105,30 +105,30 @@ country_event = {
 	}
 	
 	# Default ==> Advance disaster
-	option {
+	option = {
 		name = SLMod_events_nobility_disaster_namespace.1.z
 		custom_tooltip = SLMod_events_nobility_disaster_namespace.1.z.tooltip
 
-		add_disaster_progress {
+		add_disaster_progress = {
 			disaster = estate_nobility_disaster
 			value = 5
 		}
-		if {
-			limit {
+		if = {
+			limit = {
 				is_at_war = yes
 			}
 			add_war_exhaustion = 2
 		}
-		if {
-			limit {
-				NOT { # If progress has not reach 50%
+		if = {
+			limit = {
+				NOT = { # If progress has not reach 50%
 					has_disaster_progress = {
 						disaster = estate_nobility_disaster
 						value = 50
 					}
 				}
 			}
-			add_disaster_progress {
+			add_disaster_progress = {
 				disaster = estate_nobility_disaster
 				value = 5
 			}

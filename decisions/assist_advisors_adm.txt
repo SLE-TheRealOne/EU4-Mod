@@ -1,18 +1,18 @@
 country_decisions = {
-	assist_advisor_natural_scientist {
-		potential {
+	assist_advisor_natural_scientist = {
+		potential = {
 			advisor = natural_scientist
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_natural_scientist_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			natural_scientist = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_natural_scientist_country_modifier
 				duration = 365
 				hidden = no
@@ -26,20 +26,20 @@ country_decisions = {
 		}
 	}
 
-	assist_advisor_philosopher {
-		potential {
+	assist_advisor_philosopher = {
+		potential = {
 			advisor = philosopher
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_philosopher_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			philosopher = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_philosopher_country_modifier
 				duration = 365
 				hidden = no
@@ -53,20 +53,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_artist {
-		potential {
+	assist_advisor_artist = {
+		potential = {
 			advisor = artist
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_artist_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			artist = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_artist_country_modifier
 				duration = 365
 				hidden = no
@@ -80,20 +80,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_theologian {
-		potential {
+	assist_advisor_theologian = {
+		potential = {
 			advisor = theologian
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_theologian_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			theologian = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_theologian_country_modifier
 				duration = 365
 				hidden = no
@@ -107,20 +107,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_treasurer {
-		potential {
+	assist_advisor_treasurer = {
+		potential = {
 			advisor = treasurer
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_treasurer_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			treasurer = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_treasurer_country_modifier
 				duration = 365
 				hidden = no
@@ -134,20 +134,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_master_of_mint {
-		potential {
+	assist_advisor_master_of_mint = {
+		potential = {
 			advisor = master_of_mint
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_master_of_mint_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			master_of_mint = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_master_of_mint_country_modifier
 				duration = 365
 				hidden = no
@@ -161,20 +161,20 @@ country_decisions = {
 		}
 	}
 	
-	assist_advisor_inquisitor {
-		potential {
+	assist_advisor_inquisitor = {
+		potential = {
 			advisor = inquisitor
-			NOT {
+			NOT = {
 				has_country_modifier = assist_advisor_inquisitor_country_modifier
 			}
 		}
 		
-		allow {
+		allow = {
 			inquisitor = 3
 		}
 		
-		effect {
-			add_country_modifier {
+		effect = {
+			add_country_modifier = {
 				name = assist_advisor_inquisitor_country_modifier
 				duration = 365
 				hidden = no

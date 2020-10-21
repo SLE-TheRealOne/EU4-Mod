@@ -7,77 +7,62 @@ province_event = {
 	desc = SLMod_events_prosperity_namespace.1.desc
 	picture = CITY_DEVELOPMENT_eventPicture
 	
-	trigger {
+	trigger = {
 		is_prosperous = yes
 	}
 	
-	mean_time_to_happen {
+	mean_time_to_happen = {
 		days = 730
 		
 		# Stability modifiers ==> Max 6 months (either negative or positive)
-		modifier {
-			factor = 0.95
-			owner {
+		modifier = {
+			factor = 0.90
+			owner = {
 				stability = 1
 			}
 		}
-		modifier {
-			factor = 0.95
-			owner {
+		modifier = {
+			factor = 0.75
+			owner = {
 				stability = 2
 			}
 		}
-		modifier {
-			factor = 0.95
-			owner {
+		modifier = {
+			factor = 0.7
+			owner = {
 				stability = 3
 			}
 		}
-		modifier { # -1
-			factor = 1.05
-			owner {
-				NOT { stability = 0 }
+		modifier = { # -1
+			factor = 1.10
+			owner = {
+				NOT = { stability = 0 }
 			}
 		}
-		modifier { # -2
-			factor = 1.05
-			owner {
-				NOT { stability = -1 }
+		modifier = { # -2
+			factor = 1.15
+			owner = {
+				NOT = { stability = -1 }
 			}
 		}
-		modifier { # -3
-			factor = 1.05
-			owner {
-				NOT { stability = -2 }
+		modifier = { # -3
+			factor = 1.30
+			owner = {
+				NOT = { stability = -2 }
 			}
 		}
 	}
 	
-	option {
+	option = {
 		name = SLMod_events_prosperity_namespace.1.a
-		trigger {
-			owner {
-				NOT { has_country_flag = idp_prosperity_took_adm }
-			}
-		}
 		add_base_tax = 1
 	}
-	option {
+	option = {
 		name = SLMod_events_prosperity_namespace.1.b
-		trigger {
-			owner {
-				NOT { has_country_flag = idp_prosperity_took_dip }
-			}
-		}
 		add_base_production = 1
 	}
-	option {
+	option = {
 		name = SLMod_events_prosperity_namespace.1.c
-		trigger {
-			owner {
-				NOT { has_country_flag = idp_prosperity_took_mil }
-			}
-		}
 		add_base_manpower = 1
 	}
 }

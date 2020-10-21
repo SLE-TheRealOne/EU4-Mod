@@ -1,10 +1,10 @@
 observatory_01 = {
-	cost = 310
+	cost = 300
 	time = 6
 	one_per_country = yes
 	
-	trigger {
-		NOT {
+	trigger = {
+		NOT = {
 			has_global_flag = observatory_flag
 		}
 	}
@@ -15,7 +15,7 @@ observatory_01 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_01_country_modifier
 				duration = -1
 				hidden = no
@@ -29,7 +29,7 @@ observatory_01 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_01_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -37,7 +37,7 @@ observatory_01 = {
 }
 
 observatory_02 = {
-	cost = 625
+	cost = 306
 	time = 7
 	one_per_country = yes
 	make_obsolete = observatory_01
@@ -48,7 +48,7 @@ observatory_02 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_02_country_modifier
 				duration = -1
 				hidden = no
@@ -60,7 +60,7 @@ observatory_02 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_02_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -68,7 +68,7 @@ observatory_02 = {
 }
 
 observatory_03 = {
-	cost = 1250
+	cost = 312
 	time = 8
 	one_per_country = yes
 	make_obsolete = observatory_02
@@ -79,7 +79,7 @@ observatory_03 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_03_country_modifier
 				duration = -1
 				hidden = no
@@ -93,7 +93,7 @@ observatory_03 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_03_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -101,7 +101,7 @@ observatory_03 = {
 }
 
 observatory_04 = {
-	cost = 2500
+	cost = 318
 	time = 9
 	one_per_country = yes
 	make_obsolete = observatory_03
@@ -112,7 +112,7 @@ observatory_04 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_04_country_modifier
 				duration = -1
 				hidden = no
@@ -128,7 +128,7 @@ observatory_04 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_04_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -136,7 +136,7 @@ observatory_04 = {
 }
 
 observatory_05 = {
-	cost = 5000
+	cost = 324
 	time = 10
 	one_per_country = yes
 	make_obsolete = observatory_04
@@ -147,7 +147,7 @@ observatory_05 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_05_country_modifier
 				duration = -1
 				hidden = no
@@ -165,7 +165,7 @@ observatory_05 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_05_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -173,7 +173,7 @@ observatory_05 = {
 }
 
 observatory_06 = {
-	cost = 7500
+	cost = 331
 	time = 11
 	one_per_country = yes
 	make_obsolete = observatory_05
@@ -184,7 +184,7 @@ observatory_06 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_06_country_modifier
 				duration = -1
 				hidden = no
@@ -204,7 +204,7 @@ observatory_06 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_06_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -212,7 +212,7 @@ observatory_06 = {
 }
 
 observatory_07 = {
-	cost = 10000
+	cost = 337
 	time = 13
 	one_per_country = yes
 	make_obsolete = observatory_06
@@ -223,7 +223,7 @@ observatory_07 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_07_country_modifier
 				duration = -1
 				hidden = no
@@ -245,7 +245,7 @@ observatory_07 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_07_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -253,7 +253,7 @@ observatory_07 = {
 }
 
 observatory_08 = {
-	cost = 15000
+	cost = 344
 	time = 12
 	one_per_country = yes
 	make_obsolete = observatory_07
@@ -264,7 +264,7 @@ observatory_08 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_08_country_modifier
 				duration = -1
 				hidden = no
@@ -288,7 +288,7 @@ observatory_08 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_08_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -296,7 +296,7 @@ observatory_08 = {
 }
 
 observatory_09 = {
-	cost = 20000
+	cost = 351
 	time = 13
 	one_per_country = yes
 	make_obsolete = observatory_08
@@ -307,7 +307,7 @@ observatory_09 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_09_country_modifier
 				duration = -1
 				hidden = no
@@ -333,7 +333,7 @@ observatory_09 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_09_country_modifier
 		}
 		clr_global_flag = observatory_flag
@@ -342,7 +342,7 @@ observatory_09 = {
 
 
 observatory_10 = {
-	cost = 40000
+	cost = 358
 	time = 14
 	one_per_country = yes
 	make_obsolete = observatory_09
@@ -353,7 +353,7 @@ observatory_10 = {
 	
 	on_built = {
 		owner = {
-			add_country_modifier {
+			add_country_modifier = {
 				name = observatory_10_country_modifier
 				duration = -1
 				hidden = no
@@ -381,7 +381,7 @@ observatory_10 = {
 	}
 	
 	on_destroyed = {
-		owner {
+		owner = {
 			remove_country_modifier = observatory_10_country_modifier
 		}
 		clr_global_flag = observatory_flag
