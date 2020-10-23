@@ -3,10 +3,13 @@ prime_ministry_01 = {
 	time = 5
 	one_per_country = yes
 	
-	trigger = {
+	build_trigger = {
 		NOT = {
 			has_global_flag = prime_ministry_flag
 		}
+		has_seat_in_parliament = yes
+		is_state = yes
+		num_free_building_slots = 1
 	}
 	
 	ai_will_do = {

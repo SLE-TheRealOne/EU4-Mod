@@ -1,0 +1,11 @@
+province_prosperity_free_base_tax_modifier = {
+    local_tax_modifier = -0.15
+}
+
+province_prosperity_free_base_production_modifier = {
+    trade_value_modifier = -0.15
+}
+
+province_prosperity_free_base_manpower_modifier = {
+    local_manpower_modifier = -0.15
+}

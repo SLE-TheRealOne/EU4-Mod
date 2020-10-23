@@ -19,7 +19,7 @@
  bannerText: "Bâtiments uniques"
  
  building_military_academy_01: "Académie militaire I"
- building_military_academy_01_desc: "Une école militaire où sont formés les officiers et dirigeants de nos armées permettra de diffuser les meilleures techniques dans les régiments, d'augmenter la discipline et de mieux retenir les leçons des victoires ou défaites\n\nChaque niveau apporte:\n  - Déclin annuel de la tradition terrestre: §G-2.0%§!\n  - Tradition terrestre tirée des batailles: §G+2.0%§!\n  - Entraînement des troupes: §G+2.0%§!\n  - Perte annuelle de professionalisme: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_military_academy_01_desc: "Une école militaire où sont formés les officiers et dirigeants de nos armées permettra de diffuser les meilleures techniques dans les régiments, d'augmenter la discipline et de mieux retenir les leçons des victoires ou défaites\n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Réserves militaires brutes d'au moins 7\n\n§MChaque niveau apporte:§!\n  - Déclin annuel de la tradition terrestre: §G-2.0%§!\n  - Tradition terrestre tirée des batailles: §G+2.0%§!\n  - Entraînement des troupes: §G+2.0%§!\n  - Perte annuelle de professionalisme: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_military_academy_02: "Académie militaire II"
  building_military_academy_02_desc: "Amélioration de l'académie militaire"
  building_military_academy_03: "Académie militaire III"
@@ -40,7 +40,7 @@
  building_military_academy_10_desc: "Amélioration de l'académie militaire"
 
  building_precision_workshop_01: "Atelier de précision I"
- building_precision_workshop_01_desc: "La volonté d'améliorer la fiabilité et les performances de l'armement, tout en réduisant son coût, amène à optimiser les pièces qui le composent en les rendant standard et interchangeables. La production devient alors industrielle et permet de soutenir les importantes armées. On arrive ainsi à diminuer le coût de maintenance d'une armée et ses pertes peuvent être renforcées plus vite \n\nChaque niveau apporte:\n  - Coût de renforcement: §G-2.0%§!\n  - Vitesse de renforcement: §G+2.0%§!\n  - Modif. d'entretien terrestre! §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_precision_workshop_01_desc: "La volonté d'améliorer la fiabilité et les performances de l'armement, tout en réduisant son coût, amène à optimiser les pièces qui le composent en les rendant standard et interchangeables. La production devient alors industrielle et permet de soutenir les importantes armées. On arrive ainsi à diminuer le coût de maintenance d'une armée et ses pertes peuvent être renforcées plus vite \n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Production de base d'au moins 7\n\n§MChaque niveau apporte:§!\n  - Coût de renforcement: §G-2.0%§!\n  - Vitesse de renforcement: §G+2.0%§!\n  - Modif. d'entretien terrestre! §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_precision_workshop_02: "Atelier de précision II"
  building_precision_workshop_02_desc: "Amélioration de l'atelier de précision"
  building_precision_workshop_03: "Atelier de précision III"
@@ -61,7 +61,7 @@
  building_precision_workshop_10_desc: "Amélioration de l'atelier de précision"
 
  building_embassy_01: "Ambassade I"
- building_embassy_01_desc: "A mesure que les frontières du monde s'étendent, il est plus que jamais nécessaire de savoir co-exister avec d'autres nations ... et de savoir s'en protéger. \n\n§RCondition§! : Doit se trouver dans la capitale \n\nChaque niveau apporte:\n  - Déclin du prestige: §G-2.0%§!\n  - Impact sur relation diplomatique quand espion découvert: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_embassy_01_desc: "A mesure que les frontières du monde s'étendent, il est plus que jamais nécessaire de savoir co-exister avec d'autres nations ... et de savoir s'en protéger. \n\n§MConditions de la province:§!\n  - Est la capitale\n  - Appartient à un état\n  - Dévelopement d'au moins 12\n  - Est prospère\n\n§MChaque niveau apporte:§!\n  - Déclin du prestige: §G-2.0%§!\n  - Impact sur relation diplomatique quand espion découvert: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_embassy_02: "Ambassade II"
  building_embassy_02_desc: "Amélioration de l'ambassade"
  building_embassy_03: "Ambassade III"
@@ -82,7 +82,7 @@
  building_embassy_10_desc: "Amélioration de l'ambassade"
 
  building_spy_center_01: "Centre d'espionnage I"
- building_spy_center_01_desc: "La diplomatie nécessite parfois de savoir récupérer des informations précieuses auprès des bons contacts, aux bons moments et dans les bons endroits. Le Centre d'espionnage forme les diplomates en leur apprenant toutes les techniques et subterfuges nécessaires \n\nChaque niveau apporte:\n  - Constit. de réseaux d'espionnage: §G+2.0%§!\n  - Efficacité du soutien aux rebelles: §G+2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_spy_center_01_desc: "La diplomatie nécessite parfois de savoir récupérer des informations précieuses auprès des bons contacts, aux bons moments et dans les bons endroits. Le Centre d'espionnage forme les diplomates en leur apprenant toutes les techniques et subterfuges nécessaires \n\n§MConditions de la province:§!\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Constit. de réseaux d'espionnage: §G+2.0%§!\n  - Efficacité du soutien aux rebelles: §G+2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_spy_center_02: "Centre d'espionnage II"
  building_spy_center_02_desc: "Amélioration du centre d'espionnage"
  building_spy_center_03: "Centre d'espionnage III"
@@ -103,7 +103,7 @@
  building_spy_center_10_desc: "Amélioration du centre d'espionnage"
 
  building_prime_ministry_01: "Ministère général I"
- building_prime_ministry_01_desc: "Alors que de plus en plus d'états sont intégrés à la nation, la décentralisation du pouvoir permet de renforcer l'éfficacité provinciale sans diminuer l'autorité de l'état \n\nChaque niveau apporte:\n  - Coût du développement: §G-5.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_prime_ministry_01_desc: "Alors que de plus en plus d'états sont intégrés à la nation, la décentralisation du pouvoir permet de renforcer l'éfficacité provinciale sans diminuer l'autorité de l'état \n\n§MConditions de la province:§!\n  - Dispose d'un siège au parlement\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Coût du développement: §G-5.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_prime_ministry_02: "Ministère général II"
  building_prime_ministry_02_desc: "Amélioration du ministrèe général"
  building_prime_ministry_03: "Ministère général III"
@@ -124,7 +124,7 @@
  building_prime_ministry_10_desc: "Amélioration du ministrèe général"
 
  building_observatory_01: "Observatoire I"
- building_observatory_01_desc: "Il suffit parfois de lever les yeux pour mieux comprendre notre place dans l'univers \n\nChaque niveau apporte:\n  - Coût des doctrines: §G-2.5%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_observatory_01_desc: "Il suffit parfois de lever les yeux pour mieux comprendre notre place dans l'univers \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Coût des doctrines: §G-2.5%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_observatory_02: "Observatoire II"
  building_observatory_02_desc: "Amélioration de l'observatoire"
  building_observatory_03: "Observatoire III"
@@ -145,7 +145,7 @@
  building_observatory_10_desc: "Amélioration de l'observatoire"
 
  building_laboratory_01: "Laboratoire I"
- building_laboratory_01_desc: "Les unes après les autres, les expériences menées en laboratoire confirment que la méthode empirique reste le vecteur principal de découvertes \n\nChaque niveau apporte:\n  - Coût des technologies: §G-2.0%§!\n - Coût du bâtiment: §R+2.0%§!\n"
+ building_laboratory_01_desc: "Les unes après les autres, les expériences menées en laboratoire confirment que la méthode empirique reste le vecteur principal de découvertes \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Coût des technologies: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_laboratory_02: "Laboratoire II"
  building_laboratory_02_desc: "Amélioration du laboratoire"
  building_laboratory_03: "Laboratoire III"
@@ -168,27 +168,21 @@
  #                        =====================================================================
  #                        ======================        Decisions        ======================
  #                        =====================================================================
- reduce_nobles_influence_title: "--- Réduire l'influence des nobles"
- reduce_nobles_influence_desc: "Faire une démonstration de force afin de réduire l'influence dont dispose la faction"
- reduce_church_influence_title: "--- Réduire l'influence des prêtres"
- reduce_church_influence_desc: "Faire une démonstration de force afin de réduire l'influence dont dispose la faction"
- reduce_burghers_influence_title: "--- Réduire l'influence des bourgeois"
- reduce_burghers_influence_desc: "Faire une démonstration de force afin de réduire l'influence dont dispose la faction"
  reduce_development_costs_title: "--- Aide au développement"
  reduce_development_costs_desc: "Le principal problème n'est parfois pas d'avoir les ressources mais d'être capable de les dépenser ; le développement des provinces est facilité par un investissement plus important en ducat"
  create_officers_school_title:  "--- Créer une école d'officiers"
  create_officers_school_desc: "La professionalisation et la taille de nos armées poussent à uniformiser l'encadrement des troupes. \n Les stratégies, tactiques et ordres doivent pouvoir être transmis de la même façon à toutes les unités, terrestres ou navales, dans toutes les régions sous notre contrôle.\nCependant, diluer le pouvoir militaire parmis des gens du commun risquera de déplaire aux nobles"
- abandon_officers_school_title: "--- Revenir sur l'école d'officiers"
- abandon_officers_school_desc: "L'expérience n'a pas été concluante ; le savoir dispensé dans l'école n'aura pas réussi à se diffuser dans les armées alors que la cohérence, avant assurée par les nobles, s'est perdue. Il nous faut abandonner l'idée"
+
+
  siege_artillery_title: "--- Axer notre artillerie sur le siège"
  siege_artillery_desc: "L'invasion de nos ennemis passera par l'éffondrement de leurs défenses. Boulets explosifs, canon rayés et munitions plus lourdes nous permettront de percer toutes les murailles"
  combat_artillery_title: "--- Axer notre artillerie sur le combat"
  combat_artillery_desc: "L'invasion de nos ennemis passera par l'éffondrement de leurs armées. Les boulets creux d'Henry Shrapnel nous permettront d'infliger de très importantes pertes à l'ennemi"
- army_base_units_division_title: "--- Adopter le système divisionaire"
- army_base_units_division_desc: "Augmenter la taille des unités combattantes, en mutualisant les compagnies de support, de soutien et d'intendance permettra l'émergence de nouvelles stratégie, à l'échelle bien plus ambitieuse et augmentera la combativité de nos armées"
- align_army_ranks_and_medals_title: "--- Institutionaliser la promotion et les décorations militaires"
+
+ align_army_ranks_and_medals_title: "--- Rangs et médailles"
  align_army_ranks_and_medals_desc: "S'il est donné, à tout soldat, la possibilité de gravir les échelons, nous aurons, sous peu, des officiers sortis du rang pleinement capables d'assurer l'encadrement des troupes et d'améliorer nos résultats tactiques. Tandis que récompenser la combativité par des décorations et médailles fournira le supplément nécessaire pour surpasser nos ennemis durant la bataille"
- improve_defenses_title: "--- Renforcer nos défenses" 
+
+ improve_defenses_title: "--- Renforcer nos défenses"
  improve_defenses_desc: "Rendre nos forts plus robustes, mieux construits, mieux placés et plus garnis en hommes nous permettra de tenir les positions clefs dans nos futurs conflits"
  # -------------------------
  assist_advisor_natural_scientist_title: "--- Assister §Y[Root.Adm_Advisor.GetName]§!"
@@ -441,20 +435,26 @@
  desc_efficient_privateers_country_modifier: "Un pavillon plutôt qu'un autre ? Quelle différence ? Pourvu que le butin soit conséquent !"
  trade_steering_country_modifier: "Les marins font de bons marchands"
  desc_trade_steering_country_modifier: "Il y a toujours quelque chose à échanger dans un port ; une marchandise sans valeur quelque part peut très bien valoir une fortune à l'autre bout du monde. Naviguer : n'est-ce pas l'essence du commerce ?"
- officers_school_country_modifier: "Ecole d'officiers"
- desc_officers_school_country_modifier: ""
  siege_artillery_country_modifier: "Artillerie de siège"
  desc_siege_artillery_country_modifier: "Nous avons axé notre artillerie pour le siège plutôt que le combat"
  combat_artillery_country_modifier: "Artillerie de combat"
  desc_combat_artillery_country_modifier: "Nous avons axé notre artillerie pour le combat plutôt que le siège"
- army_base_units_division_country_modifier: "Système divisionaire"
- desc_army_base_units_division_country_modifier: "Les armées sont organisées en divisions plutôt qu'en régiments"
  align_army_ranks_and_medals_country_modifier: "Grades et médailles"
  desc_align_army_ranks_and_medals_country_modifier: "Nos soldats savent que leur efficacité au combat sera récompensée"
  improve_defenses_country_modifier: "Défenses renforcées"
  desc_improve_defenses_country_modifier: "Il sera plus difficile, pour nos ennemis, de nous atteindre"
  increased_estate_influence: "Nous avons accordé des avantages à cette faction augmentant, de fait, son influence"
- 
+
+ #                        =============================================================================
+ #                        ======================        Province modifiers        ======================
+ #                        =============================================================================
+ province_prosperity_free_base_tax_modifier: "Prospérité accelerée : A"
+ desc_province_prosperity_free_base_tax_modifier: "La prospérité de l'état §R[This.GetAreaName]§! a permis à §C[This.GetName]§! de bénéficier d'une hausse "
+ province_prosperity_free_base_production_modifier: "Prospérité accelerée : B"
+ desc_province_prosperity_free_base_production_modifier: "DESC"
+ province_prosperity_free_base_manpower_modifier: "Prospérité accelerée : C"
+ desc_province_prosperity_free_base_manpower_modifier: "DESC"
+
  #                        ======================================================================
  #                        ======================          Events          ======================
  #                        ======================================================================
@@ -500,7 +500,7 @@
  SLMod_events_nobility_disaster_namespace.1.z.tooltip: "==> Si le pays est en guerre : §R+2§! de lassitude de guerre \n==> Si l'avancée vers le désastre \"§YCoup d'Etat nobilitaire§!\" est inférieure à §Y50§! : §R+5§! d'avancée pour ce désastre \n ---------------------------"
  
  SLMod_events_prosperity_namespace.1.title: "Prospérité d'une province"
- SLMod_events_prosperity_namespace.1.desc: "L'état de §R[This.GetAreaName]§! jouit actuellement d'une période de prospérité dont les effets, pour les habitants de §B[This.GetName]§! sont particulièrement visibles : nous avons l'opportunité de pouvoir investir dans cette province"
+ SLMod_events_prosperity_namespace.1.desc: "L'état de §R[This.GetAreaName]§! jouit actuellement d'une période de prospérité dont les effets, pour les habitants de §C[This.GetName]§! sont particulièrement visibles : nous avons l'opportunité de pouvoir investir dans cette province"
  SLMod_events_prosperity_namespace.1.a: "Augmenter la valeur fiscale"
  SLMod_events_prosperity_namespace.1.b: "Augmenter la production"
  SLMod_events_prosperity_namespace.1.c: "Augmenter les réserves militaires"

@@ -3,8 +3,13 @@ precision_workshop_01 = {
 	time = 6
 	one_per_country = yes
 	
-	trigger = {
-		is_in_capital_area = yes
+	build_trigger = {
+		NOT = {
+            has_global_flag = precision_workshop_flag
+        }
+        is_state = yes
+        num_free_building_slots = 1
+        base_production = 7
 	}
 	
 	ai_will_do = {
@@ -40,10 +45,6 @@ precision_workshop_02 = {
 	one_per_country = yes
 	make_obsolete = precision_workshop_01
 	
-	trigger = {
-		is_in_capital_area = yes
-	}
-	
 	ai_will_do = {
 		factor = 1
 	}
@@ -74,10 +75,6 @@ precision_workshop_03 = {
 	time = 8
 	one_per_country = yes
 	make_obsolete = precision_workshop_02
-	
-	trigger = {
-		is_in_capital_area = yes
-	}
 	
 	ai_will_do = {
 		factor = 1
@@ -111,10 +108,6 @@ precision_workshop_04 = {
 	time = 9
 	one_per_country = yes
 	make_obsolete = precision_workshop_03
-	
-	trigger = {
-		is_in_capital_area = yes
-	}	
 	
 	ai_will_do = {
 		factor = 1
@@ -150,10 +143,6 @@ precision_workshop_05 = {
 	time = 10
 	one_per_country = yes
 	make_obsolete = precision_workshop_04
-	
-	trigger = {
-		is_in_capital_area = yes
-	}
 	
 	ai_will_do = {
 		factor = 1
@@ -191,10 +180,6 @@ precision_workshop_06 = {
 	time = 11
 	one_per_country = yes
 	make_obsolete = precision_workshop_05
-	
-	trigger = {
-		is_in_capital_area = yes
-	}
 	
 	ai_will_do = {
 		factor = 1
@@ -234,10 +219,6 @@ precision_workshop_07 = {
 	time = 12
 	one_per_country = yes
 	make_obsolete = precision_workshop_06
-	
-	trigger = {
-		is_in_capital_area = yes
-	}
 	
 	ai_will_do = {
 		factor = 1
@@ -279,10 +260,6 @@ precision_workshop_08 = {
 	time = 13
 	one_per_country = yes
 	make_obsolete = precision_workshop_07
-	
-	trigger = {
-		is_in_capital_area = yes
-	}
 	
 	ai_will_do = {
 		factor = 1
@@ -326,10 +303,6 @@ precision_workshop_09 = {
 	time = 14
 	one_per_country = yes
 	make_obsolete = precision_workshop_08
-	
-	trigger = {
-		is_in_capital_area = yes
-	}	
 	
 	ai_will_do = {
 		factor = 1
@@ -375,10 +348,6 @@ precision_workshop_10 = {
 	time = 15
 	one_per_country = yes
 	make_obsolete = precision_workshop_09
-		
-	trigger = {
-		is_in_capital_area = yes
-	}
 	
 	ai_will_do = {
 		factor = 1

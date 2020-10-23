@@ -7,10 +7,12 @@ spy_center_01 = {
 		factor = 1
 	}
 	
-	trigger = {
+	build_trigger = {
 		NOT = {
 			has_global_flag = spy_center_flag
 		}
+		is_state = yes
+		num_free_building_slots = 1
 	}
 	
 	on_built = {

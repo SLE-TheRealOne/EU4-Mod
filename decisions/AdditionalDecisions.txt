@@ -1,62 +1,10 @@
 country_decisions = {
 	
-	reduce_church_influence = {
-		allow = {
-			manpower = 50
-			estate_influence = {
-				estate = estate_church
-				influence = 50
-			}
-		}
-		
-		effect = {
-			add_manpower = -50
-			add_estate_influence_modifier = {
-				estate = estate_church
-				desc = reduce_influence_effect
-				influence = -10
-				duration = 1095
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	reduce_burghers_influence = {
-		allow = {
-			manpower = 50
-			estate_influence = {
-				estate = estate_burghers
-				influence = 50
-			}
-		}
-		
-		effect = {
-			add_manpower = -50
-			add_estate_influence_modifier = {
-				estate = estate_burghers
-				desc = reduce_influence_effect
-				influence = -10
-				duration = 1095
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -2
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	reduce_development_costs = {
+		potential = {
+		    NOT = { has_country_modifier = reduce_development_costs_country_modifier }
+		}
+
 		allow = {
 			stability = 2
 			NOT = { inflation = 3 }
@@ -65,7 +13,7 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = reduce_development_costs_country_modifier
-				duration = -1
+				duration = 3650
 				hidden = no
 			}
 		}
@@ -74,55 +22,25 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	create_officers_school = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
 			NOT = { has_country_modifier = officers_school_country_modifier }
 		}
-		
+
 		allow = {
-			full_idea_group = innovativeness_ideas
-			army_professionalism = 0.75
-			army_size = 220
+			army_professionalism = 0.60
 		}
-				
+
 		effect = {
 			add_country_modifier = {
 				name = officers_school_country_modifier
 				duration = -1
 				hidden = no
 			}
-			add_estate_loyalty = {
-				estate = estate_nobility
-				loyalty = -10
-			}
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	abandon_officers_school = {
-		potential = {
-			has_dlc = "Cradle of Civilization"
-			has_country_modifier = officers_school_country_modifier
-		}
-		
-		allow = {
-			has_country_modifier = officers_school_country_modifier
-		}
-		
-		effect = {
-			add_army_professionalism = -0.25
-			remove_country_modifier = officers_school_country_modifier
-			add_estate_loyalty = {
-				estate = estate_nobility
-				loyalty = 2
-			}
-		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -135,15 +53,13 @@ country_decisions = {
 		}
 		
 		allow = {
-			NOT = { has_country_modifier = siege_artillery_country_modifier }
-			NOT = { has_country_modifier = combat_artillery_country_modifier }
-			full_idea_group = offensive_ideas
+            artillery_fraction = 0.15
 		}
 		
 		effect = {
 			add_country_modifier = {
 				name = siege_artillery_country_modifier
-				duration = -1
+				duration = 3650
 				hidden = no
 			}
 		}
@@ -159,43 +75,14 @@ country_decisions = {
 			NOT = { has_country_modifier = combat_artillery_country_modifier }
 		}
 		
-		allow = {
-			NOT = { has_country_modifier = siege_artillery_country_modifier }
-			NOT = { has_country_modifier = combat_artillery_country_modifier }
-			full_idea_group = quantity_ideas
+        allow = {
+            artillery_fraction = 0.15
 		}
 		
 		effect = {
 			add_country_modifier = {
 				name = combat_artillery_country_modifier
-				duration = -1
-				hidden = no
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	army_base_units_division = {
-		potential = {
-			NOT = { has_country_modifier = army_base_units_country_modifier }
-		}
-		
-		allow = {
-			OR = {
-				advisor = army_organiser
-				advisor = army_reformer
-			}
-			NOT = { has_country_modifier = army_base_units_country_modifier }
-			full_idea_group = quality_ideas
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = army_base_units_country_modifier
-				duration = -1
+				duration = 3650
 				hidden = no
 			}
 		}
@@ -215,8 +102,8 @@ country_decisions = {
 				advisor = army_organiser
 				advisor = army_reformer
 			}
-			NOT = { has_country_modifier = align_army_ranks_and_medals_country_modifier }
-			full_idea_group = aristocracy_ideas
+			army_professionalism = 0.3
+			army_tradition = 20
 		}
 		
 		effect = {
@@ -236,10 +123,11 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = improve_defenses_country_modifier }
 		}
-		
+
 		allow = {
-			full_idea_group = defensive_ideas
-			NOT = { has_country_modifier = improve_defenses_country_modifier }
+		    any_province = {
+		        fort_level = 3
+		    }
 		}
 		
 		effect = {
@@ -254,4 +142,27 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+    raise_discipline = {
+        potential = {
+            NOT = { has_country_modifier = raise_discipline_country_modifier }
+        }
+
+        allow = {
+            army_size_percentage = 0.90
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = raise_discipline_country_modifier
+                duration = 730
+                hidden = no
+            }
+            add_yearly_manpower = -0.32
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
 }

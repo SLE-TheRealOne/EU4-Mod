@@ -3,10 +3,13 @@ observatory_01 = {
 	time = 6
 	one_per_country = yes
 	
-	trigger = {
+	build_trigger = {
 		NOT = {
 			has_global_flag = observatory_flag
 		}
+		is_prosperous = yes
+		is_state = yes
+		num_free_building_slots = 1
 	}
 	
 	ai_will_do = {

@@ -10,9 +10,11 @@ province_event = {
 	trigger = {
 		is_prosperous = yes
 	}
+
+	is_mtth_scaled_to_size = 1
 	
 	mean_time_to_happen = {
-		days = 730
+		months = 120
 		
 		# Stability modifiers ==> Max 6 months (either negative or positive)
 		modifier = {
@@ -56,13 +58,25 @@ province_event = {
 	option = {
 		name = SLMod_events_prosperity_namespace.1.a
 		add_base_tax = 1
+        add_province_modifier = {
+            name = "province_prosperity_free_base_tax_modifier"
+            duration = 365
+        }
 	}
 	option = {
 		name = SLMod_events_prosperity_namespace.1.b
 		add_base_production = 1
+		add_province_modifier = {
+            name = "province_prosperity_free_base_production_modifier"
+            duration = 365
+        }
 	}
 	option = {
 		name = SLMod_events_prosperity_namespace.1.c
 		add_base_manpower = 1
+		add_province_modifier = {
+            name = "province_prosperity_free_base_manpower_modifier"
+            duration = 365
+        }
 	}
 }

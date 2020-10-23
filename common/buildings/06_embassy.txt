@@ -3,13 +3,15 @@ embassy_01 = {
 	time = 6
 	one_per_country = yes
 	
-	trigger = {
-		AND = {
-			is_capital = yes
-			NOT = {
-				has_global_flag = embassy_flag
-			}
-		}
+	build_trigger = {
+        is_capital = yes
+        NOT = {
+            has_global_flag = embassy_flag
+        }
+        development = 12
+        is_state = yes
+        num_free_building_slots = 1
+        is_prosperous = yes
 	}
 	
 	ai_will_do = {

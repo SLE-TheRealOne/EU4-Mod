@@ -6,7 +6,16 @@ military_academy_01 = {
 	ai_will_do = {
 		factor = 1
 	}
-	
+
+	build_trigger = {
+        NOT = {
+            has_global_flag = military_academy_flag
+        }
+        is_state = yes
+        base_manpower = 7
+        num_free_building_slots = 1
+    }
+
 	on_built = {
 		owner = {
 			add_country_modifier = {
