@@ -8,7 +8,6 @@ precision_workshop_01 = {
             has_global_flag = precision_workshop_flag
         }
         is_state = yes
-        num_free_building_slots = 1
         base_production = 7
 	}
 	

@@ -13,7 +13,6 @@ military_academy_01 = {
         }
         is_state = yes
         base_manpower = 7
-        num_free_building_slots = 1
     }
 
 	on_built = {

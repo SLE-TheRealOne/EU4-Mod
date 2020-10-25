@@ -1,0 +1,31 @@
+# Also happens when advisor dies
+on_post_adm_advisor_fired = {
+    remove_country_modifier = assist_advisor_natural_scientist_country_modifier
+    remove_country_modifier = assist_advisor_philosopher_country_modifier
+    remove_country_modifier = assist_advisor_artist_country_modifier
+    remove_country_modifier = assist_advisor_theologian_country_modifier
+    remove_country_modifier = assist_advisor_treasurer_country_modifier
+    remove_country_modifier = assist_advisor_master_of_mint_country_modifier
+    remove_country_modifier = assist_advisor_inquisitor_country_modifier
+}
+
+# Also happens when advisor dies
+on_post_dip_advisor_fired = {
+    remove_country_modifier = assist_advisor_spymaster_country_modifier
+    remove_country_modifier = assist_advisor_naval_reformer_country_modifier
+    remove_country_modifier = assist_advisor_trader_country_modifier
+    remove_country_modifier = assist_advisor_colonial_governor_country_modifier
+    remove_country_modifier = assist_advisor_diplomat_country_modifier
+    remove_country_modifier = assist_advisor_navigator_country_modifier
+}
+
+# Also happens when advisor dies
+on_post_mil_advisor_fired = {
+    remove_country_modifier = assist_advisor_commandant_country_modifier
+    remove_country_modifier = assist_advisor_army_reformer_country_modifier
+    remove_country_modifier = assist_advisor_army_organiser_country_modifier
+    remove_country_modifier = assist_advisor_quartermaster_country_modifier
+    remove_country_modifier = assist_advisor_recruitmaster_country_modifier
+    remove_country_modifier = assist_advisor_fortification_expert_country_modifier
+    remove_country_modifier = assist_advisor_grand_captain_country_modifier
+}

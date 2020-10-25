@@ -1,0 +1,65 @@
+# --------------------------------------------
+assist_advisor_natural_scientist_country_modifier = {
+	production_efficiency = 0.02
+}
+assist_advisor_philosopher_country_modifier = {
+	prestige = 0.2
+}
+assist_advisor_artist_country_modifier = {
+	stability_cost_modifier = -0.02
+}
+assist_advisor_theologian_country_modifier = {
+	global_unrest = -0.2
+}
+assist_advisor_treasurer_country_modifier = {
+	global_tax_modifier = 0.02
+}
+assist_advisor_master_of_mint_country_modifier = {
+	inflation_reduction = 0.02
+}
+assist_advisor_inquisitor_country_modifier = {
+	global_missionary_strength = 0.004
+}
+
+# --------------------------------------------
+assist_advisor_spymaster_country_modifier = {
+	spy_offence = 0.05
+}
+assist_advisor_naval_reformer_country_modifier = {
+	naval_morale = 0.02
+}
+assist_advisor_trader_country_modifier = {
+	trade_efficiency = 0.02
+}
+assist_advisor_colonial_governor_country_modifier = {
+	global_tariffs = 0.02
+}
+assist_advisor_diplomat_country_modifier = {
+	improve_relation_modifier = 0.04
+}
+assist_advisor_navigator_country_modifier = {
+	range = 0.04
+}
+
+# --------------------------------------------
+assist_advisor_commandant_country_modifier = {
+	discipline = 0.01
+}
+assist_advisor_army_reformer_country_modifier = {
+	land_morale = 0.02
+}
+assist_advisor_army_organiser_country_modifier = {
+	land_forcelimit_modifier = 0.02
+}
+assist_advisor_quartermaster_country_modifier = {
+	reinforce_speed = 0.07
+}
+assist_advisor_recruitmaster_country_modifier = {
+	global_manpower_modifier = 0.02
+}
+assist_advisor_fortification_expert_country_modifier = {
+	defensiveness = 0.04
+}
+assist_advisor_grand_captain_country_modifier = {
+	land_maintenance_modifier = -0.02
+}

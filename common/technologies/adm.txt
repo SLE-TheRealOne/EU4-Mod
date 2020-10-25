@@ -129,7 +129,6 @@ technology = { #Textile Manufactory
 	#Textile Manufactory
 	textile = yes
     observatory_04 = yes
-    trading_post_01 = yes
 }
 
 technology = { #Early Modern Administration
@@ -189,7 +188,6 @@ technology = { #University
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1
 	observatory_06 = yes
-	trading_post_02 = yes
 }
 
 technology = { #National Sovereignty
@@ -247,7 +245,6 @@ technology = { #Measuring the World
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1
 	observatory_08 = yes
-	trading_post_03 = yes
 }
 
 technology = { #Bonds and Tontines

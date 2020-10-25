@@ -9,7 +9,7 @@ observatory_01 = {
 		}
 		is_prosperous = yes
 		is_state = yes
-		num_free_building_slots = 1
+		has_terrain = mountain
 	}
 	
 	ai_will_do = {

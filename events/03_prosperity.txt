@@ -5,10 +5,15 @@ province_event = {
 	id = SLMod_events_prosperity_namespace.1
 	title = SLMod_events_prosperity_namespace.1.title
 	desc = SLMod_events_prosperity_namespace.1.desc
-	picture = CITY_DEVELOPMENT_eventPicture
+	picture = FEAST_eventPicture
 	
 	trigger = {
 		is_prosperous = yes
+		NOT = {
+		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_tax
+		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_production
+		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_manpower
+		}
 	}
 
 	is_mtth_scaled_to_size = 1
@@ -59,7 +64,7 @@ province_event = {
 		name = SLMod_events_prosperity_namespace.1.a
 		add_base_tax = 1
         add_province_modifier = {
-            name = "province_prosperity_free_base_tax_modifier"
+            name = "SLMod_province_modifier_prosperity_free_base_tax"
             duration = 365
         }
 	}
@@ -67,7 +72,7 @@ province_event = {
 		name = SLMod_events_prosperity_namespace.1.b
 		add_base_production = 1
 		add_province_modifier = {
-            name = "province_prosperity_free_base_production_modifier"
+            name = "SLMod_province_modifier_prosperity_free_base_production"
             duration = 365
         }
 	}
@@ -75,7 +80,7 @@ province_event = {
 		name = SLMod_events_prosperity_namespace.1.c
 		add_base_manpower = 1
 		add_province_modifier = {
-            name = "province_prosperity_free_base_manpower_modifier"
+            name = "SLMod_province_modifier_prosperity_free_base_manpower"
             duration = 365
         }
 	}

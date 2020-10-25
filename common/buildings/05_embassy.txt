@@ -10,7 +10,6 @@ embassy_01 = {
         }
         development = 12
         is_state = yes
-        num_free_building_slots = 1
         is_prosperous = yes
 	}
 	

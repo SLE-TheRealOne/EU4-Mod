@@ -1,182 +1,33 @@
-#    ===== Crowded navy =====
-efficient_privateers_country_modifier = {
-	privateer_efficiency = 0.15
-}
-trade_steering_country_modifier = {
-	trade_steering = 0.15
-}
-crowded_navy_country_modifier = {
-	naval_attrition = 0.15
-	navy_tradition_decay = 0.05
-}
-slow_navy_tradition_decay_country_modifier = {
-	navy_tradition_decay = -0.015
-}
-
-#    ===== Crowded army =====
-crowded_army_country_modifier = {
-	discipline = -0.15
-	land_attrition = -0.10
-	army_tradition_decay = -0.10
-}
-condottieri_raise_country_modifier = {
-	possible_condottieri = 0.1
-}
-
-#    ===== Decisions =====
-reduce_development_costs_country_modifier = {
-	inflation_reduction = -0.30
-	development_cost = -0.10
-	global_tax_modifier = -0.10
-}
-siege_artillery_country_modifier = {
-	artillery_bonus_vs_fort = 1
-	siege_blockade_progress = 1
-	siege_ability = 0.15
-	artillery_power = -0.15
-    backrow_artillery_damage = -0.15
-}
-combat_artillery_country_modifier = {
-	artillery_power = 0.15
-	backrow_artillery_damage = 0.15
-	siege_ability = -0.15
-}
-officers_school_country_modifier = {
-	drill_gain_modifier = 0.1
-	drill_decay_modifier = -0.1
-	yearly_army_professionalism = 0.1
-}
-align_army_ranks_and_medals_country_modifier = {
-	army_tradition_from_battle = 0.1
-	land_morale = 0.1
-	recover_army_morale_speed = 0.1
-}
-improve_defenses_country_modifier = {
-	defensiveness = 0.20
-	fort_maintenance_modifier = 0.20
-	garrison_size = 0.20
-}
-
-raise_discipline_country_modifier = {
-    discipline = 0.01
-    army_tradition_from_battle = 0.15
-    army_tradition_decay = -0.01
-}
-
-# --------------------------------------------
-assist_advisor_natural_scientist_country_modifier = {
-	production_efficiency = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_philosopher_country_modifier = {
-	prestige = 0.2
-	advisor_cost = 0.1
-}
-assist_advisor_artist_country_modifier = {
-	stability_cost_modifier = -0.02
-	advisor_cost = 0.1
-}
-assist_advisor_theologian_country_modifier = {
-	global_unrest = -0.2
-	advisor_cost = 0.1
-}
-assist_advisor_treasurer_country_modifier = {
-	global_tax_modifier = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_master_of_mint_country_modifier = {
-	inflation_reduction = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_inquisitor_country_modifier = {
-	global_missionary_strength = 0.004
-	advisor_cost = 0.1
-}
-# --------------------------------------------
-assist_advisor_spymaster_country_modifier = {
-	spy_offence = 0.05
-	advisor_cost = 0.1
-}
-assist_advisor_naval_reformer_country_modifier = {
-	naval_morale = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_trader_country_modifier = {
-	trade_efficiency = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_colonial_governor_country_modifier = {
-	global_tariffs = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_diplomat_country_modifier = {
-	improve_relation_modifier = 0.04
-	advisor_cost = 0.1
-}
-assist_advisor_navigator_country_modifier = {
-	range = 0.04
-	advisor_cost = 0.1
-}
-# --------------------------------------------
-assist_advisor_commandant_country_modifier = {
-	discipline = 0.01
-	advisor_cost = 0.1
-}
-assist_advisor_army_reformer_country_modifier = {
-	land_morale = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_army_organiser_country_modifier = {
-	land_forcelimit_modifier = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_quartermaster_country_modifier = {
-	reinforce_speed = 0.07
-	advisor_cost = 0.1
-}
-assist_advisor_recruitmaster_country_modifier = {
-	global_manpower_modifier = 0.02
-	advisor_cost = 0.1
-}
-assist_advisor_fortification_expert_country_modifier = {
-	defensiveness = 0.04
-	advisor_cost = 0.1
-}
-assist_advisor_grand_captain_country_modifier = {
-	land_maintenance_modifier = -0.02
-	advisor_cost = 0.1
-}
-
 #    ===== Prime ministry =====
 prime_ministry_01_country_modifier = {
-	development_cost = -0.05
+	development_cost = -0.02
 }
 prime_ministry_02_country_modifier = {
-	development_cost = -0.10
+	development_cost = -0.04
 }
 prime_ministry_03_country_modifier = {
-	development_cost = -0.15
+	development_cost = -0.06
 }
 prime_ministry_04_country_modifier = {
-	development_cost = -0.20
+	development_cost = -0.08
 }
 prime_ministry_05_country_modifier = {
-	development_cost = -0.25
+	development_cost = -0.10
 }
 prime_ministry_06_country_modifier = {
-	development_cost = -0.30
+	development_cost = -0.12
 }
 prime_ministry_07_country_modifier = {
-	development_cost = -0.35
+	development_cost = -0.14
 }
 prime_ministry_08_country_modifier = {
-	development_cost = -0.40
+	development_cost = -0.16
 }
 prime_ministry_09_country_modifier = {
-	development_cost = -0.45
+	development_cost = -0.18
 }
 prime_ministry_10_country_modifier = {
-	development_cost = -0.50
+	development_cost = -0.20
 }
 
 #   ===== Embassy =====

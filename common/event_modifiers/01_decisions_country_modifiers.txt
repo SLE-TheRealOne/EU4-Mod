@@ -1,0 +1,38 @@
+reduce_development_costs_country_modifier = {
+	inflation_reduction = -0.30
+	development_cost = -0.10
+	global_tax_modifier = -0.10
+}
+siege_artillery_country_modifier = {
+	artillery_bonus_vs_fort = 1
+	siege_blockade_progress = 1
+	siege_ability = 0.15
+	artillery_power = -0.15
+    backrow_artillery_damage = -0.15
+}
+combat_artillery_country_modifier = {
+	artillery_power = 0.15
+	backrow_artillery_damage = 0.15
+	siege_ability = -0.15
+}
+officers_school_country_modifier = {
+	drill_gain_modifier = 0.1
+	drill_decay_modifier = -0.1
+	yearly_army_professionalism = 0.1
+}
+align_army_ranks_and_medals_country_modifier = {
+	army_tradition_from_battle = 0.1
+	land_morale = 0.1
+	recover_army_morale_speed = 0.1
+}
+improve_defenses_country_modifier = {
+	defensiveness = 0.20
+	fort_maintenance_modifier = 0.20
+	garrison_size = 0.20
+}
+
+raise_discipline_country_modifier = {
+    discipline = 0.01
+    army_tradition_from_battle = 0.15
+    army_tradition_decay = -0.01
+}

@@ -96,7 +96,7 @@ technology = {
 	land_morale = 	0.5
 	military_tactics 	= 	0.25
 
-	military_academy_01
+	military_academy_01 = yes
 }
 
 technology = {

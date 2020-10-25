@@ -1,0 +1,24 @@
+efficient_privateers_country_modifier = {
+	privateer_efficiency = 0.15
+}
+
+trade_steering_country_modifier = {
+	trade_steering = 0.15
+}
+
+crowded_navy_country_modifier = {
+	naval_attrition = 0.15
+	navy_tradition_decay = 0.05
+}
+
+slow_navy_tradition_decay_country_modifier = {
+	navy_tradition_decay = -0.015
+}
+
+SLMod_country_modifiers_condottieri_raise_personality = {
+	possible_condottieri = 0.3
+}
+
+SLMod_country_modifiers_condottieri_raise_light = {
+    possible_condottieri = 0.15
+}

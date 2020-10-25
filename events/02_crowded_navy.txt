@@ -5,7 +5,7 @@ country_event = {
 	id = SLMod_events_crowded_navy_namespace.1
 	title = SLMod_events_crowded_navy_namespace.1.title
 	desc = SLMod_events_crowded_navy_namespace.1.desc
-	picture = CORRUPTION_eventPicture
+	picture = NAVAL_MILITARY_eventPicture
 	hidden = no
 
 	trigger = {
@@ -29,8 +29,8 @@ country_event = {
 			duration = 365
 			hidden = no
 		}
-		# Trade 15 months of sailors for 12 months of bonus
-		add_yearly_sailors = -1.25
+
+		add_yearly_sailors = -0.16
 	}
 	
 	# Boost navy tradition
@@ -48,24 +48,8 @@ country_event = {
 			duration = 365
 			hidden = no
 		}
-		
-		# Trade 15 months of sailors for 12 months of bonus
-		add_yearly_sailors = -1.25
-	}
 
-	# Cycle them for manpower
-	option = {
-		name = SLMod_events_crowded_navy_namespace.1.c
-		
-		trigger = {
-			NOT = {
-				manpower_percentage = 50
-			}
-		}
-		
-		# Trade 12 months of sailors for 5 months of manpower
-		add_yearly_sailors = -1
-		add_yearly_manpower = 0.42
+		add_yearly_sailors = -0.16
 	}
 	
 	# Boost trade
@@ -74,7 +58,7 @@ country_event = {
 		
 		highlight = yes
 		trigger = {
-			personality = entrepreneur_personality
+			ruler_has_personality = entrepreneur_personality
 		}
 
 		add_country_modifier = {
@@ -82,9 +66,8 @@ country_event = {
 			duration = 365
 			hidden = no
 		}
-		
-		# Trade 15 months of sailors for 12 months of bonus
-		add_yearly_sailors = -1.25
+
+		add_yearly_sailors = -0.16
 	}
 	
 	# Default

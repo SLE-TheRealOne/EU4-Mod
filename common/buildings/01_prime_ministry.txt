@@ -1,6 +1,6 @@
 prime_ministry_01 = {
 	cost = 300
-	time = 5
+	time = 0
 	one_per_country = yes
 	
 	build_trigger = {
@@ -9,7 +9,6 @@ prime_ministry_01 = {
 		}
 		has_seat_in_parliament = yes
 		is_state = yes
-		num_free_building_slots = 1
 	}
 	
 	ai_will_do = {
@@ -24,6 +23,7 @@ prime_ministry_01 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
+			add_splendor = 1
 		}
 		# Used to have building location on country modifiers view
 		save_global_event_target_as = prime_ministry_location
@@ -37,15 +37,22 @@ prime_ministry_01 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+	on_obsolete = {
+	    owner = {
+            remove_country_modifier = prime_ministry_01_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+	}
 }
 
 prime_ministry_02 = {
-	cost = 306
-	time = 6
+	cost = 606
+	time = 0
 	make_obsolete = prime_ministry_01
 	
 	one_per_country = yes
-	
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -58,8 +65,7 @@ prime_ministry_02 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -69,15 +75,22 @@ prime_ministry_02 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = prime_ministry_02_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+    }
 }
 
 prime_ministry_03 = {
-	cost = 312
-	time = 7
+	cost = 918
+	time = 0
 	make_obsolete = prime_ministry_02
 	
 	one_per_country = yes
-	
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -90,10 +103,7 @@ prime_ministry_03 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = prime_ministry_02_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -103,13 +113,20 @@ prime_ministry_03 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = prime_ministry_03_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+    }
 }
 
 prime_ministry_04 = {
-	cost = 318
-	time = 8
+	cost = 1236
+	time = 0
 	make_obsolete = prime_ministry_03
-	
+
 	one_per_country = yes
 	
 	ai_will_do = {
@@ -124,12 +141,7 @@ prime_ministry_04 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = prime_ministry_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = prime_ministry_03_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -139,13 +151,20 @@ prime_ministry_04 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+    on_obsolete = {
+		owner = {
+			remove_country_modifier = prime_ministry_04_country_modifier
+		}
+		clr_global_flag = prime_ministry_flag
+	}
 }
 
 prime_ministry_05 = {
-	cost = 324
-	time = 9
+	cost = 1561
+	time = 09
 	make_obsolete = prime_ministry_04
-	
+
 	one_per_country = yes
 	
 	ai_will_do = {
@@ -160,14 +179,7 @@ prime_ministry_05 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = prime_ministry_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = prime_ministry_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = prime_ministry_04_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -177,10 +189,17 @@ prime_ministry_05 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+    on_obsolete = {
+        owner = {
+            remove_country_modifier = prime_ministry_05_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+    }
 }
 
 prime_ministry_06 = {
-	cost = 331
+	cost = 1892
 	time = 10
 	make_obsolete = prime_ministry_05
 	
@@ -198,16 +217,7 @@ prime_ministry_06 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = prime_ministry_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = prime_ministry_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = prime_ministry_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = prime_ministry_05_country_modifier
+            add_splendor = 1
 		}
 	}
 	
@@ -217,10 +227,17 @@ prime_ministry_06 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = prime_ministry_06_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+    }
 }
 
 prime_ministry_07 = {
-	cost = 337
+	cost = 2230
 	time = 11
 	make_obsolete = prime_ministry_06
 	
@@ -238,18 +255,7 @@ prime_ministry_07 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = prime_ministry_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = prime_ministry_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = prime_ministry_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = prime_ministry_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = prime_ministry_06_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -259,10 +265,17 @@ prime_ministry_07 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = prime_ministry_07_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+    }
 }
 
 prime_ministry_08 = {
-	cost = 344
+	cost = 2575
 	time = 12
 	make_obsolete = prime_ministry_07
 	
@@ -280,20 +293,7 @@ prime_ministry_08 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = prime_ministry_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = prime_ministry_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = prime_ministry_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = prime_ministry_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = prime_ministry_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = prime_ministry_07_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -303,10 +303,17 @@ prime_ministry_08 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = prime_ministry_08_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+    }
 }
 
 prime_ministry_09 = {
-	cost = 351
+	cost = 2926
 	time = 13
 	make_obsolete = prime_ministry_08
 	
@@ -324,22 +331,7 @@ prime_ministry_09 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = prime_ministry_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = prime_ministry_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = prime_ministry_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = prime_ministry_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = prime_ministry_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = prime_ministry_07_country_modifier
-			# Upgrade from level 8
-			remove_country_modifier = prime_ministry_08_country_modifier
+		    add_splendor = 1
 		}
 	}
 	
@@ -349,10 +341,17 @@ prime_ministry_09 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = prime_ministry_09_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+    }
 }
 
 prime_ministry_10 = {
-	cost = 358
+	cost = 3285
 	time = 14
 	make_obsolete = prime_ministry_09
 	
@@ -370,24 +369,7 @@ prime_ministry_10 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = prime_ministry_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = prime_ministry_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = prime_ministry_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = prime_ministry_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = prime_ministry_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = prime_ministry_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = prime_ministry_07_country_modifier
-			# Upgrade from level 8
-			remove_country_modifier = prime_ministry_08_country_modifier
-			# Upgrade from level 9
-			remove_country_modifier = prime_ministry_09_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -397,4 +379,11 @@ prime_ministry_10 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = prime_ministry_10_country_modifier
+        }
+        clr_global_flag = prime_ministry_flag
+    }
 }

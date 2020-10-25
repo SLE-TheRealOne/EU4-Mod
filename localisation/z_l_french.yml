@@ -2,22 +2,6 @@
  #                        =====================================================================
  #                        ======================        Buildings        ======================
  #                        =====================================================================
- building_trading_post_01: "Comptoir commercial I"
- building_trading_post_01_desc: "Produire, stocker, échanger : le Comptoir est un haut lieu du commerce où se retrouvent toutes celles et ceux qui aiment faire circuler les devises"
- building_trading_post_02: "Comptoir commercial II"
- building_trading_post_02_desc: "Amélioration du comptoir commercial"
- building_trading_post_03: "Comptoir commercial III"
- building_trading_post_03_desc: "Amélioration du comptoir commercial"
-
- building_grievances_center_01: "Centre de doléances I"
- building_grievances_center_01_desc: "Savoir écouter les plaintes, revendications et autres suppliques peut s'avérer payant lorsqu'on souhaite intégrer une province à l'empire"
- building_grievances_center_02: "Centre de doléances II"
- building_grievances_center_02_desc: "Amélioration du centre de doléances"
- building_grievances_center_03: "Centre de doléances III"
- building_grievances_center_03_desc: "Amélioration du centre de doléances"
-
- bannerText: "Bâtiments uniques"
- 
  building_military_academy_01: "Académie militaire I"
  building_military_academy_01_desc: "Une école militaire où sont formés les officiers et dirigeants de nos armées permettra de diffuser les meilleures techniques dans les régiments, d'augmenter la discipline et de mieux retenir les leçons des victoires ou défaites\n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Réserves militaires brutes d'au moins 7\n\n§MChaque niveau apporte:§!\n  - Déclin annuel de la tradition terrestre: §G-2.0%§!\n  - Tradition terrestre tirée des batailles: §G+2.0%§!\n  - Entraînement des troupes: §G+2.0%§!\n  - Perte annuelle de professionalisme: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_military_academy_02: "Académie militaire II"
@@ -103,7 +87,7 @@
  building_spy_center_10_desc: "Amélioration du centre d'espionnage"
 
  building_prime_ministry_01: "Ministère général I"
- building_prime_ministry_01_desc: "Alors que de plus en plus d'états sont intégrés à la nation, la décentralisation du pouvoir permet de renforcer l'éfficacité provinciale sans diminuer l'autorité de l'état \n\n§MConditions de la province:§!\n  - Dispose d'un siège au parlement\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Coût du développement: §G-5.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_prime_ministry_01_desc: "Alors que de plus en plus d'états sont intégrés à la nation, la décentralisation du pouvoir permet de renforcer l'éfficacité provinciale sans diminuer l'autorité de l'état \n\n§MConditions de la province:§!\n  - Dispose d'un siège au parlement\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Coût du développement: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_prime_ministry_02: "Ministère général II"
  building_prime_ministry_02_desc: "Amélioration du ministrèe général"
  building_prime_ministry_03: "Ministère général III"
@@ -124,7 +108,7 @@
  building_prime_ministry_10_desc: "Amélioration du ministrèe général"
 
  building_observatory_01: "Observatoire I"
- building_observatory_01_desc: "Il suffit parfois de lever les yeux pour mieux comprendre notre place dans l'univers \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Coût des doctrines: §G-2.5%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_observatory_01_desc: "Il suffit parfois de lever les yeux pour mieux comprendre notre place dans l'univers \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n  - Terrain : Montagnes\n\n§MChaque niveau apporte:§!\n  - Coût des doctrines: §G-2.5%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_observatory_02: "Observatoire II"
  building_observatory_02_desc: "Amélioration de l'observatoire"
  building_observatory_03: "Observatoire III"
@@ -145,7 +129,7 @@
  building_observatory_10_desc: "Amélioration de l'observatoire"
 
  building_laboratory_01: "Laboratoire I"
- building_laboratory_01_desc: "Les unes après les autres, les expériences menées en laboratoire confirment que la méthode empirique reste le vecteur principal de découvertes \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Coût des technologies: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_laboratory_01_desc: "Les unes après les autres, les expériences menées en laboratoire confirment que la méthode empirique reste le vecteur principal de découvertes \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n  - Dévelopement d'au moins 12\n\n§MChaque niveau apporte:§!\n  - Coût des technologies: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_laboratory_02: "Laboratoire II"
  building_laboratory_02_desc: "Amélioration du laboratoire"
  building_laboratory_03: "Laboratoire III"
@@ -233,13 +217,13 @@
  #                        =============================================================================
  unique_buildings_country_modifier_alternate_description: "§R, sera retiré si le bâtiment est détruit§!"
 
- prime_ministry_01_country_modifier: "Premier ministère"
- desc_prime_ministry_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
- prime_ministry_02_country_modifier: "Second ministère"
- desc_prime_ministry_02_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
- prime_ministry_03_country_modifier: "Troisième ministère"
- desc_prime_ministry_03_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
- prime_ministry_04_country_modifier: "Quatrième ministère"
+ prime_ministry_01_country_modifier: "§MPremier ministère§!"
+ desc_prime_ministry_01_country_modifier: "Ce bâtiment a été construit dans la province §M[prime_ministry_location.GetName]§!"
+ prime_ministry_02_country_modifier: "§MSecond ministère§!"
+ desc_prime_ministry_02_country_modifier: "Ce bâtiment a été construit dans la province §M[prime_ministry_location.GetName]§!"
+ prime_ministry_03_country_modifier: "§MTroisième ministère§!"
+ desc_prime_ministry_03_country_modifier: "Ce bâtiment a été construit dans la province §M[prime_ministry_location.GetName]§!"
+ prime_ministry_04_country_modifier: "§MQuatrième ministère§!"
  desc_prime_ministry_04_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
  prime_ministry_05_country_modifier: "Cinquième ministère"
  desc_prime_ministry_05_country_modifier: "Ce bâtiment a été construit dans la province §Y[prime_ministry_location.GetName]§!"
@@ -423,13 +407,9 @@
  
  reduce_development_costs_country_modifier: "Aide au développement"
  desc_reduce_development_costs_country_modifier: "Coût du développement réduit"
- condottieri_raise_country_modifier: "Condottieri étendu"
- desc_condottieri_raise_country_modifier: "D'autres ont surement plus besoin de nos armées que nous. N'hésitons pas à leur louer nos services"
  slow_navy_tradition_decay_country_modifier: "Tradition maritime préservée"
  desc_slow_navy_tradition_decay_country_modifier: "Nous avons confié, à certains de nos marins, la mission exclusive de maintenir vivante et vigoureuse notre tradition navale afin qu'elle ne se perde pas"
  crowded_navy_country_modifier: "Ports surchargés"
- crowded_army_country_modifier: "Armée de suiveurs"
- desc_crowded_army_country_modifier: "Tous ceux qui n'ont pu trouver une place dans nos armées suivent nos soldats en campagne ; ils tentent tout de même de participer mais ne figurent ni dans l'intendance ni dans les effectifs. Leur combativité est donc quasi-nulle bien qu'ils consomment des ressources" 
  desc_crowded_navy_country_modifier: "La frustration que génère le fait de rester à terre chez nos marins perturbe chaque visite d'un navire dans un port. Les rixes se multiplient et le ravitaillement n'est pas correctement assuré"
  efficient_privateers_country_modifier: "Corsaires intrépides"
  desc_efficient_privateers_country_modifier: "Un pavillon plutôt qu'un autre ? Quelle différence ? Pourvu que le butin soit conséquent !"
@@ -445,32 +425,11 @@
  desc_improve_defenses_country_modifier: "Il sera plus difficile, pour nos ennemis, de nous atteindre"
  increased_estate_influence: "Nous avons accordé des avantages à cette faction augmentant, de fait, son influence"
 
- #                        =============================================================================
- #                        ======================        Province modifiers        ======================
- #                        =============================================================================
- province_prosperity_free_base_tax_modifier: "Prospérité accelerée : A"
- desc_province_prosperity_free_base_tax_modifier: "La prospérité de l'état §R[This.GetAreaName]§! a permis à §C[This.GetName]§! de bénéficier d'une hausse "
- province_prosperity_free_base_production_modifier: "Prospérité accelerée : B"
- desc_province_prosperity_free_base_production_modifier: "DESC"
- province_prosperity_free_base_manpower_modifier: "Prospérité accelerée : C"
- desc_province_prosperity_free_base_manpower_modifier: "DESC"
-
  #                        ======================================================================
  #                        ======================          Events          ======================
  #                        ======================================================================
- 
- SLMod_events_greedy_wealth_namespace.1.title: "Gestion difficile"
- SLMod_events_greedy_wealth_namespace.1.desc: "Les recettes du pays sont, réjouissons-en nous, très importantes. A tel point que spéculateurs, espions et autres ennemis déstabilisent notre marché et s'arrangent pour retourner cette bonne fortune contre nous"
- SLMod_events_greedy_wealth_namespace.1.z: "Notre monnaie se dévalue !"
- SLMod_events_greedy_wealth_namespace.1.z.tooltip: "L'effet du malus peut être doublé si §Y[Root.Monarch.GetName]§! est §Rcupide§! \n---------------------------"
- 
- SLMod_events_greedy_wealth_namespace.2.title: "Dilution de l'administration"
- SLMod_events_greedy_wealth_namespace.2.desc: "Plus notre pays s'étend, plus le nombre de personne auxquelles nous devons faire confiance pour sa gestion augmente. Parmi eux, doit se trouver un groupe de crapules qui se servent en priorité avant de remplir nos caisses"
- SLMod_events_greedy_wealth_namespace.2.z: "Notre administration est corrompue !"
- SLMod_events_greedy_wealth_namespace.2.z.tooltip: "L'effet du malus peut être doublé si §Y[Root.Monarch.GetName]§! est une §Rcrapule§! \n---------------------------"
- 
  SLMod_events_crowded_navy_namespace.1.title: "L'appel du large"
- SLMod_events_crowded_navy_namespace.1.desc: "De très nombreux hommes attendent impatiemment un navire sur lequel embarquer. Peut-être pourrions nous trouver, à toutes ces recrues potentielles, une activité ?"
+ SLMod_events_crowded_navy_namespace.1.desc: "De très nombreux hommes attendent impatiemment un navire sur lequel embarquer. Peut-être pourrions nous trouver, à toutes ces recrues potentielles, une autre activité ?"
  SLMod_events_crowded_navy_namespace.1.a: "Faisons les naviguer sous pavillon corsaire"
  SLMod_events_crowded_navy_namespace.1.b: "Attachons-nous à maintenir la tradition maritime"
  SLMod_events_crowded_navy_namespace.1.c: "Renforçons l'armée"
@@ -479,31 +438,54 @@
  
  SLMod_events_crowded_army_namespace.1.title: "L'ennemi fantôme"
  SLMod_events_crowded_army_namespace.1.desc: "Nous disposons de nombreuses recrues prêtes à en découdre mais d'aucun régiment pour les acceuillir. Peut-être pouvons-nous leur trouver un autre usage ?"
- SLMod_events_crowded_army_namespace.1.a: "Montrons au monde notre force"
+ SLMod_events_crowded_army_namespace.1.a: "Faisons démonstration de notre force !"
+ SLMod_events_crowded_army_namespace.1.a.tooltip: "Organisons une grande parade et invitons les dignitaires, militaires de hauts rangs et autres ambassadeurs. Ils verront bien que notre armée compte parmis les plus puissantes du monde.\n"
  SLMod_events_crowded_army_namespace.1.b: "Attachons-nous à maintenir la tradition militaire"
  SLMod_events_crowded_army_namespace.1.c: "Organisons des exercices"
+ SLMod_events_crowded_army_namespace.1.c.tooltip: "Dédions quelques compagnies à l'élaboration de nouveaux exercices et prorocoles d'entraintement. Nous pourrons ainsi rendre notre armée plus performante.\n"
  SLMod_events_crowded_army_namespace.1.d: "Augmentons nos participations aux conflits étrangers"
- SLMod_events_crowded_army_namespace.1.d.tooltip: "Que ce soit pour faire démonstration de notre force ou affaiblir aujourd'hui les ennemis de demain, utilisons ces réserves"
- SLMod_events_crowded_army_namespace.1.z: "Il y aura de nombreux déçus"
- 
- SLMod_events_nobility_disaster_namespace.1.title: "L'influence des nobles est catastrophique"
- SLMod_events_nobility_disaster_namespace.1.desc: "Les nobles ont acquis une telle influence que notre légitimité au pouvoir s'en trouve réduite. Ils préparent, de toute évidence un coup d'état. Nous devons réagir pour tenter de contenir ce désastre"
- SLMod_events_nobility_disaster_namespace.1.a: "Traitons le problème par la force"
- SLMod_events_nobility_disaster_namespace.1.a.tooltip: "Cette option est disponible car les réserves militaires sont d'au moins §G80%§! \n--------------------------- \n Saisissons domaines, armes et matériel de quelques meneurs de cette faction et procédons à quelques arrestations\n---------------------------"
- SLMod_events_nobility_disaster_namespace.1.b: "Réunissons nos soutiens à l'étranger"
- SLMod_events_nobility_disaster_namespace.1.b.tooltip: "Cette option est disponible car le prestige est d'au moins §G80§! \n--------------------------- \n Il est possible que les idées séditionnaires se soient étendues chez certains de nos voisins. Faisons appel à leur soutien pour saper l'influence de cette faction\n---------------------------"
- SLMod_events_nobility_disaster_namespace.1.c: "Faisons des contre-propositions"
- SLMod_events_nobility_disaster_namespace.1.c.tooltip: "Cette option est disponible car nous disposons, en réserve, d'au moins §Gun an§! de recettes fiscales \n --------------------------- \n Soudoyons les soutiens des meneurs de cette sédition, payons des informateurs qui nous donneront les informations nécessaires à saper leur influence et engageons des fauteurs de trouble pour semer la discorde dans cette faction\n---------------------------"
- SLMod_events_nobility_disaster_namespace.1.d: "Jouons la carte de la division"
- SLMod_events_nobility_disaster_namespace.1.d.tooltip: "Cette option est disponible car nous ne faisons face à §Gaucun autre désastre de faction§! \n--------------------------- \n Accordons des privilèges et avantages aux factions rivales ; elles s'occuperont alors de redresser la situation en notre faveur\n---------------------------"
- SLMod_events_nobility_disaster_namespace.1.z: "Nous n'avons aucune solution !"
- SLMod_events_nobility_disaster_namespace.1.z.tooltip: "==> Si le pays est en guerre : §R+2§! de lassitude de guerre \n==> Si l'avancée vers le désastre \"§YCoup d'Etat nobilitaire§!\" est inférieure à §Y50§! : §R+5§! d'avancée pour ce désastre \n ---------------------------"
- 
- SLMod_events_prosperity_namespace.1.title: "Prospérité d'une province"
- SLMod_events_prosperity_namespace.1.desc: "L'état de §R[This.GetAreaName]§! jouit actuellement d'une période de prospérité dont les effets, pour les habitants de §C[This.GetName]§! sont particulièrement visibles : nous avons l'opportunité de pouvoir investir dans cette province"
- SLMod_events_prosperity_namespace.1.a: "Augmenter la valeur fiscale"
- SLMod_events_prosperity_namespace.1.b: "Augmenter la production"
- SLMod_events_prosperity_namespace.1.c: "Augmenter les réserves militaires"
+ SLMod_events_crowded_army_namespace.1.d.tooltip: "D'autres nations ont peut-être plus besoin que nous, en ce moment, de réserves militaires. Envoyons quelques compagnies en tant qu'observateurs ou conseillers. Que ce soit pour faire démonstration de notre force ou affaiblir aujourd'hui les ennemis de demain, il est fort à parier que notre réputation s'en verra améliorée.\n"
+ SLMod_country_modifiers_condottieri_raise_light: "§MArmées à louer§!"
+ SLMod_events_crowded_army_namespace.1.e: "Soldats ou ouvriers ?"
+ SLMod_events_crowded_army_namespace.1.e.tooltip: "Troquons le fusil pour la pioche et envoyons quelques compagnies assurer les travaux d'infrastructure dans la province de §M[crowded_army_randomly_chosen_province.GetName]§! ; ainsi l'investissement en ressources non-humaines sera moins élevé\n"
+ SLMod_events_crowded_army_namespace.1.f: "Faisons démonstration de notre force !"
+ SLMod_events_crowded_army_namespace.1.f.tooltip: "Organisons une grande parade et invitons les dignitaires, militaires de hauts rangs et autres ambassadeurs. Ils verront bien que notre armée compte parmis les plus puissantes du monde.\n"
+ SLMod_events_crowded_army_namespace.1.g: "Attachons-nous à maintenir la tradition militaire"
+ SLMod_events_crowded_army_namespace.1.h: "Organisons des exercices"
+ SLMod_events_crowded_army_namespace.1.h.tooltip: "Dédions quelques compagnies à l'élaboration de nouveaux exercices et prorocoles d'entraintement. Nous pourrons ainsi rendre notre armée plus performante.\n"
+ SLMod_events_crowded_army_namespace.1.i: "Augmentons nos participations aux conflits étrangers"
+ SLMod_events_crowded_army_namespace.1.i.tooltip: "D'autres nations ont peut-être plus besoin que nous, en ce moment, de réserves militaires. Envoyons quelques compagnies en tant qu'observateurs ou conseillers. Que ce soit pour faire démonstration de notre force ou affaiblir aujourd'hui les ennemis de demain, il est fort à parier que notre réputation s'en verra améliorée.\n"
+ SLMod_country_modifiers_condottieri_raise_personality: "§MArmées à louer§!"
+ SLMod_events_crowded_army_namespace.1.j: "Soldats ou ouvriers ?"
+ SLMod_events_crowded_army_namespace.1.j.tooltip: "Troquons le fusil pour la pioche et envoyons quelques compagnies assurer les travaux d'infrastructure de §M[This.GetName]§! ; ainsi l'investissement en ressources non-humaines sera moins élevé\n"
+ SLMod_province_modifier_development_cost_reduction_04: "§MSoldats ouvriers§!"
+ SLMod_province_modifier_development_cost_reduction_06: "§MSoldats ouvriers§!"
+ SLMod_province_modifier_development_cost_reduction_08: "§MSoldats ouvriers§!"
+ SLMod_province_modifier_development_cost_reduction_10: "§MSoldats ouvriers§!"
+ SLMod_province_modifier_development_cost_reduction_12: "§MSoldats ouvriers§!"
 
+ SLMod_events_prosperity_namespace.1.title: "Prospérité d'une province"
+ SLMod_events_prosperity_namespace.1.desc: "L'état de §R[This.GetAreaName]§! jouit actuellement d'une période de prospérité dont les effets, pour les habitants de §M[This.GetName]§! sont particulièrement visibles : nous avons l'opportunité de pouvoir investir rapidement dans cette province"
+ SLMod_events_prosperity_namespace.1.a: "Augmenter la valeur fiscale"
+ SLMod_province_modifier_prosperity_free_base_tax: "§MContrecoup de la prospérité économique§!"
+ desc_SLMod_province_modifier_prosperity_free_base_tax: "L'investissement soudain pour augmenter la valeur fiscale de base a généré des coûts supplémentaires qui diminueront, pendant un moment, la collecte de taxes"
+ SLMod_events_prosperity_namespace.1.b: "Augmenter la production"
+ SLMod_province_modifier_prosperity_free_base_production: "§MContrecoup de la prospérité industrielle§!"
+ desc_SLMod_province_modifier_prosperity_free_base_production: "L'investissement soudain pour augmenter la production de base a généré des coûts supplémentaires qui diminueront, pendant un moment, la valeur commerciale"
+ SLMod_events_prosperity_namespace.1.c: "Augmenter les réserves militaires"
+ SLMod_province_modifier_prosperity_free_base_manpower: "§MContrecoup de la prospérité militaire§!"
+ desc_SLMod_province_modifier_prosperity_free_base_manpower: "L'investissement soudain pour augmenter les réserves militaires a généré des coûts supplémentaires qui ralentiront, pendant un moment, la ..."
 
  unique_buildings_banner_text: "Bâtiments uniques"
+
+ SLMod_events_ruler_namespace.1.title: "Effet de notre prestige"
+ SLMod_events_ruler_namespace.1.desc: "Notre prestige est au plus haut : les nations mineures nous envient, nos concurrents nous respectent et nos ennemis sont fébriles. [Root.Monarch.GetName] sait maintenant mieux comment inspirer toutes ces émotions et gérer notre pouvoir."
+ SLMod_events_ruler_namespace.1.a: "Bonne nouvelle !"
+
+ SLMod_events_ruler_namespace.2.title: "Effets de forte légitimité"
+ SLMod_events_ruler_namespace.2.desc: "[Root.Monarch.GetName] est pleinement légitime au yeux du monde. [Root.Monarch.GetSheHe] n'a plus de justifications à apporter ou d'honneur à défendre. Pour en arriver là, [Root.Monarch.GetSheHe] a su développer de nouveaux talents diplomatiques qui nous seront utiles pour le futur"
+ SLMod_events_ruler_namespace.2.a: "Bonne nouvelle !"
+
+ SLMod_events_ruler_namespace.3.title: "Effets de notre démonstration de force"
+ SLMod_events_ruler_namespace.3.desc: "Nous avons fait démonstration de notre force et de notre capacité à, par la guerre, imposer notre volonté et notre vision ou à défendre notre territoire. [Root.Monarch.GetName] a su tirer des enseignements de ces succès et sera plus apte à les reproduire"
+ SLMod_events_ruler_namespace.3.a: "Bonne nouvelle !"

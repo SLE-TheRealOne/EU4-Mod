@@ -8,7 +8,7 @@ country_decisions = {
 		}
 		
 		allow = {
-			commandant = 3
+			commandant = 2
 		}
 		
 		effect = {
@@ -18,7 +18,7 @@ country_decisions = {
 				hidden = no
 			}
 			# Trade 12 months of sailors for 5 months of manpower
-			add_yearly_manpower = -0.25
+			add_yearly_manpower = -0.12
 		}
 		
 		ai_will_do = {
@@ -35,7 +35,7 @@ country_decisions = {
 		}
 		
 		allow = {
-			army_reformer = 3
+			army_reformer = 2
 		}
 		
 		effect = {
@@ -45,7 +45,7 @@ country_decisions = {
 				hidden = no
 			}
 			# Trade 12 months of sailors for 5 months of manpower
-			add_yearly_manpower = -0.25
+			add_yearly_manpower = -0.12
 		}
 		
 		ai_will_do = {
@@ -62,7 +62,7 @@ country_decisions = {
 		}
 		
 		allow = {
-			army_organiser = 3
+			army_organiser = 2
 		}
 		
 		effect = {
@@ -72,7 +72,7 @@ country_decisions = {
 				hidden = no
 			}
 			# Trade 12 months of sailors for 5 months of manpower
-			add_yearly_manpower = -0.25
+			add_yearly_manpower = -0.12
 		}
 		
 		ai_will_do = {
@@ -89,7 +89,7 @@ country_decisions = {
 		}
 		
 		allow = {
-			quartermaster = 3
+			quartermaster = 2
 		}
 		
 		effect = {
@@ -99,7 +99,7 @@ country_decisions = {
 				hidden = no
 			}
 			# Trade 12 months of sailors for 5 months of manpower
-			add_yearly_manpower = -0.25
+			add_yearly_manpower = -0.12
 		}
 		
 		ai_will_do = {
@@ -116,7 +116,7 @@ country_decisions = {
 		}
 		
 		allow = {
-			recruitmaster = 3
+			recruitmaster = 2
 		}
 		
 		effect = {
@@ -126,7 +126,7 @@ country_decisions = {
 				hidden = no
 			}
 			# Trade 12 months of sailors for 5 months of manpower
-			add_yearly_manpower = -0.25
+			add_yearly_manpower = -0.12
 		}
 		
 		ai_will_do = {
@@ -143,7 +143,7 @@ country_decisions = {
 		}
 		
 		allow = {
-			fortification_expert = 3
+			fortification_expert = 2
 		}
 		
 		effect = {
@@ -153,7 +153,7 @@ country_decisions = {
 				hidden = no
 			}
 			# Trade 12 months of sailors for 5 months of manpower
-			add_yearly_manpower = -0.25
+			add_yearly_manpower = -0.12
 		}
 		
 		ai_will_do = {
@@ -170,7 +170,7 @@ country_decisions = {
 		}
 		
 		allow = {
-			grand_captain = 3
+			grand_captain = 2
 		}
 		
 		effect = {
@@ -180,7 +180,7 @@ country_decisions = {
 				hidden = no
 			}
 			# Trade 12 months of sailors for 5 months of manpower
-			add_yearly_manpower = -0.25
+			add_yearly_manpower = -0.12
 		}
 		
 		ai_will_do = {

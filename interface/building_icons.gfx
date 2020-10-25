@@ -1,25 +1,6 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_trading_post_01"
-		texturefile = "gfx//interface//buildings//latin_workshop.tga"
-		loadType = "INGAME"
-	}
-	
-		spriteType = {
-		name = "GFX_trading_post_02"
-		texturefile = "gfx//interface//buildings//latin_workshop.tga"
-		loadType = "INGAME"
-	}
-	
-	spriteType = {
-		name = "GFX_trading_post_03"
-		texturefile = "gfx//interface//buildings//latin_workshop.tga"
-		loadType = "INGAME"
-	}
-	
-	
-	spriteType = {
 		name = "GFX_grievances_center_01"
 		texturefile = "gfx//interface//buildings//latin_workshop.tga"
 		loadType = "INGAME"

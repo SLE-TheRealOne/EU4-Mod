@@ -12,7 +12,6 @@ spy_center_01 = {
 			has_global_flag = spy_center_flag
 		}
 		is_state = yes
-		num_free_building_slots = 1
 	}
 	
 	on_built = {
@@ -23,6 +22,7 @@ spy_center_01 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
+			add_splendor = 1
 		}
 		# Used to have building location on country modifiers view
 		save_global_event_target_as = spy_center_location
@@ -36,10 +36,17 @@ spy_center_01 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_01_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_02 = {
-	cost = 306
+	cost = 606
 	time = 7
 	one_per_country = yes
 	make_obsolete = spy_center_01
@@ -56,8 +63,7 @@ spy_center_02 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
+            app_splendor = 1
 		}
 	}
 	
@@ -67,10 +73,17 @@ spy_center_02 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_02_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_03 = {
-	cost = 312
+	cost = 918
 	time = 8
 	one_per_country = yes
 	make_obsolete = spy_center_02
@@ -87,10 +100,7 @@ spy_center_03 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = spy_center_02_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -100,10 +110,17 @@ spy_center_03 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_03_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_04 = {
-	cost = 318
+	cost = 1236
 	time = 9
 	one_per_country = yes
 	make_obsolete = spy_center_03
@@ -120,12 +137,7 @@ spy_center_04 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = spy_center_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = spy_center_03_country_modifier
+			add_splendor=1
 		}
 	}
 	
@@ -135,10 +147,17 @@ spy_center_04 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_04_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_05 = {
-	cost = 324
+	cost = 1561
 	time = 10
 	one_per_country = yes
 	make_obsolete = spy_center_04
@@ -155,14 +174,7 @@ spy_center_05 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = spy_center_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = spy_center_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = spy_center_04_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -172,10 +184,17 @@ spy_center_05 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_05_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_06 = {
-	cost = 331
+	cost = 1892
 	time = 11
 	one_per_country = yes
 	make_obsolete = spy_center_05
@@ -192,16 +211,7 @@ spy_center_06 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = spy_center_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = spy_center_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = spy_center_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = spy_center_05_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -211,10 +221,17 @@ spy_center_06 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_06_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_07 = {
-	cost = 337
+	cost = 2230
 	time = 12
 	one_per_country = yes
 	make_obsolete = spy_center_06
@@ -231,18 +248,7 @@ spy_center_07 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = spy_center_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = spy_center_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = spy_center_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = spy_center_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = spy_center_06_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -252,10 +258,17 @@ spy_center_07 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_07_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_08 = {
-	cost = 344
+	cost = 2575
 	time = 13
 	one_per_country = yes
 	make_obsolete = spy_center_07
@@ -272,20 +285,7 @@ spy_center_08 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = spy_center_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = spy_center_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = spy_center_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = spy_center_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = spy_center_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = spy_center_07_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -295,10 +295,17 @@ spy_center_08 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_08_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_09 = {
-	cost = 351
+	cost = 2926
 	time = 14
 	one_per_country = yes
 	make_obsolete = spy_center_08
@@ -315,22 +322,7 @@ spy_center_09 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = spy_center_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = spy_center_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = spy_center_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = spy_center_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = spy_center_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = spy_center_07_country_modifier
-			# Upgrade from level 8
-			remove_country_modifier = spy_center_08_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -340,10 +332,17 @@ spy_center_09 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_09_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
 
 spy_center_10 = {
-	cost = 358
+	cost = 3285
 	time = 15
 	one_per_country = yes
 	make_obsolete = spy_center_09
@@ -360,24 +359,7 @@ spy_center_10 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = spy_center_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = spy_center_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = spy_center_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = spy_center_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = spy_center_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = spy_center_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = spy_center_07_country_modifier
-			# Upgrade from level 8
-			remove_country_modifier = spy_center_08_country_modifier
-			# Upgrade from level 9
-			remove_country_modifier = spy_center_09_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -387,4 +369,11 @@ spy_center_10 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = spy_center_10_country_modifier
+        }
+        clr_global_flag = spy_center_flag
+    }
 }
