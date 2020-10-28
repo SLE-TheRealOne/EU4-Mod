@@ -22,7 +22,7 @@ country_event = {
                 limit = {
                     is_state = yes
                 }
-            save_event_target_as = crowded_army_randomly_chosen_province
+            save_event_target_as = crowded_army_randomly_chosen_province_1
             }
         }
     }
@@ -32,13 +32,28 @@ country_event = {
 		name = SLMod_events_crowded_army_namespace.1.a
 		custom_tooltip = SLMod_events_crowded_army_namespace.1.a.tooltip
 
+        trigger = {
+            NOT = {
+                ruler_has_personality = babbling_buffoon_personality
+                ruler_has_personality = naive_personality
+            }
+        }
+
 		add_yearly_manpower = -0.16
 		add_prestige = 2
 	}
-	
+
 	# Army tradition boost - Light
 	option = {
         name = SLMod_events_crowded_army_namespace.1.b
+
+        trigger = {
+            NOT = {
+                ruler_has_personality = martial_educator_personality
+                ruler_has_personality = strict_personality
+            }
+        }
+
         add_yearly_manpower = -0.16
         add_army_tradition = 2.5
     }
@@ -47,6 +62,13 @@ country_event = {
 	option = {
 		name = SLMod_events_crowded_army_namespace.1.c
 		custom_tooltip = SLMod_events_crowded_army_namespace.1.c.tooltip
+
+        trigger = {
+            NOT = {
+                ruler_has_personality = tactical_genius_personality
+                ruler_has_personality = inspiring_leader_personality
+            }
+        }
 
 		add_yearly_manpower = -0.16
 		add_army_professionalism = 0.01
@@ -60,6 +82,8 @@ country_event = {
         trigger = {
             NOT = {
                 has_country_modifier = SLMod_country_modifiers_condottieri_raise_light
+                ruler_has_personality = intricate_web_weaver_personality
+                ruler_has_personality = charismatic_negotiator_personality
             }
         }
 
@@ -81,20 +105,23 @@ country_event = {
 	    add_yearly_manpower = -0.16
 
         trigger = {
-            event_target:crowded_army_randomly_chosen_province = {
+            event_target:crowded_army_randomly_chosen_province_1 = {
                 NOT = {
                     has_province_modifier = SLMod_province_modifier_development_cost_reduction_04
                     has_province_modifier = SLMod_province_modifier_development_cost_reduction_06
                     has_province_modifier = SLMod_province_modifier_development_cost_reduction_08
                     has_province_modifier = SLMod_province_modifier_development_cost_reduction_10
                     has_province_modifier = SLMod_province_modifier_development_cost_reduction_12
+                    ruler_has_personality = architectural_visionary_personality
+                    ruler_has_personality = entrepreneur_personality
+                    ruler_has_personality = industrious_personality
                 }
             }
         }
 
         random_list = {
             45 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                         name = SLMod_province_modifier_development_cost_reduction_04
                         duration = 365
@@ -102,7 +129,7 @@ country_event = {
                 }
             }
             25 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                         name = SLMod_province_modifier_development_cost_reduction_06
                         duration = 180
@@ -110,7 +137,7 @@ country_event = {
                 }
             }
             15 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                        name = SLMod_province_modifier_development_cost_reduction_08
                        duration = 120
@@ -118,7 +145,7 @@ country_event = {
                 }
             }
             10 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                         name = SLMod_province_modifier_development_cost_reduction_10
                         duration = 90
@@ -126,7 +153,7 @@ country_event = {
                 }
             }
             5 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                        name = SLMod_province_modifier_development_cost_reduction_12
                        duration = 60
@@ -227,7 +254,7 @@ country_event = {
         add_yearly_manpower = -0.16
 
         trigger = {
-            event_target:crowded_army_randomly_chosen_province = {
+            event_target:crowded_army_randomly_chosen_province_1 = {
                 NOT = {
                     has_province_modifier = SLMod_province_modifier_development_cost_reduction_04
                     has_province_modifier = SLMod_province_modifier_development_cost_reduction_06
@@ -245,7 +272,7 @@ country_event = {
 
         random_list = {
             45 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                         name = SLMod_province_modifier_development_cost_reduction_04
                         duration = 365
@@ -253,7 +280,7 @@ country_event = {
                 }
             }
             25 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                         name = SLMod_province_modifier_development_cost_reduction_06
                         duration = 180
@@ -261,7 +288,7 @@ country_event = {
                 }
             }
             15 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                        name = SLMod_province_modifier_development_cost_reduction_08
                        duration = 120
@@ -269,7 +296,7 @@ country_event = {
                 }
             }
             10 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                         name = SLMod_province_modifier_development_cost_reduction_10
                         duration = 90
@@ -277,7 +304,7 @@ country_event = {
                 }
             }
             5 = {
-                event_target:crowded_army_randomly_chosen_province = {
+                event_target:crowded_army_randomly_chosen_province_1 = {
                     add_province_modifier = {
                        name = SLMod_province_modifier_development_cost_reduction_12
                        duration = 60
@@ -287,5 +314,4 @@ country_event = {
         }
 
     }
-
 }

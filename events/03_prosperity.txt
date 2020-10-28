@@ -9,17 +9,12 @@ province_event = {
 	
 	trigger = {
 		is_prosperous = yes
-		NOT = {
-		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_tax
-		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_production
-		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_manpower
-		}
 	}
 
 	is_mtth_scaled_to_size = 1
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 6
 		
 		# Stability modifiers ==> Max 6 months (either negative or positive)
 		modifier = {
@@ -62,6 +57,17 @@ province_event = {
 	
 	option = {
 		name = SLMod_events_prosperity_namespace.1.a
+
+		trigger = {
+		    NOT = {
+		        has_province_modifier = SLMod_province_modifier_prosperity_free_base_tax
+		    }
+		}
+
+        owner = {
+            add_yearly_manpower = -0.24
+        }
+
 		add_base_tax = 1
         add_province_modifier = {
             name = "SLMod_province_modifier_prosperity_free_base_tax"
@@ -70,6 +76,17 @@ province_event = {
 	}
 	option = {
 		name = SLMod_events_prosperity_namespace.1.b
+
+		trigger = {
+            NOT = {
+                has_province_modifier = SLMod_province_modifier_prosperity_free_base_production
+            }
+        }
+
+        owner = {
+            add_yearly_manpower = -0.24
+        }
+
 		add_base_production = 1
 		add_province_modifier = {
             name = "SLMod_province_modifier_prosperity_free_base_production"
@@ -78,6 +95,17 @@ province_event = {
 	}
 	option = {
 		name = SLMod_events_prosperity_namespace.1.c
+
+		trigger = {
+            NOT = {
+                has_province_modifier = SLMod_province_modifier_prosperity_free_base_manpower
+            }
+        }
+
+        owner = {
+            add_yearly_manpower = -0.24
+        }
+
 		add_base_manpower = 1
 		add_province_modifier = {
             name = "SLMod_province_modifier_prosperity_free_base_manpower"

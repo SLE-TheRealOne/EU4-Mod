@@ -22,6 +22,9 @@ country_event = {
 
 		trigger = {
 			has_privateers = yes
+			NOT = {
+                has_country_modifier = efficient_privateers_country_modifier
+            }
 		}
 		
 		add_country_modifier = {
@@ -40,6 +43,7 @@ country_event = {
 		trigger = {
 			NOT = {
 				navy_tradition = 90
+				has_country_modifier = slow_navy_tradition_decay_country_modifier
 			}
 		}
 		
@@ -59,6 +63,7 @@ country_event = {
 		highlight = yes
 		trigger = {
 			ruler_has_personality = entrepreneur_personality
+			has_country_modifier = trade_steering_country_modifier
 		}
 
 		add_country_modifier = {

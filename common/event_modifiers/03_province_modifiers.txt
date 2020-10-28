@@ -29,3 +29,11 @@ SLMod_province_modifier_development_cost_reduction_10 = {
 SLMod_province_modifier_development_cost_reduction_12 = {
     local_development_cost = -0.12
 }
+
+SLMod_province_modifiers_institution_spread_boost_a = {
+    institution_growth = 2
+}
+
+SLMod_province_modifiers_institution_spread_boost_b = {
+    local_institution_spread = 0.20
+}

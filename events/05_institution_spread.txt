@@ -1,0 +1,107 @@
+namespace = SLMod_events_institution_spread_namespace
+
+province_event = {
+
+	id = SLMod_events_institution_spread_namespace.1
+	title = SLMod_events_institution_spread_namespace.1.title
+	desc = SLMod_events_institution_spread_namespace.1.desc
+	picture = FEAST_eventPicture
+	
+	trigger = {
+		owner = {
+		    is_lacking_institutions = yes
+		}
+		is_prosperous = yes
+		current_institution_growth = 10
+	}
+
+	is_mtth_scaled_to_size = 1
+	
+	mean_time_to_happen = {
+		months = 3
+		
+		# Stability modifiers ==> Max 6 months (either negative or positive)
+		modifier = {
+			factor = 0.90
+			owner = {
+				stability = 1
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				stability = 2
+			}
+		}
+		modifier = {
+			factor = 0.7
+			owner = {
+				stability = 3
+			}
+		}
+		modifier = { # -1
+			factor = 1.10
+			owner = {
+				NOT = { stability = 0 }
+			}
+		}
+		modifier = { # -2
+			factor = 1.15
+			owner = {
+				NOT = { stability = -1 }
+			}
+		}
+		modifier = { # -3
+			factor = 1.30
+			owner = {
+				NOT = { stability = -2 }
+			}
+		}
+	}
+	
+	option = {
+		name = SLMod_events_institution_spread_namespace.1.a
+
+		trigger = {
+            NOT = {
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost
+            }
+        }
+
+        owner = {
+            add_yearly_manpower = -0.16
+        }
+
+
+        add_next_institution_embracement = 1
+
+        add_province_modifier = {
+            name = SLMod_province_modifiers_institution_spread_boost_a
+            duration = 1460
+            hidden = no
+        }
+	}
+
+	option = {
+        name = SLMod_events_institution_spread_namespace.1.b
+
+        trigger = {
+            NOT = {
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost
+            }
+        }
+
+        owner = {
+            add_yearly_manpower = -0.16
+        }
+
+        add_next_institution_embracement = 1
+
+        add_province_modifier = {
+            name = SLMod_province_modifiers_institution_spread_boost_b
+            duration = 1460
+            hidden = no
+        }
+    }
+
+}

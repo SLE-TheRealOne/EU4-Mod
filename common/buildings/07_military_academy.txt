@@ -23,6 +23,7 @@ military_academy_01 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
+			add_splendor = 1
 		}
 		# Used to have building location on country modifiers view
 		save_global_event_target_as = military_academy_location
@@ -36,10 +37,17 @@ military_academy_01 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_01_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_02 = {
-	cost = 306
+	cost = 606
 	time = 7
 	one_per_country = yes
 	make_obsolete = military_academy_01
@@ -56,8 +64,7 @@ military_academy_02 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -67,10 +74,17 @@ military_academy_02 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_02_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_03 = {
-	cost = 312
+	cost = 918
 	time = 8
 	one_per_country = yes
 	make_obsolete = military_academy_02
@@ -87,10 +101,7 @@ military_academy_03 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = military_academy_02_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -100,10 +111,17 @@ military_academy_03 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_03_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_04 = {
-	cost = 318
+	cost = 1236
 	time = 9
 	one_per_country = yes
 	make_obsolete = military_academy_03
@@ -120,12 +138,7 @@ military_academy_04 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = military_academy_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = military_academy_03_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -135,10 +148,17 @@ military_academy_04 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_04_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_05 = {
-	cost = 324
+	cost = 1561
 	time = 10
 	one_per_country = yes
 	make_obsolete = military_academy_04
@@ -155,14 +175,7 @@ military_academy_05 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = military_academy_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = military_academy_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = military_academy_04_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -172,10 +185,17 @@ military_academy_05 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_05_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_06 = {
-	cost = 331
+	cost = 1892
 	time = 11
 	one_per_country = yes
 	make_obsolete = military_academy_05
@@ -192,16 +212,7 @@ military_academy_06 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = military_academy_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = military_academy_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = military_academy_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = military_academy_05_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -211,10 +222,17 @@ military_academy_06 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_06_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_07 = {
-	cost = 337
+	cost = 2230
 	time = 12
 	one_per_country = yes
 	make_obsolete = military_academy_06
@@ -231,18 +249,7 @@ military_academy_07 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = military_academy_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = military_academy_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = military_academy_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = military_academy_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = military_academy_06_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -252,10 +259,17 @@ military_academy_07 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_07_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_08 = {
-	cost = 344
+	cost = 2575
 	time = 13
 	one_per_country = yes
 	make_obsolete = military_academy_07
@@ -272,20 +286,7 @@ military_academy_08 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = military_academy_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = military_academy_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = military_academy_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = military_academy_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = military_academy_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = military_academy_07_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -295,10 +296,17 @@ military_academy_08 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete= {
+        owner = {
+            remove_country_modifier = military_academy_08_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_09 = {
-	cost = 351
+	cost = 2926
 	time = 14
 	one_per_country = yes
 	make_obsolete = military_academy_08
@@ -315,22 +323,7 @@ military_academy_09 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = military_academy_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = military_academy_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = military_academy_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = military_academy_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = military_academy_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = military_academy_07_country_modifier
-			# Upgrade from level 8
-			remove_country_modifier = military_academy_08_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -340,10 +333,17 @@ military_academy_09 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_09_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
 
 military_academy_10 = {
-	cost = 358
+	cost = 3285
 	time = 15
 	one_per_country = yes
 	make_obsolete = military_academy_09
@@ -360,24 +360,7 @@ military_academy_10 = {
 				hidden = no
 				desc = unique_buildings_country_modifier_alternate_description
 			}
-			# Upgrade from level 1
-			remove_country_modifier = military_academy_01_country_modifier
-			# Upgrade from level 2
-			remove_country_modifier = military_academy_02_country_modifier
-			# Upgrade from level 3
-			remove_country_modifier = military_academy_03_country_modifier
-			# Upgrade from level 4
-			remove_country_modifier = military_academy_04_country_modifier
-			# Upgrade from level 5
-			remove_country_modifier = military_academy_05_country_modifier
-			# Upgrade from level 6
-			remove_country_modifier = military_academy_06_country_modifier
-			# Upgrade from level 7
-			remove_country_modifier = military_academy_07_country_modifier
-			# Upgrade from level 8
-			remove_country_modifier = military_academy_08_country_modifier
-			# Upgrade from level 9
-			remove_country_modifier = military_academy_09_country_modifier
+			add_splendor = 1
 		}
 	}
 	
@@ -387,4 +370,11 @@ military_academy_10 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = military_academy_10_country_modifier
+        }
+        clr_global_flag = military_academy_flag
+    }
 }
