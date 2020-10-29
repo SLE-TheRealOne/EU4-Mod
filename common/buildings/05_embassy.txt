@@ -1,6 +1,6 @@
 embassy_01 = {
-	cost = 300
-	time = 6
+	cost = 150
+	time = 5
 	one_per_country = yes
 	
 	build_trigger = {
@@ -49,8 +49,8 @@ embassy_01 = {
 }
 
 embassy_02 = {
-	cost = 606
-	time = 7
+	cost = 303
+	time = 6
 	one_per_country = yes
 	make_obsolete = embassy_01
 	
@@ -86,8 +86,8 @@ embassy_02 = {
 }
 
 embassy_03 = {
-	cost = 918
-	time = 8
+	cost = 459
+	time = 7
 	one_per_country = yes
 	make_obsolete = embassy_02
 	
@@ -123,8 +123,8 @@ embassy_03 = {
 }
 
 embassy_04 = {
-	cost = 1236
-	time = 9
+	cost = 618
+	time = 8
 	one_per_country = yes
 	make_obsolete = embassy_03
 	
@@ -160,8 +160,8 @@ embassy_04 = {
 }
 
 embassy_05 = {
-	cost = 1561
-	time = 10
+	cost = 781
+	time = 9
 	one_per_country = yes
 	make_obsolete = embassy_04
 	
@@ -197,8 +197,8 @@ embassy_05 = {
 }
 
 embassy_06 = {
-	cost = 1892
-	time = 11
+	cost = 946
+	time = 10
 	one_per_country = yes
 	make_obsolete = embassy_05
 	
@@ -234,8 +234,8 @@ embassy_06 = {
 }
 
 embassy_07 = {
-	cost = 2230
-	time = 12
+	cost = 1142
+	time = 11
 	one_per_country = yes
 	make_obsolete = embassy_06
 	
@@ -271,8 +271,8 @@ embassy_07 = {
 }
 
 embassy_08 = {
-	cost = 2575
-	time = 13
+	cost = 1287
+	time = 12
 	one_per_country = yes
 	make_obsolete = embassy_07
 	
@@ -308,8 +308,8 @@ embassy_08 = {
 }
 
 embassy_09 = {
-	cost = 2926
-	time = 14
+	cost = 1463
+	time = 13
 	one_per_country = yes
 	make_obsolete = embassy_08
 	
@@ -345,8 +345,8 @@ embassy_09 = {
 }
 
 embassy_10 = {
-	cost = 3285
-	time = 15
+	cost = 1642
+	time = 14
 	one_per_country = yes
 	make_obsolete = embassy_09
 	

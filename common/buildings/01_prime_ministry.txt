@@ -1,6 +1,6 @@
 prime_ministry_01 = {
-	cost = 300
-	time = 0
+	cost = 150
+	time = 5
 	one_per_country = yes
 	
 	build_trigger = {
@@ -47,8 +47,8 @@ prime_ministry_01 = {
 }
 
 prime_ministry_02 = {
-	cost = 606
-	time = 0
+	cost = 303
+	time = 6
 	make_obsolete = prime_ministry_01
 	
 	one_per_country = yes
@@ -85,8 +85,8 @@ prime_ministry_02 = {
 }
 
 prime_ministry_03 = {
-	cost = 918
-	time = 0
+	cost = 459
+	time = 7
 	make_obsolete = prime_ministry_02
 	
 	one_per_country = yes
@@ -123,8 +123,8 @@ prime_ministry_03 = {
 }
 
 prime_ministry_04 = {
-	cost = 1236
-	time = 0
+	cost = 618
+	time = 8
 	make_obsolete = prime_ministry_03
 
 	one_per_country = yes
@@ -161,7 +161,7 @@ prime_ministry_04 = {
 }
 
 prime_ministry_05 = {
-	cost = 1561
+	cost = 781
 	time = 09
 	make_obsolete = prime_ministry_04
 
@@ -199,7 +199,7 @@ prime_ministry_05 = {
 }
 
 prime_ministry_06 = {
-	cost = 1892
+	cost = 946
 	time = 10
 	make_obsolete = prime_ministry_05
 	
@@ -237,7 +237,7 @@ prime_ministry_06 = {
 }
 
 prime_ministry_07 = {
-	cost = 2230
+	cost = 1142
 	time = 11
 	make_obsolete = prime_ministry_06
 	
@@ -275,7 +275,7 @@ prime_ministry_07 = {
 }
 
 prime_ministry_08 = {
-	cost = 2575
+	cost = 1287
 	time = 12
 	make_obsolete = prime_ministry_07
 	
@@ -313,7 +313,7 @@ prime_ministry_08 = {
 }
 
 prime_ministry_09 = {
-	cost = 2926
+	cost = 1463
 	time = 13
 	make_obsolete = prime_ministry_08
 	
@@ -351,7 +351,7 @@ prime_ministry_09 = {
 }
 
 prime_ministry_10 = {
-	cost = 3285
+	cost = 1642
 	time = 14
 	make_obsolete = prime_ministry_09
 	

@@ -1,6 +1,6 @@
 observatory_01 = {
-	cost = 300
-	time = 6
+	cost = 150
+	time = 5
 	one_per_country = yes
 	
 	build_trigger = {
@@ -48,8 +48,8 @@ observatory_01 = {
 }
 
 observatory_02 = {
-	cost = 606
-	time = 7
+	cost = 303
+	time = 6
 	one_per_country = yes
 	make_obsolete = observatory_01
 
@@ -85,8 +85,8 @@ observatory_02 = {
 }
 
 observatory_03 = {
-	cost = 918
-	time = 8
+	cost = 459
+	time = 7
 	one_per_country = yes
 	make_obsolete = observatory_02
 	
@@ -122,8 +122,8 @@ observatory_03 = {
 }
 
 observatory_04 = {
-	cost = 1236
-	time = 9
+	cost = 618
+	time = 8
 	one_per_country = yes
 	make_obsolete = observatory_03
 	
@@ -159,8 +159,8 @@ observatory_04 = {
 }
 
 observatory_05 = {
-	cost = 1561
-	time = 10
+	cost = 781
+	time = 9
 	one_per_country = yes
 	make_obsolete = observatory_04
 	
@@ -196,8 +196,8 @@ observatory_05 = {
 }
 
 observatory_06 = {
-	cost = 1892
-	time = 11
+	cost = 946
+	time = 10
 	one_per_country = yes
 	make_obsolete = observatory_05
 		
@@ -233,8 +233,8 @@ observatory_06 = {
 }
 
 observatory_07 = {
-	cost = 2230
-	time = 13
+	cost = 1142
+	time = 11
 	one_per_country = yes
 	make_obsolete = observatory_06
 	
@@ -270,7 +270,7 @@ observatory_07 = {
 }
 
 observatory_08 = {
-	cost = 2575
+	cost = 1287
 	time = 12
 	one_per_country = yes
 	make_obsolete = observatory_07
@@ -307,7 +307,7 @@ observatory_08 = {
 }
 
 observatory_09 = {
-	cost = 2926
+	cost = 1463
 	time = 13
 	one_per_country = yes
 	make_obsolete = observatory_08
@@ -344,7 +344,7 @@ observatory_09 = {
 }
 
 observatory_10 = {
-	cost = 3285
+	cost = 1642
 	time = 14
 	one_per_country = yes
 	make_obsolete = observatory_09
