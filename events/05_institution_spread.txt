@@ -6,6 +6,7 @@ province_event = {
 	title = SLMod_events_institution_spread_namespace.1.title
 	desc = SLMod_events_institution_spread_namespace.1.desc
 	picture = FEAST_eventPicture
+	goto = root
 	
 	trigger = {
 		owner = {

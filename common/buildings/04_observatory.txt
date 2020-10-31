@@ -22,7 +22,6 @@ observatory_01 = {
 				name = observatory_01_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -63,7 +62,6 @@ observatory_02 = {
 				name = observatory_02_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -100,7 +98,6 @@ observatory_03 = {
 				name = observatory_03_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -137,7 +134,6 @@ observatory_04 = {
 				name = observatory_04_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -174,7 +170,6 @@ observatory_05 = {
 				name = observatory_05_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -211,7 +206,6 @@ observatory_06 = {
 				name = observatory_06_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -248,7 +242,6 @@ observatory_07 = {
 				name = observatory_07_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -285,7 +278,6 @@ observatory_08 = {
 				name = observatory_08_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -322,7 +314,6 @@ observatory_09 = {
 				name = observatory_09_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -359,7 +350,6 @@ observatory_10 = {
 				name = observatory_10_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}

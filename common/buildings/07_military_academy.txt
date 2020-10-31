@@ -21,7 +21,6 @@ military_academy_01 = {
 				name = military_academy_01_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -62,7 +61,6 @@ military_academy_02 = {
 				name = military_academy_02_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -99,7 +97,6 @@ military_academy_03 = {
 				name = military_academy_03_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -136,7 +133,6 @@ military_academy_04 = {
 				name = military_academy_04_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -173,7 +169,6 @@ military_academy_05 = {
 				name = military_academy_05_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -210,7 +205,6 @@ military_academy_06 = {
 				name = military_academy_06_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -247,7 +241,6 @@ military_academy_07 = {
 				name = military_academy_07_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -284,7 +277,6 @@ military_academy_08 = {
 				name = military_academy_08_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -321,7 +313,6 @@ military_academy_09 = {
 				name = military_academy_09_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -358,7 +349,6 @@ military_academy_10 = {
 				name = military_academy_10_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}

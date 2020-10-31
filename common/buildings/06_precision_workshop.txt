@@ -21,7 +21,6 @@ precision_workshop_01 = {
 				name = precision_workshop_01_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -62,7 +61,6 @@ precision_workshop_02 = {
 				name = precision_workshop_02_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -99,7 +97,6 @@ precision_workshop_03 = {
 				name = precision_workshop_03_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -136,7 +133,6 @@ precision_workshop_04 = {
 				name = precision_workshop_04_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -173,7 +169,6 @@ precision_workshop_05 = {
 				name = precision_workshop_05_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -210,7 +205,6 @@ precision_workshop_06 = {
 				name = precision_workshop_06_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -247,7 +241,6 @@ precision_workshop_11 = {
 				name = precision_workshop_07_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -284,7 +277,6 @@ precision_workshop_08 = {
 				name = precision_workshop_08_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -321,7 +313,6 @@ precision_workshop_09 = {
 				name = precision_workshop_09_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -358,7 +349,6 @@ precision_workshop_10 = {
 				name = precision_workshop_10_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}

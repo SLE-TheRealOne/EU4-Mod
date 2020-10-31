@@ -21,7 +21,6 @@ prime_ministry_01 = {
 				name = prime_ministry_01_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -63,7 +62,6 @@ prime_ministry_02 = {
 				name = prime_ministry_02_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -101,7 +99,6 @@ prime_ministry_03 = {
 				name = prime_ministry_03_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -139,7 +136,6 @@ prime_ministry_04 = {
 				name = prime_ministry_04_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -177,7 +173,6 @@ prime_ministry_05 = {
 				name = prime_ministry_05_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -215,7 +210,6 @@ prime_ministry_06 = {
 				name = prime_ministry_06_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
             add_splendor = 1
 		}
@@ -253,7 +247,6 @@ prime_ministry_07 = {
 				name = prime_ministry_07_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -291,7 +284,6 @@ prime_ministry_08 = {
 				name = prime_ministry_08_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}
@@ -329,7 +321,6 @@ prime_ministry_09 = {
 				name = prime_ministry_09_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 		    add_splendor = 1
 		}
@@ -367,7 +358,6 @@ prime_ministry_10 = {
 				name = prime_ministry_10_country_modifier
 				duration = -1
 				hidden = no
-				desc = unique_buildings_country_modifier_alternate_description
 			}
 			add_splendor = 1
 		}

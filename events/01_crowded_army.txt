@@ -1,6 +1,5 @@
 namespace = SLMod_events_crowded_army_namespace
 
-# Manpower usage
 country_event = {
 	id = SLMod_events_crowded_army_namespace.1
 	title = SLMod_events_crowded_army_namespace.1.title
@@ -27,7 +26,11 @@ country_event = {
         }
     }
 
-	# Boost prestige - Light
+    ####################################
+    ####       Light versions       ####
+    ####################################
+
+	# A - Boost prestige - Light
 	option = {
 		name = SLMod_events_crowded_army_namespace.1.a
 		custom_tooltip = SLMod_events_crowded_army_namespace.1.a.tooltip
@@ -43,7 +46,7 @@ country_event = {
 		add_prestige = 2
 	}
 
-	# Army tradition boost - Light
+	# B - Army tradition boost - Light
 	option = {
         name = SLMod_events_crowded_army_namespace.1.b
 
@@ -58,7 +61,7 @@ country_event = {
         add_army_tradition = 2.5
     }
 	
-	# Add professionalism - Light
+	# C - Drill gain - Light
 	option = {
 		name = SLMod_events_crowded_army_namespace.1.c
 		custom_tooltip = SLMod_events_crowded_army_namespace.1.c.tooltip
@@ -67,14 +70,20 @@ country_event = {
             NOT = {
                 ruler_has_personality = tactical_genius_personality
                 ruler_has_personality = inspiring_leader_personality
+                has_country_modifier = SLMod_country_modifiers_drill_gain_boost_light
             }
         }
 
 		add_yearly_manpower = -0.16
-		add_army_professionalism = 0.01
+
+		add_country_modifier = {
+            name = SLMod_country_modifiers_drill_gain_boost_light
+            duration = 182
+            hidden = no
+        }
 	}
 	
-	# Condottieri boost - Light
+	# D - Condottieri boost - Light
 	option = {
 		name = SLMod_events_crowded_army_namespace.1.d
 		custom_tooltip = SLMod_events_crowded_army_namespace.1.d.tooltip
@@ -97,7 +106,7 @@ country_event = {
 
 	}
 
-    # Local development cost reduction - Light
+    # E - Local development cost reduction - Light
 	option = {
 	    name = SLMod_events_crowded_army_namespace.1.e
 	    custom_tooltip = SLMod_events_crowded_army_namespace.1.e.tooltip
@@ -164,7 +173,33 @@ country_event = {
 
 	}
 
-	# Boost prestige - Personality
+    # K - Drill decay reduction - Light
+    option = {
+		name = SLMod_events_crowded_army_namespace.1.k
+		custom_tooltip = SLMod_events_crowded_army_namespace.1.k.tooltip
+
+        trigger = {
+            NOT = {
+                ruler_has_personality = tactical_genius_personality
+                ruler_has_personality = inspiring_leader_personality
+                has_country_modifier = SLMod_country_modifiers_drill_decay_reduction_light
+            }
+        }
+
+		add_yearly_manpower = -0.16
+
+		add_country_modifier = {
+            name = SLMod_country_modifiers_drill_decay_reduction_light
+            duration = 182
+            hidden = no
+        }
+	}
+
+    ####################################
+    ####    Personality versions    ####
+    ####################################
+
+	# F - Boost prestige - Personality
     option = {
         name = SLMod_events_crowded_army_namespace.1.f
         custom_tooltip = SLMod_events_crowded_army_namespace.1.f.tooltip
@@ -178,11 +213,11 @@ country_event = {
             }
         }
 
-        add_yearly_manpower = -0.16
+        add_yearly_manpower = -0.32
         add_prestige = 4
     }
 
-    # Army tradition boost - Personality
+    # G - Army tradition boost - Personality
     option = {
         name = SLMod_events_crowded_army_namespace.1.g
 
@@ -195,11 +230,11 @@ country_event = {
             }
         }
 
-        add_yearly_manpower = -0.16
+        add_yearly_manpower = -0.32
         add_army_tradition = 5
     }
 
-    # Add professionalism - Personality
+    # H - Drill gain - Personality
     option = {
         name = SLMod_events_crowded_army_namespace.1.h
         custom_tooltip = SLMod_events_crowded_army_namespace.1.h.tooltip
@@ -211,13 +246,21 @@ country_event = {
                 ruler_has_personality = tactical_genius_personality
                 ruler_has_personality = inspiring_leader_personality
             }
+            NOT = {
+                has_country_modifier = SLMod_country_modifiers_drill_gain_boost_personality
+            }
         }
 
-        add_yearly_manpower = -0.16
-        add_army_professionalism = 0.02
+        add_yearly_manpower = -0.32
+
+        add_country_modifier = {
+            name = SLMod_country_modifiers_drill_gain_boost_personality
+            duration = 182
+            hidden = no
+        }
     }
 
-    # Condottieri boost - Personality
+    # I - Condottieri boost - Personality
     option = {
         name = SLMod_events_crowded_army_namespace.1.i
         custom_tooltip = SLMod_events_crowded_army_namespace.1.i.tooltip
@@ -244,14 +287,14 @@ country_event = {
 
     }
 
-    # Local development cost reduction - Personality
+    # J - Local development cost reduction - Personality
     option = {
-        name = SLMod_events_crowded_army_namespace.1.e
-        custom_tooltip = SLMod_events_crowded_army_namespace.1.e.tooltip
+        name = SLMod_events_crowded_army_namespace.1.j
+        custom_tooltip = SLMod_events_crowded_army_namespace.1.j.tooltip
 
         highlight = yes
 
-        add_yearly_manpower = -0.16
+        add_yearly_manpower = -0.32
 
         trigger = {
             event_target:crowded_army_randomly_chosen_province_1 = {
@@ -313,5 +356,31 @@ country_event = {
             }
         }
 
+    }
+
+    # L - Drill decay reduction - Personality
+    option = {
+        name = SLMod_events_crowded_army_namespace.1.l
+        custom_tooltip = SLMod_events_crowded_army_namespace.1.l.tooltip
+
+        highlight = yes
+
+        trigger = {
+            OR = {
+                ruler_has_personality = tactical_genius_personality
+                ruler_has_personality = inspiring_leader_personality
+            }
+            NOT = {
+                has_country_modifier = has_country_modifier = SLMod_country_modifiers_drill_decay_reduction_personality
+            }
+        }
+
+        add_yearly_manpower = -0.32
+
+        add_country_modifier = {
+            name = SLMod_country_modifiers_drill_decay_reduction_personality
+            duration = 182
+            hidden = no
+        }
     }
 }
