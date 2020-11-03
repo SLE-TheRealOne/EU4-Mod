@@ -9,6 +9,7 @@ country_decisions = {
 		
 		allow = {
 			natural_scientist = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -36,6 +37,7 @@ country_decisions = {
 		
 		allow = {
 			philosopher = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -63,6 +65,7 @@ country_decisions = {
 		
 		allow = {
 			artist = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -90,6 +93,7 @@ country_decisions = {
 		
 		allow = {
 			theologian = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -117,6 +121,7 @@ country_decisions = {
 		
 		allow = {
 			treasurer = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -144,6 +149,7 @@ country_decisions = {
 		
 		allow = {
 			master_of_mint = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -171,6 +177,7 @@ country_decisions = {
 		
 		allow = {
 			inquisitor = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {

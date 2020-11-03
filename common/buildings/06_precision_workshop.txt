@@ -64,6 +64,7 @@ precision_workshop_02 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {
@@ -100,6 +101,7 @@ precision_workshop_03 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {
@@ -136,6 +138,7 @@ precision_workshop_04 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {
@@ -172,6 +175,7 @@ precision_workshop_05 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {
@@ -208,6 +212,7 @@ precision_workshop_06 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {
@@ -225,7 +230,7 @@ precision_workshop_06 = {
     }
 }
 
-precision_workshop_11 = {
+precision_workshop_07 = {
 	cost = 1142
 	time = 12
 	one_per_country = yes
@@ -244,6 +249,7 @@ precision_workshop_11 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {
@@ -280,6 +286,7 @@ precision_workshop_08 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {
@@ -316,6 +323,7 @@ precision_workshop_09 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {
@@ -352,6 +360,7 @@ precision_workshop_10 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = precision_workshop_flag
 	}
 	
 	on_destroyed = {

@@ -61,8 +61,9 @@ spy_center_02 = {
 				duration = -1
 				hidden = no
 			}
-            app_splendor = 1
+            add_splendor = 1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {
@@ -99,6 +100,7 @@ spy_center_03 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {
@@ -135,6 +137,7 @@ spy_center_04 = {
 			}
 			add_splendor=1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {
@@ -171,6 +174,7 @@ spy_center_05 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {
@@ -207,6 +211,7 @@ spy_center_06 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {
@@ -243,6 +248,7 @@ spy_center_07 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {
@@ -279,6 +285,7 @@ spy_center_08 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {
@@ -315,6 +322,7 @@ spy_center_09 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {
@@ -351,6 +359,7 @@ spy_center_10 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = spy_center_flag
 	}
 	
 	on_destroyed = {

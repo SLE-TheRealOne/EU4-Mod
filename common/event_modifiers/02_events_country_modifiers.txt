@@ -20,7 +20,7 @@ SLMod_country_modifiers_drill_gain_boost_light = {
 }
 
 SLMod_country_modifiers_drill_decay_reduction_light = {
-    drill_decay_modifier = 0.10
+    drill_decay_modifier = -0.10
 }
 
 SLMod_country_modifiers_drill_gain_boost_personality = {
@@ -28,9 +28,8 @@ SLMod_country_modifiers_drill_gain_boost_personality = {
 }
 
 SLMod_country_modifiers_drill_decay_reduction_personality = {
-    drill_decay_modifier = 0.20
+    drill_decay_modifier = -0.20
 }
-
 
 SLMod_country_modifiers_condottieri_raise_personality = {
 	possible_condottieri = 0.3
@@ -38,4 +37,21 @@ SLMod_country_modifiers_condottieri_raise_personality = {
 
 SLMod_country_modifiers_condottieri_raise_light = {
     possible_condottieri = 0.15
+}
+
+SLMod_country_modifier_army_tradition_boost_light = {
+    army_tradition = 0.40
+}
+
+SLMod_country_modifier_army_tradition_boost_personality = {
+    army_tradition = 0.80
+}
+
+SLMod_country_modifier_ruler_adm_bumped = {
+}
+
+SLMod_country_modifier_ruler_dip_bumped = {
+}
+
+SLMod_country_modifier_ruler_mil_bumped = {
 }

@@ -65,6 +65,7 @@ laboratory_02 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {
@@ -101,6 +102,7 @@ laboratory_03 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {
@@ -137,6 +139,7 @@ laboratory_04 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {
@@ -173,6 +176,7 @@ laboratory_05 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {
@@ -209,6 +213,7 @@ laboratory_06 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {
@@ -245,6 +250,7 @@ laboratory_07 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {
@@ -281,6 +287,7 @@ laboratory_08 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {
@@ -317,6 +324,7 @@ laboratory_09 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {
@@ -354,6 +362,7 @@ laboratory_10 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = laboratory_flag
 	}
 	
 	on_destroyed = {

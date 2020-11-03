@@ -209,7 +209,26 @@
 
  SLMod_country_modifiers_condottieri_raise_light: "§MArmées à louer§!"
  SLMod_country_modifiers_condottieri_raise_personality: "§MArmées à louer§!"
+
  SLMod_country_modifiers_drill_gain_boost_light: "§MManuel d'instructions§!"
+ desc_SLMod_country_modifiers_drill_gain_boost_light: "Etudes stratégiques, maintient et nettoyage des armes, tactiques de régiments, ordres, hiérarchie : tout ce qu'il faut savoir pour devenir soldat de métier"
+
  SLMod_country_modifiers_drill_gain_boost_personality: "§MManuel d'instructions§!"
+ desc_SLMod_country_modifiers_drill_gain_boost_personality: "Etudes stratégiques, maintient et nettoyage des armes, tactiques de régiments, ordres, hiérarchie : tout ce qu'il faut savoir pour devenir soldat de métier"
+
  SLMod_country_modifiers_drill_decay_reduction_light: "§MMaintien en conditions§!"
+ desc_SLMod_country_modifiers_drill_decay_reduction_light: "Un mélange de rituels, d'exercices physiques et de mesures d'hygiène à appliquer quotidiennement"
+
  SLMod_country_modifiers_drill_decay_reduction_personality: "§MMaintien en conditions§!"
+ desc_SLMod_country_modifiers_drill_decay_reduction_personality: "Un mélange de rituels, d'exercices physiques et de mesures d'hygiène à appliquer quotidiennement"
+
+ SLMod_country_modifier_army_tradition_boost_light: "§MMaintien des traditions militaires§!"
+
+ SLMod_country_modifier_army_tradition_boost_personality: "§MMaintien des traditions militaires§!"
+
+ SLMod_country_modifier_ruler_adm_bumped: "§MApprentissage administratif terminé§!"
+ desc_SLMod_country_modifier_ruler_adm_bumped: "Il faudra un moment pour que [Root.Monarch.GetName] puisse mettre en pratique ce qu'il a appris dans le domaine administratif. Peut-être pourra-t-il, de nouveau, apprendre"
+ SLMod_country_modifier_ruler_dip_bumped: "§MApprentissage diplomatique terminé§!"
+ desc_SLMod_country_modifier_ruler_dip_bumped: "Il faudra un moment pour que [Root.Monarch.GetName] puisse mettre en pratique ce qu'il a appris dans le domaine diplomatique. Peut-être pourra-t-il, de nouveau, apprendre"
+ SLMod_country_modifier_ruler_mil_bumped: "§MApprentissage militaire terminé§!"
+ desc_SLMod_country_modifier_ruler_mil_bumped: "Il faudra un moment pour que [Root.Monarch.GetName] puisse mettre en pratique ce qu'il a appris dans le domaine militaire. Peut-être pourra-t-il, de nouveau, apprendre"

@@ -8,60 +8,28 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
-		prestige = 90
+		prestige = 92
 		NOT = {
 		    adm = 6
+		    has_country_modifier = SLMod_country_modifier_ruler_adm_bumped
 		}
 	}
 
-	is_mtth_scaled_to_size = 1
-
 	mean_time_to_happen = {
-		months = 120
-
-		# Stability modifiers ==> Max 6 months (either negative or positive)
-		modifier = {
-			factor = 0.90
-			owner = {
-				stability = 1
-			}
-		}
-		modifier = {
-			factor = 0.75
-			owner = {
-				stability = 2
-			}
-		}
-		modifier = {
-			factor = 0.7
-			owner = {
-				stability = 3
-			}
-		}
-		modifier = { # -1
-			factor = 1.10
-			owner = {
-				NOT = { stability = 0 }
-			}
-		}
-		modifier = { # -2
-			factor = 1.15
-			owner = {
-				NOT = { stability = -1 }
-			}
-		}
-		modifier = { # -3
-			factor = 1.30
-			owner = {
-				NOT = { stability = -2 }
-			}
-		}
+		months = 2
 	}
 
 	option = {
 		name = SLMod_events_ruler_namespace.1.a
+
         change_adm = 1
-        add_splendor = 1
+        add_splendor = 5
+
+        add_country_modifier = {
+            name = SLMod_country_modifier_ruler_adm_bumped
+            duration = 3650
+            hidden = no
+        }
 	}
 }
 
@@ -73,60 +41,28 @@ country_event = {
 	picture = COURT_eventPicture
 
 	trigger = {
-		legitimacy = 90
+		legitimacy = 92
 		NOT = {
 		    dip = 6
+		    has_country_modifier = SLMod_country_modifier_ruler_dip_bumped
 		}
 	}
 
-	is_mtth_scaled_to_size = 1
-
 	mean_time_to_happen = {
-		months = 120
-
-		# Stability modifiers ==> Max 6 months (either negative or positive)
-		modifier = {
-			factor = 0.90
-			owner = {
-				stability = 1
-			}
-		}
-		modifier = {
-			factor = 0.75
-			owner = {
-				stability = 2
-			}
-		}
-		modifier = {
-			factor = 0.7
-			owner = {
-				stability = 3
-			}
-		}
-		modifier = { # -1
-			factor = 1.10
-			owner = {
-				NOT = { stability = 0 }
-			}
-		}
-		modifier = { # -2
-			factor = 1.15
-			owner = {
-				NOT = { stability = -1 }
-			}
-		}
-		modifier = { # -3
-			factor = 1.30
-			owner = {
-				NOT = { stability = -2 }
-			}
-		}
+		months = 2
 	}
 
 	option = {
 		name = SLMod_events_ruler_namespace.2.a
+
         change_dip = 1
-        add_splendor = 1
+        add_splendor = 5
+
+        add_country_modifier = {
+            name = SLMod_country_modifier_ruler_dip_bumped
+            duration = 3650
+            hidden = no
+        }
 	}
 }
 
@@ -138,59 +74,27 @@ country_event = {
 	picture = HRE_eventPicture
 
 	trigger = {
-		power_projection = 90
+		power_projection = 92
 		NOT = {
 		    mil = 6
+		    has_country_modifier = SLMod_country_modifier_ruler_mil_bumped
 		}
 	}
 
-	is_mtth_scaled_to_size = 1
-
 	mean_time_to_happen = {
-		months = 120
-
-		# Stability modifiers ==> Max 6 months (either negative or positive)
-		modifier = {
-			factor = 0.90
-			owner = {
-				stability = 1
-			}
-		}
-		modifier = {
-			factor = 0.75
-			owner = {
-				stability = 2
-			}
-		}
-		modifier = {
-			factor = 0.7
-			owner = {
-				stability = 3
-			}
-		}
-		modifier = { # -1
-			factor = 1.10
-			owner = {
-				NOT = { stability = 0 }
-			}
-		}
-		modifier = { # -2
-			factor = 1.15
-			owner = {
-				NOT = { stability = -1 }
-			}
-		}
-		modifier = { # -3
-			factor = 1.30
-			owner = {
-				NOT = { stability = -2 }
-			}
-		}
+		months = 2
 	}
 
 	option = {
 		name = SLMod_events_ruler_namespace.3.a
+
         change_mil = 1
-        add_splendor = 1
+        add_splendor = 5
+
+        add_country_modifier = {
+            name = SLMod_country_modifier_ruler_mil_bumped
+            duration = 3650
+            hidden = no
+        }
 	}
 }

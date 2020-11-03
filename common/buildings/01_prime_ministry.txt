@@ -65,6 +65,7 @@ prime_ministry_02 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {
@@ -102,6 +103,7 @@ prime_ministry_03 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {
@@ -139,6 +141,7 @@ prime_ministry_04 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {
@@ -176,6 +179,7 @@ prime_ministry_05 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {
@@ -213,6 +217,7 @@ prime_ministry_06 = {
 			}
             add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {
@@ -250,6 +255,7 @@ prime_ministry_07 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {
@@ -287,6 +293,7 @@ prime_ministry_08 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {
@@ -324,6 +331,7 @@ prime_ministry_09 = {
 			}
 		    add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {
@@ -361,6 +369,7 @@ prime_ministry_10 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = prime_ministry_flag
 	}
 	
 	on_destroyed = {

@@ -4,3 +4,10 @@
  SLMod_province_modifier_development_cost_reduction_08: "§MSoldats ouvriers§!"
  SLMod_province_modifier_development_cost_reduction_10: "§MSoldats ouvriers§!"
  SLMod_province_modifier_development_cost_reduction_12: "§MSoldats ouvriers§!"
+
+ SLMod_province_modifier_prosperity_free_base_tax: "§MContrecoup de la prospérité économique§!"
+ desc_SLMod_province_modifier_prosperity_free_base_tax: "L'investissement soudain pour augmenter la valeur fiscale de base a généré des coûts supplémentaires qui diminueront, pendant un moment, la collecte de taxes"
+ SLMod_province_modifier_prosperity_free_base_production: "§MContrecoup de la prospérité industrielle§!"
+ desc_SLMod_province_modifier_prosperity_free_base_production: "L'investissement soudain pour augmenter la production de base a généré des coûts supplémentaires qui diminueront, pendant un moment, la valeur commerciale"
+ SLMod_province_modifier_prosperity_free_base_manpower: "§MContrecoup de la prospérité militaire§!"
+ desc_SLMod_province_modifier_prosperity_free_base_manpower: "L'investissement soudain pour augmenter les réserves militaires a généré des coûts supplémentaires qui ralentiront, pendant un moment, les réserves militaires"

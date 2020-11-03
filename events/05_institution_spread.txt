@@ -11,6 +11,7 @@ province_event = {
 	trigger = {
 		owner = {
 		    is_lacking_institutions = yes
+		    manpower_percentage = 0.30
 		}
 		is_prosperous = yes
 		current_institution_growth = 10
@@ -20,8 +21,7 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 3
-		
-		# Stability modifiers ==> Max 6 months (either negative or positive)
+
 		modifier = {
 			factor = 0.90
 			owner = {
@@ -65,14 +65,9 @@ province_event = {
 
 		trigger = {
             NOT = {
-                has_province_modifier = SLMod_province_modifiers_institution_spread_boost
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
             }
         }
-
-        owner = {
-            add_yearly_manpower = -0.16
-        }
-
 
         add_next_institution_embracement = 1
 
@@ -88,12 +83,8 @@ province_event = {
 
         trigger = {
             NOT = {
-                has_province_modifier = SLMod_province_modifiers_institution_spread_boost
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
             }
-        }
-
-        owner = {
-            add_yearly_manpower = -0.16
         }
 
         add_next_institution_embracement = 1

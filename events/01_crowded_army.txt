@@ -49,16 +49,23 @@ country_event = {
 	# B - Army tradition boost - Light
 	option = {
         name = SLMod_events_crowded_army_namespace.1.b
+        custom_tooltip = SLMod_events_crowded_army_namespace.1.b.tooltip
 
         trigger = {
             NOT = {
                 ruler_has_personality = martial_educator_personality
                 ruler_has_personality = strict_personality
+                has_country_modifier = SLMod_country_modifier_army_tradition_boost_light
             }
         }
 
-        add_yearly_manpower = -0.16
-        add_army_tradition = 2.5
+        add_yearly_manpower = -0.20
+
+        add_country_modifier = {
+            name = SLMod_country_modifier_army_tradition_boost_light
+            duration = 365
+            hidden = no
+        }
     }
 	
 	# C - Drill gain - Light
@@ -220,6 +227,7 @@ country_event = {
     # G - Army tradition boost - Personality
     option = {
         name = SLMod_events_crowded_army_namespace.1.g
+        custom_tooltip = SLMod_events_crowded_army_namespace.1.g.tooltip
 
         highlight = yes
 
@@ -228,10 +236,18 @@ country_event = {
                 ruler_has_personality = martial_educator_personality
                 ruler_has_personality = strict_personality
             }
+            NOT = {
+                has_country_modifier = SLMod_country_modifier_army_tradition_boost_personality
+            }
         }
 
-        add_yearly_manpower = -0.32
-        add_army_tradition = 5
+        add_yearly_manpower = -0.40
+
+        add_country_modifier = {
+            name = SLMod_country_modifier_army_tradition_boost_personality
+            duration = 365
+            hidden = no
+        }
     }
 
     # H - Drill gain - Personality
@@ -371,7 +387,7 @@ country_event = {
                 ruler_has_personality = inspiring_leader_personality
             }
             NOT = {
-                has_country_modifier = has_country_modifier = SLMod_country_modifiers_drill_decay_reduction_personality
+                has_country_modifier = SLMod_country_modifiers_drill_decay_reduction_personality
             }
         }
 

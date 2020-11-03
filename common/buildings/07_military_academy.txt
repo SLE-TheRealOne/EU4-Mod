@@ -64,6 +64,7 @@ military_academy_02 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {
@@ -100,6 +101,7 @@ military_academy_03 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {
@@ -136,6 +138,7 @@ military_academy_04 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {
@@ -172,6 +175,7 @@ military_academy_05 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {
@@ -208,6 +212,7 @@ military_academy_06 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {
@@ -244,6 +249,7 @@ military_academy_07 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {
@@ -280,6 +286,7 @@ military_academy_08 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {
@@ -316,6 +323,7 @@ military_academy_09 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {
@@ -352,6 +360,7 @@ military_academy_10 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = military_academy_flag
 	}
 	
 	on_destroyed = {

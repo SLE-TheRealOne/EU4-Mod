@@ -9,6 +9,7 @@ country_decisions = {
 		
 		allow = {
 			spymaster = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -36,6 +37,7 @@ country_decisions = {
 		
 		allow = {
 			naval_reformer = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -63,6 +65,7 @@ country_decisions = {
 		
 		allow = {
 			trader = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -90,6 +93,7 @@ country_decisions = {
 		
 		allow = {
 			colonial_governor = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -117,6 +121,7 @@ country_decisions = {
 		
 		allow = {
 			diplomat = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {
@@ -144,6 +149,7 @@ country_decisions = {
 		
 		allow = {
 			navigator = 2
+			manpower_percentage = 0.30
 		}
 		
 		effect = {

@@ -7,17 +7,37 @@ province_event = {
 	desc = SLMod_events_prosperity_namespace.1.desc
 	picture = FEAST_eventPicture
 	goto = root
-	
-	trigger = {
-		is_prosperous = yes
+
+	immediate = {
+	    export_to_variable = { which = total_available_manpower value = manpower who = owner }
+
+	    export_to_variable = { which = manpower_cost_for_tax_boost value = base_tax }
+        multiply_variable = { which = manpower_cost_for_tax_boost value = 0.5 }
+
+        export_to_variable = { which = manpower_cost_for_production_boost value = base_production }
+        multiply_variable = { which = manpower_cost_for_production_boost value = 0.5 }
+
+        export_to_variable = { which = manpower_cost_for_manpower_boost value = base_manpower }
+        multiply_variable = { which = manpower_cost_for_manpower_boost value = 0.5 }
+
+        export_to_variable = { which = modifier_duration value = development }
+        multiply_variable = { which = modifier_duration value = 30 }
 	}
 
-	is_mtth_scaled_to_size = 1
-	
+	trigger = {
+		is_prosperous = yes
+		NOT = {
+		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_tax
+		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_production
+		    has_province_modifier = SLMod_province_modifier_prosperity_free_base_manpower
+		}
+	}
+
+    is_mtth_scaled_to_size = 1
+
 	mean_time_to_happen = {
-		months = 6
-		
-		# Stability modifiers ==> Max 6 months (either negative or positive)
+		months = 5
+
 		modifier = {
 			factor = 0.90
 			owner = {
@@ -55,7 +75,7 @@ province_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = SLMod_events_prosperity_namespace.1.a
 
@@ -63,18 +83,24 @@ province_event = {
 		    NOT = {
 		        has_province_modifier = SLMod_province_modifier_prosperity_free_base_tax
 		    }
+		    check_variable = {
+                which = total_available_manpower
+                which = manpower_cost_for_tax_boost
+            }
 		}
 
-        owner = {
-            add_yearly_manpower = -0.24
+        add_base_tax = 1
+		dynamic_scripted_effect = {
+		    effect = add_manpower
+		    variable = manpower_cost_for_tax_boost
+		    scope = owner
         }
-
-		add_base_tax = 1
-        add_province_modifier = {
-            name = "SLMod_province_modifier_prosperity_free_base_tax"
-            duration = 365
-        }
+		dynamic_add_or_extend_province_modifier = {
+		    name = SLMod_province_modifier_prosperity_free_base_tax
+		    duration = modifier_duration
+		}
 	}
+
 	option = {
 		name = SLMod_events_prosperity_namespace.1.b
 
@@ -82,18 +108,24 @@ province_event = {
             NOT = {
                 has_province_modifier = SLMod_province_modifier_prosperity_free_base_production
             }
+            check_variable = {
+                which = total_available_manpower
+                which = manpower_cost_for_production_boost
+            }
         }
 
-        owner = {
-            add_yearly_manpower = -0.24
+        add_base_production = 1
+        dynamic_scripted_effect = {
+            effect = add_manpower
+            variable = manpower_cost_for_production_boost
+            scope = owner
         }
-
-		add_base_production = 1
-		add_province_modifier = {
-            name = "SLMod_province_modifier_prosperity_free_base_production"
-            duration = 365
+        dynamic_add_or_extend_province_modifier = {
+            name = SLMod_province_modifier_prosperity_free_base_production
+            duration = modifier_duration
         }
 	}
+
 	option = {
 		name = SLMod_events_prosperity_namespace.1.c
 
@@ -101,16 +133,43 @@ province_event = {
             NOT = {
                 has_province_modifier = SLMod_province_modifier_prosperity_free_base_manpower
             }
+            check_variable = {
+                which = total_available_manpower
+                which = manpower_cost_for_manpower_boost
+            }
         }
 
-        owner = {
-            add_yearly_manpower = -0.24
+        add_base_manpower = 1
+        dynamic_scripted_effect = {
+            effect = add_manpower
+            variable = manpower_cost_for_manpower_boost
+            scope = owner
         }
-
-		add_base_manpower = 1
-		add_province_modifier = {
-            name = "SLMod_province_modifier_prosperity_free_base_manpower"
-            duration = 365
+        dynamic_add_or_extend_province_modifier = {
+            name = SLMod_province_modifier_prosperity_free_base_manpower
+            duration = modifier_duration
         }
 	}
+
+	option = {
+        name = SLMod_events_prosperity_namespace.1.z
+        custom_tooltip = SLMod_events_prosperity_namespace.1.z.toolip
+
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = total_available_manpower
+                    which = manpower_cost_for_manpower_boost
+                }
+                check_variable = {
+                    which = total_available_manpower
+                    which = manpower_cost_for_manpower_boost
+                }
+                check_variable = {
+                    which = total_available_manpower
+                    which = manpower_cost_for_manpower_boost
+                }
+            }
+        }
+    }
 }

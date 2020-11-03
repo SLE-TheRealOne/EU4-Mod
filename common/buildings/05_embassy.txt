@@ -66,6 +66,7 @@ embassy_02 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
@@ -102,6 +103,7 @@ embassy_03 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
@@ -138,6 +140,7 @@ embassy_04 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
@@ -174,6 +177,7 @@ embassy_05 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
@@ -210,6 +214,7 @@ embassy_06 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
@@ -246,6 +251,7 @@ embassy_07 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
@@ -282,6 +288,7 @@ embassy_08 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
@@ -318,6 +325,7 @@ embassy_09 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
@@ -354,6 +362,7 @@ embassy_10 = {
 			}
 			add_splendor = 1
 		}
+		set_global_flag = embassy_flag
 	}
 	
 	on_destroyed = {
