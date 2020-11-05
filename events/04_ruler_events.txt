@@ -7,8 +7,15 @@ country_event = {
 	desc = SLMod_events_ruler_namespace.1.desc
 	picture = DIPLOMACY_eventPicture
 
+    immediate = {
+        hidden_effect = {
+            export_to_variable = { which = splendor_amount_to_add value = prestige }
+            subtract_variable = { which = splendor_amount_to_add value = 90 }
+        }
+    }
+
 	trigger = {
-		prestige = 92
+		prestige = 90
 		NOT = {
 		    adm = 6
 		    has_country_modifier = SLMod_country_modifier_ruler_adm_bumped
@@ -16,14 +23,19 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 1
 	}
 
 	option = {
 		name = SLMod_events_ruler_namespace.1.a
+		custom_tooltip = SLMod_events_ruler_namespace.1.a.tooltip
 
         change_adm = 1
-        add_splendor = 5
+
+        dynamic_scripted_effect_integer = {
+            effect = add_splendor
+            variable = splendor_amount_to_add
+        }
 
         add_country_modifier = {
             name = SLMod_country_modifier_ruler_adm_bumped
@@ -40,8 +52,15 @@ country_event = {
 	desc = SLMod_events_ruler_namespace.2.desc
 	picture = COURT_eventPicture
 
+    immediate = {
+        hidden_effect = {
+            export_to_variable = { which = splendor_amount_to_add value = trigger_value:legitimacy }
+            subtract_variable = { which = splendor_amount_to_add value = 90 }
+        }
+    }
+
 	trigger = {
-		legitimacy = 92
+		legitimacy = 90
 		NOT = {
 		    dip = 6
 		    has_country_modifier = SLMod_country_modifier_ruler_dip_bumped
@@ -49,14 +68,19 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 1
 	}
 
 	option = {
 		name = SLMod_events_ruler_namespace.2.a
+		custom_tooltip = SLMod_events_ruler_namespace.2.a.tooltip
 
         change_dip = 1
-        add_splendor = 5
+
+        dynamic_scripted_effect_integer = {
+            effect = add_splendor
+            variable = splendor_amount_to_add
+        }
 
         add_country_modifier = {
             name = SLMod_country_modifier_ruler_dip_bumped
@@ -73,8 +97,15 @@ country_event = {
 	desc = SLMod_events_ruler_namespace.3.desc
 	picture = HRE_eventPicture
 
+    immediate = {
+        hidden_effect = {
+            export_to_variable = { which = splendor_amount_to_add value = trigger_value:power_projection }
+            subtract_variable = { which = splendor_amount_to_add value = 90 }
+        }
+    }
+
 	trigger = {
-		power_projection = 92
+		power_projection = 90
 		NOT = {
 		    mil = 6
 		    has_country_modifier = SLMod_country_modifier_ruler_mil_bumped
@@ -82,14 +113,19 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 1
 	}
 
 	option = {
 		name = SLMod_events_ruler_namespace.3.a
+		custom_tooltip = SLMod_events_ruler_namespace.3.a.tooltip
 
         change_mil = 1
-        add_splendor = 5
+
+        dynamic_scripted_effect_integer = {
+            effect = add_splendor
+            variable = splendor_amount_to_add
+        }
 
         add_country_modifier = {
             name = SLMod_country_modifier_ruler_mil_bumped

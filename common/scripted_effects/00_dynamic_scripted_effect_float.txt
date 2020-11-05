@@ -1,0 +1,89 @@
+dynamic_scripted_effect_float = {
+    #hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                    which = $operation$
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = { which = $variable$ value = 5242.88 }
+                }
+                subtract_variable = { which = $variable$ value = 5242.88 }
+                [[scope]$scope$ = {]
+                    $effect$ = 2621.44
+                [[scope]}]
+            }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=2621.44 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=1310.72 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=655.36 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=327.68 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=163.84 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=81.92 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=40.96 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=20.48 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=10.24 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=5.12 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=2.56 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=1.28 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=0.64 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=0.32 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=0.16 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=0.08 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=0.04 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=0.02 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=0.01 }
+        }
+
+        if = {
+            limit = {
+                check_variable = {
+                    which = $operation$
+                    value = -1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = { which = $variable$ value = -5242.88 }
+                }
+                subtract_variable = { which = $variable$ value = -5242.88 }
+                [[scope]$scope$ = {]
+                    $effect$ = -2621.44
+                [[scope]}]
+            }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=2621.44 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=1310.72 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=655.36 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=327.68 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=163.84 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=81.92 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=40.96 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=20.48 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=10.24 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=5.12 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=2.56 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=1.28 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=0.64 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=0.32 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=0.16 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=0.08 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=0.04 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=0.02 }
+            dynamic_scripted_effect_iteration_float = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=0.01 }
+        }
+    #}
+}
+
+dynamic_scripted_effect_iteration_float = {
+    if = {
+        limit = {
+            check_variable = { which = $variable$ value = $num$ }
+        }
+        subtract_variable = { which = $variable$ value = $num$ }
+        [[scope]$scope$ = {]
+            $effect$ = [[sign]$sign$]$num$
+        [[scope]}]
+    }
+}

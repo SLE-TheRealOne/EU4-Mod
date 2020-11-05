@@ -36,7 +36,7 @@ province_event = {
     is_mtth_scaled_to_size = 1
 
 	mean_time_to_happen = {
-		months = 5
+		months = 12
 
 		modifier = {
 			factor = 0.90
@@ -90,10 +90,11 @@ province_event = {
 		}
 
         add_base_tax = 1
-		dynamic_scripted_effect = {
+		dynamic_scripted_effect_float = {
 		    effect = add_manpower
 		    variable = manpower_cost_for_tax_boost
 		    scope = owner
+		    operation = -1
         }
 		dynamic_add_or_extend_province_modifier = {
 		    name = SLMod_province_modifier_prosperity_free_base_tax
@@ -115,10 +116,11 @@ province_event = {
         }
 
         add_base_production = 1
-        dynamic_scripted_effect = {
+        dynamic_scripted_effect_float = {
             effect = add_manpower
             variable = manpower_cost_for_production_boost
             scope = owner
+            operation = -1
         }
         dynamic_add_or_extend_province_modifier = {
             name = SLMod_province_modifier_prosperity_free_base_production
@@ -140,10 +142,11 @@ province_event = {
         }
 
         add_base_manpower = 1
-        dynamic_scripted_effect = {
+        dynamic_scripted_effect_float = {
             effect = add_manpower
             variable = manpower_cost_for_manpower_boost
             scope = owner
+            operation = -1
         }
         dynamic_add_or_extend_province_modifier = {
             name = SLMod_province_modifier_prosperity_free_base_manpower

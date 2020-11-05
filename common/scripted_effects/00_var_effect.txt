@@ -1,0 +1,80 @@
+var_effect = { #effect #var (#scope)
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = { which = $var$ value = 0 }
+            }
+            while = {
+                limit = {
+                    check_variable = { which = $var$ value = 2621.44 }
+                }
+                subtract_variable = { which = $var$ value = 2621.44 }
+                [[scope]$scope$ = {]
+                    $effect$ = 2621.44
+                [[scope]}]
+
+            }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=1310.72 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=655.36 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=327.68 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=163.84 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=81.92 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=40.96 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=20.48 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=10.24 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=5.12 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=2.56 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=1.28 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=0.64 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=0.32 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=0.16 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=0.08 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=0.04 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=0.02 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] num=0.01 }
+        }
+        else = {
+            multiply_variable = { which = $var$ value = -1 }
+            while = {
+                limit = {
+                    check_variable = { which = $var$ value = 2621.44 }
+                }
+                subtract_variable = { which = $var$ value = 2621.44 }
+                [[scope]$scope$ = {]
+                    $effect$ = -2621.44
+                [[scope]}]
+
+            }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=1310.72 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=655.36 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=327.68 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=163.84 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=81.92 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=40.96 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=20.48 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=10.24 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=5.12 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=2.56 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=1.28 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=0.64 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=0.32 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=0.16 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=0.08 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=0.04 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=0.02 }
+            var_effect_helper = { effect=$effect$ var=$var$ [[scope]$scope$] sign=- num=0.01 }
+        }
+        set_variable = { which = $var$ value = 0 }
+    }
+}
+var_effect_helper = {
+    if = {
+        limit = {
+            check_variable = { which = $var$ value = $num$ }
+        }
+        subtract_variable = { which = $var$ value = $num$ }
+        [[scope]$scope$ = {]
+            $effect$ = [[sign]$sign$]$num$
+        [[scope]}]
+    }
+}
