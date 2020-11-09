@@ -9,19 +9,10 @@ province_event = {
 	goto = root
 
 	immediate = {
-	    export_to_variable = { which = total_available_manpower value = manpower who = owner }
-
-	    export_to_variable = { which = manpower_cost_for_tax_boost value = base_tax }
-        multiply_variable = { which = manpower_cost_for_tax_boost value = 0.5 }
-
-        export_to_variable = { which = manpower_cost_for_production_boost value = base_production }
-        multiply_variable = { which = manpower_cost_for_production_boost value = 0.5 }
-
-        export_to_variable = { which = manpower_cost_for_manpower_boost value = base_manpower }
-        multiply_variable = { which = manpower_cost_for_manpower_boost value = 0.5 }
-
-        export_to_variable = { which = modifier_duration value = development }
-        multiply_variable = { which = modifier_duration value = 30 }
+        hidden_effect = {
+            export_to_variable = { which = modifier_duration value = development }
+            multiply_variable = { which = modifier_duration value = 30 }
+        }
 	}
 
 	trigger = {
@@ -39,37 +30,37 @@ province_event = {
 		months = 12
 
 		modifier = {
-			factor = 0.90
+			factor = 0.95
 			owner = {
 				stability = 1
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.95
 			owner = {
 				stability = 2
 			}
 		}
 		modifier = {
-			factor = 0.7
+			factor = 0.90
 			owner = {
 				stability = 3
 			}
 		}
 		modifier = { # -1
-			factor = 1.10
+			factor = 1.05
 			owner = {
 				NOT = { stability = 0 }
 			}
 		}
 		modifier = { # -2
-			factor = 1.15
+			factor = 1.05
 			owner = {
 				NOT = { stability = -1 }
 			}
 		}
 		modifier = { # -3
-			factor = 1.30
+			factor = 1.10
 			owner = {
 				NOT = { stability = -2 }
 			}
@@ -83,19 +74,10 @@ province_event = {
 		    NOT = {
 		        has_province_modifier = SLMod_province_modifier_prosperity_free_base_tax
 		    }
-		    check_variable = {
-                which = total_available_manpower
-                which = manpower_cost_for_tax_boost
-            }
 		}
 
         add_base_tax = 1
-		dynamic_scripted_effect_float = {
-		    effect = add_manpower
-		    variable = manpower_cost_for_tax_boost
-		    scope = owner
-		    operation = -1
-        }
+
 		dynamic_add_or_extend_province_modifier = {
 		    name = SLMod_province_modifier_prosperity_free_base_tax
 		    duration = modifier_duration
@@ -109,19 +91,10 @@ province_event = {
             NOT = {
                 has_province_modifier = SLMod_province_modifier_prosperity_free_base_production
             }
-            check_variable = {
-                which = total_available_manpower
-                which = manpower_cost_for_production_boost
-            }
         }
 
         add_base_production = 1
-        dynamic_scripted_effect_float = {
-            effect = add_manpower
-            variable = manpower_cost_for_production_boost
-            scope = owner
-            operation = -1
-        }
+
         dynamic_add_or_extend_province_modifier = {
             name = SLMod_province_modifier_prosperity_free_base_production
             duration = modifier_duration
@@ -135,19 +108,10 @@ province_event = {
             NOT = {
                 has_province_modifier = SLMod_province_modifier_prosperity_free_base_manpower
             }
-            check_variable = {
-                which = total_available_manpower
-                which = manpower_cost_for_manpower_boost
-            }
         }
 
         add_base_manpower = 1
-        dynamic_scripted_effect_float = {
-            effect = add_manpower
-            variable = manpower_cost_for_manpower_boost
-            scope = owner
-            operation = -1
-        }
+
         dynamic_add_or_extend_province_modifier = {
             name = SLMod_province_modifier_prosperity_free_base_manpower
             duration = modifier_duration
@@ -157,22 +121,5 @@ province_event = {
 	option = {
         name = SLMod_events_prosperity_namespace.1.z
         custom_tooltip = SLMod_events_prosperity_namespace.1.z.toolip
-
-        trigger = {
-            NOT = {
-                check_variable = {
-                    which = total_available_manpower
-                    which = manpower_cost_for_manpower_boost
-                }
-                check_variable = {
-                    which = total_available_manpower
-                    which = manpower_cost_for_manpower_boost
-                }
-                check_variable = {
-                    which = total_available_manpower
-                    which = manpower_cost_for_manpower_boost
-                }
-            }
-        }
     }
 }

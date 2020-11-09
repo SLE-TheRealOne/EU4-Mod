@@ -232,3 +232,6 @@
  desc_SLMod_country_modifier_ruler_dip_bumped: "Il faudra un moment pour que [Root.Monarch.GetName] puisse mettre en pratique ce qu'il a appris dans le domaine diplomatique. Peut-être pourra-t-il, de nouveau, apprendre"
  SLMod_country_modifier_ruler_mil_bumped: "§MApprentissage militaire terminé§!"
  desc_SLMod_country_modifier_ruler_mil_bumped: "Il faudra un moment pour que [Root.Monarch.GetName] puisse mettre en pratique ce qu'il a appris dans le domaine militaire. Peut-être pourra-t-il, de nouveau, apprendre"
+
+ SLMod_country_modifiers_institution_spread_boost: "§MPropagation militaire§!"
+ desc_SLMod_country_modifiers_institution_spread_boost: "Nous avons décidé de réorienter notre main d'oeuvre militaire vers la propagation d'une institution"

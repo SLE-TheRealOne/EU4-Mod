@@ -21,7 +21,7 @@ country_event = {
                 limit = {
                     is_state = yes
                 }
-            save_event_target_as = crowded_army_randomly_chosen_province_1
+                save_event_target_as = crowded_army_randomly_chosen_province_1
             }
         }
     }

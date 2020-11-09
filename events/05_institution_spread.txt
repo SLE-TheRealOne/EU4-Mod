@@ -1,99 +1,121 @@
 namespace = SLMod_events_institution_spread_namespace
 
-province_event = {
+country_event = {
 
 	id = SLMod_events_institution_spread_namespace.1
 	title = SLMod_events_institution_spread_namespace.1.title
 	desc = SLMod_events_institution_spread_namespace.1.desc
 	picture = FEAST_eventPicture
 	goto = root
-	
-	trigger = {
-		owner = {
-		    is_lacking_institutions = yes
-		    manpower_percentage = 0.30
-		}
-		is_prosperous = yes
-		current_institution_growth = 10
-	}
 
-	is_mtth_scaled_to_size = 1
+    immediate = {
+        hidden_effect = {
+            export_to_variable = { which = current_year value = trigger_value:is_year }
+            set_variable = { which = unembraced_penalty which = current_year }
+            subtract_variable = { which = unembraced_penalty value = 1550 }
+
+            set_variable = { which = unembraced_penalty_multiplier which = unembraced_penalty }
+            change_variable = { which = unembraced_penalty_multiplier value = 100 }
+            divide_variable = { which = unembraced_penalty_multiplier value = 100 }
+
+            set_variable = { which = next_institution_embracement_to_add value = 2 }
+            multiply_variable = { which = next_institution_embracement_to_add which = unembraced_penalty_multiplier }
+        }
+    }
+
+    trigger = {
+        is_lacking_institutions = yes
+        NOT = {
+            has_country_modifier = SLMod_country_modifiers_institution_spread_boost
+        }
+        manpower_percentage = 0.30
+    }
 	
 	mean_time_to_happen = {
-		months = 3
-
-		modifier = {
-			factor = 0.90
-			owner = {
-				stability = 1
-			}
-		}
-		modifier = {
-			factor = 0.75
-			owner = {
-				stability = 2
-			}
-		}
-		modifier = {
-			factor = 0.7
-			owner = {
-				stability = 3
-			}
-		}
-		modifier = { # -1
-			factor = 1.10
-			owner = {
-				NOT = { stability = 0 }
-			}
-		}
-		modifier = { # -2
-			factor = 1.15
-			owner = {
-				NOT = { stability = -1 }
-			}
-		}
-		modifier = { # -3
-			factor = 1.30
-			owner = {
-				NOT = { stability = -2 }
-			}
-		}
-	}
+        days = 1
+    }
 	
 	option = {
 		name = SLMod_events_institution_spread_namespace.1.a
+		custom_tooltip = SLMod_events_institution_spread_namespace.1.a.tooltip
 
 		trigger = {
             NOT = {
-                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
+                has_country_modifier = SLMod_country_modifiers_institution_spread_boost
             }
         }
 
-        add_next_institution_embracement = 1
-
-        add_province_modifier = {
-            name = SLMod_province_modifiers_institution_spread_boost_a
-            duration = 1460
+        add_country_modifier = {
+            name = SLMod_country_modifiers_institution_spread_boost
+            duration = 1800
             hidden = no
+        }
+
+        every_owned_province = {
+            limit = {
+                is_state = yes
+                current_institution = 5
+                NOT = {
+                    current_institution = 70
+                    has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
+                }
+            }
+            add_province_modifier = {
+                name = SLMod_province_modifiers_institution_spread_boost_a
+                duration = 1460
+                hidden = no
+            }
+            dynamic_scripted_effect_float = {
+                effect = add_next_institution_embracement
+                variable = next_institution_embracement_to_add
+                scope = owner
+                operation = 1
+            }
         }
 	}
 
 	option = {
         name = SLMod_events_institution_spread_namespace.1.b
+        custom_tooltip = SLMod_events_institution_spread_namespace.1.b.tooltip
 
         trigger = {
             NOT = {
-                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
+                has_country_modifier = SLMod_country_modifiers_institution_spread_boost
             }
         }
 
-        add_next_institution_embracement = 1
-
-        add_province_modifier = {
-            name = SLMod_province_modifiers_institution_spread_boost_b
-            duration = 1460
+        add_country_modifier = {
+            name = SLMod_country_modifiers_institution_spread_boost
+            duration = 1800
             hidden = no
         }
+
+        every_owned_province = {
+            limit = {
+                is_state = yes
+                current_institution = 5
+                NOT = {
+                    has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
+                    current_institution = 70
+                }
+            }
+            add_province_modifier = {
+                name = SLMod_province_modifiers_institution_spread_boost_b
+                duration = 1460
+                hidden = no
+            }
+            dynamic_scripted_effect_float = {
+                effect = add_next_institution_embracement
+                variable = next_institution_embracement_to_add
+                scope = owner
+                operation = 1
+            }
+        }
     }
+
+    option = {
+		name = SLMod_events_institution_spread_namespace.1.z
+		custom_tooltip = SLMod_events_institution_spread_namespace.1.z.tooltip
+	}
 
 }
