@@ -190,7 +190,7 @@
 
  reduce_development_costs_country_modifier: "§MAide au développement§!"
  desc_reduce_development_costs_country_modifier: "Coût du développement réduit"
- slow_navy_tradition_decay_country_modifier: "$MTradition maritime préservée§!"
+ slow_navy_tradition_decay_country_modifier: "§MTradition maritime préservée§!"
  desc_slow_navy_tradition_decay_country_modifier: "Nous avons confié, à certains de nos marins, la mission exclusive de maintenir vivante et vigoureuse notre tradition navale afin qu'elle ne se perde pas"
  crowded_navy_country_modifier: "§MPorts surchargés§!"
  desc_crowded_navy_country_modifier: "La frustration que génère le fait de rester à terre chez nos marins perturbe chaque visite d'un navire dans un port. Les rixes se multiplient et le ravitaillement n'est pas correctement assuré"
@@ -235,3 +235,7 @@
 
  SLMod_country_modifiers_institution_spread_boost: "§MPropagation militaire§!"
  desc_SLMod_country_modifiers_institution_spread_boost: "Nous avons décidé de réorienter notre main d'oeuvre militaire vers la propagation d'une institution"
+
+ SLMod_country_modifier_events_institution_spread_2: "§MInstitution propagée par le prestige§!"
+ SLMod_country_modifier_events_institution_spread_3: "§MInstitution propagée par la légitimité§!"
+ SLMod_country_modifier_events_institution_spread_4: "§MInstitution propagée par la démonstration de force§!"

@@ -2,50 +2,41 @@ dynamic_scripted_effect_integer = {
     hidden_effect = {
         if = {
             limit = {
-                check_variable = {
-                    which = $variable$
-                    value = 0
-                }
+                check_variable = { which = $var$ value = 0 }
             }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=128 }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=64  }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=32  }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=16  }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=8   }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=4   }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=2   }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ [[scope]scope=$scope$] num=1   }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ [[scope]scope=$scope$] num=128 }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ [[scope]scope=$scope$] num=64  }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ [[scope]scope=$scope$] num=32  }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ [[scope]scope=$scope$] num=16  }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ [[scope]scope=$scope$] num=8   }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ [[scope]scope=$scope$] num=4   }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ [[scope]scope=$scope$] num=2   }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ [[scope]scope=$scope$] num=1   }
         } else = {
-            multiply_variable = { which = $variable$ value = -1 }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=128 }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=64  }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=32  }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=16  }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=8   }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=4   }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=2   }
-            dynamic_scripted_effect_iteration_integer = { effect=$effect$ variable=$variable$ sign=- [[scope]scope=$scope$] num=1   }
+            multiply_variable = { which = $var$ value = -1 }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ sign=- [[scope]scope=$scope$] num=128 }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ sign=- [[scope]scope=$scope$] num=64  }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ sign=- [[scope]scope=$scope$] num=32  }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ sign=- [[scope]scope=$scope$] num=16  }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ sign=- [[scope]scope=$scope$] num=8   }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ sign=- [[scope]scope=$scope$] num=4   }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ sign=- [[scope]scope=$scope$] num=2   }
+            dynamic_scripted_effect_iteration_integer = { effect=$effect$ var=$var$ sign=- [[scope]scope=$scope$] num=1   }
         }
-        set_variable = { which = $variable$ value = 0 }
+        set_variable = { which = $var$ value = 0 }
     }
 }
 
 dynamic_scripted_effect_iteration_integer = {
     if = {
         limit = {
-            check_variable = {
-                which = $variable$
-                value = $num$
-            }
+            check_variable = { which = $var$ value = $num$ }
         }
 
         [[scope]$scope$ = {]
             $effect$ = [[sign]$sign$]$num$
         [[scope]}]
 
-        subtract_variable = {
-            which = $variable$
-            value = $num$
-        }
+        subtract_variable = { which = $var$ value = $num$ }
     }
 }

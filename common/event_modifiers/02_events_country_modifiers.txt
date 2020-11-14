@@ -59,3 +59,12 @@ SLMod_country_modifier_ruler_mil_bumped = {
 SLMod_country_modifiers_institution_spread_boost = {
     state_maintenance_modifier = 0.10
 }
+
+SLMod_country_modifier_events_institution_spread_2 = {
+}
+
+SLMod_country_modifier_events_institution_spread_3 = {
+}
+
+SLMod_country_modifier_events_institution_spread_4 = {
+}

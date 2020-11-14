@@ -12,9 +12,7 @@ country_event = {
 		sailors_percentage = 0.90
 	}
 	
-	mean_time_to_happen = {
-		days = 365
-	}
+	is_triggered_only = yes
 	
 	# Boost privateer_efficiency
 	option = {

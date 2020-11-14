@@ -34,7 +34,7 @@ country_event = {
 
         dynamic_scripted_effect_integer = {
             effect = add_splendor
-            variable = splendor_amount_to_add
+            var = splendor_amount_to_add
         }
 
         add_country_modifier = {
@@ -79,7 +79,7 @@ country_event = {
 
         dynamic_scripted_effect_integer = {
             effect = add_splendor
-            variable = splendor_amount_to_add
+            var = splendor_amount_to_add
         }
 
         add_country_modifier = {
@@ -124,7 +124,7 @@ country_event = {
 
         dynamic_scripted_effect_integer = {
             effect = add_splendor
-            variable = splendor_amount_to_add
+            var = splendor_amount_to_add
         }
 
         add_country_modifier = {

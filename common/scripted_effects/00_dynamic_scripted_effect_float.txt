@@ -2,10 +2,7 @@ dynamic_scripted_effect_float = {
     #hidden_effect = {
         if = {
             limit = {
-                check_variable = {
-                    which = $operation$
-                    value = 1
-                }
+                check_variable = { which = $operation$ value = 1 }
             }
             while = {
                 limit = {
@@ -39,10 +36,7 @@ dynamic_scripted_effect_float = {
 
         if = {
             limit = {
-                check_variable = {
-                    which = $operation$
-                    value = -1
-                }
+                check_variable = { which = $operation$ value = -1 }
             }
             while = {
                 limit = {
@@ -85,5 +79,7 @@ dynamic_scripted_effect_iteration_float = {
         [[scope]$scope$ = {]
             $effect$ = [[sign]$sign$]$num$
         [[scope]}]
+
+        add_splendor = 2
     }
 }
