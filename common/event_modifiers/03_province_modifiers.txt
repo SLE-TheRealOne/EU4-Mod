@@ -33,9 +33,11 @@ SLMod_province_modifier_development_cost_reduction_12 = {
 SLMod_province_modifiers_institution_spread_boost_a = {
     institution_growth = 2
     local_manpower_modifier = -0.20
+    local_state_maintenance_modifier = 0.05
 }
 
 SLMod_province_modifiers_institution_spread_boost_b = {
     local_institution_spread = 0.20
     local_manpower_modifier = -0.20
+    local_state_maintenance_modifier = 0.05
 }

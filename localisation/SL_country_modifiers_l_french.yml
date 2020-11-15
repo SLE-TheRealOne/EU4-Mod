@@ -188,8 +188,8 @@
  assist_advisor_grand_captain_country_modifier: "§MMinistre Grand capitaine§!"
  desc_assist_advisor_grand_captain_country_modifier: "Allouer à notre §YGrand capitaine§! du matériel, du personnel ainsi que des ressources supplémentaires lui permettrait de se focaliser sur ses compétences pour laisser libre cours à tout son talent"
 
- reduce_development_costs_country_modifier: "§MAide au développement§!"
- desc_reduce_development_costs_country_modifier: "Coût du développement réduit"
+ SLMod_country_modifiers_reduce_development_costs: "§MAide au développement§!"
+ desc_SLMod_country_modifiers_reduce_development_costs: "Les états fournissent de la main d'oeuvre et des moyens supplémentaires pour favoriser tous types de projets qui permettraient à nos provinces de s'améliorer"
  slow_navy_tradition_decay_country_modifier: "§MTradition maritime préservée§!"
  desc_slow_navy_tradition_decay_country_modifier: "Nous avons confié, à certains de nos marins, la mission exclusive de maintenir vivante et vigoureuse notre tradition navale afin qu'elle ne se perde pas"
  crowded_navy_country_modifier: "§MPorts surchargés§!"

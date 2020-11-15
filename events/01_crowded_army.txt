@@ -9,6 +9,7 @@ country_event = {
 
 	trigger = {
 		manpower_percentage = 0.95
+		is_at_war = no
 	}
 	
 	mean_time_to_happen = {

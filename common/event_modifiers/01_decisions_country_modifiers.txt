@@ -1,7 +1,7 @@
-reduce_development_costs_country_modifier = {
-	inflation_reduction = -0.30
+SLMod_country_modifiers_reduce_development_costs = {
+	inflation_reduction = -0.10
 	development_cost = -0.10
-	global_tax_modifier = -0.10
+	state_maintenance_modifier = 0.03
 }
 siege_artillery_country_modifier = {
 	artillery_bonus_vs_fort = 1

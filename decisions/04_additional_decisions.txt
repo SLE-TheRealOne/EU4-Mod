@@ -2,7 +2,7 @@ country_decisions = {
 	
 	reduce_development_costs = {
 		potential = {
-		    NOT = { has_country_modifier = reduce_development_costs_country_modifier }
+		    NOT = { has_country_modifier = SLMod_country_modifiers_reduce_development_costs }
 		}
 
 		allow = {
@@ -12,8 +12,8 @@ country_decisions = {
 		
 		effect = {
 			add_country_modifier = {
-				name = reduce_development_costs_country_modifier
-				duration = 3650
+				name = SLMod_country_modifiers_reduce_development_costs
+				duration = 1460
 				hidden = no
 			}
 		}

@@ -1,5 +1,6 @@
 namespace = SLMod_events_ruler_namespace
 
+# Prestige
 country_event = {
 
 	id = SLMod_events_ruler_namespace.1
@@ -45,6 +46,7 @@ country_event = {
 	}
 }
 
+# Legitimacy
 country_event = {
 
 	id = SLMod_events_ruler_namespace.2
@@ -90,6 +92,7 @@ country_event = {
 	}
 }
 
+# Power projection
 country_event = {
 
 	id = SLMod_events_ruler_namespace.3
