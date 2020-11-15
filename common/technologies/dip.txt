@@ -58,6 +58,7 @@ technology = { #Marketplace
 
 	trade_range	= 10
 	marketplace = yes
+	opera_01 = yes
 }
 
 technology = { #Basic Financial Instruments
@@ -88,6 +89,7 @@ technology = { #Naval Ambitions
 	naval_morale			= 0.3
 	range					= 115
 	impressment_offices 	= yes
+	opera_02 = yes
 }
 
 technology  = { #Docks
@@ -124,6 +126,7 @@ technology = { #The Flute
 	global_colonial_growth  = 	10
 	enable = flute
 	enable = war_galley
+	opera_03 = yes
 }
 
 technology = { #Wharf
@@ -152,7 +155,7 @@ technology = { #Chartered Companies
 
 	trade_efficiency 		= 	0.02
 	enable = brig
-
+    opera_04 = yes
 }
 
 technology = { #The Galleass
@@ -186,6 +189,7 @@ technology = { #Development of Maritime Law
 
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
+	opera_05 = yes
 }
 
 technology = { #Merchantman
@@ -222,7 +226,7 @@ technology = { #The War Galleon
 
 	drydock = yes
 
-
+    opera_06 = yes
 	enable = wargalleon
 	enable = frigate
 }
@@ -234,7 +238,7 @@ technology = { #Naval Professionalization
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	num_accepted_cultures = 1
-
+    spy_center_07 = yes
 }
 
 technology = { #The Chebeck
@@ -260,6 +264,7 @@ technology = { #Limes
 	reduced_naval_attrition = yes
 	enable = twodecker
 	enable = trabakul
+	opera_07 = yes
 }
 
 technology = { #Heavy Frigates
@@ -297,6 +302,7 @@ technology = { #The Threedeckers
 	naval_maintenance		= 	0.1
 
 	enable = threedecker
+	opera_08 = yes
 }
 
 technology = { #The Eastindiaman
@@ -328,6 +334,7 @@ technology = { #Joint Stock Companies
 
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
+	opera_09 = yes
 }
 
 technology = { #Midshipmen Cadets
@@ -356,6 +363,7 @@ technology = { #Superior Ship Design
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1
 	num_accepted_cultures = 1
+	opera_10 = yes
 }
 
 technology = { #The Gold Standard

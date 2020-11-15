@@ -1,23 +1,6 @@
 spriteTypes = {
 
-	spriteType = {
-		name = "GFX_grievances_center_01"
-		texturefile = "gfx//interface//buildings//latin_workshop.tga"
-		loadType = "INGAME"
-	}
-	
-	spriteType = {
-		name = "GFX_grievances_center_02"
-		texturefile = "gfx//interface//buildings//latin_workshop.tga"
-		loadType = "INGAME"
-	}
-	
-	spriteType = {
-		name = "GFX_grievances_center_03"
-		texturefile = "gfx//interface//buildings//latin_workshop.tga"
-		loadType = "INGAME"
-	}
-
+    # embassy==> latin_embassy
 	spriteType = {
 		name = "GFX_embassy_01"
 		texturefile = "gfx//interface//buildings//latin_embassy.tga"
@@ -77,7 +60,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_embassy.tga"
 		loadType = "INGAME"
 	}
-	
+
+	# prime_ministry ==> GFX_prime_ministry_01
 	spriteType = {
 		name = "GFX_prime_ministry_01"
 		texturefile = "gfx//interface//buildings//latin_town_hall.tga"
@@ -137,7 +121,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_town_hall.tga"
 		loadType = "INGAME"
 	}
-	
+
+	# military_academy ==> latin_courthouse
 	spriteType = {
 		name = "GFX_military_academy_01"
 		texturefile = "gfx//interface//buildings//latin_courthouse.tga"
@@ -198,6 +183,7 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 
+    # precision_workshop ==> latin_workshop
 	spriteType = {
 		name = "GFX_precision_workshop_01"
 		texturefile = "gfx//interface//buildings//latin_workshop.tga"
@@ -257,7 +243,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_workshop.tga"
 		loadType = "INGAME"
 	}
-	
+
+	# laboratory ==> latin_admiralty
 	spriteType = {
 		name = "GFX_laboratory_01"
 		texturefile = "gfx//interface//buildings//latin_admiralty.tga"
@@ -317,7 +304,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_admiralty.tga"
 		loadType = "INGAME"
 	}
-	
+
+	# spy_center ==> spy_center
 	spriteType = {
 		name = "GFX_spy_center_01"
 		texturefile = "gfx//interface//buildings//latin_spy_agency.tga"
@@ -377,7 +365,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_spy_agency.tga"
 		loadType = "INGAME"
 	}
-	
+
+	# observatory ==> observatory
 	spriteType = {
 		name = "GFX_observatory_01"
 		texturefile = "gfx//interface//buildings//latin_glorious_monument.tga"
@@ -437,6 +426,67 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_glorious_monument.tga"
 		loadType = "INGAME"
 	}
+
+	# opera ==> trade_company/company_administration
+    spriteType = {
+        name = "GFX_opera_01"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_02"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_03"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_04"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_05"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_06"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_07"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_08"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_09"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_opera_10"
+        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        loadType = "INGAME"
+    }
 
 	spriteType = {
 		name = "GFX_building_default"

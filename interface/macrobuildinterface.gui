@@ -1372,6 +1372,23 @@ guiTypes = {
             maxHeight = 18
             text = "2000¤"
         }
+
+        ##########   Prime ministry   ##########
+        checkboxType = {
+            name = "build_opera_01"
+            position = { x = 9 y = 590 }
+            quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+        }
+
+        instantTextBoxType={
+            name = "opera_01_cost"
+            position = {x = 9 y = 640 }
+            font = "vic_18"
+            borderSize = {x = 0 y = 0}
+            maxWidth = 128
+            maxHeight = 18
+            text = "2000¤"
+        }
         #FIDOM
 
 		iconType = {

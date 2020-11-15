@@ -1,0 +1,67 @@
+dynamic_add_institution_embracement = {
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = { which = $variable$ value = 0 }
+            }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=2621.44 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=1310.72 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=655.36 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=327.68 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=163.84 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=81.92 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=40.96 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=20.48 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=10.24 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=5.12 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=2.56 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=1.28 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=0.64 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=0.32 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=0.16 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=0.08 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=0.04 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=0.02 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ [[scope]scope=$scope$] num=0.01 }
+        }
+        if = {
+            multiply_variable = { which = $variable$ value = -1 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=2621.44 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=1310.72 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=655.36 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=327.68 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=163.84 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=81.92 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=40.96 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=20.48 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=10.24 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=5.12 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=2.56 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=1.28 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=0.64 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=0.32 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=0.16 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=0.08 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=0.04 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=0.02 }
+            dynamic_add_institution_embracement_iteration = { variable=$variable$ institution=$institution$ sign=- [[scope]scope=$scope$] num=0.01 }
+        }
+    }
+}
+
+dynamic_add_institution_embracement_iteration = {
+    if = {
+        limit = {
+            check_variable = { which = $variable$ value = $num$ }
+        }
+
+        [[scope]$scope$ = {]
+            add_institution_embracement = {
+                which = $institution$
+                value = [[sign]$sign$]$num$
+            }
+        [[scope]}]
+
+        subtract_variable = { which = $variable$ value = $num$ }
+    }
+}

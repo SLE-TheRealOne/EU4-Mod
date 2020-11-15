@@ -1,5 +1,6 @@
 namespace = SLMod_events_institution_spread
 
+# printing_press
 province_event = {
 
 	id = SLMod_events_institution_spread.1
@@ -23,18 +24,20 @@ province_event = {
     }
 
     trigger = {
+        is_institution_enabled = printing_press
         owner = {
-            is_lacking_institutions = yes
             NOT = {
-                has_country_modifier = SLMod_country_modifiers_institution_spread_boost
+                has_institution = printing_press
+                has_country_modifier = SLMod_country_modifiers_institution_spread_1_boost
             }
         }
         is_state = yes
+        printing_press = 5
         NOT = {
-            current_institution = 70
+            printing_press = 70
             OR = {
-                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
-                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
+                has_province_modifier = SLMod_province_modifiers_institution_spread_1_boost_a
+                has_province_modifier = SLMod_province_modifiers_institution_spread_1_boost_b
             }
         }
     }
@@ -49,27 +52,27 @@ province_event = {
 
 		trigger = {
 		    NOT = {
-		        has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
+		        has_province_modifier = SLMod_province_modifiers_institution_spread_1_boost_a
 		    }
 		}
 
         owner = {
             add_country_modifier = {
-                name = SLMod_country_modifiers_institution_spread_boost
+                name = SLMod_country_modifiers_institution_spread_1_boost
                 duration = 120
                 hidden = no
             }
         }
 
         add_province_modifier = {
-            name = SLMod_province_modifiers_institution_spread_boost_a
+            name = SLMod_province_modifiers_institution_spread_1_boost_a
             duration = 1460
             hidden = no
         }
 
-        dynamic_scripted_effect_float = {
-            effect = add_next_institution_embracement
+        dynamic_add_institution_embracement = {
             variable = SLMod_events_institution_spread_1_next_institution_embracement_to_add
+            institution = printing_press
             scope = ROOT
         }
 	}
@@ -80,27 +83,27 @@ province_event = {
 
         trigger = {
             NOT = {
-                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
+                has_province_modifier = SLMod_province_modifiers_institution_spread_1_boost_b
             }
         }
 
         owner = {
             add_country_modifier = {
-                name = SLMod_country_modifiers_institution_spread_boost
+                name = SLMod_country_modifiers_institution_spread_1_boost
                 duration = 120
                 hidden = no
             }
         }
 
         add_province_modifier = {
-            name = SLMod_province_modifiers_institution_spread_boost_b
+            name = SLMod_province_modifiers_institution_spread_1_boost_b
             duration = 1460
             hidden = no
         }
 
-        dynamic_scripted_effect_float = {
-            effect = add_next_institution_embracement
+        dynamic_add_institution_embracement = {
             variable = SLMod_events_institution_spread_1_next_institution_embracement_to_add
+            institution = printing_press
             scope = ROOT
         }
     }
@@ -111,7 +114,7 @@ province_event = {
 
 		owner = {
             add_country_modifier = {
-                name = SLMod_country_modifiers_institution_spread_boost
+                name = SLMod_country_modifiers_institution_spread_1_boost
                 duration = 120
                 hidden = no
             }
@@ -119,6 +122,8 @@ province_event = {
 	}
 
 }
+
+# global_trade
 
 # Prestige
 country_event = {

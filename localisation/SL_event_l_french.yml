@@ -34,7 +34,7 @@
  SLMod_events_crowded_army_namespace.1.l: "Réviser le manuel"
  SLMod_events_crowded_army_namespace.1.l.tooltip: "Entre deux périodes d'entrainement, nos soldats ne doivent pas perdre les bons réflexes de leur entrainement\n"
 
- SLMod_events_institution_spread.1.title: "Institutions - Diffusion militaire"
+ SLMod_events_institution_spread.1.title: "Presse à imprimer - Diffusion militaire"
  SLMod_events_institution_spread.1.desc: "L'institution §MPresse à imprimer§! est apparue il y a §R[Root.SLMod_events_institution_spread_1_unembraced_penalty.GetValue]§! ans mais nous ne l'avons toujours pas adoptée.\nD'un autre côté notre réserve de main d'oeuvre militaire se remplit\nNous pourrions accélerer la diffusion de cette institution en réorientant cette main d'oeuvre."
  SLMod_events_institution_spread.1.a: "Détachons quelues compagnies pour lancer la machine"
  SLMod_events_institution_spread.1.a.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_1_next_institution_embracement_to_add.GetValue]§! pour la propagation de l'institution §YPresse à imprimer§! dans la province de §Y[This.GetName]§!"

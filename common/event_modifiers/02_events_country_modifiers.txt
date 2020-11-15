@@ -56,7 +56,7 @@ SLMod_country_modifier_ruler_dip_bumped = {
 SLMod_country_modifier_ruler_mil_bumped = {
 }
 
-SLMod_country_modifiers_institution_spread_boost = {
+SLMod_country_modifiers_institution_spread_1_boost = {
     global_institution_spread = 0.02
     state_maintenance_modifier = 0.01
 }

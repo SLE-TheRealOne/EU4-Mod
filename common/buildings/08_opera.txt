@@ -1,0 +1,384 @@
+opera_01 = {
+	cost = 150
+	time = 5
+	one_per_country = yes
+	
+	build_trigger = {
+		NOT = {
+			has_global_flag = opera_flag
+		}
+		owner = {
+		    is_lacking_institutions = yes
+		}
+		is_state = yes
+		is_prosperous = yes
+		development = 20
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_01_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		# Used to have building location on country modifiers view
+		save_global_event_target_as = opera_location
+		# Used to have unicity for all versions (and not per version)
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_01_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_01_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}
+
+opera_02 = {
+	cost = 303
+	time = 6
+	one_per_country = yes
+	make_obsolete = opera_01
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_02_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_02_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_02_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}
+
+opera_03 = {
+	cost = 459
+	time = 7
+	one_per_country = yes
+	make_obsolete = opera_02
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_03_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_03_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_03_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}
+
+opera_04 = {
+	cost = 618
+	time = 8
+	one_per_country = yes
+	make_obsolete = opera_03
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_04_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_04_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_04_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}
+
+opera_05 = {
+	cost = 781
+	time = 9
+	one_per_country = yes
+	make_obsolete = opera_04
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_05_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_05_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_05_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}
+
+opera_06 = {
+	cost = 946
+	time = 10
+	one_per_country = yes
+	make_obsolete = opera_05
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_06_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_06_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_06_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}
+
+opera_07 = {
+	cost = 1142
+	time = 11
+	one_per_country = yes
+	make_obsolete = opera_06
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_07_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_07_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_07_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}
+
+opera_08 = {
+	cost = 1287
+	time = 12
+	one_per_country = yes
+	make_obsolete = opera_07
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_08_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_08_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_08_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}
+
+opera_09 = {
+	cost = 1463
+	time = 13
+	one_per_country = yes
+	make_obsolete = opera_08
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_09_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_09_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_obsolete = {
+        owner = {
+            remove_country_modifier = opera_09_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+
+}
+
+opera_10 = {
+	cost = 1642
+	time = 14
+	one_per_country = yes
+	make_obsolete = opera_09
+	
+	ai_will_do = {
+		factor = 1
+	}
+	
+	on_built = {
+		owner = {
+			add_country_modifier = {
+				name = opera_10_country_modifier
+				duration = -1
+				hidden = no
+			}
+			add_splendor = 1
+		}
+		set_global_flag = opera_flag
+	}
+	
+	on_destroyed = {
+		owner = {
+			remove_country_modifier = opera_10_country_modifier
+		}
+		clr_global_flag = opera_flag
+	}
+
+	on_osbolete = {
+        owner = {
+            remove_country_modifier = opera_10_country_modifier
+        }
+        clr_global_flag = opera_flag
+    }
+}

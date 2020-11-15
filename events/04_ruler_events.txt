@@ -18,7 +18,7 @@ country_event = {
 	trigger = {
 		prestige = 90
 		NOT = {
-		    adm = 6
+		    adm = 8
 		    has_country_modifier = SLMod_country_modifier_ruler_adm_bumped
 		}
 	}
@@ -64,7 +64,7 @@ country_event = {
 	trigger = {
 		legitimacy = 90
 		NOT = {
-		    dip = 6
+		    dip = 8
 		    has_country_modifier = SLMod_country_modifier_ruler_dip_bumped
 		}
 	}
@@ -110,7 +110,7 @@ country_event = {
 	trigger = {
 		power_projection = 90
 		NOT = {
-		    mil = 6
+		    mil = 8
 		    has_country_modifier = SLMod_country_modifier_ruler_mil_bumped
 		}
 	}

@@ -12,5 +12,5 @@
  SLMod_province_modifier_prosperity_free_base_manpower: "§MContrecoup de la prospérité militaire§!"
  desc_SLMod_province_modifier_prosperity_free_base_manpower: "L'investissement soudain pour augmenter les réserves militaires a généré des coûts supplémentaires qui ralentiront, pendant un moment, les réserves militaires"
 
- SLMod_province_modifiers_institution_spread_boost_a: "§MPropagation militaire - Tactique§!"
- SLMod_province_modifiers_institution_spread_boost_b: "§MPropagation militaire - Stratégie§!"
+ SLMod_province_modifiers_institution_spread_1_boost_a: "§MPropagation militaire - Tactique§!"
+ SLMod_province_modifiers_institution_spread_1_boost_b: "§MPropagation militaire - Stratégie§!"
