@@ -430,61 +430,61 @@ spriteTypes = {
 	# opera ==> trade_company/company_administration
     spriteType = {
         name = "GFX_opera_01"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_02"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_03"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_04"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_05"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_06"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_07"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_08"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_09"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 
     spriteType = {
         name = "GFX_opera_10"
-        texturefile = "gfx//interface//buildings//trade_company/company_administration.dds"
+        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }
 

@@ -123,8 +123,6 @@ province_event = {
 
 }
 
-# global_trade
-
 # Prestige
 country_event = {
 
@@ -188,6 +186,7 @@ country_event = {
 	option = {
 		name = SLMod_events_institution_spread.2.a
 		custom_tooltip = SLMod_events_institution_spread.2.a.tooltip
+		goto = SLMod_events_institution_spread_2_selected_province_A
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -205,6 +204,7 @@ country_event = {
 	option = {
         name = SLMod_events_institution_spread.2.b
         custom_tooltip = SLMod_events_institution_spread.2.b.tooltip
+        goto = SLMod_events_institution_spread_2_selected_province_B
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -222,6 +222,7 @@ country_event = {
     option = {
         name = SLMod_events_institution_spread.2.c
         custom_tooltip = SLMod_events_institution_spread.2.c.tooltip
+        goto = SLMod_events_institution_spread_2_selected_province_C
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -299,6 +300,7 @@ country_event = {
 	option = {
 		name = SLMod_events_institution_spread.3.a
 		custom_tooltip = SLMod_events_institution_spread.3.a.tooltip
+		goto = SLMod_events_institution_spread_3_selected_province_A
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -316,6 +318,7 @@ country_event = {
 	option = {
         name = SLMod_events_institution_spread.3.b
         custom_tooltip = SLMod_events_institution_spread.3.b.tooltip
+        goto = SLMod_events_institution_spread_3_selected_province_B
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -333,6 +336,7 @@ country_event = {
     option = {
         name = SLMod_events_institution_spread.3.c
         custom_tooltip = SLMod_events_institution_spread.3.c.tooltip
+       goto = SLMod_events_institution_spread_3_selected_province_C
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -410,6 +414,7 @@ country_event = {
 	option = {
 		name = SLMod_events_institution_spread.4.a
 		custom_tooltip = SLMod_events_institution_spread.4.a.tooltip
+		goto = SLMod_events_institution_spread_4_selected_province_A
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -427,6 +432,7 @@ country_event = {
 	option = {
         name = SLMod_events_institution_spread.4.b
         custom_tooltip = SLMod_events_institution_spread.4.b.tooltip
+        goto = SLMod_events_institution_spread_4_selected_province_B
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -444,6 +450,7 @@ country_event = {
     option = {
         name = SLMod_events_institution_spread.4.c
         custom_tooltip = SLMod_events_institution_spread.4.c.tooltip
+        goto = SLMod_events_institution_spread_4_selected_province_C
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
