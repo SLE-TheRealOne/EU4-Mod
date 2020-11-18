@@ -241,61 +241,61 @@ precision_workshop_10_country_modifier = {
 }
 #   ===== Military academy =====
 military_academy_01_country_modifier = {
-	army_tradition_decay = -0.02
+	army_tradition_decay = -0.002
 	army_tradition_from_battle = 0.02
 	drill_gain_modifier = 0.02
 	drill_decay_modifier = -0.02
 }
 military_academy_02_country_modifier = {
-	army_tradition_decay = -0.04
+	army_tradition_decay = -0.004
 	army_tradition_from_battle = 0.04
 	drill_gain_modifier = 0.04
 	drill_decay_modifier = -0.04
 }
 military_academy_03_country_modifier = {
-	army_tradition_decay = -0.06
+	army_tradition_decay = -0.006
 	army_tradition_from_battle = 0.06
 	drill_gain_modifier = 0.06
 	drill_decay_modifier = -0.06
 }
 military_academy_04_country_modifier = {
-	army_tradition_decay = -0.08
+	army_tradition_decay = -0.008
 	army_tradition_from_battle = 0.08
 	drill_gain_modifier = 0.08
 	drill_decay_modifier = -0.08
 }
 military_academy_05_country_modifier = {
-	army_tradition_decay = -0.10
+	army_tradition_decay = -0.010
 	army_tradition_from_battle = 0.10
 	drill_gain_modifier = 0.10
 	drill_decay_modifier = -0.10
 }
 military_academy_06_country_modifier = {
-	army_tradition_decay = -0.12
+	army_tradition_decay = -0.012
 	army_tradition_from_battle = 0.12
 	drill_gain_modifier = 0.12
 	drill_decay_modifier = -0.12
 }
 military_academy_07_country_modifier = {
-	army_tradition_decay = -0.14
+	army_tradition_decay = -0.014
 	army_tradition_from_battle = 0.14
 	drill_gain_modifier = 0.14
 	drill_decay_modifier = -0.14
 }
 military_academy_08_country_modifier = {
-	army_tradition_decay = -0.16
+	army_tradition_decay = -0.016
 	army_tradition_from_battle = 0.16
 	drill_gain_modifier = 0.16
 	drill_decay_modifier = -0.16
 }
 military_academy_09_country_modifier = {
-	army_tradition_decay = -0.18
+	army_tradition_decay = -0.018
 	army_tradition_from_battle = 0.18
 	drill_gain_modifier = 0.18
 	drill_decay_modifier = -0.18
 }
 military_academy_10_country_modifier = {
-	army_tradition_decay = -0.20
+	army_tradition_decay = -0.02
 	army_tradition_from_battle = 0.20
 	drill_gain_modifier = 0.20
 	drill_decay_modifier = -0.20

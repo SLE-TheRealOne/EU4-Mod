@@ -345,7 +345,7 @@ technology = {
 	land_morale 		=	1.0
 	military_tactics	=	0.25
 
-
+    precision_workshop_05 = yes
 
 	enable = irish_charge
 	enable = dutch_maurician

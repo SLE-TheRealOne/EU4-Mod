@@ -145,7 +145,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_2_selected_province_A
+                 export_to_variable = { which = SLMod_events_institution_spread_2_selected_province_A_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_2_selected_province_A
             }
 
             random_owned_province = {
@@ -156,7 +157,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_2_selected_province_B
+                 export_to_variable = { which = SLMod_events_institution_spread_2_selected_province_B_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_2_selected_province_B
             }
 
             random_owned_province = {
@@ -167,7 +169,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_2_selected_province_C
+                 export_to_variable = { which = SLMod_events_institution_spread_2_selected_province_C_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_2_selected_province_C
             }
         }
     }
@@ -259,7 +262,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_3_selected_province_A
+                 export_to_variable = { which = SLMod_events_institution_spread_3_selected_province_A_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_3_selected_province_A
             }
 
             random_owned_province = {
@@ -270,7 +274,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_3_selected_province_B
+                 export_to_variable = { which = SLMod_events_institution_spread_3_selected_province_B_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_3_selected_province_B
             }
 
             random_owned_province = {
@@ -281,7 +286,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_3_selected_province_C
+                 export_to_variable = { which = SLMod_events_institution_spread_3_selected_province_C_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_3_selected_province_C
             }
         }
     }
@@ -336,7 +342,7 @@ country_event = {
     option = {
         name = SLMod_events_institution_spread.3.c
         custom_tooltip = SLMod_events_institution_spread.3.c.tooltip
-       goto = SLMod_events_institution_spread_3_selected_province_C
+        goto = SLMod_events_institution_spread_3_selected_province_C
 
         dynamic_scripted_effect_integer = {
             effect = add_next_institution_embracement
@@ -373,7 +379,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_4_selected_province_A
+                 export_to_variable = { which = SLMod_events_institution_spread_4_selected_province_A_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_4_selected_province_A
             }
 
             random_owned_province = {
@@ -384,7 +391,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_4_selected_province_B
+                 export_to_variable = { which = SLMod_events_institution_spread_4_selected_province_B_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_4_selected_province_B
             }
 
             random_owned_province = {
@@ -395,7 +403,8 @@ country_event = {
                         current_institution = 70
                      }
                  }
-                save_event_target_as = SLMod_events_institution_spread_4_selected_province_C
+                 export_to_variable = { which = SLMod_events_institution_spread_4_selected_province_C_current_institution value = trigger_value:current_institution }
+                 save_event_target_as = SLMod_events_institution_spread_4_selected_province_C
             }
         }
     }

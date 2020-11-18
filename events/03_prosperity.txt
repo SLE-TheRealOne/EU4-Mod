@@ -9,10 +9,13 @@ province_event = {
 	goto = root
 
 	immediate = {
-        hidden_effect = {
+        #hidden_effect = {
             export_to_variable = { which = modifier_duration value = development }
             multiply_variable = { which = modifier_duration value = 30 }
-        }
+            export_to_variable = { which = SLMod_events_prosperity_namespace_1_current_province_tax_level value = trigger_value:base_tax }
+            export_to_variable = { which = SLMod_events_prosperity_namespace_1_current_province_production_level value = trigger_value:base_production }
+            export_to_variable = { which = SLMod_events_prosperity_namespace_1_current_province_manpower_level value = trigger_value:base_manpower }
+        #}
 	}
 
 	trigger = {
