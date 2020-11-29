@@ -70,6 +70,15 @@
  SLMod_events_institution_spread.4.c: "[SLMod_events_institution_spread_4_selected_province_C.GetName] - [SLMod_events_institution_spread_4_selected_province_C.SLMod_events_institution_spread_4_selected_province_C_current_institution.GetValue]"
  SLMod_events_institution_spread.4.c.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_4_next_institution_embracement_amount_to_add.GetValue]§! pour la propagation de la prochaine institution en §Y[SLMod_events_institution_spread_4_selected_province_C.GetName]§!"
 
+ SLMod_events_institution_spread.5.title: "Lumières - Diffusion militaire"
+ SLMod_events_institution_spread.5.desc: "L'institution §MLumières§! est apparue il y a §R[Root.SLMod_events_institution_spread_5_unembraced_penalty.GetValue]§! ans mais nous ne l'avons toujours pas adoptée.\nD'un autre côté notre réserve de main d'oeuvre militaire se remplit\nNous pourrions accélerer la diffusion de cette institution en réorientant cette main d'oeuvre"
+ SLMod_events_institution_spread.5.a: "Détachons quelues compagnies pour lancer la machine"
+ SLMod_events_institution_spread.5.a.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_5_next_institution_embracement_to_add.GetValue]§! pour la propagation de l'institution §YLumières§! dans la province de §Y[This.GetName]§!"
+ SLMod_events_institution_spread.5.b: "Nous bénéficions déjà de plusieurs sources"
+ SLMod_events_institution_spread.5.b.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_5_next_institution_embracement_to_add.GetValue]§! pour la propagation de l'institution §YLumières§! dans la province de §Y[This.GetName]§!"
+ SLMod_events_institution_spread.5.z: "Aucun effet"
+ SLMod_events_institution_spread.5.z.tooltip: "Laissons les choses suivrent leur cours : l'institution finira bien par se diffuser d'elle-même"
+
  SLMod_events_prosperity_namespace.1.title: "Prospérité d'une province"
  SLMod_events_prosperity_namespace.1.desc: "L'état de §R[This.GetAreaName]§! jouit actuellement d'une période de prospérité dont les effets, pour les habitants de §M[This.GetName]§! sont particulièrement visibles : nous avons l'opportunité de pouvoir investir rapidement dans cette province"
  SLMod_events_prosperity_namespace.1.a: "Augmenter la valeur fiscale - Actuellement [This.SLMod_events_prosperity_namespace_1_current_province_tax_level.GetValue]"
@@ -101,3 +110,9 @@
  SLMod_events_ruler_namespace.3.b: "Bonne nouvelle !"
  SLMod_events_ruler_namespace.3.b.tooltip: "Gain de §G[Root.SLMod_events_ruler_namespace_3_splendor_amount_to_add_bonus.GetValue]§! en splendeur"
 
+ SLMod_events_generals_namespace.1.title: "Un général mercenaire nous propose ses services"
+ SLMod_events_generals_namespace.1.desc: "Un général étranger, apparament déçu du traitement qu'il recevait dans son armée, nous propose ses services. Cela représente apparament une aubaine mais, à condition qu'il ne soit pas un espion, il faudra un petit moment pour que nos commandants actuels acceptent ce nouveau venu"
+ SLMod_events_generals_namespace.1.a: "Bienvenu général !"
+ SLMod_events_generals_namespace.1.a.tooltip: "Un général de §G[Root.SLMod_events_generals_namespace_1_general_army_tradition.GetValue]§! de tradition apparaît"
+ SLMod_events_generals_namespace.1.z: "Non merci"
+ SLMod_events_generals_namespace.1.z.tooltip: "Nous pouvons nous passer du soutien d'un transfuge"

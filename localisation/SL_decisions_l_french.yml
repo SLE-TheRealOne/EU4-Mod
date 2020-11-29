@@ -2,20 +2,25 @@
 
  reduce_development_costs_title: "--- Aide au développement"
  reduce_development_costs_desc: "Demandons aux états de fournir de la main d'oeuvre et des moyens supplémentaires pour favoriser tous types de projets qui permettraient à nos provinces de s'améliorer"
- create_officers_school_title:  "--- Créer une école d'officiers"
- create_officers_school_desc: "La professionalisation et la taille de nos armées poussent à uniformiser l'encadrement des troupes. \n Les stratégies, tactiques et ordres doivent pouvoir être transmis de la même façon à toutes les unités, terrestres ou navales, dans toutes les régions sous notre contrôle.\nCependant, diluer le pouvoir militaire parmis des gens du commun risquera de déplaire aux nobles"
-
-
+ create_superior_officers_school_title:  "--- Créer une école d'officiers supérieurs"
+ create_superior_officers_school_desc: "La professionalisation et la taille de nos armées poussent à uniformiser l'encadrement des troupes. En complément de l'académie militaire, concentrée sur la troupe, créeons également une école dédiées aux officiers supérieurs, de haut rang. Un tel encadrement aura néanmoins un coût"
  siege_artillery_title: "--- Axer notre artillerie sur le siège"
  siege_artillery_desc: "L'invasion de nos ennemis passera par l'éffondrement de leurs défenses. Boulets explosifs, canon rayés et munitions plus lourdes nous permettront de percer toutes les murailles"
  combat_artillery_title: "--- Axer notre artillerie sur le combat"
  combat_artillery_desc: "L'invasion de nos ennemis passera par l'éffondrement de leurs armées. Les boulets creux d'Henry Shrapnel nous permettront d'infliger de très importantes pertes à l'ennemi"
-
- align_army_ranks_and_medals_title: "--- Rangs et médailles"
- align_army_ranks_and_medals_desc: "S'il est donné, à tout soldat, la possibilité de gravir les échelons, nous aurons, sous peu, des officiers sortis du rang pleinement capables d'assurer l'encadrement des troupes et d'améliorer nos résultats tactiques. Tandis que récompenser la combativité par des décorations et médailles fournira le supplément nécessaire pour surpasser nos ennemis durant la bataille"
-
+ medals_and_distinctions_title: "--- Médailles et décorations"
+ medals_and_distinctions_desc: "Récompensons les actions héroïques et exceptionnelles par des médailles, distinctions, décorations. Nous en tirerons à coup sur, des avantages tactiques et exploits sur les champs de bataille"
  improve_defenses_title: "--- Renforcer nos défenses"
  improve_defenses_desc: "Rendre nos forts plus robustes, mieux construits, mieux placés et plus garnis en hommes nous permettra de tenir les positions clefs dans nos futurs conflits"
+ raise_discipline_title: "--- Améliorer la discipline de la troupe"
+ raise_discipline_desc: "Par des règles plus strictes, un contrôle plus ferme et des sanctions plus sévères, nos officiers et commandants pourront mieux tenir la troupe"
+ raise_army_tradition_title: "--- Soigner la tradition militaire"
+ raise_army_tradition_desc: "Les rituels et traditions de nos armées ne sont pas que pour la parade. Elle permettent de cultiver l'esprit de corps et la combativité. C'est un atout précieux pour nos campagnes qui ne doit pas être négligé"
+ improve_army_logistics_title: "--- Améliorer la logistique des armées"
+ improve_army_logistics_desc: "Des éclaireurs, une avant-garde, une arrière-garde, des chariots, des chevaux de trait : utilisons notre §MAtelier de précision§! afin de fournir à nos armées tout le nécessaire pour qu'elles puissent plus rapidement se déplacer en campagne"
+ use_splendor_A_title: "--- Splendeur - Institutions"
+ use_splendor_B_title: "--- Splendeur - Entrainement"
+ use_splendor_C_title: "--- Splendeur - Developement"
  # -------------------------
  assist_advisor_natural_scientist_title: "--- Assister §Y[Root.Adm_Advisor.GetName]§!"
  assist_advisor_natural_scientist_desc: "Allouer à §Y[Root.Adm_Advisor.GetName]§! du matériel, du personnel ainsi que des ressources supplémentaires lui permettrait de se focaliser sur ses compétences pour laisser libre cours à tout son talent"

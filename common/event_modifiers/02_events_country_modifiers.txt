@@ -56,7 +56,7 @@ SLMod_country_modifier_ruler_dip_bumped = {
 SLMod_country_modifier_ruler_mil_bumped = {
 }
 
-SLMod_country_modifiers_institution_spread_1_boost = {
+SLMod_country_modifiers_institution_spread_boost = {
     global_institution_spread = 0.02
     state_maintenance_modifier = 0.01
 }
@@ -74,4 +74,12 @@ SLMod_country_modifier_events_institution_spread_3 = {
 SLMod_country_modifier_events_institution_spread_4 = {
     global_institution_spread = 0.02
     state_maintenance_modifier = 0.01
+}
+
+SLMod_country_modifier_general_recruited = {
+    discipline = -0.01
+    land_maintenance_modifier = 0.10
+    artillery_power = -0.05
+    cavalry_power = -0.05
+    infantry_power = -0.05
 }

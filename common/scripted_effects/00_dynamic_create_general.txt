@@ -1,0 +1,13 @@
+dynamic_create_general = {
+    hidden_effect = {
+        [[scope]$scope$ = {]
+            create_general = {
+                tradition = $tradition$
+                add_fire = 1
+                add_shock = 2
+                add_manuever = 3
+                add_siege = 4
+            }
+        [[scope]}]
+    }
+}

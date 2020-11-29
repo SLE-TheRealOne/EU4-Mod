@@ -21,7 +21,7 @@
  building_military_academy_10_desc: "Amélioration de l'académie militaire"
 
  building_precision_workshop_01: "Atelier de précision I"
- building_precision_workshop_01_desc: "La volonté d'améliorer la fiabilité et les performances de l'armement, tout en réduisant son coût, amène à optimiser les pièces qui le composent en les rendant standard et interchangeables. La production devient alors industrielle et permet de soutenir les importantes armées. On arrive ainsi à diminuer le coût de maintenance d'une armée et ses pertes peuvent être renforcées plus vite \n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Production de base d'au moins 7\n\n§MChaque niveau apporte:§!\n  - Coût de renforcement: §G-2.0%§!\n  - Vitesse de renforcement: §G+2.0%§!\n  - Modif. d'entretien terrestre! §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_precision_workshop_01_desc: "La volonté d'améliorer la fiabilité et les performances de l'armement, tout en réduisant son coût, amène à optimiser les pièces qui le composent en les rendant standard et interchangeables. La production devient alors industrielle et permet de soutenir les importantes armées. On arrive ainsi à diminuer le coût de maintenance d'une armée et ses pertes peuvent être renforcées plus vite \n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Production de base d'au moins 7\n\n§MChaque niveau apporte:§!\n  - Coût de renforcement: §G-2.0%§!\n  - Vitesse de renforcement: §G+2.0%§!\n  - Modif. d'entretien terrestre: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_precision_workshop_02: "Atelier de précision II"
  building_precision_workshop_02_desc: "Amélioration de l'atelier de précision"
  building_precision_workshop_03: "Atelier de précision III"

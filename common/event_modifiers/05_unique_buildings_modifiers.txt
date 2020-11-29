@@ -1,33 +1,33 @@
 #    ===== Prime ministry =====
 prime_ministry_01_country_modifier = {
-	development_cost = -0.02
+	development_cost = -0.01
 }
 prime_ministry_02_country_modifier = {
-	development_cost = -0.04
+	development_cost = -0.02
 }
 prime_ministry_03_country_modifier = {
-	development_cost = -0.06
+	development_cost = -0.03
 }
 prime_ministry_04_country_modifier = {
-	development_cost = -0.08
+	development_cost = -0.04
 }
 prime_ministry_05_country_modifier = {
-	development_cost = -0.10
+	development_cost = -0.05
 }
 prime_ministry_06_country_modifier = {
-	development_cost = -0.12
+	development_cost = -0.06
 }
 prime_ministry_07_country_modifier = {
-	development_cost = -0.14
+	development_cost = -0.07
 }
 prime_ministry_08_country_modifier = {
-	development_cost = -0.16
+	development_cost = -0.08
 }
 prime_ministry_09_country_modifier = {
-	development_cost = -0.18
+	development_cost = -0.09
 }
 prime_ministry_10_country_modifier = {
-	development_cost = -0.20
+	development_cost = -0.10
 }
 
 #   ===== Embassy =====
@@ -190,115 +190,115 @@ observatory_10_country_modifier = {
 
 #   ===== Precision workshop =====
 precision_workshop_01_country_modifier = {
+	reinforce_cost_modifier = -0.01
+    reinforce_speed = 0.01
+    land_maintenance_modifier = -0.01
+}
+precision_workshop_02_country_modifier = {
 	reinforce_cost_modifier = -0.02
     reinforce_speed = 0.02
     land_maintenance_modifier = -0.02
 }
-precision_workshop_02_country_modifier = {
+precision_workshop_03_country_modifier = {
+	reinforce_cost_modifier = -0.03
+    reinforce_speed = 0.03
+    land_maintenance_modifier = -0.03
+}
+precision_workshop_04_country_modifier = {
 	reinforce_cost_modifier = -0.04
     reinforce_speed = 0.04
     land_maintenance_modifier = -0.04
 }
-precision_workshop_03_country_modifier = {
+precision_workshop_05_country_modifier = {
+	reinforce_cost_modifier = -0.05
+    reinforce_speed = 0.05
+    land_maintenance_modifier = -0.05
+}
+precision_workshop_06_country_modifier = {
 	reinforce_cost_modifier = -0.06
     reinforce_speed = 0.06
     land_maintenance_modifier = -0.06
 }
-precision_workshop_04_country_modifier = {
+precision_workshop_07_country_modifier = {
+	reinforce_cost_modifier = -0.07
+    reinforce_speed = 0.07
+    land_maintenance_modifier = -0.07
+}
+precision_workshop_08_country_modifier = {
 	reinforce_cost_modifier = -0.08
     reinforce_speed = 0.08
     land_maintenance_modifier = -0.08
 }
-precision_workshop_05_country_modifier = {
-	reinforce_cost_modifier = -0.10
-    reinforce_speed = 0.10
-    land_maintenance_modifier = -0.10
-}
-precision_workshop_06_country_modifier = {
-	reinforce_cost_modifier = -0.12
-    reinforce_speed = 0.12
-    land_maintenance_modifier = -0.12
-}
-precision_workshop_07_country_modifier = {
-	reinforce_cost_modifier = -0.14
-    reinforce_speed = 0.14
-    land_maintenance_modifier = -0.14
-}
-precision_workshop_08_country_modifier = {
-	reinforce_cost_modifier = -0.16
-    reinforce_speed = 0.16
-    land_maintenance_modifier = -0.16
-}
 precision_workshop_09_country_modifier = {
-	reinforce_cost_modifier = -0.18
-    reinforce_speed = 0.18
-    land_maintenance_modifier = -0.18
+	reinforce_cost_modifier = -0.09
+    reinforce_speed = 0.09
+    land_maintenance_modifier = -0.09
 }
 precision_workshop_10_country_modifier = {
-	reinforce_cost_modifier = -0.2
-	reinforce_speed = 0.2
-	land_maintenance_modifier = -0.2
+	reinforce_cost_modifier = -0.10
+	reinforce_speed = 0.10
+	land_maintenance_modifier = -0.10
 }
 #   ===== Military academy =====
 military_academy_01_country_modifier = {
+	army_tradition_decay = -0.001
+	army_tradition_from_battle = 0.01
+	drill_gain_modifier = 0.01
+	drill_decay_modifier = -0.01
+}
+military_academy_02_country_modifier = {
 	army_tradition_decay = -0.002
 	army_tradition_from_battle = 0.02
 	drill_gain_modifier = 0.02
 	drill_decay_modifier = -0.02
 }
-military_academy_02_country_modifier = {
+military_academy_03_country_modifier = {
+	army_tradition_decay = -0.003
+	army_tradition_from_battle = 0.03
+	drill_gain_modifier = 0.03
+	drill_decay_modifier = -0.03
+}
+military_academy_04_country_modifier = {
 	army_tradition_decay = -0.004
 	army_tradition_from_battle = 0.04
 	drill_gain_modifier = 0.04
 	drill_decay_modifier = -0.04
 }
-military_academy_03_country_modifier = {
+military_academy_05_country_modifier = {
+	army_tradition_decay = -0.005
+	army_tradition_from_battle = 0.05
+	drill_gain_modifier = 0.05
+	drill_decay_modifier = -0.05
+}
+military_academy_06_country_modifier = {
 	army_tradition_decay = -0.006
 	army_tradition_from_battle = 0.06
 	drill_gain_modifier = 0.06
 	drill_decay_modifier = -0.06
 }
-military_academy_04_country_modifier = {
+military_academy_07_country_modifier = {
+	army_tradition_decay = -0.007
+	army_tradition_from_battle = 0.07
+	drill_gain_modifier = 0.07
+	drill_decay_modifier = -0.07
+}
+military_academy_08_country_modifier = {
 	army_tradition_decay = -0.008
 	army_tradition_from_battle = 0.08
 	drill_gain_modifier = 0.08
 	drill_decay_modifier = -0.08
 }
-military_academy_05_country_modifier = {
+military_academy_09_country_modifier = {
+	army_tradition_decay = -0.009
+	army_tradition_from_battle = 0.09
+	drill_gain_modifier = 0.09
+	drill_decay_modifier = -0.09
+}
+military_academy_10_country_modifier = {
 	army_tradition_decay = -0.010
 	army_tradition_from_battle = 0.10
 	drill_gain_modifier = 0.10
 	drill_decay_modifier = -0.10
-}
-military_academy_06_country_modifier = {
-	army_tradition_decay = -0.012
-	army_tradition_from_battle = 0.12
-	drill_gain_modifier = 0.12
-	drill_decay_modifier = -0.12
-}
-military_academy_07_country_modifier = {
-	army_tradition_decay = -0.014
-	army_tradition_from_battle = 0.14
-	drill_gain_modifier = 0.14
-	drill_decay_modifier = -0.14
-}
-military_academy_08_country_modifier = {
-	army_tradition_decay = -0.016
-	army_tradition_from_battle = 0.16
-	drill_gain_modifier = 0.16
-	drill_decay_modifier = -0.16
-}
-military_academy_09_country_modifier = {
-	army_tradition_decay = -0.018
-	army_tradition_from_battle = 0.18
-	drill_gain_modifier = 0.18
-	drill_decay_modifier = -0.18
-}
-military_academy_10_country_modifier = {
-	army_tradition_decay = -0.02
-	army_tradition_from_battle = 0.20
-	drill_gain_modifier = 0.20
-	drill_decay_modifier = -0.20
 }
 
 # === Opera ===

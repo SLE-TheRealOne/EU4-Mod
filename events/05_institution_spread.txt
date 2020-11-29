@@ -28,7 +28,7 @@ province_event = {
         owner = {
             NOT = {
                 has_institution = printing_press
-                has_country_modifier = SLMod_country_modifiers_institution_spread_1_boost
+                has_country_modifier = SLMod_country_modifiers_institution_spread_boost
             }
         }
         is_state = yes
@@ -36,8 +36,8 @@ province_event = {
         NOT = {
             printing_press = 70
             OR = {
-                has_province_modifier = SLMod_province_modifiers_institution_spread_1_boost_a
-                has_province_modifier = SLMod_province_modifiers_institution_spread_1_boost_b
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
             }
         }
     }
@@ -52,20 +52,20 @@ province_event = {
 
 		trigger = {
 		    NOT = {
-		        has_province_modifier = SLMod_province_modifiers_institution_spread_1_boost_a
+		        has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
 		    }
 		}
 
         owner = {
             add_country_modifier = {
-                name = SLMod_country_modifiers_institution_spread_1_boost
+                name = SLMod_country_modifiers_institution_spread_boost
                 duration = 120
                 hidden = no
             }
         }
 
         add_province_modifier = {
-            name = SLMod_province_modifiers_institution_spread_1_boost_a
+            name = SLMod_province_modifiers_institution_spread_boost_a
             duration = 1460
             hidden = no
         }
@@ -83,20 +83,20 @@ province_event = {
 
         trigger = {
             NOT = {
-                has_province_modifier = SLMod_province_modifiers_institution_spread_1_boost_b
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
             }
         }
 
         owner = {
             add_country_modifier = {
-                name = SLMod_country_modifiers_institution_spread_1_boost
+                name = SLMod_country_modifiers_institution_spread_boost
                 duration = 120
                 hidden = no
             }
         }
 
         add_province_modifier = {
-            name = SLMod_province_modifiers_institution_spread_1_boost_b
+            name = SLMod_province_modifiers_institution_spread_boost_b
             duration = 1460
             hidden = no
         }
@@ -114,13 +114,12 @@ province_event = {
 
 		owner = {
             add_country_modifier = {
-                name = SLMod_country_modifiers_institution_spread_1_boost
+                name = SLMod_country_modifiers_institution_spread_boost
                 duration = 120
                 hidden = no
             }
         }
 	}
-
 }
 
 # Prestige
@@ -180,6 +179,13 @@ country_event = {
 		NOT = {
 		    has_country_modifier = SLMod_country_modifier_events_institution_spread_2
 		}
+        any_owned_province = {
+             is_state = yes
+             current_institution = 5
+             NOT = {
+                current_institution = 70
+             }
+        }
 	}
 
 	mean_time_to_happen = {
@@ -297,6 +303,13 @@ country_event = {
 		NOT = {
 		    has_country_modifier = SLMod_country_modifier_events_institution_spread_3
 		}
+        any_owned_province = {
+             is_state = yes
+             current_institution = 5
+             NOT = {
+                current_institution = 70
+             }
+        }
 	}
 
 	mean_time_to_happen = {
@@ -414,6 +427,13 @@ country_event = {
 		NOT = {
 		    has_country_modifier = SLMod_country_modifier_events_institution_spread_4
 		}
+		any_owned_province = {
+             is_state = yes
+             current_institution = 5
+             NOT = {
+                current_institution = 70
+             }
+        }
 	}
 
 	mean_time_to_happen = {
@@ -473,4 +493,126 @@ country_event = {
             hidden = no
         }
     }
+}
+
+# enlightenment
+province_event = {
+
+	id = SLMod_events_institution_spread.5
+	title = SLMod_events_institution_spread.5.title
+	desc = SLMod_events_institution_spread.5.desc
+	picture = INVENTION_eventPicture
+	goto = root
+
+    immediate = {
+        hidden_effect = {
+            export_to_variable = { which = SLMod_events_institution_spread_5_unembraced_penalty value = trigger_value:is_year }
+            subtract_variable = { which = SLMod_events_institution_spread_5_unembraced_penalty value = 1700 }
+
+            set_variable = { which = SLMod_events_institution_spread_5_unembraced_penalty_multiplier which = SLMod_events_institution_spread_5_unembraced_penalty }
+            change_variable = { which = SLMod_events_institution_spread_5_unembraced_penalty_multiplier value = 100 }
+            divide_variable = { which = SLMod_events_institution_spread_5_unembraced_penalty_multiplier value = 100 }
+
+            set_variable = { which = SLMod_events_institution_spread_5_next_institution_embracement_to_add value = 2 }
+            multiply_variable = { which = SLMod_events_institution_spread_5_next_institution_embracement_to_add which = SLMod_events_institution_spread_5_unembraced_penalty_multiplier }
+        }
+    }
+
+    trigger = {
+        is_institution_enabled = enlightenment
+        owner = {
+            NOT = {
+                has_institution = enlightenment
+                has_country_modifier = SLMod_country_modifiers_institution_spread_boost
+            }
+        }
+        is_state = yes
+        enlightenment = 5
+        NOT = {
+            enlightenment = 70
+            OR = {
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
+            }
+        }
+    }
+
+	mean_time_to_happen = {
+        days = 1
+    }
+
+	option = {
+		name = SLMod_events_institution_spread.5.a
+		custom_tooltip = SLMod_events_institution_spread.5.a.tooltip
+
+		trigger = {
+		    NOT = {
+		        has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
+		    }
+		}
+
+        owner = {
+            add_country_modifier = {
+                name = SLMod_country_modifiers_institution_spread_boost
+                duration = 120
+                hidden = no
+            }
+        }
+
+        add_province_modifier = {
+            name = SLMod_province_modifiers_institution_spread_boost_a
+            duration = 1460
+            hidden = no
+        }
+
+        dynamic_add_institution_embracement = {
+            variable = SLMod_events_institution_spread_5_next_institution_embracement_to_add
+            institution = enlightenment
+            scope = ROOT
+        }
+	}
+
+	option = {
+        name = SLMod_events_institution_spread.5.b
+        custom_tooltip = SLMod_events_institution_spread.5.b.tooltip
+
+        trigger = {
+            NOT = {
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
+            }
+        }
+
+        owner = {
+            add_country_modifier = {
+                name = SLMod_country_modifiers_institution_spread_boost
+                duration = 120
+                hidden = no
+            }
+        }
+
+        add_province_modifier = {
+            name = SLMod_province_modifiers_institution_spread_boost_b
+            duration = 1460
+            hidden = no
+        }
+
+        dynamic_add_institution_embracement = {
+            variable = SLMod_events_institution_spread_5_next_institution_embracement_to_add
+            institution = enlightenment
+            scope = ROOT
+        }
+    }
+
+    option = {
+		name = SLMod_events_institution_spread.5.z
+		custom_tooltip = SLMod_events_institution_spread.5.z.tooltip
+
+		owner = {
+            add_country_modifier = {
+                name = SLMod_country_modifiers_institution_spread_boost
+                duration = 120
+                hidden = no
+            }
+        }
+	}
 }

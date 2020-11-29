@@ -13,7 +13,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 18
 	}
 
     immediate = {
@@ -44,7 +44,7 @@ country_event = {
         }
 
 		add_yearly_manpower = -0.16
-		add_prestige = 2
+		add_prestige = 1
 	}
 
 	# B - Army tradition boost - Light
@@ -86,7 +86,7 @@ country_event = {
 
 		add_country_modifier = {
             name = SLMod_country_modifiers_drill_gain_boost_light
-            duration = 182
+            duration = 365
             hidden = no
         }
 	}
@@ -198,7 +198,7 @@ country_event = {
 
 		add_country_modifier = {
             name = SLMod_country_modifiers_drill_decay_reduction_light
-            duration = 182
+            duration = 365
             hidden = no
         }
 	}
@@ -222,7 +222,7 @@ country_event = {
         }
 
         add_yearly_manpower = -0.32
-        add_prestige = 4
+        add_prestige = 2
     }
 
     # G - Army tradition boost - Personality
@@ -272,7 +272,7 @@ country_event = {
 
         add_country_modifier = {
             name = SLMod_country_modifiers_drill_gain_boost_personality
-            duration = 182
+            duration = 365
             hidden = no
         }
     }
@@ -396,7 +396,7 @@ country_event = {
 
         add_country_modifier = {
             name = SLMod_country_modifiers_drill_decay_reduction_personality
-            duration = 182
+            duration = 365
             hidden = no
         }
     }

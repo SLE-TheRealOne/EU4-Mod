@@ -15,14 +15,26 @@ combat_artillery_country_modifier = {
 	backrow_artillery_damage = 0.15
 	siege_ability = -0.15
 }
-officers_school_country_modifier = {
-	drill_gain_modifier = 0.1
-	drill_decay_modifier = -0.1
-	yearly_army_professionalism = 0.1
+SLMod_country_modifier_superior_officers_school_permanent = {
+	drill_gain_modifier = 0.10
+	drill_decay_modifier = -0.10
+	general_cost = -0.05
+	land_maintenance_modifier = 0.05
+	reinforce_cost_modifier = 0.05
 }
-align_army_ranks_and_medals_country_modifier = {
+SLMod_country_modifier_superior_officers_school_created = {
+	infantry_cost = 0.15
+	cavalry_cost = 0.15
+	artillery_cost = 0.15
+	yearly_army_professionalism = 0.005
+}
+SLMod_country_modifier_improve_army_logistics = {
+    movement_speed = 0.10
+    land_maintenance_modifier = 0.05
+}
+SLMod_country_modifier_medals_and_distinctions = {
 	army_tradition_from_battle = 0.1
-	land_morale = 0.1
+	land_morale = 0.05
 	recover_army_morale_speed = 0.1
 }
 improve_defenses_country_modifier = {
@@ -30,9 +42,19 @@ improve_defenses_country_modifier = {
 	fort_maintenance_modifier = 0.20
 	garrison_size = 0.20
 }
-
-raise_discipline_country_modifier = {
+SLMod_country_modifiers_raise_discipline = {
     discipline = 0.01
-    army_tradition_from_battle = 0.15
+}
+SLMod_country_modifiers_raise_army_tradition = {
+    army_tradition_from_battle = 0.10
     army_tradition_decay = -0.01
+}
+SLMod_country_modifier_splendor_usage_A = {
+    global_institution_spread = 0.10
+}
+SLMod_country_modifier_splendor_usage_B = {
+    drill_gain_modifier = 0.05
+}
+SLMod_country_modifier_splendor_usage_C = {
+    development_cost = -0.05
 }

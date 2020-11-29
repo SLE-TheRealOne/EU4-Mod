@@ -2118,41 +2118,61 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_glorious_monument.tga"
 		loadType = "INGAME"
 	}
-
 	spriteType = {
 		name = "GFX_farm_estate"
 		texturefile = "gfx//interface//buildings//manufactory_farm_estate.tga"
 		loadType = "INGAME"
 	}
-	
 	spriteType = {
 		name = "GFX_mills"
 		texturefile = "gfx//interface//buildings//manufactory_mill.dds"
 		loadType = "INGAME"
 	}
-	
 	spriteType = {
 		name = "GFX_furnace"
 		texturefile = "gfx//interface//buildings//manufactory_furnace.dds"
 		loadType = "INGAME"
 	}
-
+	spriteType = {
+        name = "GFX_soldier_households"
+        texturefile = "gfx//interface//buildings//latin_constable.tga"
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "GFX_ramparts"
+        texturefile = "gfx//interface//buildings//latin_march.tga"
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "GFX_impressment_offices"
+        texturefile = "gfx//interface//buildings//latin_college.tga"
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "GFX_state_house"
+        texturefile = "gfx//interface//buildings//latin_royal_palace.tga"
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "GFX_coastal_defence"
+        texturefile = "gfx/interface/buildings/coastal_defence.dds"
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "GFX_naval_battery"
+        texturefile = "gfx/interface/buildings/naval_battery.dds"
+        loadType = "INGAME"
+    }
 	spriteType = {
 		name = "GFX_plantations"
 		texturefile = "gfx//interface//buildings//manufactory_plantations.tga"
 		loadType = "INGAME"
 	}
-	
 	spriteType = {
 		name = "GFX_tradecompany"
 		texturefile = "gfx//interface//buildings//manufactory_trade_company.tga"
 		loadType = "INGAME"
 	}
-	
-	
-	
-	
-	
 	spriteType = {
 		name = "GFX_fort_africangfx"
 		texturefile = "gfx//interface//buildings//african_fort.tga"

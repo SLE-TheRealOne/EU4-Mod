@@ -9,7 +9,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
     immediate = {
-        #hidden_effect = {
+        hidden_effect = {
             export_to_variable = { which = SLMod_events_ruler_namespace_1_splendor_amount_to_add value = prestige }
             subtract_variable = { which = SLMod_events_ruler_namespace_1_splendor_amount_to_add value = 90 }
 
@@ -17,7 +17,7 @@ country_event = {
             multiply_variable = { which = SLMod_events_ruler_namespace_1_splendor_amount_to_add_bonus value = 2 }
 
             export_to_variable = { which = current_ruler_adm_stat value = trigger_value:adm }
-        #}
+        }
     }
 
 	trigger = {
@@ -90,13 +90,15 @@ country_event = {
         hidden_effect = {
             export_to_variable = { which = SLMod_events_ruler_namespace_2_splendor_amount_to_add value = trigger_value:legitimacy }
             subtract_variable = { which = SLMod_events_ruler_namespace_2_splendor_amount_to_add value = 90 }
+
+            set_variable = { which = SLMod_events_ruler_namespace_2_splendor_amount_to_add_bonus which = SLMod_events_ruler_namespace_2_splendor_amount_to_add }
+            multiply_variable = { which = SLMod_events_ruler_namespace_2_splendor_amount_to_add_bonus value = 2 }
         }
     }
 
 	trigger = {
 		legitimacy = 90
 		NOT = {
-		    dip = 8
 		    has_country_modifier = SLMod_country_modifier_ruler_dip_bumped
 		}
 	}
@@ -163,13 +165,15 @@ country_event = {
         hidden_effect = {
             export_to_variable = { which = SLMod_events_ruler_namespace_3_splendor_amount_to_add value = trigger_value:power_projection }
             subtract_variable = { which = SLMod_events_ruler_namespace_3_splendor_amount_to_add value = 90 }
+
+            set_variable = { which = SLMod_events_ruler_namespace_3_splendor_amount_to_add_bonus which = SLMod_events_ruler_namespace_3_splendor_amount_to_add }
+            multiply_variable = { which = SLMod_events_ruler_namespace_3_splendor_amount_to_add_bonus value = 2 }
         }
     }
 
 	trigger = {
 		power_projection = 90
 		NOT = {
-		    mil = 8
 		    has_country_modifier = SLMod_country_modifier_ruler_mil_bumped
 		}
 	}

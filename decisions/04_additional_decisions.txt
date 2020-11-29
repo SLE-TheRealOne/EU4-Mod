@@ -1,13 +1,17 @@
 country_decisions = {
-	
+
+	# reduce_development_costs
 	reduce_development_costs = {
 		potential = {
 		    NOT = { has_country_modifier = SLMod_country_modifiers_reduce_development_costs }
 		}
 
 		allow = {
-			stability = 2
-			NOT = { inflation = 3 }
+			stability = 1
+			NOT = {
+			    inflation = 3
+			    corruption = 2
+            }
 		}
 		
 		effect = {
@@ -23,29 +27,62 @@ country_decisions = {
 		}
 	}
 
-	create_officers_school = {
+    # improve_army_logistics
+    improve_army_logistics = {
+        potential = {
+            has_dlc = "Cradle of Civilization"
+            NOT = { has_country_modifier = SLMod_country_modifier_improve_army_logistics }
+        }
+
+        allow = {
+            army_professionalism = 0.30
+            has_global_flag = precision_workshop_flag
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = SLMod_country_modifier_improve_army_logistics
+                duration = 730
+                hidden = no
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    # create_officers_school
+	create_superior_officers_school = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
-			NOT = { has_country_modifier = officers_school_country_modifier }
+			NOT = { has_country_modifier = SLMod_country_modifier_superior_officers_school_permanent }
 		}
 
 		allow = {
-			army_professionalism = 0.60
+			army_professionalism = 0.40
+			has_global_flag = military_academy_flag
 		}
 
 		effect = {
 			add_country_modifier = {
-				name = officers_school_country_modifier
+				name = SLMod_country_modifier_superior_officers_school_permanent
 				duration = -1
 				hidden = no
 			}
+			add_country_modifier = {
+                name = SLMod_country_modifier_superior_officers_school_created
+                duration = 3650
+                hidden = no
+            }
 		}
 
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
+	# siege_artillery
 	siege_artillery = {
 		potential = {
 			NOT = { has_country_modifier = siege_artillery_country_modifier }
@@ -68,7 +105,8 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
+	# combat_artillery
 	combat_artillery = {
 		potential = {
 			NOT = { has_country_modifier = siege_artillery_country_modifier }
@@ -91,10 +129,11 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
-	align_army_ranks_and_medals = {
+
+	# medals_and_distinctions
+	medals_and_distinctions = {
 		potential = {
-			NOT = { has_country_modifier = align_army_ranks_and_medals_country_modifier }
+			NOT = { has_country_modifier = SLMod_country_modifier_medals_and_distinctions }
 		}
 		
 		allow = {
@@ -102,13 +141,13 @@ country_decisions = {
 				advisor = army_organiser
 				advisor = army_reformer
 			}
-			army_professionalism = 0.3
-			army_tradition = 20
+			army_professionalism = 0.40
+			army_tradition = 40
 		}
 		
 		effect = {
 			add_country_modifier = {
-				name = align_army_ranks_and_medals_country_modifier
+				name = SLMod_country_modifier_medals_and_distinctions
 				duration = -1
 				hidden = no
 			}
@@ -118,7 +157,8 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
+	# improve_defenses
 	improve_defenses = {
 		potential = {
 			NOT = { has_country_modifier = improve_defenses_country_modifier }
@@ -143,26 +183,139 @@ country_decisions = {
 		}
 	}
 
+    # raise_discipline
     raise_discipline = {
         potential = {
-            NOT = { has_country_modifier = raise_discipline_country_modifier }
+            NOT = { has_country_modifier = SLMod_country_modifiers_raise_discipline }
         }
 
         allow = {
-            army_size_percentage = 0.90
+            is_at_war = yes
         }
 
         effect = {
             add_country_modifier = {
-                name = raise_discipline_country_modifier
+                name = SLMod_country_modifiers_raise_discipline
                 duration = 730
                 hidden = no
             }
-            add_yearly_manpower = -0.32
+            add_yearly_manpower = -0.24
         }
 
         ai_will_do = {
             factor = 1
         }
     }
+
+    # raise_army_tradition
+    raise_army_tradition = {
+        potential = {
+            NOT = { has_country_modifier = SLMod_country_modifiers_raise_army_tradition }
+        }
+
+        allow = {
+            is_at_war = yes
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = SLMod_country_modifiers_raise_army_tradition
+                duration = 730
+                hidden = no
+            }
+            add_yearly_manpower = -0.24
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    # use_splendor_A
+    use_splendor_A = {
+        potential = {
+            NOT = { has_country_modifier = SLMod_country_modifier_splendor_usage_A }
+            in_golden_age = yes
+        }
+
+        allow = {
+            splendor = 800
+            stability = 1
+            NOT = {
+                corruption = 2
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = SLMod_country_modifier_splendor_usage_A
+                duration = 1460
+                hidden = no
+            }
+            add_splendor = -800
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    # use_splendor_B
+    use_splendor_B = {
+        potential = {
+            NOT = { has_country_modifier = SLMod_country_modifier_splendor_usage_B }
+            in_golden_age = yes
+        }
+
+        allow = {
+            splendor = 800
+            stability = 1
+            NOT = {
+                corruption = 2
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = SLMod_country_modifier_splendor_usage_B
+                duration = 1460
+                hidden = no
+            }
+            add_splendor = -800
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    # use_splendor_C
+    use_splendor_C = {
+        potential = {
+            NOT = { has_country_modifier = SLMod_country_modifier_splendor_usage_C }
+            in_golden_age = yes
+        }
+
+        allow = {
+            splendor = 800
+            stability = 1
+            NOT = {
+                corruption = 2
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = SLMod_country_modifier_splendor_usage_C
+                duration = 1460
+                hidden = no
+            }
+            add_splendor = -800
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
 }

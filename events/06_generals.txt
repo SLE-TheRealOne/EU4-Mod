@@ -1,0 +1,72 @@
+namespace = SLMod_events_generals_namespace
+
+# General creation
+country_event = {
+
+	id = SLMod_events_generals_namespace.1
+	title = SLMod_events_generals_namespace.1.title
+	desc = SLMod_events_generals_namespace.1.desc
+	picture = DIPLOMACY_eventPicture
+
+    immediate = {
+        #hidden_effect = {
+            export_to_variable = { which = SLMod_events_generals_namespace_1_general_army_tradition value = trigger_value:army_tradition }
+            export_to_variable = { which = SLMod_events_generals_namespace_1_bonus_prestige value = trigger_value:prestige }
+            export_to_variable = { which = SLMod_events_generals_namespace_1_bonus_power_projection value = trigger_value:power_projection }
+            export_to_variable = { which = SLMod_events_generals_namespace_1_num_of_colonists value = trigger_value:num_of_colonists }
+
+            if = {
+                limit = {
+                    check_variable = { which = SLMod_events_generals_namespace_1_bonus_prestige value = 90 }
+                }
+                subtract_variable = { which = SLMod_events_generals_namespace_1_bonus_prestige value = 90 }
+                change_variable = { which = SLMod_events_generals_namespace_1_general_army_tradition which = SLMod_events_generals_namespace_1_bonus_prestige }
+            }
+
+            if = {
+                limit = {
+                    check_variable = { which = SLMod_events_generals_namespace_1_bonus_power_projection value = 90 }
+                }
+                subtract_variable = { which = SLMod_events_generals_namespace_1_bonus_power_projection value = 90 }
+                change_variable = { which = SLMod_events_generals_namespace_1_general_army_tradition which = SLMod_events_generals_namespace_1_bonus_power_projection }
+            }
+        #}
+    }
+
+	trigger = {
+	    army_size_percentage = 0.70
+	    army_professionalism = 0.10
+		NOT = {
+		    num_of_generals = 2
+		    has_country_modifier = SLMod_country_modifier_general_recruited
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = SLMod_events_generals_namespace.1.a
+		custom_tooltip = SLMod_events_generals_namespace.1.a.tooltip
+
+        add_splendor = 2
+        add_corruption = 2
+
+        dynamic_create_general = {
+            tradition = SLMod_events_generals_namespace_1_general_army_tradition
+        }
+
+        add_country_modifier = {
+            name = SLMod_country_modifier_general_recruited
+            duration = 3650
+            hidden = no
+        }
+	}
+
+	option = {
+        name = SLMod_events_generals_namespace.1.z
+        custom_tooltip = SLMod_events_generals_namespace.1.z.tooltip
+    }
+
+}
