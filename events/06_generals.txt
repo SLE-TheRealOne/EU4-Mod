@@ -9,7 +9,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
     immediate = {
-        #hidden_effect = {
+        hidden_effect = {
             export_to_variable = { which = SLMod_events_generals_namespace_1_general_army_tradition value = trigger_value:army_tradition }
             export_to_variable = { which = SLMod_events_generals_namespace_1_bonus_prestige value = trigger_value:prestige }
             export_to_variable = { which = SLMod_events_generals_namespace_1_bonus_power_projection value = trigger_value:power_projection }
@@ -30,7 +30,7 @@ country_event = {
                 subtract_variable = { which = SLMod_events_generals_namespace_1_bonus_power_projection value = 90 }
                 change_variable = { which = SLMod_events_generals_namespace_1_general_army_tradition which = SLMod_events_generals_namespace_1_bonus_power_projection }
             }
-        #}
+        }
     }
 
 	trigger = {

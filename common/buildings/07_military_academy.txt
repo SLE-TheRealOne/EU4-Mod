@@ -369,11 +369,4 @@ military_academy_10 = {
 		}
 		clr_global_flag = military_academy_flag
 	}
-
-	on_obsolete = {
-        owner = {
-            remove_country_modifier = military_academy_10_country_modifier
-        }
-        clr_global_flag = military_academy_flag
-    }
 }

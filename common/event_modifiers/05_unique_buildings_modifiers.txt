@@ -158,34 +158,28 @@ laboratory_10_country_modifier = {
 
 #   ===== Observatory =====
 observatory_01_country_modifier = {
-	idea_cost = -0.01
+	idea_cost = -0.0125
 }
 observatory_02_country_modifier = {
-	idea_cost = -0.02
+	idea_cost = -0.0250
 }
 observatory_03_country_modifier = {
-	idea_cost = -0.03
+	idea_cost = -0.0375
 }
 observatory_04_country_modifier = {
-	idea_cost = -0.04
+	idea_cost = -0.0500
 }
 observatory_05_country_modifier = {
-	idea_cost = -0.05
+	idea_cost = -0.0625
 }
 observatory_06_country_modifier = {
-	idea_cost = -0.06
+	idea_cost = -0.0750
 }
 observatory_07_country_modifier = {
-	idea_cost = -0.07
+	idea_cost = -0.0875
 }
 observatory_08_country_modifier = {
-	idea_cost = -0.08
-}
-observatory_09_country_modifier = {
-	idea_cost = -0.09
-}
-observatory_10_country_modifier = {
-	idea_cost = -0.10
+	idea_cost = -0.1000
 }
 
 #   ===== Precision workshop =====
@@ -303,32 +297,26 @@ military_academy_10_country_modifier = {
 
 # === Opera ===
 opera_01_country_modifier = {
-    global_institution_spread = 0.02
+    global_institution_spread = 0.025
 }
 opera_02_country_modifier = {
-    global_institution_spread = 0.04
+    global_institution_spread = 0.050
 }
 opera_03_country_modifier = {
-    global_institution_spread = 0.06
+    global_institution_spread = 0.075
 }
 opera_04_country_modifier = {
-    global_institution_spread = 0.08
+    global_institution_spread = 0.100
 }
 opera_05_country_modifier = {
-    global_institution_spread = 0.10
+    global_institution_spread = 0.125
 }
 opera_06_country_modifier = {
-    global_institution_spread = 0.12
+    global_institution_spread = 0.150
 }
 opera_07_country_modifier = {
-    global_institution_spread = 0.14
+    global_institution_spread = 0.175
 }
 opera_08_country_modifier = {
-    global_institution_spread = 0.16
-}
-opera_09_country_modifier = {
-    global_institution_spread = 0.18
-}
-opera_10_country_modifier = {
-    global_institution_spread = 0.20
+    global_institution_spread = 0.200
 }

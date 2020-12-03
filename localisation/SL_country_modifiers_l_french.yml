@@ -100,10 +100,6 @@
  desc_observatory_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
  observatory_08_country_modifier: "§MObservatoire VIII§!"
  desc_observatory_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
- observatory_09_country_modifier: "§MObservatoire IX§!"
- desc_observatory_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
- observatory_10_country_modifier: "§MObservatoire X§!"
- desc_observatory_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[observatory_location.GetName]§!"
 
  precision_workshop_01_country_modifier: "§MAtelier de précision I§!"
  desc_precision_workshop_01_country_modifier: "Ce bâtiment a été construit dans la province §Y[precision_workshop_location.GetName]§!"
@@ -163,11 +159,6 @@
  desc_opera_07_country_modifier: "Ce bâtiment a été construit dans la province §Y[opera_location.GetName]§!"
  opera_08_country_modifier: "§MOpéra VIII§!"
  desc_opera_08_country_modifier: "Ce bâtiment a été construit dans la province §Y[opera_location.GetName]§!"
- opera_09_country_modifier: "§MOpéra IX§!"
- desc_opera_09_country_modifier: "Ce bâtiment a été construit dans la province §Y[opera_location.GetName]§!"
- opera_10_country_modifier: "§MOpéra IX§!"
- desc_opera_10_country_modifier: "Ce bâtiment a été construit dans la province §Y[opera_location.GetName]§!"
-
 
  assist_advisor_natural_scientist_country_modifier: "§MMinistre Scientifique§!"
  desc_assist_advisor_natural_scientist_country_modifier: "Allouer à notre §YScientifique§! du matériel, du personnel ainsi que des ressources supplémentaires lui permettrait de se focaliser sur ses compétences pour laisser libre cours à tout son talent"
@@ -226,8 +217,8 @@
  desc_combat_artillery_country_modifier: "Nous avons axé notre artillerie pour le combat plutôt que le siège"
  align_army_ranks_and_medals_country_modifier: "§MGrades et médailles§!"
  desc_align_army_ranks_and_medals_country_modifier: "Nos soldats savent que leur efficacité au combat sera récompensée"
- improve_defenses_country_modifier: "§MDéfenses renforcées§!"
- desc_improve_defenses_country_modifier: "Il sera plus difficile, pour nos ennemis, de nous atteindre"
+ SLMod_country_modifier_improve_defenses: "§MDéfenses renforcées§!"
+ desc_SLMod_country_modifier_improve_defenses: "Il sera plus difficile, pour nos ennemis, de nous atteindre"
 
  SLMod_country_modifiers_condottieri_raise_light: "§MArmées à louer§!"
  SLMod_country_modifiers_condottieri_raise_personality: "§MArmées à louer§!"

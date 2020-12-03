@@ -111,14 +111,6 @@ province_event = {
     option = {
 		name = SLMod_events_institution_spread.1.z
 		custom_tooltip = SLMod_events_institution_spread.1.z.tooltip
-
-		owner = {
-            add_country_modifier = {
-                name = SLMod_country_modifiers_institution_spread_boost
-                duration = 120
-                hidden = no
-            }
-        }
 	}
 }
 
@@ -606,13 +598,119 @@ province_event = {
     option = {
 		name = SLMod_events_institution_spread.5.z
 		custom_tooltip = SLMod_events_institution_spread.5.z.tooltip
+	}
+}
 
-		owner = {
+# industrialization
+province_event = {
+
+	id = SLMod_events_institution_spread.6
+	title = SLMod_events_institution_spread.6.title
+	desc = SLMod_events_institution_spread.6.desc
+	picture = INVENTION_eventPicture
+	goto = root
+
+    immediate = {
+        hidden_effect = {
+            export_to_variable = { which = SLMod_events_institution_spread_6_unembraced_penalty value = trigger_value:is_year }
+            subtract_variable = { which = SLMod_events_institution_spread_6_unembraced_penalty value = 1780 }
+
+            set_variable = { which = SLMod_events_institution_spread_6_unembraced_penalty_multiplier which = SLMod_events_institution_spread_6_unembraced_penalty }
+            change_variable = { which = SLMod_events_institution_spread_6_unembraced_penalty_multiplier value = 100 }
+            divide_variable = { which = SLMod_events_institution_spread_6_unembraced_penalty_multiplier value = 100 }
+
+            set_variable = { which = SLMod_events_institution_spread_6_next_institution_embracement_to_add value = 2 }
+            multiply_variable = { which = SLMod_events_institution_spread_6_next_institution_embracement_to_add which = SLMod_events_institution_spread_6_unembraced_penalty_multiplier }
+        }
+    }
+
+    trigger = {
+        is_institution_enabled = industrialization
+        owner = {
+            NOT = {
+                has_institution = industrialization
+                has_country_modifier = SLMod_country_modifiers_institution_spread_boost
+            }
+        }
+        is_state = yes
+        industrialization = 5
+        NOT = {
+            industrialization = 70
+            OR = {
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
+            }
+        }
+    }
+
+	mean_time_to_happen = {
+        days = 1
+    }
+
+	option = {
+		name = SLMod_events_institution_spread.6.a
+		custom_tooltip = SLMod_events_institution_spread.6.a.tooltip
+
+		trigger = {
+		    NOT = {
+		        has_province_modifier = SLMod_province_modifiers_institution_spread_boost_a
+		    }
+		}
+
+        owner = {
             add_country_modifier = {
                 name = SLMod_country_modifiers_institution_spread_boost
                 duration = 120
                 hidden = no
             }
         }
+
+        add_province_modifier = {
+            name = SLMod_province_modifiers_institution_spread_boost_a
+            duration = 1460
+            hidden = no
+        }
+
+        dynamic_add_institution_embracement = {
+            variable = SLMod_events_institution_spread_6_next_institution_embracement_to_add
+            institution = industrialization
+            scope = ROOT
+        }
+	}
+
+	option = {
+        name = SLMod_events_institution_spread.6.b
+        custom_tooltip = SLMod_events_institution_spread.6.b.tooltip
+
+        trigger = {
+            NOT = {
+                has_province_modifier = SLMod_province_modifiers_institution_spread_boost_b
+            }
+        }
+
+        owner = {
+            add_country_modifier = {
+                name = SLMod_country_modifiers_institution_spread_boost
+                duration = 120
+                hidden = no
+            }
+        }
+
+        add_province_modifier = {
+            name = SLMod_province_modifiers_institution_spread_boost_b
+            duration = 1460
+            hidden = no
+        }
+
+        dynamic_add_institution_embracement = {
+            variable = SLMod_events_institution_spread_6_next_institution_embracement_to_add
+            institution = industrialization
+            scope = ROOT
+        }
+    }
+
+    option = {
+		name = SLMod_events_institution_spread.6.z
+		custom_tooltip = SLMod_events_institution_spread.6.z.tooltip
 	}
 }

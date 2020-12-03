@@ -368,11 +368,4 @@ spy_center_10 = {
 		}
 		clr_global_flag = spy_center_flag
 	}
-
-	on_obsolete = {
-        owner = {
-            remove_country_modifier = spy_center_10_country_modifier
-        }
-        clr_global_flag = spy_center_flag
-    }
 }

@@ -57,11 +57,11 @@ country_decisions = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
 			NOT = { has_country_modifier = SLMod_country_modifier_superior_officers_school_permanent }
+			has_global_flag = military_academy_flag
 		}
 
 		allow = {
 			army_professionalism = 0.40
-			has_global_flag = military_academy_flag
 		}
 
 		effect = {
@@ -161,7 +161,7 @@ country_decisions = {
 	# improve_defenses
 	improve_defenses = {
 		potential = {
-			NOT = { has_country_modifier = improve_defenses_country_modifier }
+			NOT = { has_country_modifier = SLMod_country_modifier_improve_defenses }
 		}
 
 		allow = {
@@ -172,7 +172,7 @@ country_decisions = {
 		
 		effect = {
 			add_country_modifier = {
-				name = improve_defenses_country_modifier
+				name = SLMod_country_modifier_improve_defenses
 				duration = -1
 				hidden = no
 			}
@@ -187,9 +187,6 @@ country_decisions = {
     raise_discipline = {
         potential = {
             NOT = { has_country_modifier = SLMod_country_modifiers_raise_discipline }
-        }
-
-        allow = {
             is_at_war = yes
         }
 
@@ -211,9 +208,6 @@ country_decisions = {
     raise_army_tradition = {
         potential = {
             NOT = { has_country_modifier = SLMod_country_modifiers_raise_army_tradition }
-        }
-
-        allow = {
             is_at_war = yes
         }
 

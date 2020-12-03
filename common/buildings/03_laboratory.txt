@@ -371,11 +371,4 @@ laboratory_10 = {
 		}
 		clr_global_flag = laboratory_flag
 	}
-
-	on_osbolete = {
-        owner = {
-            remove_country_modifier = laboratory_10_country_modifier
-        }
-        clr_global_flag = laboratory_flag
-    }
 }

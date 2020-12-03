@@ -334,7 +334,6 @@ technology = { #Joint Stock Companies
 
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
-	opera_09 = yes
 }
 
 technology = { #Midshipmen Cadets
@@ -363,7 +362,6 @@ technology = { #Superior Ship Design
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1
 	num_accepted_cultures = 1
-	opera_10 = yes
 }
 
 technology = { #The Gold Standard

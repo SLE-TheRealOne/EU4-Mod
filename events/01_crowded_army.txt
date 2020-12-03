@@ -11,12 +11,8 @@ country_event = {
 		manpower_percentage = 0.95
 		is_at_war = no
 	}
-	
-	mean_time_to_happen = {
-		months = 18
-	}
 
-    immediate = {
+	immediate = {
         hidden_effect = {
             random_owned_province = {
                 limit = {
@@ -26,6 +22,11 @@ country_event = {
             }
         }
     }
+	
+	mean_time_to_happen = {
+		months = 18
+	}
+
 
     ####################################
     ####       Light versions       ####

@@ -414,18 +414,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//latin_glorious_monument.tga"
 		loadType = "INGAME"
 	}
-	
-	spriteType = {
-		name = "GFX_observatory_09"
-		texturefile = "gfx//interface//buildings//latin_glorious_monument.tga"
-		loadType = "INGAME"
-	}
-	
-	spriteType = {
-		name = "GFX_observatory_10"
-		texturefile = "gfx//interface//buildings//latin_glorious_monument.tga"
-		loadType = "INGAME"
-	}
 
 	# opera ==> trade_company/company_administration
     spriteType = {
@@ -472,18 +460,6 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_opera_08"
-        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
-        loadType = "INGAME"
-    }
-
-    spriteType = {
-        name = "GFX_opera_09"
-        texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
-        loadType = "INGAME"
-    }
-
-    spriteType = {
-        name = "GFX_opera_10"
         texturefile = "gfx//interface//buildings//trade_company//company_administration.dds"
         loadType = "INGAME"
     }

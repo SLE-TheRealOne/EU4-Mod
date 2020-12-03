@@ -369,11 +369,4 @@ precision_workshop_10 = {
 		}
 		clr_global_flag = precision_workshop_flag
 	}
-
-	on_obsolete = {
-        owner = {
-            remove_country_modifier = precision_workshop_10_country_modifier
-        }
-        clr_global_flag = precision_workshop_flag
-    }
 }

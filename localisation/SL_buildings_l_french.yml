@@ -120,10 +120,6 @@
  building_observatory_07_desc: "Amélioration de l'observatoire"
  building_observatory_08: "Observatoire VIII"
  building_observatory_08_desc: "Amélioration de l'observatoire"
- building_observatory_09: "Observatoire IX"
- building_observatory_09_desc: "Amélioration de l'observatoire"
- building_observatory_10: "Observatoire X"
- building_observatory_10_desc: "Amélioration de l'observatoire"
 
  building_laboratory_01: "Laboratoire I"
  building_laboratory_01_desc: "Les unes après les autres, les expériences menées en laboratoire confirment que la méthode empirique reste le vecteur principal de découvertes \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n  - Dévelopement d'au moins 12\n\n§MChaque niveau apporte:§!\n  - Coût des technologies: §G-1.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
@@ -147,7 +143,7 @@
  building_laboratory_10_desc: "Amélioration du laboratoire"
 
  building_opera_01: "Opéra I"
- building_opera_01_desc: "Un haut lieu de culture et de prestige. Les réprésentations régulières des plus grand chefs d'oeuvre attireront à coup sur capitaines d'industries, savants, commerçants, explorateurs, conquistadors, artistes et autres intellectuels.\n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Est prospère\n  - Dévelopement d'au moins 20\n\n§MChaque niveau apporte:§!:\n  - Propagation des institutions: §G+2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_opera_01_desc: "Un haut lieu de culture et de prestige. Les réprésentations régulières des plus grand chefs d'oeuvre attireront à coup sur capitaines d'industries, savants, commerçants, explorateurs, conquistadors, artistes et autres intellectuels.\n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Est prospère\n  - Dévelopement d'au moins 20\n\n§MChaque niveau apporte:§!:\n  - Propagation des institutions: §G+2.5%§!\n  - Coût du bâtiment: §R+2.5%§!\n"
  building_opera_02: "Opéra II"
  building_opera_02_desc: "Amélioration du laboratoire"
  building_opera_03: "Opéra III"
@@ -162,7 +158,3 @@
  building_opera_07_desc: "Amélioration du laboratoire"
  building_opera_08: "Opéra VIII"
  building_opera_08_desc: "Amélioration du laboratoire"
- building_opera_09: "Opéra IX"
- building_opera_09_desc: "Amélioration du laboratoire"
- building_opera_10: "Opéra X"
- building_opera_10_desc: "Amélioration du laboratoire"

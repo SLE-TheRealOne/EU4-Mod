@@ -378,11 +378,4 @@ prime_ministry_10 = {
 		}
 		clr_global_flag = prime_ministry_flag
 	}
-
-	on_obsolete = {
-        owner = {
-            remove_country_modifier = prime_ministry_10_country_modifier
-        }
-        clr_global_flag = prime_ministry_flag
-    }
 }
