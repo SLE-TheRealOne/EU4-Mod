@@ -190,6 +190,10 @@ country_decisions = {
             is_at_war = yes
         }
 
+        allow = {
+            manpower_percentage = 0.20
+        }
+
         effect = {
             add_country_modifier = {
                 name = SLMod_country_modifiers_raise_discipline
@@ -209,6 +213,10 @@ country_decisions = {
         potential = {
             NOT = { has_country_modifier = SLMod_country_modifiers_raise_army_tradition }
             is_at_war = yes
+        }
+
+        allow = {
+            manpower_percentage = 0.20
         }
 
         effect = {
