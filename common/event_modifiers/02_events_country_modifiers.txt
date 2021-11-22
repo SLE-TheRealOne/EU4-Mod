@@ -78,8 +78,17 @@ SLMod_country_modifier_events_institution_spread_4 = {
 
 SLMod_country_modifier_general_recruited = {
     discipline = -0.01
-    land_maintenance_modifier = 0.10
+    land_maintenance_modifier = 0.05
     artillery_power = -0.05
     cavalry_power = -0.05
     infantry_power = -0.05
+    diplomatic_reputation= -1
+}
+
+SLMod_country_modifier_global_ship_trade_power_10 = {
+    global_ship_trade_power = 0.10
+}
+
+SLMod_country_modifier_global_ship_trade_power_20 = {
+    global_ship_trade_power = 0.20
 }

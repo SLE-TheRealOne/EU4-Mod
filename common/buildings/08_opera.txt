@@ -11,8 +11,10 @@ opera_01 = {
 		    is_lacking_institutions = yes
 		}
 		is_state = yes
-		is_prosperous = yes
-		development = 20
+		development = 14
+        NOT = {
+            unrest = 1
+        }
 	}
 	
 	ai_will_do = {

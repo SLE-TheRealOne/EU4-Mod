@@ -21,7 +21,7 @@
  building_military_academy_10_desc: "Amélioration de l'académie militaire"
 
  building_precision_workshop_01: "Atelier de précision I"
- building_precision_workshop_01_desc: "La volonté d'améliorer la fiabilité et les performances de l'armement, tout en réduisant son coût, amène à optimiser les pièces qui le composent en les rendant standard et interchangeables. La production devient alors industrielle et permet de soutenir les importantes armées. On arrive ainsi à diminuer le coût de maintenance d'une armée et ses pertes peuvent être renforcées plus vite \n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Production de base d'au moins 7\n\n§MChaque niveau apporte:§!\n  - Coût de renforcement: §G-2.0%§!\n  - Vitesse de renforcement: §G+2.0%§!\n  - Modif. d'entretien terrestre: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_precision_workshop_01_desc: "La volonté d'améliorer la fiabilité et les performances de l'armement, tout en réduisant son coût, amène à optimiser les pièces qui le composent en les rendant standard et interchangeables. La production devient alors industrielle et permet de soutenir les importantes armées. On arrive ainsi à diminuer le coût de maintenance d'une armée et ses pertes peuvent être renforcées plus vite \n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Production de base d'au moins 7\n  - Terrain : Bois\n\n§MChaque niveau apporte:§!\n  - Coût de renforcement: §G-2.0%§!\n  - Vitesse de renforcement: §G+2.0%§!\n  - Modif. d'entretien terrestre: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_precision_workshop_02: "Atelier de précision II"
  building_precision_workshop_02_desc: "Amélioration de l'atelier de précision"
  building_precision_workshop_03: "Atelier de précision III"
@@ -42,7 +42,7 @@
  building_precision_workshop_10_desc: "Amélioration de l'atelier de précision"
 
  building_embassy_01: "Ambassade I"
- building_embassy_01_desc: "A mesure que les frontières du monde s'étendent, il est plus que jamais nécessaire de savoir co-exister avec d'autres nations ... et de savoir s'en protéger. \n\n§MConditions de la province:§!\n  - Est la capitale\n  - Appartient à un état\n  - Dévelopement d'au moins 12\n  - Est prospère\n\n§MChaque niveau apporte:§!\n  - Amélioration des relations: §G+1.0%§!\n  - Impact de l'expansion agressive: §G-1.0%§!\n  - Coût d'annexation diplomatique: §G-1.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_embassy_01_desc: "A mesure que les frontières du monde s'étendent, il est plus que jamais nécessaire de savoir co-exister avec d'autres nations ... et de savoir s'en protéger. \n\n§MConditions de la province:§!\n  - Est la capitale\n  - Appartient à un état\n  - Dévelopement d'au moins 14\n\n§MChaque niveau apporte:§!\n  - Amélioration des relations: §G+1.0%§!\n  - Impact de l'expansion agressive: §G-1.0%§!\n  - Coût d'annexation diplomatique: §G-1.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_embassy_02: "Ambassade II"
  building_embassy_02_desc: "Amélioration de l'ambassade"
  building_embassy_03: "Ambassade III"
@@ -63,7 +63,7 @@
  building_embassy_10_desc: "Amélioration de l'ambassade"
 
  building_spy_center_01: "Centre d'espionnage I"
- building_spy_center_01_desc: "La diplomatie nécessite parfois de savoir récupérer des informations précieuses auprès des bons contacts, aux bons moments et dans les bons endroits. Le Centre d'espionnage forme les diplomates en leur apprenant toutes les techniques et subterfuges nécessaires \n\n§MConditions de la province:§!\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Constit. de réseaux d'espionnage: §G+2.0%§!\n  - Efficacité du soutien aux rebelles: §G+2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_spy_center_01_desc: "La diplomatie nécessite parfois de savoir récupérer des informations précieuses auprès des bons contacts, aux bons moments et dans les bons endroits. Le Centre d'espionnage forme les diplomates en leur apprenant toutes les techniques et subterfuges nécessaires \n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Terrain : L'un des suivants\n    - Marais\n    - Forêt\n    - Montagne\n    - Jungle\n\n§MChaque niveau apporte:§!\n  - Constit. de réseaux d'espionnage: §G+2.0%§!\n  - Efficacité du soutien aux rebelles: §G+2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_spy_center_02: "Centre d'espionnage II"
  building_spy_center_02_desc: "Amélioration du centre d'espionnage"
  building_spy_center_03: "Centre d'espionnage III"
@@ -84,7 +84,7 @@
  building_spy_center_10_desc: "Amélioration du centre d'espionnage"
 
  building_prime_ministry_01: "Ministère général I"
- building_prime_ministry_01_desc: "Alors que de plus en plus d'états sont intégrés à la nation, la décentralisation du pouvoir permet de renforcer l'éfficacité provinciale sans diminuer l'autorité de l'état \n\n§MConditions de la province:§!\n  - Dispose d'un siège au parlement\n  - Appartient à un état\n\n§MChaque niveau apporte:§!\n  - Coût du développement: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_prime_ministry_01_desc: "Alors que de plus en plus d'états sont intégrés à la nation, la décentralisation du pouvoir permet de renforcer l'éfficacité provinciale sans diminuer l'autorité de l'état \n\n§MConditions de la province:§!\n  - Dévelopement d'au moins 14\n  - Appartient à un état\n  - Autonomie locale inférieure à 1\n\n§MChaque niveau apporte:§!\n  - Coût du développement: §G-2.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_prime_ministry_02: "Ministère général II"
  building_prime_ministry_02_desc: "Amélioration du ministrèe général"
  building_prime_ministry_03: "Ministère général III"
@@ -105,7 +105,7 @@
  building_prime_ministry_10_desc: "Amélioration du ministrèe général"
 
  building_observatory_01: "Observatoire I"
- building_observatory_01_desc: "Il suffit parfois de lever les yeux pour mieux comprendre notre place dans l'univers \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n  - Terrain : Montagnes\n\n§MChaque niveau apporte:§!\n  - Coût des doctrines: §G-1.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_observatory_01_desc: "Il suffit parfois de lever les yeux pour mieux comprendre notre place dans l'univers \n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Terrain : Montagnes\n\n§MChaque niveau apporte:§!\n  - Coût des doctrines: §G-1.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_observatory_02: "Observatoire II"
  building_observatory_02_desc: "Amélioration de l'observatoire"
  building_observatory_03: "Observatoire III"
@@ -122,7 +122,7 @@
  building_observatory_08_desc: "Amélioration de l'observatoire"
 
  building_laboratory_01: "Laboratoire I"
- building_laboratory_01_desc: "Les unes après les autres, les expériences menées en laboratoire confirment que la méthode empirique reste le vecteur principal de découvertes \n\n§MConditions de la province:§!\n  - Est prospère\n  - Appartient à un état\n  - Dévelopement d'au moins 12\n\n§MChaque niveau apporte:§!\n  - Coût des technologies: §G-1.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
+ building_laboratory_01_desc: "Les unes après les autres, les expériences menées en laboratoire confirment que la méthode empirique reste le vecteur principal de découvertes \n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Dévelopement d'au moins 20\n\n§MChaque niveau apporte:§!\n  - Coût des technologies: §G-1.0%§!\n  - Coût du bâtiment: §R+2.0%§!\n"
  building_laboratory_02: "Laboratoire II"
  building_laboratory_02_desc: "Amélioration du laboratoire"
  building_laboratory_03: "Laboratoire III"
@@ -143,7 +143,7 @@
  building_laboratory_10_desc: "Amélioration du laboratoire"
 
  building_opera_01: "Opéra I"
- building_opera_01_desc: "Un haut lieu de culture et de prestige. Les réprésentations régulières des plus grand chefs d'oeuvre attireront à coup sur capitaines d'industries, savants, commerçants, explorateurs, conquistadors, artistes et autres intellectuels.\n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Est prospère\n  - Dévelopement d'au moins 20\n\n§MChaque niveau apporte:§!:\n  - Propagation des institutions: §G+2.5%§!\n  - Coût du bâtiment: §R+2.5%§!\n"
+ building_opera_01_desc: "Un haut lieu de culture et de prestige. Les réprésentations régulières des plus grand chefs d'oeuvre attireront à coup sur capitaines d'industries, savants, commerçants, explorateurs, conquistadors, artistes et autres intellectuels.\n\n§MConditions de la province:§!\n  - Appartient à un état\n  - Dévelopement d'au moins 20\n  - Agitation inférieure à 1\n\n§MChaque niveau apporte:§!:\n  - Propagation des institutions: §G+2.5%§!\n  - Coût du bâtiment: §R+2.5%§!\n"
  building_opera_02: "Opéra II"
  building_opera_02_desc: "Amélioration du laboratoire"
  building_opera_03: "Opéra III"

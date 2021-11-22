@@ -3,9 +3,11 @@
  SLMod_events_crowded_navy_namespace.1.desc: "De très nombreux hommes attendent impatiemment un navire sur lequel embarquer. Peut-être pourrions nous trouver, à toutes ces recrues potentielles, une autre activité ?"
  SLMod_events_crowded_navy_namespace.1.a: "Faisons les naviguer sous pavillon corsaire"
  SLMod_events_crowded_navy_namespace.1.b: "Attachons-nous à maintenir la tradition maritime"
- SLMod_events_crowded_navy_namespace.1.c: "Renforçons l'armée"
+ SLMod_events_crowded_navy_namespace.1.c: "Les marins font toujours de bons marchands"
  SLMod_events_crowded_navy_namespace.1.d: "Les marins font toujours de bons marchands"
  SLMod_events_crowded_navy_namespace.1.z: "Et une bouteille de rhum !"
+
+
  
  SLMod_events_crowded_army_namespace.1.title: "L'ennemi fantôme"
  SLMod_events_crowded_army_namespace.1.desc: "Nous disposons de nombreuses recrues prêtes à en découdre mais d'aucun régiment pour les acceuillir. Peut-être pouvons-nous leur trouver un autre usage ?"
@@ -33,6 +35,13 @@
  SLMod_events_crowded_army_namespace.1.k.tooltip: "Entre deux périodes d'entrainement, nos soldats ne doivent pas perdre les bons réflexes de leur entrainement\n"
  SLMod_events_crowded_army_namespace.1.l: "Réviser le manuel"
  SLMod_events_crowded_army_namespace.1.l.tooltip: "Entre deux périodes d'entrainement, nos soldats ne doivent pas perdre les bons réflexes de leur entrainement\n"
+ SLMod_events_crowded_army_namespace.1.m: "Compagnies d'intimidation"
+ SLMod_events_crowded_army_namespace.1.m.tooltip: "Envoyons quelques compagnies pour jouer les gros bras et faciliter les transactions sensibles de nos marchands"
+ SLMod_events_crowded_army_namespace.1.m.key: "§MCompagnies d'intimidation§!"
+ SLMod_events_crowded_army_namespace.1.n: "Compagnies disciplinaires coloniales"
+ SLMod_events_crowded_army_namespace.1.n.tooltip: "Il y a toujours des insubordonés et des trublions dans une armée : les utiliser comme travailleurs et auxiliaires dans nos colonies constitute une punition dissuasive autant qu'utile"
+
+
 
  SLMod_events_institution_spread.1.title: "Presse à imprimer - Diffusion militaire"
  SLMod_events_institution_spread.1.desc: "L'institution §MPresse à imprimer§! est apparue il y a §R[Root.SLMod_events_institution_spread_1_unembraced_penalty.GetValue]§! ans mais nous ne l'avons toujours pas adoptée.\nD'un autre côté notre réserve de main d'oeuvre militaire se remplit\nNous pourrions accélerer la diffusion de cette institution en réorientant cette main d'oeuvre."
@@ -44,7 +53,7 @@
  SLMod_events_institution_spread.1.z.tooltip: "Laissons les choses suivrent leur cours : l'institution finira bien par se diffuser d'elle-même"
 
  SLMod_events_institution_spread.2.title: "Institutions - Gain par prestige"
- SLMod_events_institution_spread.2.desc: "Nous avons acquis suffisament de prestige pour attirer écrivains, savants, philosophes, biographes et autres imprimeurs. Leurs voyages dans nos contrées nous permettront de diffuser plus facile les institutions que nous n'aurions pas encore adoptées."
+ SLMod_events_institution_spread.2.desc: "Nous avons acquis suffisament de prestige pour attirer écrivains, savants, philosophes, biographes et autres imprimeurs. Leurs voyages dans nos contrées nous permettront de diffuser plus facilement les institutions que nous n'aurions pas encore adoptées."
  SLMod_events_institution_spread.2.a: "[SLMod_events_institution_spread_2_selected_province_A.GetName] - [SLMod_events_institution_spread_2_selected_province_A.SLMod_events_institution_spread_2_selected_province_A_current_institution.GetValue]"
  SLMod_events_institution_spread.2.a.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_2_next_institution_embracement_amount_to_add.GetValue]§! pour la propagation de la prochaine institution"
  SLMod_events_institution_spread.2.b: "[SLMod_events_institution_spread_2_selected_province_B.GetName] - [SLMod_events_institution_spread_2_selected_province_B.SLMod_events_institution_spread_2_selected_province_B_current_institution.GetValue]"
@@ -53,7 +62,7 @@
  SLMod_events_institution_spread.2.c.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_2_next_institution_embracement_amount_to_add.GetValue]§! pour la propagation de la prochaine institution"
 
  SLMod_events_institution_spread.3.title: "Institutions - Gain par légitimité"
- SLMod_events_institution_spread.3.desc: "Nous avons acquis suffisament de légitimité pour attirer diplomates, consuls, traducteurs, notables et autres jurisconsultes. Leurs voyages dans nos contrées nous permettront de diffuser plus facile les institutions que nous n'aurions pas encore adoptées."
+ SLMod_events_institution_spread.3.desc: "Nous avons acquis suffisament de légitimité pour attirer diplomates, consuls, traducteurs, notables et autres jurisconsultes. Leurs voyages dans nos contrées nous permettront de diffuser plus facilement les institutions que nous n'aurions pas encore adoptées."
  SLMod_events_institution_spread.3.a: "[SLMod_events_institution_spread_3_selected_province_A.GetName] - [SLMod_events_institution_spread_3_selected_province_A.SLMod_events_institution_spread_3_selected_province_A_current_institution.GetValue]"
  SLMod_events_institution_spread.3.a.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_3_next_institution_embracement_amount_to_add.GetValue]§! pour la propagation de la prochaine institution"
  SLMod_events_institution_spread.3.b: "[SLMod_events_institution_spread_3_selected_province_B.GetName] - [SLMod_events_institution_spread_3_selected_province_B.SLMod_events_institution_spread_3_selected_province_B_current_institution.GetValue]"
@@ -62,7 +71,7 @@
  SLMod_events_institution_spread.3.c.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_3_next_institution_embracement_amount_to_add.GetValue]§! pour la propagation de la prochaine institution"
 
  SLMod_events_institution_spread.4.title: "Institutions - Gain par démonstration de force"
- SLMod_events_institution_spread.4.desc: "Nous avons suffisament fait démonstration de notre force auprès de nos rivaux et des autres pays. Suffisament pour attirer conseillers militaires, condotiorre, capitaines mercenaires et autres officiers d'états-majors. Leurs voyages dans nos contrées nous permettront de diffuser plus facile les institutions que nous n'aurions pas encore adoptées."
+ SLMod_events_institution_spread.4.desc: "Nous avons suffisament fait démonstration de notre force auprès de nos rivaux et des autres pays. Suffisament pour attirer conseillers militaires, condotiorre, capitaines mercenaires et autres officiers d'états-majors. Leurs voyages dans nos contrées nous permettront de diffuser plus facilement les institutions que nous n'aurions pas encore adoptées."
  SLMod_events_institution_spread.4.a: "[SLMod_events_institution_spread_4_selected_province_A.GetName] - [SLMod_events_institution_spread_4_selected_province_A.SLMod_events_institution_spread_4_selected_province_A_current_institution.GetValue]"
  SLMod_events_institution_spread.4.a.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_4_next_institution_embracement_amount_to_add.GetValue]§! pour la propagation de la prochaine institution en §Y[SLMod_events_institution_spread_4_selected_province_A.GetName]§!"
  SLMod_events_institution_spread.4.b: "[SLMod_events_institution_spread_4_selected_province_B.GetName] - [SLMod_events_institution_spread_4_selected_province_B.SLMod_events_institution_spread_4_selected_province_B_current_institution.GetValue]"

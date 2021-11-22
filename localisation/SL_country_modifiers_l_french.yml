@@ -239,7 +239,7 @@
  SLMod_country_modifier_ruler_mil_bumped: "§MApprentissage militaire terminé§!"
  desc_SLMod_country_modifier_ruler_mil_bumped: "Il faudra un moment pour que [Root.Monarch.GetName] puisse mettre en pratique ce qu'il a appris dans le domaine militaire. Peut-être pourra-t-il, de nouveau, apprendre"
 
- SLMod_country_modifiers_institution_spread_boost: "§MPropagation militaire - Presse à imprimer§!"
+ SLMod_country_modifiers_institution_spread_boost: "§MInstitution - Propagation militaire§!"
  desc_SLMod_country_modifiers_institution_spread_boost: "Nous avons décidé de réorienter notre main d'oeuvre militaire vers la propagation de §YPresse à imprimer§!"
 
  SLMod_country_modifier_events_institution_spread_2: "§MInstitution propagée par le prestige§!"
@@ -253,6 +253,9 @@
  SLMod_country_modifier_superior_officers_school_created: "§MEcole d'officiers supérieurs nouvelle créée§!"
  SLMod_country_modifier_improve_army_logistics: "§MLogistique de campagne§!"
  SLMod_country_modifier_general_recruited: "§MGénéral transfuge recruté§!"
+
+ SLMod_country_modifier_global_ship_trade_power_10: "§MFlotte militaire marchande - I§!"
+ SLMod_country_modifier_global_ship_trade_power_20: "§MFlotte militaire marchande - II§!"
 
  SLMod_country_modifier_splendor_usage_A: "§MSplendeur - Institutions§!"
  SLMod_country_modifier_splendor_usage_B: "§MSplendeur - Entrainement§!"

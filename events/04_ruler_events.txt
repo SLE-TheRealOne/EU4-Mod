@@ -128,6 +128,7 @@ country_event = {
             name = SLMod_country_modifier_ruler_dip_bumped
             duration = 3650
             hidden = no
+            desc =
         }
 	}
 

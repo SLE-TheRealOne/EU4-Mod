@@ -7,9 +7,8 @@ laboratory_01 = {
 		NOT = {
 			has_global_flag = laboratory_flag
 		}
-		is_prosperous = yes
 		is_state = yes
-		development = 12
+		development = 20
 	}
 	
 	ai_will_do = {

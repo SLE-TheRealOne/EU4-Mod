@@ -8,9 +8,8 @@ embassy_01 = {
         NOT = {
             has_global_flag = embassy_flag
         }
-        development = 12
+        development = 14
         is_state = yes
-        is_prosperous = yes
 	}
 	
 	ai_will_do = {

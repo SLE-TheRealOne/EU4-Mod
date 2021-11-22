@@ -11,10 +11,12 @@ country_event = {
 	trigger = {
 		sailors_percentage = 0.90
 	}
+
+    mean_time_to_happen = {
+        months = 12
+    }
 	
-	is_triggered_only = yes
-	
-	# Boost privateer_efficiency
+	# A - Boost privateer_efficiency
 	option = {
 		name = SLMod_events_crowded_navy_namespace.1.a
 
@@ -34,7 +36,7 @@ country_event = {
 		add_yearly_sailors = -0.16
 	}
 	
-	# Boost navy tradition
+	# B - Boost navy tradition
 	option = {
 		name = SLMod_events_crowded_navy_namespace.1.b
 		
@@ -54,9 +56,9 @@ country_event = {
 		add_yearly_sailors = -0.16
 	}
 	
-	# Boost trade
+	# C - Boost trade
 	option = {
-		name = SLMod_events_crowded_navy_namespace.1.d
+		name = SLMod_events_crowded_navy_namespace.1.c
 		
 		highlight = yes
 		trigger = {
@@ -72,6 +74,47 @@ country_event = {
 
 		add_yearly_sailors = -0.16
 	}
+
+	# D - Boost trade protection
+	option = {
+	    name = SLMod_events_crowded_navy_namespace.1.d
+
+        add_yearly_sailors = -0.24
+
+        trigger = {
+            NOT = {
+                has_country_modifier = SLMod_country_modifier_global_ship_trade_power_10
+                has_country_modifier = SLMod_country_modifier_global_ship_trade_power_20
+            }
+        }
+
+	    add_country_modifier = {
+	        name = SLMod_country_modifier_global_ship_trade_power_10
+	        duration = 180
+	        hidden = no
+	    }
+	}
+
+	# E - Boost trade protection
+    option = {
+        name = SLMod_events_crowded_navy_namespace.1.e
+
+        add_yearly_sailors = -0.24
+
+        trigger = {
+            ruler_has_personality = entrepreneur_personality
+            NOT = {
+                has_country_modifier = SLMod_country_modifier_global_ship_trade_power_10
+                has_country_modifier = SLMod_country_modifier_global_ship_trade_power_20
+            }
+        }
+
+        add_country_modifier = {
+            name = SLMod_country_modifier_global_ship_trade_power_20
+            duration = 180
+            hidden = no
+        }
+    }
 	
 	# Default
 	option = {

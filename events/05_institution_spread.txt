@@ -339,7 +339,7 @@ country_event = {
 
         add_country_modifier = {
             name = SLMod_country_modifier_events_institution_spread_3
-            duration = 1460
+            duration = 730
             hidden = no
         }
     }
@@ -357,7 +357,7 @@ country_event = {
 
         add_country_modifier = {
             name = SLMod_country_modifier_events_institution_spread_3
-            duration = 1460
+            duration = 730
             hidden = no
         }
     }
@@ -861,7 +861,7 @@ province_event = {
             }
         }
         is_state = yes
-        new_world_i = 5
+        current_institution_growth = 0
         NOT = {
             new_world_i = 70
             OR = {

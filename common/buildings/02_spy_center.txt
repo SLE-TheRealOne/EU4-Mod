@@ -12,6 +12,12 @@ spy_center_01 = {
 			has_global_flag = spy_center_flag
 		}
 		is_state = yes
+		OR = {
+		    has_terrain = marsh
+		    has_terrain = forest
+		    has_terrain = jungle
+		    has_terrain = mountain
+		}
 	}
 	
 	on_built = {

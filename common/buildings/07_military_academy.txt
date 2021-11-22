@@ -13,6 +13,9 @@ military_academy_01 = {
         }
         is_state = yes
         base_manpower = 7
+        NOT = {
+            local_autonomy = 5
+        }
     }
 
 	on_built = {

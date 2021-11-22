@@ -49,3 +49,7 @@ SLMod_province_modifiers_institution_spread_boost_b = {
     local_state_maintenance_modifier = 0.05
     local_unrest = 2
 }
+
+SLMod_province_modifier_local_colonial_growth = {
+    local_colonial_growth = 10
+}

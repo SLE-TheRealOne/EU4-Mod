@@ -20,11 +20,20 @@ country_event = {
                 }
                 save_event_target_as = crowded_army_randomly_chosen_province_1
             }
+            random_owned_province = {
+                limit = {
+                    is_colony = yes
+                }
+                save_event_target_as = crowded_army_randomly_chosen_colony
+            }
+            home_trade_node_effect_scope = {
+                save_event_target_as = home_trade_node_target
+            }
         }
     }
 	
 	mean_time_to_happen = {
-		months = 18
+		months = 12
 	}
 
 
@@ -203,6 +212,47 @@ country_event = {
             hidden = no
         }
 	}
+
+	# M - Home trade node boost
+	option = {
+	    name = SLMod_events_crowded_army_namespace.1.m
+	    custom_toolip = SLMod_events_crowded_army_namespace.1.m.tooltip
+
+        add_yearly_manpower = -0.16
+
+	    event_target:home_trade_node_target = {
+	        add_trade_modifier = {
+                who = ROOT
+                duration = 180
+                power = 20
+                key = SLMod_events_crowded_army_namespace.1.m.key
+            }
+	    }
+	}
+
+	# N - Colony boost
+    option = {
+        name = SLMod_events_crowded_army_namespace.1.n
+        custom_toolip = SLMod_events_crowded_army_namespace.1.n.tooltip
+
+        trigger = {
+            event_target:crowded_army_randomly_chosen_colony = {
+                NOT = {
+                    has_province_modifier = SLMod_province_modifier_local_colonial_growth
+                }
+            }
+        }
+
+        add_yearly_manpower = -0.24
+
+        event_target:crowded_army_randomly_chosen_colony = {
+            add_province_modifier = {
+                name = SLMod_province_modifier_local_colonial_growth
+                duration = 180
+            }
+        }
+
+    }
 
     ####################################
     ####    Personality versions    ####

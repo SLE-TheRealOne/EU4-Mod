@@ -7,7 +7,10 @@ prime_ministry_01 = {
 		NOT = {
 			has_global_flag = prime_ministry_flag
 		}
-		has_seat_in_parliament = yes
+		development = 14
+		NOT = {
+		    local_autonomy = 1
+		}
 		is_state = yes
 	}
 	

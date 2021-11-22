@@ -43,15 +43,15 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 6
 	}
 
 	option = {
 		name = SLMod_events_generals_namespace.1.a
 		custom_tooltip = SLMod_events_generals_namespace.1.a.tooltip
 
-        add_splendor = 2
-        add_corruption = 2
+        add_splendor = 5
+        add_corruption = 3
 
         dynamic_create_general = {
             tradition = SLMod_events_generals_namespace_1_general_army_tradition
@@ -59,7 +59,7 @@ country_event = {
 
         add_country_modifier = {
             name = SLMod_country_modifier_general_recruited
-            duration = 3650
+            duration = 730
             hidden = no
         }
 	}

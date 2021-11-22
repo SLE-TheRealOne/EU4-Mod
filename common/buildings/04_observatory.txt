@@ -7,7 +7,6 @@ observatory_01 = {
 		NOT = {
 			has_global_flag = observatory_flag
 		}
-		is_prosperous = yes
 		is_state = yes
 		has_terrain = mountain
 	}

@@ -9,6 +9,7 @@ precision_workshop_01 = {
         }
         is_state = yes
         base_production = 7
+        has_terrain = woods
 	}
 	
 	ai_will_do = {
