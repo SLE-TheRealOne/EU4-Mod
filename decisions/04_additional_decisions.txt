@@ -96,7 +96,7 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = siege_artillery_country_modifier
-				duration = 3650
+				duration = 1825
 				hidden = no
 			}
 		}
@@ -120,7 +120,7 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = combat_artillery_country_modifier
-				duration = 3650
+				duration = 1825
 				hidden = no
 			}
 		}
@@ -141,7 +141,7 @@ country_decisions = {
 				advisor = army_organiser
 				advisor = army_reformer
 			}
-			army_professionalism = 0.40
+			army_professionalism = 0.60
 			army_tradition = 40
 		}
 		

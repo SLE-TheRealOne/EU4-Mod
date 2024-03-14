@@ -9,7 +9,7 @@ country_event = {
 	hidden = no
 
 	trigger = {
-		sailors_percentage = 0.90
+		sailors_percentage = 0.98
 	}
 
     mean_time_to_happen = {

@@ -21,6 +21,8 @@
  use_splendor_A_title: "--- Splendeur - Institutions"
  use_splendor_B_title: "--- Splendeur - Entrainement"
  use_splendor_C_title: "--- Splendeur - Developement"
+ use_splendor_D_title: "--- Splendeur - Colonies"
+ use_splendor_D_desc: "Notre pays rayonne sur le monde ; suffisament pour rappeler à nos colonies qu'il est si bon d'être sous notre protection"
  # -------------------------
  assist_advisor_natural_scientist_title: "--- Assister §Y[Root.Adm_Advisor.GetName]§!"
  assist_advisor_natural_scientist_desc: "Allouer à §Y[Root.Adm_Advisor.GetName]§! du matériel, du personnel ainsi que des ressources supplémentaires lui permettrait de se focaliser sur ses compétences pour laisser libre cours à tout son talent"

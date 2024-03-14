@@ -3,24 +3,20 @@ country_decisions = {
     use_splendor_A = {
         potential = {
             NOT = { has_country_modifier = SLMod_country_modifier_splendor_usage_A }
-            in_golden_age = yes
         }
 
         allow = {
-            splendor = 800
-            stability = 1
-            NOT = {
-                corruption = 2
-            }
+            splendor = 100
+            stability = 2
         }
 
         effect = {
             add_country_modifier = {
                 name = SLMod_country_modifier_splendor_usage_A
-                duration = 1460
+                duration = 730
                 hidden = no
             }
-            add_splendor = -800
+            add_splendor = -100
         }
 
         ai_will_do = {
@@ -32,24 +28,21 @@ country_decisions = {
     use_splendor_B = {
         potential = {
             NOT = { has_country_modifier = SLMod_country_modifier_splendor_usage_B }
-            in_golden_age = yes
+
         }
 
         allow = {
-            splendor = 800
-            stability = 1
-            NOT = {
-                corruption = 2
-            }
+            splendor = 100
+            stability = 2
         }
 
         effect = {
             add_country_modifier = {
                 name = SLMod_country_modifier_splendor_usage_B
-                duration = 1460
+                duration = 730
                 hidden = no
             }
-            add_splendor = -800
+            add_splendor = -100
         }
 
         ai_will_do = {
@@ -61,24 +54,20 @@ country_decisions = {
     use_splendor_C = {
         potential = {
             NOT = { has_country_modifier = SLMod_country_modifier_splendor_usage_C }
-            in_golden_age = yes
         }
 
         allow = {
-            splendor = 800
-            stability = 1
-            NOT = {
-                corruption = 2
-            }
+            splendor = 100
+            stability = 2
         }
 
         effect = {
             add_country_modifier = {
                 name = SLMod_country_modifier_splendor_usage_C
-                duration = 1460
+                duration = 730
                 hidden = no
             }
-            add_splendor = -800
+            add_splendor = -100
         }
 
         ai_will_do = {
@@ -86,29 +75,40 @@ country_decisions = {
         }
     }
 
-    # use_splendor_C
-    use_splendor_C = {
+    # use_splendor_D
+    use_splendor_D = {
         potential = {
-            NOT = { has_country_modifier = SLMod_country_modifier_splendor_usage_C }
-            in_golden_age = yes
+            colony = 1
+            any_subject_country = {
+                liberty_desire = 40
+            }
         }
 
         allow = {
-            splendor = 800
-            stability = 1
-            NOT = {
-                corruption = 2
+            splendor = 100
+            stability = 2
+            any_subject_country = {
+                has_opinion = {
+                    who = ROOT
+                    value = 120
+                }
             }
         }
 
         effect = {
-            add_country_modifier = {
-                name = SLMod_country_modifier_splendor_usage_C
-                duration = 1460
-                hidden = no
+            add_splendor = -100
+            every_subject_country = {
+                limit = {
+                    liberty_desire = 40
+                    has_opinion = {
+                        who = ROOT
+                        value = 120
+                    }
+                }
+                add_liberty_desire = -10
             }
-            add_splendor = -800
         }
+
 
         ai_will_do = {
             factor = 1

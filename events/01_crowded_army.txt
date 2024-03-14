@@ -216,7 +216,7 @@ country_event = {
 	# M - Home trade node boost
 	option = {
 	    name = SLMod_events_crowded_army_namespace.1.m
-	    custom_toolip = SLMod_events_crowded_army_namespace.1.m.tooltip
+	    custom_tooltip = SLMod_events_crowded_army_namespace.1.m.tooltip
 
         add_yearly_manpower = -0.16
 
@@ -233,7 +233,7 @@ country_event = {
 	# N - Colony boost
     option = {
         name = SLMod_events_crowded_army_namespace.1.n
-        custom_toolip = SLMod_events_crowded_army_namespace.1.n.tooltip
+        custom_tooltip = SLMod_events_crowded_army_namespace.1.n.tooltip
 
         trigger = {
             event_target:crowded_army_randomly_chosen_colony = {
@@ -243,13 +243,29 @@ country_event = {
             }
         }
 
-        add_yearly_manpower = -0.24
+        add_yearly_manpower = -0.16
 
         event_target:crowded_army_randomly_chosen_colony = {
             add_province_modifier = {
                 name = SLMod_province_modifier_local_colonial_growth
                 duration = 180
             }
+        }
+
+    }
+
+    # O - Sailors gain
+    option = {
+        name = SLMod_events_crowded_army_namespace.1.o
+        custom_tooltip = SLMod_events_crowded_army_namespace.1.o.tooltip
+
+        add_yearly_manpower = -0.08
+        add_yearly_sailors = 0.08
+
+        add_country_modifier = {
+            name = SLMod_country_modifiers_sailors_gain_counterpart
+            duration = 365
+            hidden = no
         }
 
     }

@@ -115,6 +115,15 @@
  SLMod_events_institution_spread.8.z: "Aucun effet"
  SLMod_events_institution_spread.8.z.tooltip: "Laissons les choses suivrent leur cours : l'institution finira bien par se diffuser d'elle-même"
 
+ SLMod_events_institution_spread.9.title: "Manufactures - Diffusion militaire"
+ SLMod_events_institution_spread.9.desc: "L'institution §MManufactures§! est apparue il y a §R[Root.SLMod_events_institution_spread_9_unembraced_penalty.GetValue]§! ans mais nous ne l'avons toujours pas adoptée.\nD'un autre côté notre réserve de main d'oeuvre militaire se remplit\nNous pourrions accélerer la diffusion de cette institution en réorientant cette main d'oeuvre\n\nProgression actuelle : §R[Root.SLMod_events_institution_spread_9_selected_province_current_institution.GetValue]§!\nProgression mensuelle : §R[Root.SLMod_events_institution_spread_9_selected_province_current_institution_growth.GetValue]§!"
+ SLMod_events_institution_spread.9.a: "Détachons quelues compagnies pour lancer la machine"
+ SLMod_events_institution_spread.9.a.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_9_next_institution_embracement_to_add.GetValue]§! pour la propagation de l'institution §YLumières§! dans la province de §Y[This.GetName]§!"
+ SLMod_events_institution_spread.9.b: "Nous bénéficions déjà de plusieurs sources"
+ SLMod_events_institution_spread.9.b.tooltip: "Gain de §G[Root.SLMod_events_institution_spread_9_next_institution_embracement_to_add.GetValue]§! pour la propagation de l'institution §YLumières§! dans la province de §Y[This.GetName]§!"
+ SLMod_events_institution_spread.9.z: "Aucun effet"
+ SLMod_events_institution_spread.9.z.tooltip: "Laissons les choses suivrent leur cours : l'institution finira bien par se diffuser d'elle-même"
+
  SLMod_events_prosperity_namespace.1.title: "Prospérité d'une province"
  SLMod_events_prosperity_namespace.1.desc: "L'état de §R[This.GetAreaName]§! jouit actuellement d'une période de prospérité dont les effets, pour les habitants de §M[This.GetName]§! sont particulièrement visibles : nous avons l'opportunité de pouvoir investir rapidement dans cette province"
  SLMod_events_prosperity_namespace.1.a: "Augmenter la valeur fiscale - Actuellement [This.SLMod_events_prosperity_namespace_1_current_province_tax_level.GetValue]"

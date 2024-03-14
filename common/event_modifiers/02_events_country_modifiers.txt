@@ -57,23 +57,18 @@ SLMod_country_modifier_ruler_mil_bumped = {
 }
 
 SLMod_country_modifiers_institution_spread_boost = {
-    global_institution_spread = 0.02
-    state_maintenance_modifier = 0.01
 }
 
 SLMod_country_modifier_events_institution_spread_2 = {
-    global_institution_spread = 0.02
-    state_maintenance_modifier = 0.01
+    global_institution_spread = 0.05
 }
 
 SLMod_country_modifier_events_institution_spread_3 = {
-    global_institution_spread = 0.02
-    state_maintenance_modifier = 0.01
+    global_institution_spread = 0.05
 }
 
 SLMod_country_modifier_events_institution_spread_4 = {
-    global_institution_spread = 0.02
-    state_maintenance_modifier = 0.01
+    global_institution_spread = 0.05
 }
 
 SLMod_country_modifier_general_recruited = {
@@ -91,4 +86,8 @@ SLMod_country_modifier_global_ship_trade_power_10 = {
 
 SLMod_country_modifier_global_ship_trade_power_20 = {
     global_ship_trade_power = 0.20
+}
+
+SLMod_country_modifiers_sailors_gain_counterpart = {
+    navy_tradition_decay = 0.15
 }

@@ -1,10 +1,10 @@
 SLMod_country_modifiers_reduce_development_costs = {
-	inflation_reduction = -0.10
+	inflation_reduction = -0.15
 	development_cost = -0.10
-	state_maintenance_modifier = 0.03
+	state_maintenance_modifier = 0.05
 }
 siege_artillery_country_modifier = {
-	artillery_bonus_vs_fort = 1
+	artillery_levels_available_vs_fort = 1
 	siege_blockade_progress = 1
 	siege_ability = 0.15
 	artillery_power = -0.15
@@ -53,8 +53,8 @@ SLMod_country_modifier_splendor_usage_A = {
     global_institution_spread = 0.10
 }
 SLMod_country_modifier_splendor_usage_B = {
-    drill_gain_modifier = 0.05
+    drill_gain_modifier = 0.10
 }
 SLMod_country_modifier_splendor_usage_C = {
-    development_cost = -0.05
+    development_cost = -0.10
 }

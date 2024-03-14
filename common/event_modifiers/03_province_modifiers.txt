@@ -38,16 +38,16 @@ SLMod_province_modifier_development_cost_reduction_12 = {
 
 SLMod_province_modifiers_institution_spread_boost_a = {
     institution_growth = 2
-    local_manpower_modifier = -0.20
-    local_state_maintenance_modifier = 0.05
-    local_unrest = 2
+    local_manpower_modifier = -0.15
+    local_state_maintenance_modifier = 0.10
+    local_unrest = 3
 }
 
 SLMod_province_modifiers_institution_spread_boost_b = {
-    local_institution_spread = 0.20
-    local_manpower_modifier = -0.20
-    local_state_maintenance_modifier = 0.05
-    local_unrest = 2
+    local_institution_spread = 0.25
+    local_manpower_modifier = -0.15
+    local_state_maintenance_modifier = 0.10
+    local_unrest = 3
 }
 
 SLMod_province_modifier_local_colonial_growth = {
